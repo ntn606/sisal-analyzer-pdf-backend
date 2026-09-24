@@ -44,7 +44,7 @@ def pdf_url(sheet: str) -> str:
     return BASE + SHEETS[sheet]
 
 
-def download_pdf(sheet: str) -> str:
+def download_pdf(sheet: str):
     url = pdf_url(sheet)
 
     headers = {
@@ -68,9 +68,7 @@ def download_pdf(sheet: str) -> str:
             request_url = url
 
             if attempt:
-                request_url += (
-                    f"?cb={int(time.time())}"
-                )
+                request_url += f"?cb={int(time.time())}"
 
             response = requests.get(
                 request_url,
@@ -81,7 +79,6 @@ def download_pdf(sheet: str) -> str:
             )
 
             response.raise_for_status()
-
             content = response.content
 
             if not content.startswith(b"%PDF"):
@@ -101,7 +98,7 @@ def download_pdf(sheet: str) -> str:
                     "PDF scaricato ma senza testo estraibile."
                 )
 
-            return text
+            return text, content
 
         except Exception as error:
             last_error = error
@@ -113,15 +110,14 @@ def download_pdf(sheet: str) -> str:
         f"Download Sisal fallito: {last_error}"
     )
 
-
-def save_cache(sheet: str, text: str):
+def save_cache(sheet: str, text: str, pdf_bytes: bytes):
     with CACHE_LOCK:
         CACHE[sheet] = {
             "text": text,
+            "pdf_bytes": pdf_bytes,
             "time": time.time(),
             "error": None,
         }
-
 
 def save_error(sheet: str, error):
     with CACHE_LOCK:
@@ -136,8 +132,8 @@ def save_error(sheet: str, error):
 
 def refresh_sheet(sheet: str):
     try:
-        text = download_pdf(sheet)
-        save_cache(sheet, text)
+        text, pdf_bytes = download_pdf(sheet)
+        save_cache(sheet, text, pdf_bytes)
         print(
             f"[SISAL] {sheet}: aggiornato "
             f"({len(text)} caratteri)",
