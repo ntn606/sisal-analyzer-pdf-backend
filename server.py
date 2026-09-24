@@ -656,8 +656,10 @@ def get_matches(
     limit: int = 100,
 ):
     """
-    Elenca gli eventi presenti nella copia cache
-    del Foglio Quote Calcio Base.
+    DIAGNOSTICA TEMPORANEA.
+
+    Restituisce le righe reali estratte con pypdf
+    dal Foglio Quote Calcio Base.
     """
 
     text = get_cached_text("base")
@@ -666,36 +668,34 @@ def get_matches(
         return {
             "ok": False,
             "state": "source_not_ready",
-            "message": (
-                "Il Foglio Quote Base non è ancora "
-                "disponibile nella cache."
-            ),
-            "matches": [],
+            "lines": [],
         }
 
-    events = extract_events(text)
-
-    if query:
-        q = query.casefold()
-
-        events = [
-            event
-            for event in events
-            if q in event["raw"].casefold()
-        ]
+    lines = clean_lines(text)
 
     limit = max(1, min(limit, 300))
 
+    selected = []
+
+    for index, line in enumerate(
+        lines[:limit]
+    ):
+        selected.append(
+            {
+                "index": index,
+                "text": line,
+            }
+        )
+
     return {
         "ok": True,
-        "source": pdf_url("base"),
+        "mode": "debug_raw_pdf_lines",
         "updated": get_updated_timestamp(text),
-        "cache_age_seconds": cache_age("base"),
-        "count": len(events),
-        "matches": events[:limit],
+        "total_lines": len(lines),
+        "returned": len(selected),
+        "lines": selected,
     }
-
-
+    
 @mcp.tool()
 def get_event_markets(
     palinsesto: str,
