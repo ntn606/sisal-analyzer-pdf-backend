@@ -43,27 +43,84 @@ def fetch_pdf(sheet: str) -> str:
 
     url = BASE + SHEETS[sheet]
 
-    response = httpx.get(
-        url,
-        headers={
-            "User-Agent": "Mozilla/5.0",
-            "Accept": "application/pdf,*/*",
-        },
-        timeout=30,
-        follow_redirects=True,
-    )
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/140.0.0.0 Safari/537.36"
+        ),
+        "Accept": "application/pdf,application/octet-stream;q=0.9,*/*;q=0.8",
+        "Accept-Language": "it-IT,it;q=0.9,en;q=0.8",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Referer": "https://www.sisal.it/scommesse-matchpoint/foglio-quote",
+        "Connection": "close",
+    }
 
-    response.raise_for_status()
+    last_error = None
+    content = None
 
-    if not response.content.startswith(b"%PDF"):
-        raise RuntimeError("La risposta Sisal non è un PDF valido.")
+    # Sisal può occasionalmente rallentare o bloccare richieste
+    # provenienti da infrastrutture cloud. Usiamo HTTP/1.1,
+    # timeout separati e più tentativi.
+    for attempt in range(3):
+        try:
+            request_url = url
 
-    reader = PdfReader(io.BytesIO(response.content))
+            if attempt:
+                separator = "&" if "?" in url else "?"
+                request_url = (
+                    f"{url}{separator}cb={int(time.time())}-{attempt}"
+                )
+
+            timeout = httpx.Timeout(
+                connect=10.0,
+                read=20.0,
+                write=10.0,
+                pool=10.0,
+            )
+
+            with httpx.Client(
+                headers=headers,
+                timeout=timeout,
+                follow_redirects=True,
+                http2=False,
+            ) as client:
+                response = client.get(request_url)
+                response.raise_for_status()
+                content = response.content
+
+            if not content.startswith(b"%PDF"):
+                raise RuntimeError(
+                    "La risposta Sisal non è un PDF valido."
+                )
+
+            break
+
+        except Exception as error:
+            last_error = error
+            content = None
+
+            if attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
+
+    if content is None:
+        raise RuntimeError(
+            "Download PDF Sisal fallito dopo 3 tentativi: "
+            f"{last_error}"
+        )
+
+    reader = PdfReader(io.BytesIO(content))
 
     text = "\n".join(
         page.extract_text() or ""
         for page in reader.pages
     )
+
+    if not text.strip():
+        raise RuntimeError(
+            "PDF Sisal scaricato ma senza testo estraibile."
+        )
 
     CACHE[sheet] = {
         "time": now,
@@ -195,29 +252,40 @@ def get_event_markets(
 
     for sheet in SHEETS:
 
-        text = fetch_pdf(sheet)
-        lines = clean_lines(text)
+        try:
+            text = fetch_pdf(sheet)
+            lines = clean_lines(text)
 
-        hits = []
+            hits = []
 
-        for index, line in enumerate(lines):
+            for index, line in enumerate(lines):
 
-            if (
-                palinsesto in line
-                and avvenimento in line
-            ):
-                start = max(0, index - 2)
-                end = min(len(lines), index + 4)
+                if (
+                    palinsesto in line
+                    and avvenimento in line
+                ):
+                    start = max(0, index - 2)
+                    end = min(len(lines), index + 4)
 
-                hits.append(
-                    " | ".join(lines[start:end])
-                )
+                    hits.append(
+                        " | ".join(lines[start:end])
+                    )
 
-        result[sheet] = {
-            "updated": get_updated_timestamp(text),
-            "source": BASE + SHEETS[sheet],
-            "hits": hits[:30],
-        }
+            result[sheet] = {
+                "ok": True,
+                "updated": get_updated_timestamp(text),
+                "source": BASE + SHEETS[sheet],
+                "hits": hits[:30],
+            }
+
+        except Exception as error:
+
+            result[sheet] = {
+                "ok": False,
+                "error": str(error),
+                "source": BASE + SHEETS[sheet],
+                "hits": [],
+            }
 
     return {
         "palinsesto": palinsesto,
@@ -254,8 +322,18 @@ def search_odds(
 
     for current_sheet in targets:
 
-        text = fetch_pdf(current_sheet)
-        lines = clean_lines(text)
+        try:
+            text = fetch_pdf(current_sheet)
+            lines = clean_lines(text)
+
+        except Exception as error:
+            results.append(
+                {
+                    "sheet": current_sheet,
+                    "error": str(error),
+                }
+            )
+            continue
 
         for index, line in enumerate(lines):
 
@@ -290,6 +368,8 @@ def source_status():
 
     for sheet in SHEETS:
 
+        started = time.time()
+
         try:
             text = fetch_pdf(sheet)
 
@@ -297,6 +377,10 @@ def source_status():
                 "ok": True,
                 "updated": get_updated_timestamp(text),
                 "characters": len(text),
+                "elapsed_seconds": round(
+                    time.time() - started,
+                    2,
+                ),
                 "source": BASE + SHEETS[sheet],
             }
 
@@ -305,6 +389,10 @@ def source_status():
             result[sheet] = {
                 "ok": False,
                 "error": str(error),
+                "elapsed_seconds": round(
+                    time.time() - started,
+                    2,
+                ),
                 "source": BASE + SHEETS[sheet],
             }
 
