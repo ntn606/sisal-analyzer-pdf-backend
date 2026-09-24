@@ -232,60 +232,302 @@ def clean_lines(text: str):
 
 
 def extract_events(text: str):
+    """
+    Estrae le partite dal Foglio Quote Calcio Base.
+
+    Il PDF Sisal viene estratto da pypdf come testo e può
+    spezzare una singola riga su più righe. Per questo
+    ricostruiamo gli eventi partendo dalla struttura reale:
+
+    ORA -> descrizione partita -> PALINSESTO -> AVVENIMENTO
+
+    Vengono escluse intestazioni, anni e righe di servizio.
+    """
+
     lines = clean_lines(text)
 
     events = []
     seen = set()
 
-    for index, line in enumerate(lines):
-        numbers = re.findall(
-            r"\b\d{3,6}\b",
-            line,
+    time_re = re.compile(
+        r"(?<!\d)([01]\d|2[0-3]):[0-5]\d(?!\d)"
+    )
+
+    integer_re = re.compile(r"^\d{1,6}$")
+
+    date_re = re.compile(
+        r"^\d{1,2}/\d{1,2}/\d{2,4}$"
+    )
+
+    noise_words = (
+        "dati aggiornati",
+        "quote soggette",
+        "palinsesto",
+        "avvenimento",
+        "manifestazione",
+        "scommessa",
+        "pagina ",
+        "www.sisal",
+        "matchpoint",
+        "codice",
+    )
+
+    def is_noise(value: str) -> bool:
+        lower = value.casefold()
+
+        return any(
+            word in lower
+            for word in noise_words
         )
 
-        candidate = None
+    def looks_like_match(value: str) -> bool:
+        """
+        Una partita deve contenere un separatore tra
+        due nomi e almeno caratteri alfabetici su entrambi
+        i lati.
+        """
 
-        if len(numbers) >= 2 and any(
-            separator in line
-            for separator in (" - ", " – ", " — ")
+        value = re.sub(
+            r"\s+",
+            " ",
+            value,
+        ).strip()
+
+        if is_noise(value):
+            return False
+
+        # Normalizza i diversi trattini prodotti dal PDF.
+        value = (
+            value
+            .replace("–", "-")
+            .replace("—", "-")
+            .replace("−", "-")
+        )
+
+        if " - " not in value:
+            return False
+
+        left, right = value.split(
+            " - ",
+            1,
+        )
+
+        if not re.search(r"[A-Za-zÀ-ÿ]", left):
+            return False
+
+        if not re.search(r"[A-Za-zÀ-ÿ]", right):
+            return False
+
+        return True
+
+    def clean_match_name(value: str) -> str:
+        value = (
+            value
+            .replace("–", "-")
+            .replace("—", "-")
+            .replace("−", "-")
+        )
+
+        value = re.sub(
+            r"\s+",
+            " ",
+            value,
+        ).strip()
+
+        return value
+
+    for index, line in enumerate(lines):
+
+        time_match = time_re.search(line)
+
+        if not time_match:
+            continue
+
+        match_time = time_match.group(0)
+
+        # Tutto ciò che segue l'ora può già contenere
+        # manifestazione/partita/palinsesto/avvenimento.
+        after_time = line[
+            time_match.end():
+        ].strip()
+
+        # Ricostruiamo una piccola finestra, senza inglobare
+        # l'evento successivo.
+        parts = []
+
+        if after_time:
+            parts.append(after_time)
+
+        for offset in range(1, 7):
+            position = index + offset
+
+            if position >= len(lines):
+                break
+
+            next_line = lines[position]
+
+            # Se troviamo un'altra ora, è iniziato
+            # l'evento successivo.
+            if time_re.search(next_line):
+                break
+
+            parts.append(next_line)
+
+        if not parts:
+            continue
+
+        # Individua Palinsesto e Avvenimento.
+        #
+        # Nel PDF sono normalmente gli ultimi identificativi
+        # interi dell'evento prima delle quote.
+        id_candidates = []
+
+        for part_index, part in enumerate(parts):
+
+            tokens = part.split()
+
+            for token_index, token in enumerate(tokens):
+
+                cleaned = token.strip(
+                    ".,;:()[]"
+                )
+
+                if not integer_re.fullmatch(cleaned):
+                    continue
+
+                number = int(cleaned)
+
+                # Evita anni e numeri chiaramente non utili.
+                if 1900 <= number <= 2100:
+                    continue
+
+                id_candidates.append(
+                    (
+                        part_index,
+                        token_index,
+                        cleaned,
+                    )
+                )
+
+        if len(id_candidates) < 2:
+            continue
+
+        # Proviamo diverse coppie di identificativi.
+        # La coppia valida deve lasciare prima di sé
+        # una descrizione che sembri realmente una partita.
+        event_found = None
+
+        for candidate_index in range(
+            len(id_candidates) - 1
         ):
-            candidate = line
+            first = id_candidates[candidate_index]
+            second = id_candidates[candidate_index + 1]
 
-        elif len(numbers) >= 2:
-            start = max(0, index - 1)
-            end = min(len(lines), index + 2)
+            palinsesto = first[2]
+            avvenimento = second[2]
 
-            window = " ".join(
-                lines[start:end]
+            # Ricostruisce il testo che precede Pal./Avv.
+            description_parts = []
+
+            for part_index, part in enumerate(parts):
+
+                if part_index > first[0]:
+                    break
+
+                if part_index < first[0]:
+                    description_parts.append(part)
+                    continue
+
+                tokens = part.split()
+
+                before_id = tokens[
+                    :first[1]
+                ]
+
+                if before_id:
+                    description_parts.append(
+                        " ".join(before_id)
+                    )
+
+            description = clean_match_name(
+                " ".join(description_parts)
             )
 
-            if any(
-                separator in window
-                for separator in (
-                    " - ",
-                    " – ",
-                    " — ",
-                )
-            ):
-                candidate = window
-
-        if candidate:
-            key = (
-                numbers[0],
-                numbers[1],
-                candidate,
+            # Rimuove eventuale data rimasta davanti.
+            description_tokens = (
+                description.split()
             )
 
-            if key not in seen:
-                seen.add(key)
+            description_tokens = [
+                token
+                for token in description_tokens
+                if not date_re.fullmatch(token)
+            ]
 
-                events.append(
-                    {
-                        "palinsesto": numbers[0],
-                        "avvenimento": numbers[1],
-                        "raw": candidate,
-                    }
-                )
+            description = clean_match_name(
+                " ".join(description_tokens)
+            )
+
+            # Cerca la porzione che contiene davvero
+            # "Squadra A - Squadra B".
+            if not looks_like_match(description):
+                continue
+
+            # Se nella finestra sono finite intestazioni,
+            # prova a prendere solo la parte più vicina
+            # al separatore della partita.
+            normalized = (
+                description
+                .replace("–", "-")
+                .replace("—", "-")
+                .replace("−", "-")
+            )
+
+            # Evita descrizioni enormi dovute alla fusione
+            # accidentale di più righe.
+            if len(normalized) > 220:
+                continue
+
+            event_found = {
+                "time": match_time,
+                "match": normalized,
+                "palinsesto": palinsesto,
+                "avvenimento": avvenimento,
+            }
+
+            break
+
+        if not event_found:
+            continue
+
+        key = (
+            event_found["palinsesto"],
+            event_found["avvenimento"],
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+
+        events.append(
+            {
+                "time": event_found["time"],
+                "match": event_found["match"],
+                "palinsesto": event_found[
+                    "palinsesto"
+                ],
+                "avvenimento": event_found[
+                    "avvenimento"
+                ],
+                "raw": (
+                    f'{event_found["time"]} '
+                    f'{event_found["match"]} '
+                    f'{event_found["palinsesto"]} '
+                    f'{event_found["avvenimento"]}'
+                ),
+            }
+        )
 
     return events
 
