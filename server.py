@@ -192,6 +192,118 @@ def get_cached_text(sheet: str):
 
         return item.get("text")
 
+def get_cached_pdf(sheet: str):
+    with CACHE_LOCK:
+        item = CACHE.get(sheet)
+
+        if not item:
+            return None
+
+        return item.get("pdf_bytes")
+
+
+def extract_positioned_text(
+    sheet: str,
+    palinsesto: str,
+    avvenimento: str,
+):
+    """
+    Estrae i frammenti di testo dal PDF conservando
+    le coordinate X/Y originali.
+
+    Serve per ricostruire correttamente le colonne
+    dei Fogli Quote Sisal.
+    """
+
+    pdf_bytes = get_cached_pdf(sheet)
+
+    if not pdf_bytes:
+        return []
+
+    reader = PdfReader(io.BytesIO(pdf_bytes))
+
+    palinsesto = str(palinsesto).strip()
+    avvenimento = str(avvenimento).strip()
+
+    results = []
+
+    for page_number, page in enumerate(reader.pages):
+        fragments = []
+
+        def visitor(
+            text,
+            cm,
+            tm,
+            font_dict,
+            font_size,
+        ):
+            value = re.sub(
+                r"\s+",
+                " ",
+                text or "",
+            ).strip()
+
+            if not value:
+                return
+
+            fragments.append(
+                {
+                    "text": value,
+                    "x": round(float(tm[4]), 2),
+                    "y": round(float(tm[5]), 2),
+                    "font_size": round(
+                        float(font_size),
+                        2,
+                    ),
+                }
+            )
+
+        page.extract_text(
+            visitor_text=visitor
+        )
+
+        # Raggruppiamo gli elementi che si trovano
+        # approssimativamente sulla stessa riga.
+        rows = {}
+
+        for fragment in fragments:
+            y_key = round(
+                fragment["y"] / 2
+            ) * 2
+
+            rows.setdefault(
+                y_key,
+                [],
+            ).append(fragment)
+
+        for y_key, row in rows.items():
+            row.sort(
+                key=lambda item: item["x"]
+            )
+
+            joined = " ".join(
+                item["text"]
+                for item in row
+            )
+
+            # La riga dell'evento deve contenere
+            # entrambi gli identificatori.
+            if (
+                palinsesto not in joined
+                or avvenimento not in joined
+            ):
+                continue
+
+            results.append(
+                {
+                    "page": page_number + 1,
+                    "y": y_key,
+                    "joined": joined,
+                    "fragments": row,
+                }
+            )
+
+    return results
 
 def cache_age(sheet: str):
     with CACHE_LOCK:
@@ -489,6 +601,40 @@ def get_event_markets(
         "avvenimento": avvenimento,
         "sheets": result,
     }
+
+@mcp.tool()
+def debug_event_positions(
+    palinsesto: str,
+    avvenimento: str,
+    sheet: str = "base",
+):
+    """
+    Mostra testo e coordinate X/Y della riga
+    di uno specifico evento nel PDF originale.
+    """
+
+    if sheet not in SHEETS:
+        raise ValueError(
+            "sheet deve essere base, "
+            "combinate oppure extra"
+        )
+
+    rows = extract_positioned_text(
+        sheet,
+        palinsesto,
+        avvenimento,
+    )
+
+    return {
+        "ok": True,
+        "mode": "position_diagnostic",
+        "sheet": sheet,
+        "palinsesto": str(palinsesto),
+        "avvenimento": str(avvenimento),
+        "row_count": len(rows),
+        "rows": rows[:20],
+    }
+
 @mcp.tool()
 def search_odds(
     query: str,
