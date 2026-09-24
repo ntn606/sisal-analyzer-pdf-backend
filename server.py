@@ -1,10 +1,11 @@
 import io
 import os
 import re
+import threading
 import time
 from typing import Optional
 
-import httpx
+from curl_cffi import requests
 from pypdf import PdfReader
 from mcp.server.fastmcp import FastMCP
 from mcp.server.transport_security import TransportSecuritySettings
@@ -19,7 +20,12 @@ SHEETS = {
 }
 
 CACHE = {}
-CACHE_TTL = 600
+CACHE_LOCK = threading.Lock()
+
+# Sisal aggiorna i fogli periodicamente.
+# Manteniamo una copia pronta nel backend.
+CACHE_TTL = 3600
+REFRESH_INTERVAL = 1800
 
 
 mcp = FastMCP(
@@ -31,103 +37,177 @@ mcp = FastMCP(
 )
 
 
-def fetch_pdf(sheet: str) -> str:
+def pdf_url(sheet: str) -> str:
     if sheet not in SHEETS:
         raise ValueError(f"Foglio non supportato: {sheet}")
 
-    now = time.time()
+    return BASE + SHEETS[sheet]
 
-    cached = CACHE.get(sheet)
-    if cached and now - cached["time"] < CACHE_TTL:
-        return cached["text"]
 
-    url = BASE + SHEETS[sheet]
+def download_pdf(sheet: str) -> str:
+    url = pdf_url(sheet)
 
     headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/140.0.0.0 Safari/537.36"
+        "Accept": (
+            "application/pdf,application/octet-stream;"
+            "q=0.9,*/*;q=0.8"
         ),
-        "Accept": "application/pdf,application/octet-stream;q=0.9,*/*;q=0.8",
         "Accept-Language": "it-IT,it;q=0.9,en;q=0.8",
+        "Referer": (
+            "https://www.sisal.it/"
+            "scommesse-matchpoint/foglio-quote"
+        ),
         "Cache-Control": "no-cache",
         "Pragma": "no-cache",
-        "Referer": "https://www.sisal.it/scommesse-matchpoint/foglio-quote",
-        "Connection": "close",
     }
 
     last_error = None
-    content = None
 
-    # Sisal può occasionalmente rallentare o bloccare richieste
-    # provenienti da infrastrutture cloud. Usiamo HTTP/1.1,
-    # timeout separati e più tentativi.
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             request_url = url
 
             if attempt:
-                separator = "&" if "?" in url else "?"
-                request_url = (
-                    f"{url}{separator}cb={int(time.time())}-{attempt}"
+                request_url += (
+                    f"?cb={int(time.time())}"
                 )
 
-            timeout = httpx.Timeout(
-                connect=10.0,
-                read=20.0,
-                write=10.0,
-                pool=10.0,
+            response = requests.get(
+                request_url,
+                headers=headers,
+                impersonate="chrome",
+                timeout=20,
+                allow_redirects=True,
             )
 
-            with httpx.Client(
-                headers=headers,
-                timeout=timeout,
-                follow_redirects=True,
-                http2=False,
-            ) as client:
-                response = client.get(request_url)
-                response.raise_for_status()
-                content = response.content
+            response.raise_for_status()
+
+            content = response.content
 
             if not content.startswith(b"%PDF"):
                 raise RuntimeError(
-                    "La risposta Sisal non è un PDF valido."
+                    "La risposta ricevuta non è un PDF valido."
                 )
 
-            break
+            reader = PdfReader(io.BytesIO(content))
+
+            text = "\n".join(
+                page.extract_text() or ""
+                for page in reader.pages
+            )
+
+            if not text.strip():
+                raise RuntimeError(
+                    "PDF scaricato ma senza testo estraibile."
+                )
+
+            return text
 
         except Exception as error:
             last_error = error
-            content = None
 
-            if attempt < 2:
-                time.sleep(1.5 * (attempt + 1))
+            if attempt == 0:
+                time.sleep(1)
 
-    if content is None:
-        raise RuntimeError(
-            "Download PDF Sisal fallito dopo 3 tentativi: "
-            f"{last_error}"
-        )
-
-    reader = PdfReader(io.BytesIO(content))
-
-    text = "\n".join(
-        page.extract_text() or ""
-        for page in reader.pages
+    raise RuntimeError(
+        f"Download Sisal fallito: {last_error}"
     )
 
-    if not text.strip():
-        raise RuntimeError(
-            "PDF Sisal scaricato ma senza testo estraibile."
+
+def save_cache(sheet: str, text: str):
+    with CACHE_LOCK:
+        CACHE[sheet] = {
+            "text": text,
+            "time": time.time(),
+            "error": None,
+        }
+
+
+def save_error(sheet: str, error):
+    with CACHE_LOCK:
+        previous = CACHE.get(sheet, {})
+
+        CACHE[sheet] = {
+            "text": previous.get("text"),
+            "time": previous.get("time"),
+            "error": str(error),
+        }
+
+
+def refresh_sheet(sheet: str):
+    try:
+        text = download_pdf(sheet)
+        save_cache(sheet, text)
+        print(
+            f"[SISAL] {sheet}: aggiornato "
+            f"({len(text)} caratteri)",
+            flush=True,
         )
 
-    CACHE[sheet] = {
-        "time": now,
-        "text": text,
-    }
+    except Exception as error:
+        save_error(sheet, error)
 
-    return text
+        print(
+            f"[SISAL] {sheet}: ERRORE: {error}",
+            flush=True,
+        )
+
+
+def refresh_all():
+    threads = []
+
+    for sheet in SHEETS:
+        thread = threading.Thread(
+            target=refresh_sheet,
+            args=(sheet,),
+            daemon=True,
+        )
+
+        thread.start()
+        threads.append(thread)
+
+    for thread in threads:
+        thread.join(timeout=45)
+
+
+def background_refresher():
+    # Primo caricamento all'avvio.
+    refresh_all()
+
+    while True:
+        time.sleep(REFRESH_INTERVAL)
+        refresh_all()
+
+
+def start_background_refresher():
+    thread = threading.Thread(
+        target=background_refresher,
+        daemon=True,
+    )
+    thread.start()
+
+
+def get_cached_text(sheet: str):
+    with CACHE_LOCK:
+        item = CACHE.get(sheet)
+
+        if not item:
+            return None
+
+        return item.get("text")
+
+
+def cache_age(sheet: str):
+    with CACHE_LOCK:
+        item = CACHE.get(sheet)
+
+        if not item or not item.get("time"):
+            return None
+
+        return round(
+            time.time() - item["time"],
+            1,
+        )
 
 
 def get_updated_timestamp(text: str):
@@ -158,8 +238,10 @@ def extract_events(text: str):
     seen = set()
 
     for index, line in enumerate(lines):
-
-        numbers = re.findall(r"\b\d{3,6}\b", line)
+        numbers = re.findall(
+            r"\b\d{3,6}\b",
+            line,
+        )
 
         candidate = None
 
@@ -173,11 +255,17 @@ def extract_events(text: str):
             start = max(0, index - 1)
             end = min(len(lines), index + 2)
 
-            window = " ".join(lines[start:end])
+            window = " ".join(
+                lines[start:end]
+            )
 
             if any(
                 separator in window
-                for separator in (" - ", " – ", " — ")
+                for separator in (
+                    " - ",
+                    " – ",
+                    " — ",
+                )
             ):
                 candidate = window
 
@@ -203,16 +291,96 @@ def extract_events(text: str):
 
 
 @mcp.tool()
+def source_status():
+    """
+    Mostra lo stato della cache dei Fogli Quote Sisal.
+    Questa funzione non effettua download e risponde subito.
+    """
+
+    result = {}
+
+    with CACHE_LOCK:
+        snapshot = dict(CACHE)
+
+    for sheet in SHEETS:
+        item = snapshot.get(sheet)
+
+        if not item:
+            result[sheet] = {
+                "ok": False,
+                "state": "loading",
+                "source": pdf_url(sheet),
+            }
+            continue
+
+        text = item.get("text")
+
+        result[sheet] = {
+            "ok": bool(text),
+            "state": (
+                "ready"
+                if text
+                else "download_error"
+            ),
+            "updated": (
+                get_updated_timestamp(text)
+                if text
+                else None
+            ),
+            "characters": (
+                len(text)
+                if text
+                else 0
+            ),
+            "cache_age_seconds": cache_age(sheet),
+            "last_error": item.get("error"),
+            "source": pdf_url(sheet),
+        }
+
+    return result
+
+
+@mcp.tool()
+def refresh_sources():
+    """
+    Avvia in background un nuovo aggiornamento dei PDF.
+    Risponde immediatamente.
+    """
+
+    thread = threading.Thread(
+        target=refresh_all,
+        daemon=True,
+    )
+    thread.start()
+
+    return {
+        "ok": True,
+        "message": "Aggiornamento Sisal avviato in background.",
+    }
+
+
+@mcp.tool()
 def get_matches(
     query: Optional[str] = None,
     limit: int = 100,
 ):
     """
-    Elenca gli eventi calcistici presenti nel Foglio Quote
-    ufficiale Sisal "Calcio Base per Data".
+    Elenca gli eventi presenti nella copia cache
+    del Foglio Quote Calcio Base.
     """
 
-    text = fetch_pdf("base")
+    text = get_cached_text("base")
+
+    if not text:
+        return {
+            "ok": False,
+            "state": "source_not_ready",
+            "message": (
+                "Il Foglio Quote Base non è ancora "
+                "disponibile nella cache."
+            ),
+            "matches": [],
+        }
 
     events = extract_events(text)
 
@@ -228,8 +396,10 @@ def get_matches(
     limit = max(1, min(limit, 300))
 
     return {
-        "source": BASE + SHEETS["base"],
+        "ok": True,
+        "source": pdf_url("base"),
         "updated": get_updated_timestamp(text),
+        "cache_age_seconds": cache_age("base"),
         "count": len(events),
         "matches": events[:limit],
     }
@@ -241,8 +411,8 @@ def get_event_markets(
     avvenimento: str,
 ):
     """
-    Cerca lo stesso evento nei Fogli Quote ufficiali
-    Base, Combinate ed Extra usando Palinsesto + Avvenimento.
+    Cerca un evento nei fogli Base, Combinate ed Extra
+    già presenti nella cache.
     """
 
     palinsesto = str(palinsesto)
@@ -251,41 +421,43 @@ def get_event_markets(
     result = {}
 
     for sheet in SHEETS:
+        text = get_cached_text(sheet)
 
-        try:
-            text = fetch_pdf(sheet)
-            lines = clean_lines(text)
-
-            hits = []
-
-            for index, line in enumerate(lines):
-
-                if (
-                    palinsesto in line
-                    and avvenimento in line
-                ):
-                    start = max(0, index - 2)
-                    end = min(len(lines), index + 4)
-
-                    hits.append(
-                        " | ".join(lines[start:end])
-                    )
-
-            result[sheet] = {
-                "ok": True,
-                "updated": get_updated_timestamp(text),
-                "source": BASE + SHEETS[sheet],
-                "hits": hits[:30],
-            }
-
-        except Exception as error:
-
+        if not text:
             result[sheet] = {
                 "ok": False,
-                "error": str(error),
-                "source": BASE + SHEETS[sheet],
+                "state": "source_not_ready",
                 "hits": [],
             }
+            continue
+
+        lines = clean_lines(text)
+        hits = []
+
+        for index, line in enumerate(lines):
+            if (
+                palinsesto in line
+                and avvenimento in line
+            ):
+                start = max(0, index - 2)
+                end = min(
+                    len(lines),
+                    index + 4,
+                )
+
+                hits.append(
+                    " | ".join(
+                        lines[start:end]
+                    )
+                )
+
+        result[sheet] = {
+            "ok": True,
+            "updated": get_updated_timestamp(text),
+            "cache_age_seconds": cache_age(sheet),
+            "source": pdf_url(sheet),
+            "hits": hits[:30],
+        }
 
     return {
         "palinsesto": palinsesto,
@@ -301,14 +473,15 @@ def search_odds(
     limit: int = 100,
 ):
     """
-    Cerca squadre, mercati e selezioni nei Fogli Quote
-    ufficiali Sisal configurati.
+    Cerca testo, squadre e mercati nei Fogli Quote
+    già presenti nella cache.
     """
 
     if sheet:
         if sheet not in SHEETS:
             raise ValueError(
-                "sheet deve essere: base, combinate oppure extra"
+                "sheet deve essere base, "
+                "combinate oppure extra"
             )
 
         targets = [sheet]
@@ -317,30 +490,25 @@ def search_odds(
         targets = list(SHEETS.keys())
 
     query_lower = query.casefold()
-
     results = []
 
     for current_sheet in targets:
+        text = get_cached_text(
+            current_sheet
+        )
 
-        try:
-            text = fetch_pdf(current_sheet)
-            lines = clean_lines(text)
-
-        except Exception as error:
-            results.append(
-                {
-                    "sheet": current_sheet,
-                    "error": str(error),
-                }
-            )
+        if not text:
             continue
 
+        lines = clean_lines(text)
+
         for index, line in enumerate(lines):
-
             if query_lower in line.casefold():
-
                 start = max(0, index - 1)
-                end = min(len(lines), index + 2)
+                end = min(
+                    len(lines),
+                    index + 2,
+                )
 
                 results.append(
                     {
@@ -357,52 +525,10 @@ def search_odds(
     return results
 
 
-@mcp.tool()
-def source_status():
-    """
-    Controlla se i PDF ufficiali Sisal configurati
-    sono raggiungibili e mostra il loro aggiornamento.
-    """
-
-    result = {}
-
-    for sheet in SHEETS:
-
-        started = time.time()
-
-        try:
-            text = fetch_pdf(sheet)
-
-            result[sheet] = {
-                "ok": True,
-                "updated": get_updated_timestamp(text),
-                "characters": len(text),
-                "elapsed_seconds": round(
-                    time.time() - started,
-                    2,
-                ),
-                "source": BASE + SHEETS[sheet],
-            }
-
-        except Exception as error:
-
-            result[sheet] = {
-                "ok": False,
-                "error": str(error),
-                "elapsed_seconds": round(
-                    time.time() - started,
-                    2,
-                ),
-                "source": BASE + SHEETS[sheet],
-            }
-
-    return result
-
-
 if __name__ == "__main__":
+    start_background_refresher()
 
     mcp.settings.host = "0.0.0.0"
-
     mcp.settings.port = int(
         os.environ.get("PORT", "8000")
     )
