@@ -531,7 +531,56 @@ def extract_events(text: str):
 
     return events
 
+@mcp.tool()
+def debug_base_lines(
+    start: int = 0,
+    limit: int = 150,
+):
+    """
+    Restituisce le righe grezze estratte con pypdf
+    dal Foglio Quote Calcio Base.
 
+    Tool temporaneo di diagnostica per costruire
+    correttamente il parser degli eventi.
+    """
+
+    text = get_cached_text("base")
+
+    if not text:
+        return {
+            "ok": False,
+            "state": "source_not_ready",
+            "lines": [],
+        }
+
+    lines = clean_lines(text)
+
+    start = max(0, start)
+    limit = max(1, min(limit, 300))
+
+    selected = []
+
+    end = min(
+        len(lines),
+        start + limit,
+    )
+
+    for index in range(start, end):
+        selected.append(
+            {
+                "index": index,
+                "text": lines[index],
+            }
+        )
+
+    return {
+        "ok": True,
+        "updated": get_updated_timestamp(text),
+        "total_lines": len(lines),
+        "start": start,
+        "returned": len(selected),
+        "lines": selected,
+    }
 @mcp.tool()
 def source_status():
     """
