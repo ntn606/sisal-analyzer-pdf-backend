@@ -233,15 +233,16 @@ def clean_lines(text: str):
 
 def extract_events(text: str):
     """
-    Estrae le partite dal Foglio Quote Calcio Base.
+    Estrae gli eventi dal Foglio Quote Calcio Base.
 
-    Il PDF Sisal viene estratto da pypdf come testo e può
-    spezzare una singola riga su più righe. Per questo
-    ricostruiamo gli eventi partendo dalla struttura reale:
+    Struttura reale osservata nel testo pypdf:
 
-    ORA -> descrizione partita -> PALINSESTO -> AVVENIMENTO
+    MANIFESTAZIONE+ORA PALINSESTO AVVENIMENTO
+    NOME EVENTO QUOTA QUOTA ...
 
-    Vengono escluse intestazioni, anni e righe di servizio.
+    Esempio:
+    ECU222.30 36391 39662 Cd Alianza Cotopaxi
+    Vinotinto Fc Ecuador 2,45 3,00 2,80 ...
     """
 
     lines = clean_lines(text)
@@ -249,29 +250,103 @@ def extract_events(text: str):
     events = []
     seen = set()
 
-    time_re = re.compile(
-        r"(?<!\d)([01]\d|2[0-3]):[0-5]\d(?!\d)"
+    # In Sisal l'ora estratta dal PDF usa normalmente
+    # il punto: 20.45, 22.30, 01.00 ecc.
+    row_re = re.compile(
+        r"^"
+        r"(?P<manifestazione>.*?)"
+        r"(?P<ora>(?:[01]?\d|2[0-3])[.:][0-5]\d)"
+        r"\s+"
+        r"(?P<palinsesto>\d{3,6})"
+        r"\s+"
+        r"(?P<avvenimento>\d{1,6})"
+        r"\s+"
+        r"(?P<body>.+)"
+        r"$"
     )
 
-    integer_re = re.compile(r"^\d{1,6}$")
-
-    date_re = re.compile(
-        r"^\d{1,2}/\d{1,2}/\d{2,4}$"
+    # La prima quota segna la fine del nome dell'evento.
+    odds_re = re.compile(
+        r"(?<!\d)"
+        r"\d{1,3}[,.]\d{1,3}"
+        r"(?!\d)"
     )
 
-    noise_words = (
-        "dati aggiornati",
-        "quote soggette",
-        "palinsesto",
-        "avvenimento",
-        "manifestazione",
-        "scommessa",
-        "pagina ",
-        "www.sisal",
-        "matchpoint",
-        "codice",
-    )
+    for line in lines:
 
+        match = row_re.match(line)
+
+        if not match:
+            continue
+
+        body = match.group("body").strip()
+
+        odds_match = odds_re.search(body)
+
+        if not odds_match:
+            continue
+
+        event_name = body[
+            :odds_match.start()
+        ].strip()
+
+        # Elimina eventuali spazi multipli.
+        event_name = re.sub(
+            r"\s+",
+            " ",
+            event_name,
+        )
+
+        # Deve esserci realmente del testo nel nome.
+        if len(event_name) < 3:
+            continue
+
+        if not re.search(
+            r"[A-Za-zÀ-ÿ]",
+            event_name,
+        ):
+            continue
+
+        palinsesto = match.group(
+            "palinsesto"
+        )
+
+        avvenimento = match.group(
+            "avvenimento"
+        )
+
+        key = (
+            palinsesto,
+            avvenimento,
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+
+        raw_time = match.group("ora")
+
+        # Restituiamo l'orario nel formato più leggibile HH:MM.
+        ora = raw_time.replace(".", ":")
+
+        manifestazione = (
+            match.group("manifestazione")
+            .strip()
+        )
+
+        events.append(
+            {
+                "time": ora,
+                "manifestazione": manifestazione,
+                "match": event_name,
+                "palinsesto": palinsesto,
+                "avvenimento": avvenimento,
+                "raw": line,
+            }
+        )
+
+    return events
     def is_noise(value: str) -> bool:
         lower = value.casefold()
 
@@ -656,10 +731,11 @@ def get_matches(
     limit: int = 100,
 ):
     """
-    DIAGNOSTICA TEMPORANEA.
+    Elenca gli eventi calcistici presenti nel Foglio Quote
+    ufficiale Sisal "Calcio Base per Data".
 
-    Restituisce le righe reali estratte con pypdf
-    dal Foglio Quote Calcio Base.
+    Restituisce ora, manifestazione, nome evento,
+    Palinsesto e Avvenimento.
     """
 
     text = get_cached_text("base")
@@ -668,32 +744,43 @@ def get_matches(
         return {
             "ok": False,
             "state": "source_not_ready",
-            "lines": [],
+            "count": 0,
+            "matches": [],
         }
 
-    lines = clean_lines(text)
+    events = extract_events(text)
 
-    limit = max(1, min(limit, 300))
+    if query:
+        q = query.casefold().strip()
 
-    selected = []
+        events = [
+            event
+            for event in events
+            if (
+                q in event["match"].casefold()
+                or q in event[
+                    "manifestazione"
+                ].casefold()
+                or q == event[
+                    "palinsesto"
+                ].casefold()
+                or q == event[
+                    "avvenimento"
+                ].casefold()
+            )
+        ]
 
-    for index, line in enumerate(
-        lines[:limit]
-    ):
-        selected.append(
-            {
-                "index": index,
-                "text": line,
-            }
-        )
+    limit = max(
+        1,
+        min(limit, 300),
+    )
 
     return {
         "ok": True,
-        "mode": "debug_raw_pdf_lines",
+        "source": BASE + SHEETS["base"],
         "updated": get_updated_timestamp(text),
-        "total_lines": len(lines),
-        "returned": len(selected),
-        "lines": selected,
+        "count": len(events),
+        "matches": events[:limit],
     }
     
 @mcp.tool()
