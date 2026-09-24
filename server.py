@@ -413,12 +413,16 @@ def get_event_markets(
     avvenimento: str,
 ):
     """
-    Cerca un evento nei fogli Base, Combinate ed Extra
-    già presenti nella cache.
+    Diagnostica la struttura reale dei Fogli Quote
+    attorno a uno specifico evento.
+
+    Usa Palinsesto + Avvenimento come chiave.
+    Restituisce le righe precedenti e successive
+    separatamente, senza unirle o reinterpretarle.
     """
 
-    palinsesto = str(palinsesto)
-    avvenimento = str(avvenimento)
+    palinsesto = str(palinsesto).strip()
+    avvenimento = str(avvenimento).strip()
 
     result = {}
 
@@ -436,38 +440,59 @@ def get_event_markets(
         lines = clean_lines(text)
         hits = []
 
+        # Cerchiamo la coppia esatta Palinsesto + Avvenimento.
+        pair_re = re.compile(
+            rf"(?<!\d){re.escape(palinsesto)}"
+            rf"\s+"
+            rf"{re.escape(avvenimento)}(?!\d)"
+        )
+
         for index, line in enumerate(lines):
-            if (
-                palinsesto in line
-                and avvenimento in line
-            ):
-                start = max(0, index - 2)
-                end = min(
-                    len(lines),
-                    index + 4,
+            if not pair_re.search(line):
+                continue
+
+            # Contesto volutamente ampio:
+            # ci serve per capire intestazioni, mercati
+            # e disposizione reale delle quote nel PDF.
+            start = max(0, index - 12)
+            end = min(len(lines), index + 13)
+
+            context = []
+
+            for line_index in range(start, end):
+                context.append(
+                    {
+                        "index": line_index,
+                        "relative": line_index - index,
+                        "is_event_line": line_index == index,
+                        "text": lines[line_index],
+                    }
                 )
 
-                hits.append(
-                    " | ".join(
-                        lines[start:end]
-                    )
-                )
+            hits.append(
+                {
+                    "event_line_index": index,
+                    "event_line": line,
+                    "context": context,
+                }
+            )
 
         result[sheet] = {
             "ok": True,
             "updated": get_updated_timestamp(text),
             "cache_age_seconds": cache_age(sheet),
             "source": pdf_url(sheet),
-            "hits": hits[:30],
+            "hit_count": len(hits),
+            "hits": hits[:10],
         }
 
     return {
+        "ok": True,
+        "mode": "diagnostic_event_context",
         "palinsesto": palinsesto,
         "avvenimento": avvenimento,
         "sheets": result,
     }
-
-
 @mcp.tool()
 def search_odds(
     query: str,
