@@ -1423,6 +1423,283 @@ def get_all_event_quotes(palinsesto: str, avvenimento: str):
         "markets": markets,
     }
 
+SCOUT_MAX_PDF_AGE_MINUTES = 60
+SCOUT_MAX_FUTURE_SECONDS = 120
+SCOUT_TIMEZONE = "Europe/Rome"
+SCOUT_SHEETS = ("base", "extra", "combinate")
+
+
+def _scout_evaluate_aggregate(aggregate, now=None):
+    """Scout V1: filtra quote tecnicamente leggibili, senza pronostici.
+
+    Funzione separata dal tool per poter testare scenari artificiali.
+    'now' e' un datetime aware usato unicamente dai test, non dall'MCP.
+    Un errore globale produce SEMPRE mercati vuoti e ready_for_analysis=False.
+    """
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+
+    if now is None:
+        now = datetime.now(ZoneInfo(SCOUT_TIMEZONE))
+    if now.tzinfo is None or now.utcoffset() is None:
+        raise ValueError("Scout richiede un orario timezone-aware")
+    now = now.astimezone(ZoneInfo(SCOUT_TIMEZONE))
+
+    result = {
+        "agent": "scout_v1",
+        "ok": False,
+        "state": "blocked",
+        "ready_for_analysis": False,
+        "palinsesto": str(aggregate.get("palinsesto", "")),
+        "avvenimento": str(aggregate.get("avvenimento", "")),
+        "event": None,
+        "as_of": now.isoformat(timespec="seconds"),
+        "max_pdf_age_minutes": SCOUT_MAX_PDF_AGE_MINUTES,
+        "aggregate_state": aggregate.get("state"),
+        "blockers": [],
+        "sources": {},
+        "market_count": 0,
+        "candidate_count": 0,
+        "skipped_missing_quote": 0,
+        "skipped_invalid_quote": 0,
+        "markets": [],
+        "note": (
+            "Controllo tecnico delle quote. Non stima probabilita', "
+            "value bet o risultati sportivi; non autorizza scommesse."
+        ),
+    }
+    blockers = result["blockers"]
+
+    if aggregate.get("state") == "event_not_found":
+        result["state"] = "event_not_found"
+        blockers.append({"type": "event_not_found"})
+        return result
+    if aggregate.get("state") == "invalid_event_ids":
+        result["state"] = "invalid_event_ids"
+        blockers.append({"type": "invalid_event_ids"})
+        return result
+    if aggregate.get("state") != "ok" or not aggregate.get("ready_for_agents"):
+        blockers.append({
+            "type": "aggregate_not_ready",
+            "state": aggregate.get("state"),
+        })
+    if aggregate.get("issues"):
+        blockers.append({"type": "aggregate_issues", "count": len(aggregate["issues"])})
+    if aggregate.get("warnings"):
+        blockers.append({"type": "aggregate_warnings", "details": aggregate["warnings"]})
+
+    sheets = aggregate.get("sheets")
+    if not isinstance(sheets, dict):
+        sheets = {}
+        blockers.append({"type": "sources_missing"})
+
+    names = []
+    for sheet in SCOUT_SHEETS:
+        source = sheets.get(sheet)
+        if not isinstance(source, dict):
+            blockers.append({"type": "sheet_missing", "sheet": sheet})
+            continue
+
+        state = source.get("state")
+        if source.get("source") != pdf_url(sheet):
+            blockers.append({"type": "unexpected_pdf_source", "sheet": sheet})
+        if not source.get("ok") or state != "ok":
+            blockers.append({"type": "sheet_not_ok", "sheet": sheet, "state": state})
+
+        age = source.get("cache_age_seconds")
+        if (
+            not isinstance(age, (int, float)) or isinstance(age, bool)
+            or age < 0 or age > CACHE_TTL
+        ):
+            blockers.append({"type": "invalid_or_stale_cache", "sheet": sheet, "age_seconds": age})
+
+        updated = _all_clean_pdf_timestamp(source.get("updated"))
+        pdf_age_minutes = None
+        if updated is None:
+            blockers.append({"type": "pdf_timestamp_missing", "sheet": sheet})
+        else:
+            try:
+                printed = datetime.strptime(updated, "%d/%m/%Y - ore %H:%M:%S")
+                # Timestamp del PDF in ora italiana; non e' una stringa UTC.
+                printed = printed.replace(tzinfo=ZoneInfo(SCOUT_TIMEZONE))
+                pdf_age_seconds = (now - printed).total_seconds()
+                pdf_age_minutes = round(pdf_age_seconds / 60, 2)
+                if pdf_age_seconds > 60 * SCOUT_MAX_PDF_AGE_MINUTES:
+                    blockers.append({
+                        "type": "pdf_too_old", "sheet": sheet,
+                        "pdf_age_minutes": pdf_age_minutes,
+                        "max_age_minutes": SCOUT_MAX_PDF_AGE_MINUTES,
+                    })
+                elif pdf_age_seconds < -SCOUT_MAX_FUTURE_SECONDS:
+                    blockers.append({
+                        "type": "pdf_timestamp_in_future", "sheet": sheet,
+                        "pdf_age_minutes": pdf_age_minutes,
+                    })
+            except ValueError:
+                blockers.append({"type": "pdf_timestamp_invalid", "sheet": sheet, "updated": updated})
+
+        home = str(source.get("home_printed") or "").strip()
+        away = str(source.get("away_printed") or "").strip()
+        if not home or not away:
+            blockers.append({"type": "team_names_missing", "sheet": sheet})
+        else:
+            names.append((sheet, home, away))
+
+        result["sources"][sheet] = {
+            "state": state,
+            "source": source.get("source"),
+            "pdf_updated": updated,
+            "pdf_age_minutes": pdf_age_minutes,
+            "cache_age_seconds": age,
+            "quoted_selections": source.get("quoted_selections"),
+            "missing_selections": source.get("missing_selections"),
+        }
+
+    normalized_names = {
+        (" ".join(h.casefold().split()), " ".join(a.casefold().split()))
+        for _, h, a in names
+    }
+    if len(normalized_names) > 1:
+        blockers.append({"type": "team_names_mismatch", "sheets": [s for s, _, _ in names]})
+    if names:
+        _, home, away = names[0]
+        result["event"] = {"home": home, "away": away}
+
+    # Solo selezioni esplicitamente verificate, con numero e testo coerenti.
+    # Se il PDF non e' fresco, si calcolano diagnostiche ma NON si espone
+    # alcuna quota utilizzabile agli agenti a valle.
+    seen = set()
+    groups = []
+    counts_by_sheet = {s: 0 for s in SCOUT_SHEETS}
+    for group in aggregate.get("markets") or []:
+        if not isinstance(group, dict):
+            result["skipped_invalid_quote"] += 1
+            blockers.append({"type": "invalid_market_format"})
+            continue
+        sheet = group.get("sheet")
+        market = group.get("market")
+        if sheet not in SCOUT_SHEETS or not isinstance(market, str) or not market.strip():
+            blockers.append({"type": "invalid_market_identity"})
+            continue
+        key = (sheet, market)
+        if key in seen:
+            blockers.append({"type": "duplicate_market", "sheet": sheet, "market": market})
+            continue
+        seen.add(key)
+        source = result["sources"].get(sheet)
+        if source is None or group.get("source") != source.get("source"):
+            blockers.append({"type": "market_source_mismatch", "sheet": sheet, "market": market})
+            continue
+        if _all_clean_pdf_timestamp(group.get("pdf_updated")) != source["pdf_updated"]:
+            blockers.append({"type": "market_timestamp_mismatch", "sheet": sheet, "market": market})
+            continue
+        page = group.get("page")
+        if not isinstance(page, int) or isinstance(page, bool) or page < 1:
+            blockers.append({"type": "market_page_invalid", "sheet": sheet, "market": market})
+            continue
+        selections = []
+        local_seen = set()
+        for item in group.get("selections") or []:
+            if not isinstance(item, dict):
+                result["skipped_invalid_quote"] += 1
+                continue
+            outcome = item.get("outcome")
+            if not isinstance(outcome, str) or not outcome.strip() or outcome in local_seen:
+                result["skipped_invalid_quote"] += 1
+                blockers.append({"type": "invalid_or_duplicate_outcome", "sheet": sheet, "market": market})
+                continue
+            local_seen.add(outcome)
+            value = item.get("decimal_odds")
+            if value is None:
+                result["skipped_missing_quote"] += 1
+                continue
+            raw = str(item.get("odd") or "")
+            parsed = _base_price(raw)
+            x0 = item.get("x0")
+            valid = (
+                bool(item.get("verified"))
+                and isinstance(value, (int, float)) and not isinstance(value, bool)
+                and parsed is not None and abs(float(value) - parsed) < 0.00001
+                and isinstance(x0, (int, float)) and not isinstance(x0, bool)
+                and 0 < x0 < 1000
+            )
+            if not valid:
+                result["skipped_invalid_quote"] += 1
+                blockers.append({"type": "unverified_or_invalid_quote", "sheet": sheet, "market": market, "outcome": outcome})
+                continue
+            selections.append({
+                "outcome": outcome,
+                "odd": raw,
+                "decimal_odds": value,
+                "x0": x0,
+            })
+            counts_by_sheet[sheet] += 1
+        if selections:
+            groups.append({
+                "sheet": sheet,
+                "market": market,
+                "source": source["source"],
+                "pdf_updated": source["pdf_updated"],
+                "page": group.get("page"),
+                "selections": selections,
+            })
+
+    # Riconcilia i conteggi per individuare troncamenti e output anomali.
+    if sum(counts_by_sheet.values()) != aggregate.get("verified_selections"):
+        blockers.append({
+            "type": "verified_count_mismatch",
+            "found": sum(counts_by_sheet.values()),
+            "expected": aggregate.get("verified_selections"),
+        })
+    if sum(counts_by_sheet.values()) + result["skipped_missing_quote"] != (
+        aggregate.get("verified_selections", 0) + aggregate.get("missing_selections", 0)
+    ):
+        blockers.append({"type": "selection_count_mismatch"})
+
+    if blockers:
+        # Quota sospetta/non aggiornata: nessun candidato raggiunge Analyst.
+        return result
+    if not groups:
+        result["state"] = "no_quoted_selections"
+        result["blockers"].append({"type": "no_quoted_selections"})
+        return result
+
+    result["ok"] = True
+    result["state"] = "ready"
+    result["ready_for_analysis"] = True
+    result["markets"] = groups
+    result["market_count"] = len(groups)
+    result["candidate_count"] = sum(len(x["selections"]) for x in groups)
+    return result
+
+
+@mcp.tool()
+def scout_event(palinsesto: str, avvenimento: str):
+    """Scout V1: prepara quote verificabili solo da PDF Sisal freschi.
+
+    Un risultato 'blocked' non espone quote agli agenti. Anche un risultato
+    'ready' certifica la qualita' tecnica, NON valore economico o probabilita'.
+    """
+    palinsesto = str(palinsesto).strip()
+    avvenimento = str(avvenimento).strip()
+    try:
+        aggregate = get_all_event_quotes(palinsesto, avvenimento)
+        if not isinstance(aggregate, dict):
+            raise TypeError("L'aggregatore ha restituito un formato non valido")
+        return _scout_evaluate_aggregate(aggregate)
+    except Exception as exc:
+        return {
+            "agent": "scout_v1",
+            "ok": False,
+            "state": "scout_exception",
+            "ready_for_analysis": False,
+            "palinsesto": palinsesto,
+            "avvenimento": avvenimento,
+            "blockers": [{"type": "scout_exception", "detail": str(exc)[:300]}],
+            "candidate_count": 0,
+            "markets": [],
+        }
+
 
 @mcp.tool()
 def search_odds(
