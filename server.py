@@ -953,6 +953,248 @@ def get_extra_market_quotes(palinsesto: str, avvenimento: str):
         **data,
     }
 
+def _comb_build_specs():
+    """Crea 50 colonne nell'ordine effettivo del Foglio Combinate."""
+    specs = []
+    for goal_limit in ("1,5", "2,5", "3,5", "4,5"):
+        market = f"1X2 finale + Under/Over {goal_limit}"
+        for result in ("1", "X", "2"):
+            for total in ("Under", "Over"):
+                specs.append((market, f"{result} + {total}"))
+
+    for market in (
+        "1X2 finale + Goal/No Goal",
+        "1X2 1T + Goal/No Goal 1T",
+    ):
+        for result in ("1", "X", "2"):
+            for goals in ("Goal", "No Goal"):
+                specs.append((market, f"{result} + {goals}"))
+
+    market = "1X2 1T + Under/Over 1,5 1T"
+    for result in ("1", "X", "2"):
+        for total in ("Under", "Over"):
+            specs.append((market, f"{result} + {total}"))
+
+    # Dalla doppia riga della testata PDF: in basso NG/G (1T),
+    # in alto NG/G/G/NG (2T). L'ordine NON e' NG,G,NG,G.
+    market = "Goal/No Goal 1T + 2T"
+    specs.extend([
+        (market, "1T No Goal + 2T No Goal"),
+        (market, "1T No Goal + 2T Goal"),
+        (market, "1T Goal + 2T Goal"),
+        (market, "1T Goal + 2T No Goal"),
+    ])
+
+    market = "Goal/No Goal finale + Under/Over 2,5"
+    specs.extend([
+        (market, "Goal + Under"),
+        (market, "Goal + Over"),
+        (market, "No Goal + Under"),
+        (market, "No Goal + Over"),
+    ])
+    return specs
+
+
+COMB_OUTCOME_SPECS = _comb_build_specs()
+
+# Queste due righe sono state lette con pdfplumber sul PDF originale.
+# I valori sono etichette della testata, non quote della partita.
+COMB_HEADER_BOTTOM = (
+    ["U", "O"] * 12
+    + ["G", "NG"] * 6
+    + ["U", "O"] * 3
+    + ["NG", "G"]
+    + ["U", "O"] * 2
+)
+COMB_HEADER_TOP = (
+    ["1", "X", "2"] * 7
+    + ["NG", "G", "G", "NG", "G", "NG"]
+)
+
+
+def _comb_column_anchors(words):
+    """Legge le 50 coordinate dalla testata reale di ogni pagina.
+
+    Le quattro colonne 'G/NG 1T + 2T' compaiono nella riga
+    superiore: non vanno ricavate per interpolazione geometrica.
+    Se cambia la testata, falliamo esplicitamente anziche' inventare quote.
+    """
+    upper = None
+    lower = None
+    has_market_names = False
+    for _, line in sorted(_base_group_lines(words).items()):
+        labels = [w for w in line if float(w["x0"]) >= 260]
+        tokens = [str(w["text"]) for w in labels]
+        if tokens == COMB_HEADER_TOP:
+            upper = labels
+        elif tokens == COMB_HEADER_BOTTOM:
+            # La riga inferiore comprende anche Ora/Manif./Pal./Avv.
+            # che sono a sinistra di X=260 e quindi non compaiono qui.
+            lower = labels
+        elif (
+            "1X2" in tokens and "Finale" in tokens
+            and "G/NG" in tokens and "U/O2,5" in tokens
+        ):
+            has_market_names = True
+
+    if upper is None or lower is None or not has_market_names:
+        return None
+
+    # Prime 42 colonne: 4*(1X2+U/O) + 2*(1X2+G/NG) + (1X2+U/O 1T).
+    # Quattro colonne centrali: G/NG 1T+2T, visibili sulla testata superiore.
+    # Ultime quattro colonne: G/NG finale+U/O2,5.
+    cells = lower[:42] + upper[21:25] + lower[44:]
+    if len(cells) != len(COMB_OUTCOME_SPECS):
+        return None
+    anchors = [
+        (float(word["x0"]) + float(word["x1"])) / 2
+        for word in cells
+    ]
+    if any(b <= a for a, b in zip(anchors, anchors[1:])):
+        return None
+    return anchors
+
+
+def _comb_parse_event_row(row, anchors):
+    slots = [None] * len(COMB_OUTCOME_SPECS)
+    issues = []
+    for word in row:
+        x0 = float(word["x0"])
+        x1 = float(word["x1"])
+        center = (x0 + x1) / 2
+        if center < 265:
+            continue
+
+        raw = str(word["text"])
+        price = _base_price(raw)
+        if price is None:
+            issues.append({
+                "type": "unparsed_value", "text": raw, "x0": round(x0, 2),
+            })
+            continue
+        differences = [abs(center - x) for x in anchors]
+        slot_index = differences.index(min(differences))
+        if differences[slot_index] > 7.0:
+            issues.append({
+                "type": "unaligned_value", "text": raw, "x0": round(x0, 2),
+            })
+            continue
+        if slots[slot_index] is not None:
+            issues.append({
+                "type": "duplicate_cell", "text": raw, "slot": slot_index,
+            })
+            slots[slot_index] = {"error": "duplicate_cell"}
+            continue
+        slots[slot_index] = {
+            "odd": raw,
+            "decimal_odds": price,
+            "x0": round(x0, 2),
+        }
+
+    markets = []
+    by_market = {}
+    for i, (market, outcome) in enumerate(COMB_OUTCOME_SPECS):
+        if market not in by_market:
+            group = {"market": market, "selections": []}
+            by_market[market] = group
+            markets.append(group)
+        slot = slots[i]
+        by_market[market]["selections"].append({
+            "outcome": outcome,
+            "odd": slot.get("odd") if slot else None,
+            "decimal_odds": slot.get("decimal_odds") if slot else None,
+            "x0": slot.get("x0") if slot else None,
+        })
+
+    return {
+        "home_printed": " ".join(
+            w["text"] for w in row if 105 <= float(w["x0"]) < 187
+        ).strip() or None,
+        "away_printed": " ".join(
+            w["text"] for w in row if 187 <= float(w["x0"]) < 265
+        ).strip() or None,
+        "markets": markets,
+        "priced_selections": sum(bool(s and s.get("odd")) for s in slots),
+        "missing_selections": sum(s is None for s in slots),
+        "issues": issues,
+    }
+
+
+@mcp.tool()
+def get_combinate_market_quotes(palinsesto: str, avvenimento: str):
+    """Legge i 9 mercati Calcio Combinate mediante le coordinate PDF.
+
+    Le celle assenti rimangono null. Un'intestazione diversa o una quota
+    illeggibile produce un errore esplicito invece di una quota inventata.
+    """
+    palinsesto = str(palinsesto).strip()
+    avvenimento = str(avvenimento).strip()
+    pdf_bytes = get_cached_pdf("combinate")
+    if not pdf_bytes:
+        return {"ok": False, "state": "source_not_ready", "sheet": "combinate"}
+
+    candidates = []
+    missing_header_pages = []
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        for page_no, page in enumerate(pdf.pages, 1):
+            words = page.extract_words(
+                x_tolerance=1, y_tolerance=2,
+                keep_blank_chars=False, use_text_flow=False,
+            )
+            rows = _base_find_event_rows(words, palinsesto, avvenimento)
+            if not rows:
+                continue
+            anchors = _comb_column_anchors(words)
+            if anchors is None:
+                missing_header_pages.append(page_no)
+                continue
+            for row in rows:
+                entry = _comb_parse_event_row(row, anchors)
+                entry["page"] = page_no
+                candidates.append(entry)
+
+    if missing_header_pages:
+        return {
+            "ok": False, "state": "header_not_recognized",
+            "sheet": "combinate", "pages": missing_header_pages,
+        }
+    if not candidates:
+        return {
+            "ok": False, "state": "event_not_found", "sheet": "combinate",
+            "palinsesto": palinsesto, "avvenimento": avvenimento,
+        }
+    if len(candidates) != 1:
+        return {
+            "ok": False, "state": "ambiguous_event", "sheet": "combinate",
+            "candidate_count": len(candidates),
+        }
+
+    data = candidates[0]
+    if data["issues"]:
+        state = "review_required"
+    elif not data["priced_selections"]:
+        state = "no_quoted_selections"
+    else:
+        state = "ok"
+
+    # pypdf talvolta concatena il numero pagina al timestamp PDF.
+    updated_raw = get_updated_timestamp(get_cached_text("combinate") or "") or ""
+    timestamp_match = re.search(
+        r"\d{2}/\d{2}/\d{4}\s*-\s*ore\s*\d{2}:\d{2}:\d{2}",
+        updated_raw,
+    )
+    updated_clean = timestamp_match.group(0) if timestamp_match else updated_raw
+
+    return {
+        "ok": state == "ok", "state": state,
+        "sheet": "combinate",
+        "palinsesto": palinsesto, "avvenimento": avvenimento,
+        "source": pdf_url("combinate"),
+        "updated": updated_clean,
+        "cache_age_seconds": cache_age("combinate"),
+        **data,
+    }
+
 
 @mcp.tool()
 def search_odds(
