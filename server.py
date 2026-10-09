@@ -1195,6 +1195,234 @@ def get_combinate_market_quotes(palinsesto: str, avvenimento: str):
         **data,
     }
 
+def _all_clean_pdf_timestamp(value):
+    """Separa la data reale dal numero di pagina/pie' di pagina PDF."""
+    match = re.search(
+        r"\d{2}/\d{2}/\d{4}\s*-\s*ore\s*\d{2}:\d{2}:\d{2}",
+        str(value or ""),
+    )
+    return match.group(0) if match else None
+
+
+def _all_cache_versions():
+    """Fotografa le versioni dei PDF per rilevare refresh durante la lettura."""
+    with CACHE_LOCK:
+        return {
+            sheet: (CACHE.get(sheet) or {}).get("time")
+            for sheet in ("base", "extra", "combinate")
+        }
+
+
+@mcp.tool()
+def get_all_event_quotes(palinsesto: str, avvenimento: str):
+    """Aggrega le quote Base, Extra e Combinate di uno stesso evento Sisal.
+
+    Riporta lo stato distinto per foglio e tutte le selezioni, comprese quelle
+    senza quota (null). 'verified' vale True soltanto per le quote prodotte
+    da un parser in stato 'ok'. 'ready_for_agents' e' un controllo conservativo:
+    richiede tre fogli validi, nessun problema e cache entro il TTL.
+    Questo strumento NON valuta la convenienza di alcuna scommessa.
+    """
+    palinsesto = str(palinsesto).strip()
+    avvenimento = str(avvenimento).strip()
+    if not (
+        re.fullmatch(r"\d{3,6}", palinsesto)
+        and re.fullmatch(r"\d{1,6}", avvenimento)
+    ):
+        return {
+            "ok": False,
+            "state": "invalid_event_ids",
+            "palinsesto": palinsesto,
+            "avvenimento": avvenimento,
+            "ready_for_agents": False,
+            "sheets": {},
+            "markets": [],
+        }
+
+    extractors = (
+        ("base", get_base_market_quotes),
+        ("extra", get_extra_market_quotes),
+        ("combinate", get_combinate_market_quotes),
+    )
+    before_versions = _all_cache_versions()
+    sources = {}
+    markets = []
+    issues = []
+    verified_count = 0
+    missing_count = 0
+    total_quote_count = 0
+
+    for sheet, extractor in extractors:
+        try:
+            output = extractor(palinsesto, avvenimento)
+            if not isinstance(output, dict):
+                raise TypeError("Il parser non ha restituito un oggetto")
+        except Exception as exc:
+            output = {
+                "ok": False,
+                "state": "parser_exception",
+                "issues": [{"type": "parser_exception", "detail": str(exc)[:300]}],
+            }
+
+        sheet_state = str(output.get("state") or "unknown")
+        verified_sheet = bool(output.get("ok") and sheet_state == "ok")
+        sheet_issues = output.get("issues") or []
+        if not isinstance(sheet_issues, list):
+            sheet_issues = [{"type": "invalid_issue_format"}]
+        for issue in sheet_issues:
+            issues.append({"sheet": sheet, **(issue if isinstance(issue, dict) else {"detail": str(issue)})})
+
+        raw_markets = output.get("markets") or []
+        sheet_market_count = 0
+        sheet_verified_count = 0
+        sheet_missing_count = 0
+        sheet_quoted_count = 0
+        pdf_updated = _all_clean_pdf_timestamp(output.get("updated"))
+        url = output.get("source") or pdf_url(sheet)
+
+        for group in raw_markets:
+            if not isinstance(group, dict):
+                issues.append({"sheet": sheet, "type": "invalid_market_format"})
+                continue
+            sheet_market_count += 1
+            selections = []
+            for selection in group.get("selections") or []:
+                if not isinstance(selection, dict):
+                    issues.append({"sheet": sheet, "type": "invalid_selection_format"})
+                    continue
+                price = selection.get("decimal_odds")
+                valid_price = (
+                    isinstance(price, (int, float))
+                    and not isinstance(price, bool)
+                    and 1.01 <= price <= 999
+                )
+                if price is not None and not valid_price:
+                    issues.append({
+                        "sheet": sheet,
+                        "type": "invalid_decimal_odds",
+                        "market": group.get("market"),
+                        "outcome": selection.get("outcome"),
+                    })
+                if valid_price:
+                    sheet_quoted_count += 1
+                else:
+                    sheet_missing_count += 1
+                selection_verified = verified_sheet and valid_price
+                if selection_verified:
+                    sheet_verified_count += 1
+                selections.append({
+                    "outcome": selection.get("outcome"),
+                    "odd": selection.get("odd"),
+                    "decimal_odds": price if valid_price else None,
+                    "x0": selection.get("x0"),
+                    "verified": selection_verified,
+                })
+            markets.append({
+                "sheet": sheet,
+                "market": group.get("market"),
+                "source": url,
+                "pdf_updated": pdf_updated,
+                "page": output.get("page"),
+                "verified": verified_sheet,
+                "selections": selections,
+            })
+
+        sources[sheet] = {
+            "ok": bool(output.get("ok")),
+            "state": sheet_state,
+            "source": url,
+            "updated": pdf_updated,
+            "cache_age_seconds": output.get("cache_age_seconds"),
+            "page": output.get("page"),
+            "home_printed": output.get("home_printed"),
+            "away_printed": output.get("away_printed"),
+            "handicap_line": output.get("handicap_line") if sheet == "base" else None,
+            "market_count": sheet_market_count,
+            "quoted_selections": sheet_quoted_count,
+            "verified_selections": sheet_verified_count,
+            "missing_selections": sheet_missing_count,
+            "issues": sheet_issues,
+        }
+        verified_count += sheet_verified_count
+        missing_count += sheet_missing_count
+        total_quote_count += sheet_quoted_count
+
+    warnings = []
+    after_versions = _all_cache_versions()
+    for sheet in sources:
+        if before_versions[sheet] != after_versions[sheet]:
+            warnings.append({"type": "cache_updated_during_read", "sheet": sheet})
+        age = sources[sheet]["cache_age_seconds"]
+        if sources[sheet]["state"] == "ok" and age is None:
+            warnings.append({"type": "cache_age_unknown", "sheet": sheet})
+        if age is not None and age > CACHE_TTL:
+            warnings.append({"type": "stale_cache", "sheet": sheet, "age_seconds": age})
+        if sources[sheet]["state"] == "ok" and sources[sheet]["updated"] is None:
+            warnings.append({"type": "pdf_timestamp_unknown", "sheet": sheet})
+
+    # Quote prelevate da PDF aggiornati in momenti lontani potrebbero non
+    # descrivere lo stesso palinsesto. Per gli agenti richiediamo <=30 minuti.
+    from datetime import datetime
+    pdf_times = []
+    for sheet, source in sources.items():
+        if source["state"] == "ok" and source["updated"]:
+            try:
+                dt = datetime.strptime(source["updated"], "%d/%m/%Y - ore %H:%M:%S")
+                pdf_times.append((sheet, dt))
+            except ValueError:
+                warnings.append({"type": "pdf_timestamp_invalid", "sheet": sheet})
+    if len(pdf_times) > 1:
+        span = (max(v for _, v in pdf_times) - min(v for _, v in pdf_times)).total_seconds()
+        if span > 1800:
+            warnings.append({
+                "type": "pdf_timestamps_out_of_sync",
+                "difference_seconds": round(span),
+            })
+
+    # Gli ID Sisal sono la chiave primaria. Conserviamo i nomi stampati per
+    # rilevare discrepanze, senza sovrascrivere quelli di altri fogli.
+    names = [
+        (sheet, sources[sheet]["home_printed"], sources[sheet]["away_printed"])
+        for sheet in sources if sources[sheet]["home_printed"] and sources[sheet]["away_printed"]
+    ]
+    if len({(str(h).casefold(), str(a).casefold()) for _, h, a in names}) > 1:
+        warnings.append({"type": "printed_team_names_differ", "sheets": [s for s, _, _ in names]})
+
+    states = [sources[s]["state"] for s, _ in extractors]
+    acceptable_absence = {"event_not_found", "no_quoted_selections"}
+    if all(state == "event_not_found" for state in states):
+        state = "event_not_found"
+    elif not verified_count and all(state in acceptable_absence for state in states):
+        state = "no_quoted_selections"
+    elif issues or warnings or any(
+        state not in ("ok", "event_not_found", "no_quoted_selections")
+        for state in states
+    ):
+        state = "review_required"
+    elif all(state == "ok" for state in states):
+        state = "ok"
+    else:
+        state = "partial"
+
+    # Un foglio assente non impedisce l'ispezione umana delle quote esistenti,
+    # ma solo lo stato pieno 'ok' e' pronto per l'ingestione automatica.
+    ready_for_agents = state == "ok" and verified_count > 0
+    return {
+        "ok": state in ("ok", "partial"),
+        "state": state,
+        "palinsesto": palinsesto,
+        "avvenimento": avvenimento,
+        "ready_for_agents": ready_for_agents,
+        "sheets": sources,
+        "market_count": len(markets),
+        "quoted_selections": total_quote_count,
+        "verified_selections": verified_count,
+        "missing_selections": missing_count,
+        "issues": issues,
+        "warnings": warnings,
+        "markets": markets,
+    }
+
 
 @mcp.tool()
 def search_odds(
