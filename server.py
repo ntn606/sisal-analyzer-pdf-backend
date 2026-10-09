@@ -1,6 +1,7 @@
 import io
 import os
 import re
+import pdfplumber
 import threading
 import time
 from typing import Optional
@@ -202,108 +203,69 @@ def get_cached_pdf(sheet: str):
         return item.get("pdf_bytes")
 
 
-def extract_positioned_text(
-    sheet: str,
-    palinsesto: str,
-    avvenimento: str,
-):
-    """
-    Estrae i frammenti di testo dal PDF conservando
-    le coordinate X/Y originali.
-
-    Serve per ricostruire correttamente le colonne
-    dei Fogli Quote Sisal.
-    """
-
+def extract_positioned_text(sheet: str, palinsesto: str, avvenimento: str):
+    """Diagnostica per parole, con coordinate reali del PDF."""
     pdf_bytes = get_cached_pdf(sheet)
-
     if not pdf_bytes:
         return []
 
-    reader = PdfReader(io.BytesIO(pdf_bytes))
-
     palinsesto = str(palinsesto).strip()
     avvenimento = str(avvenimento).strip()
-
+    pair = re.compile(
+        rf"(?<!\d){re.escape(palinsesto)}\s+{re.escape(avvenimento)}(?!\d)"
+    )
     results = []
 
-    for page_number, page in enumerate(reader.pages):
-        fragments = []
-
-        def visitor(
-            text,
-            cm,
-            tm,
-            font_dict,
-            font_size,
-        ):
-            value = re.sub(
-                r"\s+",
-                " ",
-                text or "",
-            ).strip()
-
-            if not value:
-                return
-
-            fragments.append(
-                {
-                    "text": value,
-                    "x": round(float(tm[4]), 2),
-                    "y": round(float(tm[5]), 2),
-                    "font_size": round(
-                        float(font_size),
-                        2,
-                    ),
-                }
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        for page_number, page in enumerate(pdf.pages, 1):
+            words = page.extract_words(
+                x_tolerance=1,
+                y_tolerance=2,
+                keep_blank_chars=False,
+                use_text_flow=False,
             )
+            lines = {}
+            for word in words:
+                y_key = round(word["top"] / 3) * 3
+                lines.setdefault(y_key, []).append(word)
 
-        page.extract_text(
-            visitor_text=visitor
-        )
+            ordered_lines = []
+            for y_key, line_words in sorted(lines.items()):
+                line_words.sort(key=lambda w: w["x0"])
+                joined = " ".join(w["text"] for w in line_words)
+                ordered_lines.append((y_key, joined, line_words))
 
-        # Raggruppiamo gli elementi che si trovano
-        # approssimativamente sulla stessa riga.
-        rows = {}
-
-        for fragment in fragments:
-            y_key = round(
-                fragment["y"] / 2
-            ) * 2
-
-            rows.setdefault(
-                y_key,
-                [],
-            ).append(fragment)
-
-        for y_key, row in rows.items():
-            row.sort(
-                key=lambda item: item["x"]
-            )
-
-            joined = " ".join(
-                item["text"]
-                for item in row
-            )
-
-            # La riga dell'evento deve contenere
-            # entrambi gli identificatori.
-            if (
-                palinsesto not in joined
-                or avvenimento not in joined
-            ):
-                continue
-
-            results.append(
-                {
-                    "page": page_number + 1,
-                    "y": y_key,
+            for index, (y_key, joined, line_words) in enumerate(ordered_lines):
+                if not pair.search(joined):
+                    continue
+                # Include also nearby lines, useful for reading column headers.
+                nearby = []
+                for other_y, other_text, other_words in ordered_lines[max(0, index - 14):index + 3]:
+                    nearby.append({
+                        "top": other_y,
+                        "text": other_text,
+                        "words": [
+                            {"text": w["text"], "x0": round(w["x0"], 2),
+                             "x1": round(w["x1"], 2), "top": round(w["top"], 2)}
+                            for w in other_words
+                        ],
+                    })
+                results.append({
+                    "page": page_number,
+                    "top": y_key,
                     "joined": joined,
-                    "fragments": row,
-                }
-            )
-
+                    "fragments": [
+                        {"text": w["text"], "x0": round(w["x0"], 2),
+                         "x1": round(w["x1"], 2), "top": round(w["top"], 2)}
+                        for w in line_words
+                    ],
+                    "nearby_lines": nearby,
+                })
+                if len(results) >= 5:
+                    return results
     return results
+
+
 
 def cache_age(sheet: str):
     with CACHE_LOCK:
