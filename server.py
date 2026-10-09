@@ -596,6 +596,211 @@ def debug_event_positions(
         "row_count": len(rows),
         "rows": rows[:20],
     }
+BASE_OUTCOME_SPECS = [
+    ("Esito finale 1X2", "1"),
+    ("Esito finale 1X2", "X"),
+    ("Esito finale 1X2", "2"),
+    ("1X2 Handicap", "1"),
+    ("1X2 Handicap", "X"),
+    ("1X2 Handicap", "2"),
+    ("Doppia Chance", "1X"),
+    ("Doppia Chance", "X2"),
+    ("Doppia Chance", "12"),
+    ("Under/Over 1,5", "Under"),
+    ("Under/Over 1,5", "Over"),
+    ("Under/Over 2,5", "Under"),
+    ("Under/Over 2,5", "Over"),
+    ("Under/Over 3,5", "Under"),
+    ("Under/Over 3,5", "Over"),
+    ("Goal/No Goal", "Goal"),
+    ("Goal/No Goal", "No Goal"),
+    ("Segna goal casa", "Si"),
+    ("Segna goal casa", "No"),
+    ("Segna goal ospite", "Si"),
+    ("Segna goal ospite", "No"),
+]
+
+# L = indicatore LIVE; H = linea handicap, non quote.
+BASE_HEADER_TOKENS = [
+    "L", "1", "X", "2", "H", "1", "X", "2",
+    "1X", "X2", "12", "U", "O", "U", "O", "U", "O",
+    "G", "NG", "SI", "NO", "SI", "NO",
+]
+
+def _base_group_lines(words):
+    lines = {}
+    for word in words:
+        top_key = round(float(word["top"]) / 3) * 3
+        lines.setdefault(top_key, []).append(word)
+    for line_words in lines.values():
+        line_words.sort(key=lambda word: float(word["x0"]))
+    return lines
+
+
+def _base_column_anchors(words):
+    """Legge le 21 posizioni della testata, rifiuta layout imprevisti."""
+    for _, row in sorted(_base_group_lines(words).items()):
+        tokens = [word["text"] for word in row]
+        if not all(x in tokens for x in ("Ora", "Manif.", "Pal.", "Avv.")):
+            continue
+        labels = [word for word in row if float(word["x0"]) >= 245]
+        if [word["text"] for word in labels] != BASE_HEADER_TOKENS:
+            continue
+        handicap = next(word for word in labels if word["text"] == "H")
+        price_labels = [word for word in labels if word["text"] not in ("L", "H")]
+        if len(price_labels) != len(BASE_OUTCOME_SPECS):
+            continue
+        anchors = [
+            (float(w["x0"]) + float(w["x1"])) / 2
+            for w in price_labels
+        ]
+        handicap_center = (float(handicap["x0"]) + float(handicap["x1"])) / 2
+        return anchors, handicap_center
+    return None, None
+
+
+def _base_price(text):
+    # Le quote del foglio Base possono essere decimali o intere.
+    if not re.fullmatch(r"[1-9]\d{0,2}(?:,\d{1,3})?", text):
+        return None
+    price = float(text.replace(",", "."))
+    if not (1.01 <= price <= 999):
+        return None
+    return price
+
+
+def _base_find_event_rows(words, palinsesto, avvenimento):
+    """Usa gli ID nelle colonne Pal./Avv. e la prossimita' verticale."""
+    pals = [w for w in words if w["text"] == palinsesto and 52 <= w["x0"] <= 82]
+    avvs = [w for w in words if w["text"] == avvenimento and 80 <= w["x0"] <= 109]
+    results = []
+    for pal in pals:
+        for avv in avvs:
+            if abs(float(pal["top"]) - float(avv["top"])) > 3:
+                continue
+            if not (float(avv["x0"]) > float(pal["x0"])):
+                continue
+            top = (float(pal["top"]) + float(avv["top"])) / 2
+            row = [w for w in words if abs(float(w["top"]) - top) <= 3.5]
+            row.sort(key=lambda w: float(w["x0"]))
+            if any(w["text"] == palinsesto for w in row) and any(w["text"] == avvenimento for w in row):
+                results.append(row)
+    return results
+
+
+def _base_parse_event_row(row, anchors, handicap_center):
+    slots = [None] * len(BASE_OUTCOME_SPECS)
+    errors = []
+    handicap_line = None
+    for word in row:
+        x0, x1 = float(word["x0"]), float(word["x1"])
+        center = (x0 + x1) / 2
+        if center < 257:
+            continue
+        raw = word["text"]
+        if abs(center - handicap_center) <= 4.5:
+            # L'indicatore handicap puo' essere -1, 1, -2, ecc.
+            handicap_line = raw
+            continue
+        price = _base_price(raw)
+        if price is None:
+            errors.append({"type": "unparsed_value", "text": raw, "x0": round(x0, 2)})
+            continue
+        index = min(range(len(anchors)), key=lambda i: abs(center - anchors[i]))
+        if abs(center - anchors[index]) > 6.5:
+            errors.append({"type": "unaligned_value", "text": raw, "x0": round(x0, 2)})
+            continue
+        if slots[index] is not None:
+            errors.append({"type": "duplicate_cell", "text": raw, "slot": index})
+            slots[index] = {"error": "duplicate_cell"}
+            continue
+        slots[index] = {
+            "odd": raw,
+            "decimal_odds": price,
+            "x0": round(x0, 2),
+            "x1": round(x1, 2),
+        }
+    groups = []
+    by_market = {}
+    for i, (market, outcome) in enumerate(BASE_OUTCOME_SPECS):
+        if market not in by_market:
+            by_market[market] = {"market": market, "selections": []}
+            groups.append(by_market[market])
+        slot = slots[i]
+        by_market[market]["selections"].append({
+            "outcome": outcome,
+            "odd": slot.get("odd") if slot else None,
+            "decimal_odds": slot.get("decimal_odds") if slot else None,
+            "x0": slot.get("x0") if slot else None,
+        })
+    home = " ".join(w["text"] for w in row if 105 <= w["x0"] < 179).strip()
+    away = " ".join(w["text"] for w in row if 179 <= w["x0"] < 250).strip()
+    return {
+        "home_printed": home or None,
+        "away_printed": away or None,
+        "handicap_line": handicap_line,
+        "markets": groups,
+        "priced_selections": sum(bool(slot and slot.get("odd")) for slot in slots),
+        "missing_selections": sum(slot is None for slot in slots),
+        "issues": errors,
+    }
+
+
+@mcp.tool()
+def get_base_market_quotes(palinsesto: str, avvenimento: str):
+    """Quote Calcio Base lette per coordinate, senza spostare colonne vuote.
+
+    Le quote non pubblicate hanno valore null. Se il layout non corrisponde
+    alla testata prevista o ci sono frammenti illeggibili, segnala un errore.
+    """
+    palinsesto = str(palinsesto).strip()
+    avvenimento = str(avvenimento).strip()
+    pdf_bytes = get_cached_pdf("base")
+    if not pdf_bytes:
+        return {"ok": False, "state": "source_not_ready"}
+    candidates = []
+    missing_header_pages = []
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        for page_no, page in enumerate(pdf.pages, 1):
+            words = page.extract_words(
+                x_tolerance=1, y_tolerance=2,
+                keep_blank_chars=False, use_text_flow=False,
+            )
+            rows = _base_find_event_rows(words, palinsesto, avvenimento)
+            if not rows:
+                continue
+            anchors, handicap_center = _base_column_anchors(words)
+            if not anchors:
+                missing_header_pages.append(page_no)
+                continue
+            for row in rows:
+                entry = _base_parse_event_row(row, anchors, handicap_center)
+                entry["page"] = page_no
+                candidates.append(entry)
+    if missing_header_pages:
+        return {"ok": False, "state": "header_not_recognized", "pages": missing_header_pages}
+    if not candidates:
+        return {
+            "ok": False,
+            "state": "event_not_found",
+            "palinsesto": palinsesto,
+            "avvenimento": avvenimento,
+        }
+    if len(candidates) != 1:
+        return {"ok": False, "state": "ambiguous_event", "candidate_count": len(candidates)}
+    data = candidates[0]
+    return {
+        "ok": not bool(data["issues"]),
+        "state": "ok" if not data["issues"] else "review_required",
+        "sheet": "base",
+        "palinsesto": palinsesto,
+        "avvenimento": avvenimento,
+        "source": pdf_url("base"),
+        "updated": get_updated_timestamp(get_cached_text("base") or ""),
+        "cache_age_seconds": cache_age("base"),
+        **data,
+    }
+
 
 @mcp.tool()
 def search_odds(
