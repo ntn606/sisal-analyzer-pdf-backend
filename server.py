@@ -1700,6 +1700,200 @@ def scout_event(palinsesto: str, avvenimento: str):
             "markets": [],
         }
 
+ANALYST_BASELINE_SPECS = (
+    ("base", "Esito finale 1X2", ("1", "X", "2")),
+    ("base", "Under/Over 2,5", ("Under", "Over")),
+    ("base", "Goal/No Goal", ("Goal", "No Goal")),
+)
+
+ANALYST_EVIDENCE_REQUIRED = (
+    "Risultati recenti delle due squadre, con date e fonti",
+    "Gol fatti e subiti e numero di partite del campione",
+    "Contesto casa/trasferta e livello delle avversarie",
+    "Disponibilita' della rosa e notizie verificabili",
+    "Data e orario della partita confermati da una fonte esterna",
+)
+
+
+def _analyst_market_baselines(groups):
+    """Misure DESCRITTIVE delle quote: non stime del rendimento sportivo."""
+    baselines = []
+    unavailable = []
+    for sheet, market_name, required in ANALYST_BASELINE_SPECS:
+        matching = [m for m in groups if m.get("sheet") == sheet
+                    and m.get("market") == market_name]
+        if len(matching) != 1:
+            unavailable.append({"sheet": sheet, "market": market_name,
+                                "reason": "market_missing_or_duplicate"})
+            continue
+        group = matching[0]
+        rows = group.get("selections")
+        if not isinstance(rows, list):
+            unavailable.append({"sheet": sheet, "market": market_name,
+                                "reason": "invalid_selection_format"})
+            continue
+        by_outcome = {}
+        bad = False
+        for row in rows:
+            if not isinstance(row, dict):
+                bad = True
+                break
+            outcome = row.get("outcome")
+            price = row.get("decimal_odds")
+            if (outcome in by_outcome or outcome not in required
+                    or not isinstance(price, (int, float)) or isinstance(price, bool)
+                    or not 1.01 <= price <= 999):
+                bad = True
+                break
+            by_outcome[outcome] = float(price)
+        if bad or set(by_outcome) != set(required):
+            unavailable.append({"sheet": sheet, "market": market_name,
+                                "reason": "incomplete_or_invalid_market"})
+            continue
+        inverse = {k: 1.0 / by_outcome[k] for k in required}
+        total = sum(inverse.values())
+        baselines.append({
+            "sheet": sheet,
+            "market": market_name,
+            "pdf_updated": group.get("pdf_updated"),
+            "source": group.get("source"),
+            "sum_implied_percent": round(100 * total, 2),
+            "overround_percent": round(100 * (total - 1), 2),
+            "method": "reciprocal_odds_normalized_proportionally",
+            "is_independent_probability_model": False,
+            "selections": [
+                {"outcome": key,
+                 "decimal_odds": by_outcome[key],
+                 "raw_inverse_odds_percent": round(100 * inverse[key], 2),
+                 "normalized_market_share_percent": round(100 * inverse[key] / total, 2)}
+                for key in required
+            ],
+        })
+    return baselines, unavailable
+
+
+def _analyst_review_scout(scout):
+    """Transforma i dati Scout in un dossier di mercato, senza inventare stats."""
+    result = {
+        "agent": "analyst_v1",
+        "ok": False,
+        "state": "blocked_by_scout",
+        "ready_for_quant": False,
+        "event": scout.get("event") if isinstance(scout, dict) else None,
+        "palinsesto": scout.get("palinsesto") if isinstance(scout, dict) else None,
+        "avvenimento": scout.get("avvenimento") if isinstance(scout, dict) else None,
+        "reason": "Scout non ha autorizzato l'analisi delle quote",
+        "blockers": [],
+        "market_count": 0,
+        "quoted_selection_count": 0,
+        "coverage_by_sheet": {},
+        "market_baselines": [],
+        "baseline_markets_unavailable": [],
+        "independent_evidence": {
+            "state": "not_connected",
+            "required": list(ANALYST_EVIDENCE_REQUIRED),
+        },
+        "football_findings": [],
+        "recommendations": [],
+        "note": (
+            "Le percentuali implicite nelle quote NON sono una previsione "
+            "indipendente, non indicano value bet e non autorizzano puntate."
+        ),
+    }
+    if not isinstance(scout, dict):
+        result["blockers"] = [{"type": "invalid_scout_response"}]
+        return result
+    if not (scout.get("ok") is True and scout.get("state") == "ready"
+            and scout.get("ready_for_analysis") is True):
+        result["blockers"] = [{"type": "scout_not_ready",
+                               "scout_state": scout.get("state"),
+                               "details": scout.get("blockers") or []}]
+        return result
+    groups = scout.get("markets")
+    if not isinstance(groups, list) or not groups:
+        result["state"] = "invalid_scout_payload"
+        result["blockers"] = [{"type": "scout_markets_missing"}]
+        return result
+    coverage = {}
+    seen = set()
+    count = 0
+    for group in groups:
+        if not isinstance(group, dict):
+            result["state"] = "invalid_scout_payload"
+            result["blockers"] = [{"type": "invalid_market"}]
+            return result
+        sheet, market = group.get("sheet"), group.get("market")
+        if sheet not in SCOUT_SHEETS or not isinstance(market, str) or not market:
+            result["state"] = "invalid_scout_payload"
+            result["blockers"] = [{"type": "invalid_market_identity"}]
+            return result
+        if (sheet, market) in seen:
+            result["state"] = "invalid_scout_payload"
+            result["blockers"] = [{"type": "duplicate_market", "sheet": sheet, "market": market}]
+            return result
+        seen.add((sheet, market))
+        rows = group.get("selections")
+        if not isinstance(rows, list) or not rows:
+            result["state"] = "invalid_scout_payload"
+            result["blockers"] = [{"type": "empty_market", "sheet": sheet, "market": market}]
+            return result
+        for row in rows:
+            if not isinstance(row, dict):
+                result["state"] = "invalid_scout_payload"
+                result["blockers"] = [{"type": "invalid_selection"}]
+                return result
+            price = row.get("decimal_odds")
+            if (not isinstance(price, (int, float)) or isinstance(price, bool)
+                    or not 1.01 <= price <= 999):
+                result["state"] = "invalid_scout_payload"
+                result["blockers"] = [{"type": "invalid_quote"}]
+                return result
+            count += 1
+        stats = coverage.setdefault(sheet, {"markets": 0, "quoted_selections": 0})
+        stats["markets"] += 1
+        stats["quoted_selections"] += len(rows)
+    if count != scout.get("candidate_count") or len(groups) != scout.get("market_count"):
+        result["state"] = "invalid_scout_payload"
+        result["blockers"] = [{"type": "scout_count_mismatch"}]
+        return result
+
+    baseline, unavailable = _analyst_market_baselines(groups)
+    result.update({
+        "ok": True,
+        "state": "awaiting_independent_evidence",
+        "reason": (
+            "Quote tecnicamente verificate. Mancano dati sportivi esterni "
+            "e verificabili prima di stimare le probabilita'."
+        ),
+        "market_count": len(groups),
+        "quoted_selection_count": count,
+        "coverage_by_sheet": coverage,
+        "market_baselines": baseline,
+        "baseline_markets_unavailable": unavailable,
+    })
+    return result
+
+
+@mcp.tool()
+def analyst_event(palinsesto: str, avvenimento: str):
+    """Analyst V1: prepara il dossier delle quote Scout, senza false statistiche.
+
+    Se Scout blocca, non riporta quote. Se Scout e' pronto, misura soltanto
+    il mercato implicito delle quote; NON stima probabilita' indipendenti.
+    """
+    palinsesto, avvenimento = str(palinsesto).strip(), str(avvenimento).strip()
+    try:
+        scout = scout_event(palinsesto, avvenimento)
+        return _analyst_review_scout(scout)
+    except Exception as exc:
+        return {
+            "agent": "analyst_v1", "ok": False, "state": "analyst_exception",
+            "ready_for_quant": False,
+            "palinsesto": palinsesto, "avvenimento": avvenimento,
+            "blockers": [{"type": "analyst_exception", "detail": str(exc)[:300]}],
+            "market_baselines": [], "football_findings": [], "recommendations": [],
+        }
+
 
 @mcp.tool()
 def search_odds(
