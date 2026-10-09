@@ -801,6 +801,158 @@ def get_base_market_quotes(palinsesto: str, avvenimento: str):
         **data,
     }
 
+EXTRA_OUTCOME_SPECS = [
+    ("Parziale/Finale", "1-1"),
+    ("Parziale/Finale", "1-X"),
+    ("Parziale/Finale", "1-2"),
+    ("Parziale/Finale", "X-1"),
+    ("Parziale/Finale", "X-X"),
+    ("Parziale/Finale", "X-2"),
+    ("Parziale/Finale", "2-1"),
+    ("Parziale/Finale", "2-X"),
+    ("Parziale/Finale", "2-2"),
+    ("Somma goal finale", "0"),
+    ("Somma goal finale", "1"),
+    ("Somma goal finale", "2"),
+    ("Somma goal finale", "3"),
+    ("Somma goal finale", "4"),
+    ("Somma goal finale", ">4"),
+]
+
+
+def _extra_column_anchors(words):
+    """Usa solo intestazioni reali del PDF Extra, non coordinate fisse."""
+    labels_expected = [outcome for _, outcome in EXTRA_OUTCOME_SPECS]
+    for _, row in sorted(_base_group_lines(words).items()):
+        tokens = [word["text"] for word in row]
+        if not all(label in tokens for label in ("Ora", "Manif.", "Pal.", "Avv.")):
+            continue
+        labels = [word for word in row if float(word["x0"]) >= 263]
+        if [word["text"] for word in labels] != labels_expected:
+            continue
+        return [(float(word["x0"]) + float(word["x1"])) / 2 for word in labels]
+    return None
+
+
+def _extra_parse_event_row(row, anchors):
+    slots = [None] * len(EXTRA_OUTCOME_SPECS)
+    issues = []
+    for word in row:
+        x0, x1 = float(word["x0"]), float(word["x1"])
+        center = (x0 + x1) / 2
+        if center < 265:
+            continue
+        raw = str(word["text"])
+        price = _base_price(raw)
+        if price is None:
+            issues.append({"type": "unparsed_value", "text": raw, "x0": round(x0, 2)})
+            continue
+        distances = [abs(center - anchor) for anchor in anchors]
+        index = distances.index(min(distances))
+        if distances[index] > 8:
+            issues.append({"type": "unaligned_value", "text": raw, "x0": round(x0, 2)})
+            continue
+        if slots[index] is not None:
+            issues.append({"type": "duplicate_cell", "text": raw, "slot": index})
+            slots[index] = {"error": "duplicate_cell"}
+            continue
+        slots[index] = {
+            "odd": raw,
+            "decimal_odds": price,
+            "x0": round(x0, 2),
+        }
+
+    markets = []
+    by_market = {}
+    for index, (market, outcome) in enumerate(EXTRA_OUTCOME_SPECS):
+        if market not in by_market:
+            group = {"market": market, "selections": []}
+            by_market[market] = group
+            markets.append(group)
+        slot = slots[index]
+        by_market[market]["selections"].append({
+            "outcome": outcome,
+            "odd": slot.get("odd") if slot else None,
+            "decimal_odds": slot.get("decimal_odds") if slot else None,
+            "x0": slot.get("x0") if slot else None,
+        })
+
+    priced = sum(bool(slot and slot.get("odd")) for slot in slots)
+    return {
+        "home_printed": " ".join(w["text"] for w in row if 105 <= w["x0"] < 187).strip() or None,
+        "away_printed": " ".join(w["text"] for w in row if 187 <= w["x0"] < 265).strip() or None,
+        "markets": markets,
+        "priced_selections": priced,
+        "missing_selections": sum(slot is None for slot in slots),
+        "issues": issues,
+    }
+
+
+@mcp.tool()
+def get_extra_market_quotes(palinsesto: str, avvenimento: str):
+    """Legge Parziale/Finale e Somma goal finale dal PDF Sisal Extra.
+
+    Ogni quota viene associata alla propria colonna X/Y. Le selezioni senza
+    quota restano null e i valori ambigui richiedono revisione.
+    """
+    palinsesto = str(palinsesto).strip()
+    avvenimento = str(avvenimento).strip()
+    pdf_bytes = get_cached_pdf("extra")
+    if not pdf_bytes:
+        return {"ok": False, "state": "source_not_ready", "sheet": "extra"}
+
+    candidates = []
+    missing_header_pages = []
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        for page_no, page in enumerate(pdf.pages, 1):
+            words = page.extract_words(
+                x_tolerance=1, y_tolerance=2,
+                keep_blank_chars=False, use_text_flow=False,
+            )
+            rows = _base_find_event_rows(words, palinsesto, avvenimento)
+            if not rows:
+                continue
+            anchors = _extra_column_anchors(words)
+            if not anchors:
+                missing_header_pages.append(page_no)
+                continue
+            for row in rows:
+                entry = _extra_parse_event_row(row, anchors)
+                entry["page"] = page_no
+                candidates.append(entry)
+
+    if missing_header_pages:
+        return {"ok": False, "state": "header_not_recognized", "pages": missing_header_pages}
+    if not candidates:
+        return {
+            "ok": False, "state": "event_not_found", "sheet": "extra",
+            "palinsesto": palinsesto, "avvenimento": avvenimento,
+        }
+    if len(candidates) != 1:
+        return {
+            "ok": False, "state": "ambiguous_event", "sheet": "extra",
+            "candidate_count": len(candidates),
+        }
+
+    data = candidates[0]
+    if data["issues"]:
+        state = "review_required"
+    elif not data["priced_selections"]:
+        state = "no_quoted_selections"
+    else:
+        state = "ok"
+    return {
+        "ok": state == "ok",
+        "state": state,
+        "sheet": "extra",
+        "palinsesto": palinsesto,
+        "avvenimento": avvenimento,
+        "source": pdf_url("extra"),
+        "updated": get_updated_timestamp(get_cached_text("extra") or ""),
+        "cache_age_seconds": cache_age("extra"),
+        **data,
+    }
+
 
 @mcp.tool()
 def search_odds(
