@@ -1894,6 +1894,398 @@ def analyst_event(palinsesto: str, avvenimento: str):
             "market_baselines": [], "football_findings": [], "recommendations": [],
         }
 
+import unicodedata
+from datetime import datetime, timezone, timedelta
+from zoneinfo import ZoneInfo
+
+AF_API_BASE = "https://v3.football.api-sports.io"
+AF_TIMEZONE = ZoneInfo("Europe/Rome")
+AF_ALLOWED_ENDPOINTS = frozenset(("/status", "/fixtures"))
+AF_MIN_HISTORY = 5
+AF_HISTORY_DAYS = 180
+AF_MAX_FIXTURE_DAYS_AHEAD = 7
+AF_MAX_KICKOFF_DIFFERENCE_MINUTES = 30
+AF_LOCAL_DAY_LIMIT = 70  # Limite difensivo interno; il piano free ha 100 richieste/die.
+AF_LOCAL_MINUTE_LIMIT = 8 # Il piano free ha 10 richieste/minuto.
+AF_CACHE = {}
+AF_LOCK = threading.RLock()
+AF_RATE = {"day": None, "day_count": 0, "minute": None,
+           "minute_count": 0, "day_remaining": None,
+           "minute_remaining": None, "day_limit": None}
+
+
+class _AFError(Exception):
+    """Errore non sensibile: NON include la chiave API o corpi HTTP."""
+
+
+def _af_normalize_team(name):
+    if not isinstance(name, str):
+        return ""
+    transliterated = unicodedata.normalize("NFKD", name.casefold())
+    ascii_text = "".join(c for c in transliterated if not unicodedata.combining(c))
+    return " ".join(re.findall(r"[a-z0-9]+", ascii_text))
+
+
+def _af_int(value):
+    try:
+        return int(value) if value is not None and not isinstance(value, bool) else None
+    except (TypeError, ValueError):
+        return None
+
+
+def _af_request(path, params=None, ttl_seconds=300):
+    """GET sicuro con cache, quota locale e messaggi d'errore sanitizzati."""
+    if path not in AF_ALLOWED_ENDPOINTS:
+        raise _AFError("endpoint_not_allowed")
+    key = os.environ.get("API_FOOTBALL_KEY", "").strip()
+    if not key:
+        raise _AFError("provider_not_configured")
+    params = params or {}
+    request_key = (path, tuple(sorted((str(k), str(v)) for k, v in params.items())))
+    now_ts = time.time()
+    with AF_LOCK:
+        entry = AF_CACHE.get(request_key)
+        if entry and now_ts - entry["at"] < ttl_seconds:
+            return entry["body"], True
+
+        utc_day = datetime.now(timezone.utc).date().isoformat()
+        minute = int(now_ts // 60)
+        if AF_RATE["day"] != utc_day:
+            AF_RATE.update(day=utc_day, day_count=0, day_remaining=None,
+                           day_limit=None)
+        if AF_RATE["minute"] != minute:
+            AF_RATE.update(minute=minute, minute_count=0, minute_remaining=None)
+        if AF_RATE["day_count"] >= AF_LOCAL_DAY_LIMIT:
+            raise _AFError("local_daily_budget_exhausted")
+        if AF_RATE["minute_count"] >= AF_LOCAL_MINUTE_LIMIT:
+            raise _AFError("local_minute_budget_exhausted")
+        if AF_RATE["day_remaining"] is not None and AF_RATE["day_remaining"] <= 10:
+            raise _AFError("provider_daily_quota_reserve")
+        if AF_RATE["minute_remaining"] is not None and AF_RATE["minute_remaining"] <= 1:
+            raise _AFError("provider_minute_quota_reserve")
+
+        # La chiave viaggia SOLO nell'header HTTPS, mai nell'URL o nell'output.
+        AF_RATE["day_count"] += 1
+        AF_RATE["minute_count"] += 1
+        try:
+            response = requests.get(AF_API_BASE + path, params=params,
+                headers={"x-apisports-key": key, "Accept": "application/json"},
+                timeout=15)
+        except Exception:
+            raise _AFError("provider_transport_failure") from None
+
+        for field, header in (("day_remaining", "x-ratelimit-requests-remaining"),
+                              ("minute_remaining", "x-ratelimit-remaining"),
+                              ("day_limit", "x-ratelimit-requests-limit")):
+            parsed = _af_int(response.headers.get(header))
+            if parsed is not None:
+                AF_RATE[field] = parsed
+        if response.status_code in (401, 403):
+            raise _AFError("provider_authentication_failed")
+        if response.status_code == 429:
+            raise _AFError("provider_rate_limited")
+        if response.status_code != 200:
+            raise _AFError("provider_http_failure")
+        try:
+            body = response.json()
+        except Exception:
+            raise _AFError("provider_invalid_json") from None
+        if not isinstance(body, dict):
+            raise _AFError("provider_invalid_response")
+        if body.get("errors"):
+            # Le risposte di errore del provider potrebbero contenere informazioni sensibili.
+            raise _AFError("provider_reported_error")
+        paging = body.get("paging") or {}
+        if isinstance(paging, dict) and (_af_int(paging.get("total")) or 1) > 1:
+            raise _AFError("provider_pagination_not_handled")
+        AF_CACHE[request_key] = {"at": now_ts, "body": body}
+        return body, False
+
+
+def _af_sisal_kickoff_time(palinsesto, avvenimento):
+    """Recupera l'ora Sisal dal PDF Base. Non inventa la DATA della partita."""
+    pdf_text = get_cached_text("base")
+    if not pdf_text:
+        return None
+    matches = [m for m in extract_events(pdf_text)
+               if m.get("palinsesto") == palinsesto and
+                  m.get("avvenimento") == avvenimento]
+    return matches[0].get("time") if len(matches) == 1 else None
+
+
+def _af_fixture_kickoff(fixture):
+    stamp = _af_int((fixture.get("fixture") or {}).get("timestamp"))
+    if stamp is None:
+        return None
+    try:
+        return datetime.fromtimestamp(stamp, timezone.utc).astimezone(AF_TIMEZONE)
+    except (ValueError, OSError, OverflowError):
+        return None
+
+
+def _af_fixture_identity(fixture, home, away, sisal_time, match_date):
+    if not isinstance(fixture, dict):
+        return False, "invalid_fixture"
+    teams = fixture.get("teams") or {}
+    api_home = (teams.get("home") or {}).get("name")
+    api_away = (teams.get("away") or {}).get("name")
+    # Identita' stretta: eventuali soprannomi richiedono una mappatura verificata.
+    if (_af_normalize_team(api_home) != _af_normalize_team(home)
+            or _af_normalize_team(api_away) != _af_normalize_team(away)):
+        return False, "team_names_do_not_match"
+    kickoff = _af_fixture_kickoff(fixture)
+    if kickoff is None:
+        return False, "kickoff_missing"
+    if kickoff.date().isoformat() != match_date:
+        return False, "fixture_date_mismatch"
+    if not sisal_time:
+        return False, "sisal_kickoff_time_missing"
+    if kickoff.strftime("%H:%M") != sisal_time:
+        try:
+            hh, mm = (int(x) for x in sisal_time.split(":"))
+            minutes1 = kickoff.hour * 60 + kickoff.minute
+            minutes2 = hh * 60 + mm
+            delta = min(abs(minutes1-minutes2), 1440-abs(minutes1-minutes2))
+        except (ValueError, TypeError):
+            return False, "sisal_kickoff_time_invalid"
+        if delta > AF_MAX_KICKOFF_DIFFERENCE_MINUTES:
+            return False, "kickoff_time_mismatch"
+    short = ((fixture.get("fixture") or {}).get("status") or {}).get("short")
+    if short != "NS":
+        return False, "fixture_not_pre_match"
+    if kickoff <= datetime.now(AF_TIMEZONE):
+        return False, "fixture_already_started"
+    if (_af_int((teams.get("home") or {}).get("id")) is None or
+        _af_int((teams.get("away") or {}).get("id")) is None):
+        return False, "team_ids_missing"
+    return True, None
+
+
+def _af_form_for_team(team_id, fixture_timestamp, now_dt):
+    body, cache_hit = _af_request("/fixtures", {"team": team_id, "last": 10}, 1800)
+    response = body.get("response")
+    if not isinstance(response, list):
+        raise _AFError("history_invalid_response")
+    valid = []
+    for match in response:
+        if not isinstance(match, dict):
+            continue
+        meta = match.get("fixture") or {}
+        status = (meta.get("status") or {}).get("short")
+        stamp = _af_int(meta.get("timestamp"))
+        if status not in ("FT", "AET", "PEN") or stamp is None:
+            continue
+        if stamp >= fixture_timestamp or stamp >= int(now_dt.timestamp()):
+            continue
+        if stamp < fixture_timestamp - AF_HISTORY_DAYS * 86400:
+            continue
+        teams = match.get("teams") or {}
+        goals = match.get("goals") or {}
+        is_home = _af_int((teams.get("home") or {}).get("id")) == team_id
+        is_away = _af_int((teams.get("away") or {}).get("id")) == team_id
+        if is_home == is_away:
+            continue
+        gf, ga = ((goals.get("home"), goals.get("away")) if is_home else
+                  (goals.get("away"), goals.get("home")))
+        gf, ga = _af_int(gf), _af_int(ga)
+        if gf is None or ga is None or gf < 0 or ga < 0:
+            continue
+        valid.append({"fixture_id":_af_int(meta.get("id")),
+                      "date":datetime.fromtimestamp(stamp, timezone.utc).date().isoformat(),
+                      "competition":(match.get("league") or {}).get("name"),
+                      "opponent":((teams.get("away") if is_home else teams.get("home")) or {}).get("name"),
+                      "venue":"home" if is_home else "away",
+                      "goals_for":gf, "goals_against":ga,
+                      "result":"W" if gf>ga else ("D" if gf==ga else "L"),
+                      "timestamp":stamp})
+    valid.sort(key=lambda m:m["timestamp"],reverse=True)
+    valid = valid[:AF_MIN_HISTORY]
+    for m in valid:
+        m.pop("timestamp",None)
+    wins = sum(m["result"] == "W" for m in valid)
+    draws = sum(m["result"] == "D" for m in valid)
+    losses = sum(m["result"] == "L" for m in valid)
+    return {"team_id":team_id,"sample_size":len(valid),
+            "wins":wins,"draws":draws,"losses":losses,
+            "goals_for":sum(m["goals_for"] for m in valid),
+            "goals_against":sum(m["goals_against"] for m in valid),
+            "matches":valid,"cache_hit":cache_hit,
+            "source_endpoint":"/fixtures?team=<team_id>&last=10"}
+
+
+def _af_evidence_from_scout(scout, fixture_id=None, match_date=None):
+    """Collega eventi Sisal solo dopo Scout READY e un match verificato."""
+    result = {"agent":"football_evidence_v1", "ok":False,
+              "state":"blocked_by_scout", "ready_for_quant":False,
+              "palinsesto":str(scout.get("palinsesto", "")),
+              "avvenimento":str(scout.get("avvenimento", "")),
+              "event":scout.get("event"), "fixture":None,
+              "teams_form":{}, "blockers":[],
+              "note":"Statistiche descrittive; non sono probabilita' o suggerimenti di puntata."}
+    if not (scout.get("ok") is True and scout.get("state") == "ready" and
+            scout.get("ready_for_analysis") is True):
+        result["blockers"]=[{"type":"scout_not_ready","state":scout.get("state")}]
+        return result
+    if not os.environ.get("API_FOOTBALL_KEY", "").strip():
+        result.update(state="provider_not_configured", blockers=[{"type":"missing_key"}])
+        return result
+    now = datetime.now(AF_TIMEZONE)
+    if match_date is None:
+        match_date = now.date().isoformat()
+    else:
+        try:
+            parsed = datetime.strptime(str(match_date), "%Y-%m-%d").date()
+        except ValueError:
+            result.update(state="invalid_match_date", blockers=[{"type":"date_must_be_yyyy_mm_dd"}])
+            return result
+        if parsed < now.date() or parsed > now.date() + timedelta(days=AF_MAX_FIXTURE_DAYS_AHEAD):
+            result.update(state="match_date_out_of_range",blockers=[{"type":"outside_next_7_days"}])
+            return result
+    sisal_time = _af_sisal_kickoff_time(result["palinsesto"],result["avvenimento"])
+    if not sisal_time:
+        result.update(state="sisal_time_unavailable", blockers=[{"type":"missing_sisal_time"}])
+        return result
+    if not isinstance(result["event"], dict) or not result["event"].get("home") or not result["event"].get("away"):
+        result.update(state="sisal_teams_unavailable",blockers=[{"type":"missing_sisal_teams"}])
+        return result
+    try:
+        fid = _af_int(fixture_id)
+        if fixture_id is not None and (fid is None or fid <= 0):
+            result.update(state="invalid_fixture_id",blockers=[{"type":"invalid_fixture_id"}])
+            return result
+        params = ({"id":fid} if fid is not None else
+                  {"date":match_date,"timezone":"Europe/Rome"})
+        doc,_ = _af_request("/fixtures",params,300)
+        fixtures = doc.get("response")
+        if not isinstance(fixtures,list):
+            raise _AFError("fixtures_invalid_response")
+        passing=[]
+        failure_reasons={}
+        for fixture in fixtures:
+            pass_check, reason = _af_fixture_identity(fixture,
+                result["event"]["home"],result["event"]["away"],
+                sisal_time,match_date)
+            if pass_check:
+                passing.append(fixture)
+            elif reason:
+                failure_reasons[reason]=failure_reasons.get(reason,0)+1
+        if len(passing)!=1:
+            result.update(state="fixture_ambiguous" if len(passing)>1 else "fixture_not_matched",
+                blockers=[{"type":"fixture_match_count","count":len(passing),
+                           "provider_candidates":len(fixtures),
+                           "rejections":failure_reasons}])
+            return result
+        match=passing[0]
+        kickoff=_af_fixture_kickoff(match)
+        home=(match.get("teams") or {}).get("home") or {}
+        away=(match.get("teams") or {}).get("away") or {}
+        result["fixture"]={"id":_af_int((match.get("fixture") or {}).get("id")),
+             "kickoff":kickoff.isoformat(timespec="minutes"),
+             "league":(match.get("league") or {}).get("name"),
+             "country":(match.get("league") or {}).get("country"),
+             "home":{"id":_af_int(home.get("id")),"name":home.get("name")},
+             "away":{"id":_af_int(away.get("id")),"name":away.get("name")},
+             "source":"https://v3.football.api-sports.io/fixtures"}
+        if result["fixture"]["id"] is None:
+            raise _AFError("fixture_id_missing")
+        for side,team in (("home",home),("away",away)):
+            stats=_af_form_for_team(_af_int(team.get("id")),
+                                    int(kickoff.timestamp()),now)
+            stats["team_name"]=team.get("name")
+            result["teams_form"][side]=stats
+        short=[side for side,stats in result["teams_form"].items()
+               if stats["sample_size"] < AF_MIN_HISTORY]
+        if short:
+            result.update(state="insufficient_recent_history",
+                          blockers=[{"type":"less_than_5_recent_matches","sides":short}])
+            return result
+        result.update(ok=True,state="ready",ready_for_quant=True)
+        return result
+    except _AFError as exc:
+        result.update(state="provider_unavailable",
+                      blockers=[{"type":str(exc)}])
+        return result
+
+
+@mcp.tool()
+def football_provider_status(check_remote: bool = False):
+    """Verifica senza esporla la chiave API-Football su Railway.
+
+    Di default non consuma richieste esterne; check_remote=True prova /status.
+    """
+    configured=bool(os.environ.get("API_FOOTBALL_KEY", "").strip())
+    info={"provider":"API-Football", "configured":configured,
+          "authenticated":None,"state":"configured_not_tested" if configured else "not_configured",
+          "requests_remaining_last_seen":AF_RATE["day_remaining"]}
+    if not check_remote or not configured:
+        return info
+    try:
+        doc,_ = _af_request("/status",{},600)
+        body=doc.get("response") or {}
+        plan=(body.get("subscription") or {})
+        quota=(body.get("requests") or {})
+        info.update(authenticated=True,state="ok",
+                    subscription_active=plan.get("active"),
+                    plan=plan.get("plan"),
+                    requests_today=quota.get("current"),
+                    requests_limit_day=quota.get("limit_day"))
+    except _AFError as exc:
+        info.update(authenticated=False,state=str(exc))
+    return info
+
+
+@mcp.tool()
+def football_evidence_event(palinsesto: str, avvenimento: str,
+                            fixture_id: Optional[int] = None,
+                            match_date: Optional[str] = None):
+    """Sport: identifica incontro e ultimi 5 risultati, SENZA suggerire puntate.
+
+    Blocca se Scout non e' ready, nomi/orari diversi, match gia' iniziato,
+    dati insufficienti o API non disponibile. Se manca match_date usa oggi
+    (ora italiana); per una partita futura specificare YYYY-MM-DD.
+    """
+    try:
+        scout=scout_event(str(palinsesto).strip(),str(avvenimento).strip())
+        return _af_evidence_from_scout(scout,fixture_id,match_date)
+    except Exception:
+        return {"agent":"football_evidence_v1","ok":False,"state":"internal_error",
+                "ready_for_quant":False,"blockers":[{"type":"internal_error"}],
+                "teams_form":{},"fixture":None}
+
+
+@mcp.tool()
+def analyst_event_enriched(palinsesto: str, avvenimento: str,
+                           fixture_id: Optional[int] = None,
+                           match_date: Optional[str] = None):
+    """Analyst + prove esterne, solo se Scout autorizza.
+
+    ready_for_quant indica dati sufficienti per una futura modellizzazione;
+    NON e' una previsione di probabilita' ne' autorizzazione a scommettere.
+    """
+    try:
+        scout=scout_event(str(palinsesto).strip(),str(avvenimento).strip())
+        dossier=_analyst_review_scout(scout)
+        if dossier.get("state")!="awaiting_independent_evidence":
+            return dossier
+        evidence=_af_evidence_from_scout(scout,fixture_id,match_date)
+        dossier["independent_evidence"] = evidence
+        dossier["ready_for_quant"] = evidence.get("ready_for_quant") is True
+        dossier["football_findings"] = ([
+            {"side":side,"team":stats["team_name"],"sample_size":stats["sample_size"],
+             "wins":stats["wins"],"draws":stats["draws"],"losses":stats["losses"],
+             "goals_for":stats["goals_for"],"goals_against":stats["goals_against"]}
+            for side,stats in evidence.get("teams_form",{}).items()
+        ] if evidence.get("state")=="ready" else [])
+        dossier["state"] = ("evidence_ready" if dossier["ready_for_quant"]
+                             else "awaiting_independent_evidence")
+        return dossier
+    except Exception:
+        return {"agent":"analyst_v1","ok":False,"state":"internal_error",
+                "ready_for_quant":False,"football_findings":[],
+                "blockers":[{"type":"internal_error"}],"recommendations":[]}
+
+# === API-FOOTBALL: integrazione indipendente V1 (fine) ===
+
 
 @mcp.tool()
 def search_odds(
