@@ -1932,11 +1932,46 @@ def _af_int(value):
     except (TypeError, ValueError):
         return None
 
+def _af_classify_provider_error(errors):
+    """Classifica gli errori API-Football senza riportarne il contenuto.
+
+    Nessun testo originale del provider o informazione riservata e' restituita.
+    Non modifica la logica di Scout, Analyst, o delle quote.
+    """
+    if not errors:
+        return "provider_reported_error"
+    if isinstance(errors, dict):
+        keys = {str(k).casefold() for k in errors}
+    else:
+        keys = set()
+    # Il contenuto resta solo in memoria per la classificazione: MAI in output.
+    description = str(errors).casefold()[:4096]
+    if ("plan" in keys or "subscription" in keys
+            or "free plans do not have access" in description
+            or "current plan" in description
+            or "upgrade your plan" in description
+            or "subscription does not" in description):
+        return "provider_plan_restricted"
+    if ("quota" in keys or "limit" in keys
+            or "quota exceeded" in description
+            or "rate limit" in description
+            or "too many requests" in description):
+        return "provider_quota_restricted"
+    if ("token" in keys or "key" in keys or "auth" in keys
+            or "invalid api key" in description
+            or "invalid token" in description):
+        return "provider_authentication_failed"
+    if (keys.intersection({"team", "last", "id", "date", "season", "fixture", "parameters", "parameter"})
+            or "invalid parameter" in description
+            or "required parameter" in description):
+        return "provider_parameters_rejected"
+    return "provider_reported_error"
+
 
 def _af_request(path, params=None, ttl_seconds=300):
     """GET sicuro con cache, quota locale e messaggi d'errore sanitizzati."""
     if path not in AF_ALLOWED_ENDPOINTS:
-        raise _AFError("endpoint_not_allowed")
+        raise _AFError(_af_classify_provider_error(body.get("errors")))
     key = os.environ.get("API_FOOTBALL_KEY", "").strip()
     if not key:
         raise _AFError("provider_not_configured")
