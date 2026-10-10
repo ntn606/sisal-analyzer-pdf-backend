@@ -1917,6 +1917,17 @@ AF_RATE = {"day": None, "day_count": 0, "minute": None,
 class _AFError(Exception):
     """Errore non sensibile: NON include la chiave API o corpi HTTP."""
 
+    def __init__(self, code, *, diagnostic=None):
+        super().__init__(code)
+        self.diagnostic = diagnostic
+
+
+def _af_error_blocker(error):
+    blocker = {"type": str(error)}
+    if error.diagnostic is not None:
+        blocker["diagnostic"] = error.diagnostic
+    return blocker
+
 
 def _af_normalize_team(name):
     if not isinstance(name, str):
@@ -1947,14 +1958,16 @@ def _af_classify_provider_error(errors):
     # Il contenuto resta solo in memoria per la classificazione: MAI in output.
     description = str(errors).casefold()[:4096]
     if ("plan" in keys or "subscription" in keys
-            or "free plans do not have access" in description
+            or re.search(r"\bfree\s+plans?\b", description)
             or "current plan" in description
             or "upgrade your plan" in description
             or "subscription does not" in description):
         return "provider_plan_restricted"
     if ("quota" in keys or "limit" in keys
+            or "ratelimit" in keys or "requests" in keys
             or "quota exceeded" in description
             or "rate limit" in description
+            or "request limit" in description
             or "too many requests" in description):
         return "provider_quota_restricted"
     if ("token" in keys or "key" in keys or "auth" in keys
@@ -1968,13 +1981,59 @@ def _af_classify_provider_error(errors):
     return "provider_reported_error"
 
 
+def _af_error_diagnostic(code, path, params, errors=None, http_status=None):
+    """Output solo da costanti/allowlist: mai valori o messaggi del provider."""
+    categories = {
+        "provider_plan_restricted": "plan_restriction",
+        "provider_quota_restricted": "api_limit",
+        "provider_rate_limited": "api_limit",
+        "provider_daily_quota_reserve": "api_limit",
+        "provider_minute_quota_reserve": "api_limit",
+        "local_daily_budget_exhausted": "local_budget",
+        "local_minute_budget_exhausted": "local_budget",
+        "provider_authentication_failed": "authentication",
+        "provider_parameters_rejected": "invalid_parameters",
+        "provider_not_configured": "configuration",
+        "endpoint_not_allowed": "endpoint_policy",
+        "provider_transport_failure": "transport",
+        "provider_http_failure": "http",
+        "provider_invalid_json": "invalid_response",
+        "provider_invalid_response": "invalid_response",
+        "provider_pagination_not_handled": "pagination",
+    }
+    parameter_names = {"team", "last", "id", "date", "season", "fixture",
+                       "timezone", "league", "from", "to", "next", "status", "page"}
+    diagnostic = {
+        "category": categories.get(code, "other"),
+        "endpoint": path if path in AF_ALLOWED_ENDPOINTS else None,
+        "request_parameter_names": sorted(parameter_names.intersection(params)),
+    }
+    if isinstance(http_status, int) and 100 <= http_status <= 599:
+        diagnostic["http_status"] = http_status
+    if code == "provider_plan_restricted":
+        # Indica Free solo se esplicitamente presente nell'errore; non deduce il piano.
+        diagnostic["free_plan_restriction"] = bool(
+            re.search(r"\bfree\s+plans?\b", str(errors).casefold()[:4096])
+        )
+    if isinstance(errors, dict):
+        diagnostic["error_parameter_names"] = sorted(
+            parameter_names.intersection(k.casefold() for k in errors if isinstance(k, str))
+        )
+    return diagnostic
+
+
 def _af_request(path, params=None, ttl_seconds=300):
     """GET sicuro con cache, quota locale e messaggi d'errore sanitizzati."""
+    def failure(code, errors=None, http_status=None):
+        return _AFError(code, diagnostic=_af_error_diagnostic(
+            code, path, params or {}, errors, http_status
+        ))
+
     if path not in AF_ALLOWED_ENDPOINTS:
-        raise _AFError(_af_classify_provider_error(body.get("errors")))
+        raise failure("endpoint_not_allowed")
     key = os.environ.get("API_FOOTBALL_KEY", "").strip()
     if not key:
-        raise _AFError("provider_not_configured")
+        raise failure("provider_not_configured")
     params = params or {}
     request_key = (path, tuple(sorted((str(k), str(v)) for k, v in params.items())))
     now_ts = time.time()
@@ -1991,13 +2050,13 @@ def _af_request(path, params=None, ttl_seconds=300):
         if AF_RATE["minute"] != minute:
             AF_RATE.update(minute=minute, minute_count=0, minute_remaining=None)
         if AF_RATE["day_count"] >= AF_LOCAL_DAY_LIMIT:
-            raise _AFError("local_daily_budget_exhausted")
+            raise failure("local_daily_budget_exhausted")
         if AF_RATE["minute_count"] >= AF_LOCAL_MINUTE_LIMIT:
-            raise _AFError("local_minute_budget_exhausted")
+            raise failure("local_minute_budget_exhausted")
         if AF_RATE["day_remaining"] is not None and AF_RATE["day_remaining"] <= 10:
-            raise _AFError("provider_daily_quota_reserve")
+            raise failure("provider_daily_quota_reserve")
         if AF_RATE["minute_remaining"] is not None and AF_RATE["minute_remaining"] <= 1:
-            raise _AFError("provider_minute_quota_reserve")
+            raise failure("provider_minute_quota_reserve")
 
         # La chiave viaggia SOLO nell'header HTTPS, mai nell'URL o nell'output.
         AF_RATE["day_count"] += 1
@@ -2007,7 +2066,7 @@ def _af_request(path, params=None, ttl_seconds=300):
                 headers={"x-apisports-key": key, "Accept": "application/json"},
                 timeout=15)
         except Exception:
-            raise _AFError("provider_transport_failure") from None
+            raise failure("provider_transport_failure") from None
 
         for field, header in (("day_remaining", "x-ratelimit-requests-remaining"),
                               ("minute_remaining", "x-ratelimit-remaining"),
@@ -2016,23 +2075,24 @@ def _af_request(path, params=None, ttl_seconds=300):
             if parsed is not None:
                 AF_RATE[field] = parsed
         if response.status_code in (401, 403):
-            raise _AFError("provider_authentication_failed")
+            raise failure("provider_authentication_failed", http_status=response.status_code)
         if response.status_code == 429:
-            raise _AFError("provider_rate_limited")
+            raise failure("provider_rate_limited", http_status=response.status_code)
         if response.status_code != 200:
-            raise _AFError("provider_http_failure")
+            raise failure("provider_http_failure", http_status=response.status_code)
         try:
             body = response.json()
         except Exception:
-            raise _AFError("provider_invalid_json") from None
+            raise failure("provider_invalid_json", http_status=response.status_code) from None
         if not isinstance(body, dict):
-            raise _AFError("provider_invalid_response")
+            raise failure("provider_invalid_response", http_status=response.status_code)
         if body.get("errors"):
             # Le risposte di errore del provider potrebbero contenere informazioni sensibili.
-            raise _AFError("provider_reported_error")
+            raise failure(_af_classify_provider_error(body["errors"]),
+                          errors=body["errors"], http_status=response.status_code)
         paging = body.get("paging") or {}
         if isinstance(paging, dict) and (_af_int(paging.get("total")) or 1) > 1:
-            raise _AFError("provider_pagination_not_handled")
+            raise failure("provider_pagination_not_handled", http_status=response.status_code)
         AF_CACHE[request_key] = {"at": now_ts, "body": body}
         return body, False
 
@@ -2238,7 +2298,7 @@ def _af_evidence_from_scout(scout, fixture_id=None, match_date=None):
         return result
     except _AFError as exc:
         result.update(state="provider_unavailable",
-                      blockers=[{"type":str(exc)}])
+                      blockers=[_af_error_blocker(exc)])
         return result
 
 
@@ -2266,6 +2326,8 @@ def football_provider_status(check_remote: bool = False):
                     requests_limit_day=quota.get("limit_day"))
     except _AFError as exc:
         info.update(authenticated=False,state=str(exc))
+        if exc.diagnostic is not None:
+            info["provider_diagnostic"] = exc.diagnostic
     return info
 
 
@@ -2458,7 +2520,7 @@ def _af_fixture_probe_review(aggregate, sisal_time, match_date, requester=None, 
             result.update(state="fixture_not_identified", blockers=[{"type": "no_exact_fixture"}])
         return result
     except _AFError as exc:
-        result.update(state="provider_unavailable", blockers=[{"type": str(exc)}])
+        result.update(state="provider_unavailable", blockers=[_af_error_blocker(exc)])
         return result
 
 
@@ -2716,7 +2778,7 @@ def _af_history_probe_review(fixture_id, expected_home, expected_away,
         result.update(ok=True, state="history_available")
         return result
     except _AFError as exc:
-        result.update(state="provider_unavailable", blockers=[{"type": str(exc)}])
+        result.update(state="provider_unavailable", blockers=[_af_error_blocker(exc)])
         return result
 
 
