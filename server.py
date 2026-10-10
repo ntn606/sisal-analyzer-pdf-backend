@@ -2459,6 +2459,259 @@ def football_fixture_probe(palinsesto: str, avvenimento: str, match_date: str):
 
 # === API-FOOTBALL: diagnostica copertura partite V1 (fine) ===
 
+def _af_history_probe_summary(records, team_id, before_kickoff, now_dt):
+    """Estrae risultati conclusi da dati API-Football; nessuna quota."""
+    from datetime import datetime, timezone
+
+    if not isinstance(records, list):
+        raise _AFError("history_invalid_response")
+    if not isinstance(team_id, int) or isinstance(team_id, bool) or team_id <= 0:
+        raise _AFError("invalid_history_team_id")
+
+    cutoff = int(before_kickoff.timestamp())
+    current = int(now_dt.timestamp())
+    lower = cutoff - AF_HISTORY_DAYS * 86400
+    valid = []
+    seen = set()
+    excluded = {}
+
+    def skip(reason):
+        excluded[reason] = excluded.get(reason, 0) + 1
+
+    for row in records:
+        if not isinstance(row, dict):
+            skip("invalid_row")
+            continue
+        fixture = row.get("fixture") or {}
+        teams = row.get("teams") or {}
+        goals = row.get("goals") or {}
+        if not isinstance(fixture, dict) or not isinstance(teams, dict) or not isinstance(goals, dict):
+            skip("invalid_row")
+            continue
+
+        # Escludiamo i rigori: il campo goals puo' rappresentare il pareggio
+        # prima dei rigori e non descrivere il vincitore del confronto.
+        if (fixture.get("status") or {}).get("short") not in ("FT", "AET"):
+            skip("not_finished_in_regular_or_extra_time")
+            continue
+        stamp = _af_int(fixture.get("timestamp"))
+        fid = _af_int(fixture.get("id"))
+        if stamp is None or fid is None or fid <= 0 or stamp >= cutoff or stamp >= current or stamp < lower:
+            skip("invalid_or_out_of_window_fixture")
+            continue
+
+        side_home = (teams.get("home") or {})
+        side_away = (teams.get("away") or {})
+        if not isinstance(side_home, dict) or not isinstance(side_away, dict):
+            skip("invalid_team_data")
+            continue
+        home_id = _af_int(side_home.get("id"))
+        away_id = _af_int(side_away.get("id"))
+        if home_id == away_id or team_id not in (home_id, away_id):
+            skip("team_identity_mismatch")
+            continue
+        if fid in seen:
+            skip("duplicate_fixture")
+            continue
+        is_home = home_id == team_id
+        scored = _af_int(goals.get("home" if is_home else "away"))
+        conceded = _af_int(goals.get("away" if is_home else "home"))
+        opponent = side_away.get("name") if is_home else side_home.get("name")
+        if (scored is None or conceded is None or scored < 0 or conceded < 0
+                or not isinstance(opponent, str) or not opponent.strip()):
+            skip("goals_or_opponent_missing")
+            continue
+
+        seen.add(fid)
+        league = row.get("league") or {}
+        valid.append({
+            "fixture_id": fid,
+            "date": datetime.fromtimestamp(stamp, timezone.utc).astimezone(AF_TIMEZONE).date().isoformat(),
+            "opponent": opponent.strip(),
+            "competition": league.get("name") if isinstance(league, dict) else None,
+            "venue": "home" if is_home else "away",
+            "goals_for": scored,
+            "goals_against": conceded,
+            "result": "W" if scored > conceded else "D" if scored == conceded else "L",
+            "final_status": fixture.get("status").get("short"),
+            "_stamp": stamp,
+        })
+
+    valid.sort(key=lambda item: item["_stamp"], reverse=True)
+    sample = valid[:AF_MIN_HISTORY]
+    for row in sample:
+        row.pop("_stamp", None)
+
+    return {
+        "team_id": team_id,
+        "sample_size": len(sample),
+        "sample_target": AF_MIN_HISTORY,
+        "complete_sample": len(sample) == AF_MIN_HISTORY,
+        "wins": sum(row["result"] == "W" for row in sample),
+        "draws": sum(row["result"] == "D" for row in sample),
+        "losses": sum(row["result"] == "L" for row in sample),
+        "goals_for": sum(row["goals_for"] for row in sample),
+        "goals_against": sum(row["goals_against"] for row in sample),
+        "matches": sample,
+        "excluded_records": excluded,
+        "source_endpoint": "/fixtures?team=<team_id>&last=10",
+    }
+
+
+def _af_history_probe_review(fixture_id, expected_home, expected_away,
+                             match_date, requester=None, now=None):
+    """Diagnostica indipendente da Scout, testabile con un requester finto."""
+    from datetime import datetime, timedelta
+
+    if now is None:
+        now = datetime.now(AF_TIMEZONE)
+    if now.tzinfo is None or now.utcoffset() is None:
+        raise ValueError("now must be timezone-aware")
+    now = now.astimezone(AF_TIMEZONE)
+
+    result = {
+        "diagnostic": "football_history_probe_v1",
+        "ok": False,
+        "state": "not_checked",
+        "diagnostic_only": True,
+        "ready_for_analysis": False,
+        "ready_for_quant": False,
+        "fixture_id": fixture_id,
+        "match_date": match_date,
+        "expected_teams": {"home": expected_home, "away": expected_away},
+        "fixture": None,
+        "teams_form": {},
+        "blockers": [],
+        "provider_cache_hits": {},
+        "api_calls_max_without_cache": 3,
+        "note": (
+            "Dati descrittivi da API-Football; zero quote e zero pronostici. "
+            "Non certifica PDF Sisal, non aggira Scout e non abilita Quant. "
+            "Le partite decise ai rigori sono escluse dallo storico; "
+            "le altre competizioni sono dichiarate partita per partita."
+        ),
+    }
+    fid = _af_int(fixture_id)
+    if fid is None or fid <= 0 or isinstance(fixture_id, bool):
+        result.update(state="invalid_fixture_id", blockers=[{"type": "invalid_fixture_id"}])
+        return result
+    if (not isinstance(expected_home, str) or not isinstance(expected_away, str)
+            or not _af_normalize_team(expected_home)
+            or not _af_normalize_team(expected_away)
+            or _af_normalize_team(expected_home) == _af_normalize_team(expected_away)):
+        result.update(state="invalid_expected_teams", blockers=[{"type": "two_distinct_team_names_required"}])
+        return result
+    try:
+        date = datetime.strptime(str(match_date), "%Y-%m-%d").date()
+        if date.isoformat() != match_date:
+            raise ValueError("non-canonical")
+    except (ValueError, TypeError):
+        result.update(state="invalid_match_date", blockers=[{"type": "date_must_be_yyyy_mm_dd"}])
+        return result
+    if not now.date() <= date <= (now + timedelta(days=AF_MAX_FIXTURE_DAYS_AHEAD)).date():
+        result.update(state="date_out_of_range", blockers=[{"type": "only_next_7_days"}])
+        return result
+    if requester is None:
+        requester = _af_request
+
+    try:
+        body, fixture_cache_hit = requester("/fixtures", {"id": fid}, 300)
+        fixtures = body.get("response") if isinstance(body, dict) else None
+        result["provider_cache_hits"]["fixture"] = bool(fixture_cache_hit)
+        if not isinstance(fixtures, list) or len(fixtures) != 1:
+            result.update(state="fixture_not_unique", blockers=[{"type": "fixture_not_found_or_ambiguous"}])
+            return result
+        match = fixtures[0]
+        if not isinstance(match, dict):
+            result.update(state="invalid_fixture_payload", blockers=[{"type": "invalid_fixture_payload"}])
+            return result
+        meta = match.get("fixture") or {}
+        teams = match.get("teams") or {}
+        if not isinstance(meta, dict) or not isinstance(teams, dict):
+            result.update(state="invalid_fixture_payload", blockers=[{"type": "invalid_fixture_payload"}])
+            return result
+        home = teams.get("home") or {}
+        away = teams.get("away") or {}
+        if not isinstance(home, dict) or not isinstance(away, dict):
+            result.update(state="invalid_fixture_payload", blockers=[{"type": "invalid_fixture_payload"}])
+            return result
+        hname = home.get("name")
+        aname = away.get("name")
+        home_id = _af_int(home.get("id"))
+        away_id = _af_int(away.get("id"))
+        kickoff = _af_fixture_kickoff(match)
+        if (_af_int(meta.get("id")) != fid
+                or not _af_normalize_team(hname) == _af_normalize_team(expected_home)
+                or not _af_normalize_team(aname) == _af_normalize_team(expected_away)
+                or home_id is None or away_id is None
+                or home_id <= 0 or away_id <= 0 or home_id == away_id):
+            result.update(state="fixture_identity_mismatch",
+                          blockers=[{"type": "fixture_or_teams_do_not_match"}])
+            return result
+        if kickoff is None or kickoff.date() != date:
+            result.update(state="fixture_date_mismatch", blockers=[{"type": "kickoff_date_mismatch"}])
+            return result
+        if (meta.get("status") or {}).get("short") != "NS" or kickoff <= now:
+            result.update(state="fixture_not_upcoming", blockers=[{"type": "not_pre_match"}])
+            return result
+        league = match.get("league") or {}
+        result["fixture"] = {
+            "id": fid,
+            "home": {"id": home_id, "name": hname},
+            "away": {"id": away_id, "name": aname},
+            "competition": league.get("name") if isinstance(league, dict) else None,
+            "kickoff": kickoff.isoformat(timespec="minutes"),
+            "status": "NS",
+            "source": "https://v3.football.api-sports.io/fixtures",
+        }
+        for side, team_id in (("home", home_id), ("away", away_id)):
+            response, hit = requester("/fixtures", {"team": team_id, "last": 10}, 1800)
+            rows = response.get("response") if isinstance(response, dict) else None
+            result["provider_cache_hits"][side] = bool(hit)
+            stats = _af_history_probe_summary(rows, team_id, kickoff, now)
+            stats["team_name"] = hname if side == "home" else aname
+            result["teams_form"][side] = stats
+
+        missing = [side for side, stats in result["teams_form"].items()
+                   if not stats["complete_sample"]]
+        if missing:
+            result.update(state="insufficient_recent_history",
+                          blockers=[{"type": "less_than_5_valid_recent_results", "sides": missing}])
+            return result
+        result.update(ok=True, state="history_available")
+        return result
+    except _AFError as exc:
+        result.update(state="provider_unavailable", blockers=[{"type": str(exc)}])
+        return result
+
+
+@mcp.tool()
+def football_history_probe(fixture_id: int, expected_home: str,
+                           expected_away: str, match_date: str):
+    """Ultimi 5 risultati verificati per le squadre di un fixture futuro.
+
+    Diagnostica slegata da Scout: quote, PDF, probability model e Quant NON
+    vengono consultati o autorizzati. Fino a tre richieste API-Football,
+    con cache e limiti giornalieri gia' previsti da _af_request.
+    """
+    try:
+        return _af_history_probe_review(fixture_id, expected_home,
+                                        expected_away, match_date)
+    except Exception:
+        return {
+            "diagnostic": "football_history_probe_v1",
+            "ok": False,
+            "state": "internal_error",
+            "diagnostic_only": True,
+            "ready_for_analysis": False,
+            "ready_for_quant": False,
+            "fixture_id": fixture_id,
+            "teams_form": {},
+            "blockers": [{"type": "internal_error"}],
+        }
+
+# === API-FOOTBALL: diagnostica storico squadre V1 (fine) ===
+
 
 @mcp.tool()
 def search_odds(
