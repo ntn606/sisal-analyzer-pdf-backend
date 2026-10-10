@@ -2286,6 +2286,179 @@ def analyst_event_enriched(palinsesto: str, avvenimento: str,
 
 # === API-FOOTBALL: integrazione indipendente V1 (fine) ===
 
+def _af_fixture_probe_review(aggregate, sisal_time, match_date, requester=None, now=None):
+    """Diagnostica SOLTANTO identita' e copertura: NON approva quote.
+
+    Consente di controllare se API-Football conosce una partita Sisal anche
+    quando i PDF sono vecchi. Non restituisce quote, probabilita', value bet.
+    'requester'/'now' permettono test offline senza consumare chiamate API.
+    """
+    from difflib import SequenceMatcher
+
+    if now is None:
+        now = datetime.now(AF_TIMEZONE)
+    if now.tzinfo is None or now.utcoffset() is None:
+        raise ValueError("now must include timezone")
+    now = now.astimezone(AF_TIMEZONE)
+    result = {
+        "diagnostic": "football_fixture_probe_v1",
+        "ok": False,
+        "state": "not_checked",
+        "diagnostic_only": True,
+        "ready_for_analysis": False,
+        "ready_for_quant": False,
+        "palinsesto": str(aggregate.get("palinsesto", "")) if isinstance(aggregate, dict) else "",
+        "avvenimento": str(aggregate.get("avvenimento", "")) if isinstance(aggregate, dict) else "",
+        "match_date": match_date,
+        "sisal": None,
+        "provider_fixture_count": 0,
+        "exact_matches": [],
+        "possible_matches_to_review": [],
+        "rejections": {},
+        "blockers": [],
+        "provider_cache_hit": None,
+        "note": (
+            "Solo verifica di copertura/identita'. Non restituisce quote e "
+            "non aggira i blocchi di Scout; un match API non abilita Quant."
+        ),
+    }
+
+    # Prima le condizioni locali: zero chiamate esterne se input incerto.
+    try:
+        day = datetime.strptime(str(match_date), "%Y-%m-%d").date()
+        if day.isoformat() != str(match_date):
+            raise ValueError("non canonical date")
+    except (ValueError, TypeError):
+        result.update(state="invalid_date", blockers=[{"type": "date_must_be_yyyy_mm_dd"}])
+        return result
+    if day < now.date() or day > (now + timedelta(days=7)).date():
+        result.update(state="date_out_of_range", blockers=[{"type": "only_next_7_days"}])
+        return result
+    if not isinstance(aggregate, dict) or aggregate.get("state") not in ("ok", "partial"):
+        result.update(state="sisal_unavailable", blockers=[{"type": "aggregate_not_readable"}])
+        return result
+
+    sheets = aggregate.get("sheets")
+    if not isinstance(sheets, dict):
+        result.update(state="sisal_unavailable", blockers=[{"type": "sources_not_available"}])
+        return result
+    names = []
+    for sheet in ("base", "extra", "combinate"):
+        source = sheets.get(sheet)
+        if not isinstance(source, dict) or source.get("state") != "ok":
+            result.update(state="sisal_unavailable", blockers=[{"type": "sheet_not_ok", "sheet": sheet}])
+            return result
+        home = source.get("home_printed")
+        away = source.get("away_printed")
+        if not isinstance(home, str) or not home.strip() or not isinstance(away, str) or not away.strip():
+            result.update(state="sisal_unavailable", blockers=[{"type": "names_missing", "sheet": sheet}])
+            return result
+        names.append((home.strip(), away.strip()))
+    if len({(_af_normalize_team(h), _af_normalize_team(a)) for h, a in names}) != 1:
+        result.update(state="sisal_names_conflict", blockers=[{"type": "source_team_names_disagree"}])
+        return result
+    if not isinstance(sisal_time, str) or not re.fullmatch(r"(?:[01]\d|2[0-3]):[0-5]\d", sisal_time):
+        result.update(state="sisal_time_missing", blockers=[{"type": "invalid_or_missing_kickoff_time"}])
+        return result
+
+    home, away = names[0]
+    result["sisal"] = {
+        "home": home, "away": away, "kickoff_local_time": sisal_time,
+        "pdf_updated": {k: sheets[k].get("updated") for k in ("base", "extra", "combinate")},
+        "pdf_freshness_not_verified": True,
+    }
+    if requester is None:
+        requester = _af_request
+    try:
+        response, cached = requester(
+            "/fixtures", {"date": match_date, "timezone": "Europe/Rome"}, 300
+        )
+        fixtures = response.get("response") if isinstance(response, dict) else None
+        if not isinstance(fixtures, list):
+            raise _AFError("fixtures_invalid_response")
+        result["provider_cache_hit"] = bool(cached)
+        result["provider_fixture_count"] = len(fixtures)
+        near = []
+        for match in fixtures:
+            if not isinstance(match, dict):
+                continue
+            teams = match.get("teams") or {}
+            if not isinstance(teams, dict):
+                continue
+            api_home = (teams.get("home") or {}).get("name")
+            api_away = (teams.get("away") or {}).get("name")
+            if not isinstance(api_home, str) or not isinstance(api_away, str):
+                continue
+            h_sim = SequenceMatcher(None, _af_normalize_team(home),
+                                    _af_normalize_team(api_home)).ratio()
+            a_sim = SequenceMatcher(None, _af_normalize_team(away),
+                                    _af_normalize_team(api_away)).ratio()
+            # Utilizzare il controllo rigoroso gia' presente nel backend.
+            exact, why = _af_fixture_identity(match, home, away, sisal_time, match_date)
+            kickoff = _af_fixture_kickoff(match)
+            info = {
+                "fixture_id": _af_int((match.get("fixture") or {}).get("id")),
+                "home": api_home,
+                "away": api_away,
+                "league": (match.get("league") or {}).get("name"),
+                "kickoff": kickoff.isoformat(timespec="minutes") if kickoff else None,
+                "status": ((match.get("fixture") or {}).get("status") or {}).get("short"),
+            }
+            if exact:
+                result["exact_matches"].append(info)
+            else:
+                if why:
+                    result["rejections"][why] = result["rejections"].get(why, 0) + 1
+                if h_sim >= 0.55 and a_sim >= 0.55:
+                    near.append({**info, "home_similarity": round(h_sim, 3),
+                                 "away_similarity": round(a_sim, 3),
+                                 "not_verified_reason": why})
+        near.sort(key=lambda x: (x["home_similarity"] + x["away_similarity"]), reverse=True)
+        result["possible_matches_to_review"] = near[:5]
+        if len(result["exact_matches"]) == 1:
+            result.update(ok=True, state="exact_fixture_identified")
+        elif len(result["exact_matches"]) > 1:
+            result.update(state="ambiguous_fixture", blockers=[{"type": "multiple_exact_fixtures"}])
+        else:
+            result.update(state="fixture_not_identified", blockers=[{"type": "no_exact_fixture"}])
+        return result
+    except _AFError as exc:
+        result.update(state="provider_unavailable", blockers=[{"type": str(exc)}])
+        return result
+
+
+@mcp.tool()
+def football_fixture_probe(palinsesto: str, avvenimento: str, match_date: str):
+    """Verifica identificazione partita su API-Football SENZA usare quote.
+
+    Diagnostica anche con PDF vecchi: NON sostituisce Scout.
+    Restituisce fixture_id, nomi e orario solo per identificazione. Non
+    produce risultati, probabilita', consigli ne' ready_for_quant=True.
+    Richiede match_date YYYY-MM-DD (oggi o entro sette giorni in Italia).
+    """
+    palinsesto, avvenimento = str(palinsesto).strip(), str(avvenimento).strip()
+    try:
+        if not (re.fullmatch(r"\d{3,6}", palinsesto) and
+                re.fullmatch(r"\d{1,6}", avvenimento)):
+            return {
+                "diagnostic": "football_fixture_probe_v1", "ok": False,
+                "state": "invalid_event_ids", "diagnostic_only": True,
+                "ready_for_analysis": False, "ready_for_quant": False,
+                "exact_matches": [], "possible_matches_to_review": [],
+            }
+        aggregate = get_all_event_quotes(palinsesto, avvenimento)
+        sisal_time = _af_sisal_kickoff_time(palinsesto, avvenimento)
+        return _af_fixture_probe_review(aggregate, sisal_time, match_date)
+    except Exception:
+        return {
+            "diagnostic": "football_fixture_probe_v1", "ok": False,
+            "state": "internal_error", "diagnostic_only": True,
+            "ready_for_analysis": False, "ready_for_quant": False,
+            "exact_matches": [], "possible_matches_to_review": [],
+        }
+
+# === API-FOOTBALL: diagnostica copertura partite V1 (fine) ===
+
 
 @mcp.tool()
 def search_odds(
