@@ -1,0 +1,16 @@
+{
+  "schema_version": "web-scout-reviewed-claim.1",
+  "source_id": "newcastle",
+  "url": "https://www.newcastleunited.com/synthetic-test-news",
+  "team_id": "local:team:newcastle",
+  "event_key": [
+    "36411",
+    "1885",
+    "2026-10-12"
+  ],
+  "origin": "synthetic",
+  "claim_projection_sha256": "54af09aa25e5afd15591db39e42f42465ca02c3d75536304cb84a9a084cda046",
+  "reviewer_ref": "synthetic-offline-review",
+  "reviewed_at": "2026-10-11T21:01:00Z",
+  "official_lineup_explicit": false
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "web-scout-access-summary.1",
+  "unique_urls": 7,
+  "attempts_total": 8,
+  "received_articles": 0,
+  "new_football_provider_requests": 0,
+  "evidence_file": "cache/access-observations.json",
+  "additional_diagnostic_attempt": {
+    "url": "https://www.premierleague.com/robots.txt",
+    "acquired_at": null,
+    "timestamp_basis": "not_recorded_for_extra_diagnostic",
+    "target_http_status": null,
+    "proxy_tunnel_status": 403,
+    "content_retrieved": false
+  },
+  "covered_competition_sources_tested": [
+    "PL",
+    "PD",
+    "CL",
+    "EL",
+    "ECL"
+  ],
+  "other_competition_sources": "not_tested",
+  "subsequent_live_collection_enabled": false,
+  "proxy_bypassed": false
+}

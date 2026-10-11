@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "palinsesto",
+    "avvenimento",
+    "match_date"
+  ],
+  "properties": {
+    "palinsesto": {
+      "type": "string",
+      "pattern": "^[0-9]{1,20}$"
+    },
+    "avvenimento": {
+      "type": "string",
+      "pattern": "^[0-9]{1,20}$"
+    },
+    "match_date": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

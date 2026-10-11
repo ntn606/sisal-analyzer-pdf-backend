@@ -1,0 +1,69 @@
+# Elenco completo dei file aggiunti
+
+Base main:304cb2cf06d9f8f226eb89b701d3ec57beba6a38. Nessun file preesistente modificato. Nuova directory isolata e un workflow dedicato.
+
+63 file aggiunti:
+
+- .github/workflows/web-research-scout-v1.yml
+- research/web-research-scout-v1/.gitignore
+- research/web-research-scout-v1/ARCHITECTURE.md
+- research/web-research-scout-v1/CHANGED_FILES.md
+- research/web-research-scout-v1/LIMITATIONS.md
+- research/web-research-scout-v1/README.md
+- research/web-research-scout-v1/RESULTS.md
+- research/web-research-scout-v1/SECURITY_REPORT.md
+- research/web-research-scout-v1/SOURCE_MATRIX.md
+- research/web-research-scout-v1/cache/ACTIVE.json
+- research/web-research-scout-v1/cache/access-observations.json
+- research/web-research-scout-v1/cache/claims.json
+- research/web-research-scout-v1/cache/identity-references.json
+- research/web-research-scout-v1/cache/revisions/39e909166916198e12c217b12882da4d6f06c31c631a8356b2d8898cc97c1b0f/access-observations.json
+- research/web-research-scout-v1/cache/revisions/39e909166916198e12c217b12882da4d6f06c31c631a8356b2d8898cc97c1b0f/claims.json
+- research/web-research-scout-v1/cache/revisions/39e909166916198e12c217b12882da4d6f06c31c631a8356b2d8898cc97c1b0f/identity-references.json
+- research/web-research-scout-v1/cache/revisions/39e909166916198e12c217b12882da4d6f06c31c631a8356b2d8898cc97c1b0f/manifest.json
+- research/web-research-scout-v1/cache/revisions/39e909166916198e12c217b12882da4d6f06c31c631a8356b2d8898cc97c1b0f/source-matrix.json
+- research/web-research-scout-v1/cache/revisions/39e909166916198e12c217b12882da4d6f06c31c631a8356b2d8898cc97c1b0f/sources.json
+- research/web-research-scout-v1/cache/source-matrix.json
+- research/web-research-scout-v1/cache/sources.json
+- research/web-research-scout-v1/contracts/access-observations.schema.json
+- research/web-research-scout-v1/contracts/active.schema.json
+- research/web-research-scout-v1/contracts/claim.schema.json
+- research/web-research-scout-v1/contracts/claims.schema.json
+- research/web-research-scout-v1/contracts/identity-references.schema.json
+- research/web-research-scout-v1/contracts/manifest.schema.json
+- research/web-research-scout-v1/contracts/request.schema.json
+- research/web-research-scout-v1/contracts/response.schema.json
+- research/web-research-scout-v1/contracts/reviewed-proof.schema.json
+- research/web-research-scout-v1/contracts/source-matrix.schema.json
+- research/web-research-scout-v1/contracts/sources.schema.json
+- research/web-research-scout-v1/examples/coventry-newcastle.json
+- research/web-research-scout-v1/examples/levante-sevilla.json
+- research/web-research-scout-v1/examples/request.json
+- research/web-research-scout-v1/examples/synthetic-claim.json
+- research/web-research-scout-v1/examples/synthetic-proof.json
+- research/web-research-scout-v1/examples/synthetic-verified.json
+- research/web-research-scout-v1/reports/access-summary.json
+- research/web-research-scout-v1/reports/test-results.json
+- research/web-research-scout-v1/requirements-ci.lock
+- research/web-research-scout-v1/requirements.txt
+- research/web-research-scout-v1/scripts/generate_examples.py
+- research/web-research-scout-v1/scripts/offline_guard/os_guard.py
+- research/web-research-scout-v1/scripts/offline_guard/sitecustomize.py
+- research/web-research-scout-v1/scripts/prepare_cache.py
+- research/web-research-scout-v1/scripts/run_offline.py
+- research/web-research-scout-v1/scripts/scan_secrets.py
+- research/web-research-scout-v1/scripts/validate_artifacts.py
+- research/web-research-scout-v1/tests/support.py
+- research/web-research-scout-v1/tests/test_cache.py
+- research/web-research-scout-v1/tests/test_mcp_cli.py
+- research/web-research-scout-v1/tests/test_offline_guard.py
+- research/web-research-scout-v1/tests/test_probe.py
+- research/web-research-scout-v1/tests/test_security_collection.py
+- research/web-research-scout-v1/web_research_scout/__init__.py
+- research/web-research-scout-v1/web_research_scout/__main__.py
+- research/web-research-scout-v1/web_research_scout/cache.py
+- research/web-research-scout-v1/web_research_scout/collect.py
+- research/web-research-scout-v1/web_research_scout/extract.py
+- research/web-research-scout-v1/web_research_scout/mcp_server.py
+- research/web-research-scout-v1/web_research_scout/probe.py
+- research/web-research-scout-v1/web_research_scout/security.py

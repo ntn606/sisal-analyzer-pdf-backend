@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "minItems": 13,
+  "maxItems": 13,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "competition": {
+        "enum": [
+          "SA",
+          "SB",
+          "PL",
+          "PD",
+          "BL1",
+          "FL1",
+          "DED",
+          "PPL",
+          "ELC",
+          "BPL",
+          "CL",
+          "EL",
+          "ECL"
+        ]
+      },
+      "label": {
+        "type": "string",
+        "maxLength": 240
+      },
+      "source_id": {
+        "type": "string",
+        "maxLength": 240
+      },
+      "coverage": {
+        "enum": [
+          "verified",
+          "partial",
+          "not_verified"
+        ]
+      },
+      "access_observed": {
+        "enum": [
+          "not_tested",
+          "source_blocked",
+          "accessible"
+        ]
+      },
+      "football_data_prior_declared_free": {
+        "type": "boolean"
+      },
+      "real_web_claims_verified": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "required": [
+      "competition",
+      "label",
+      "source_id",
+      "coverage",
+      "access_observed",
+      "football_data_prior_declared_free",
+      "real_web_claims_verified"
+    ]
+  }
+}

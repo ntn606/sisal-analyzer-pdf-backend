@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "maxItems": 256,
+  "items": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "urn:sisal:web-scout:claim:1",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "team_id",
+      "event_key",
+      "category",
+      "claim_key",
+      "effective_at",
+      "value",
+      "description",
+      "source_id",
+      "url",
+      "published_at",
+      "publication_date",
+      "collected_at",
+      "fresh_until",
+      "origin",
+      "assertion",
+      "evidence_file",
+      "evidence_sha256"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]{1,80}$"
+      },
+      "team_id": {
+        "type": "string",
+        "pattern": "^local:team:[a-z0-9-]+$"
+      },
+      "event_key": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "prefixItems": [
+          {
+            "type": "string",
+            "pattern": "^[0-9]{1,20}$"
+          },
+          {
+            "type": "string",
+            "pattern": "^[0-9]{1,20}$"
+          },
+          {
+            "type": "string",
+            "format": "date"
+          }
+        ]
+      },
+      "category": {
+        "enum": [
+          "recent_results",
+          "standings",
+          "injury",
+          "suspension",
+          "availability",
+          "probable_lineup",
+          "official_lineup",
+          "schedule",
+          "news"
+        ]
+      },
+      "claim_key": {
+        "type": "string",
+        "pattern": "^[a-z0-9:-]{1,100}$"
+      },
+      "effective_at": {
+        "type": "string",
+        "format": "date"
+      },
+      "value": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "string",
+            "maxLength": 200
+          },
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000
+          },
+          {
+            "type": "array",
+            "maxItems": 22,
+            "items": {
+              "type": "string",
+              "maxLength": 80
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "player_id": {
+                "type": "string",
+                "maxLength": 80
+              },
+              "statement": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "availability": {
+                "enum": [
+                  "available",
+                  "unavailable",
+                  "uncertain"
+                ]
+              },
+              "position": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 100
+              },
+              "points": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 200
+              },
+              "match_ids": {
+                "type": "array",
+                "maxItems": 5,
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "lineup": {
+                "type": "array",
+                "maxItems": 11,
+                "items": {
+                  "type": "string",
+                  "maxLength": 80
+                }
+              }
+            }
+          }
+        ]
+      },
+      "description": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "maxLength": 240
+      },
+      "source_id": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]{1,50}$"
+      },
+      "url": {
+        "type": "string",
+        "maxLength": 2048,
+        "format": "uri"
+      },
+      "published_at": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date-time"
+      },
+      "publication_date": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date"
+      },
+      "collected_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "fresh_until": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "origin": {
+        "enum": [
+          "real_saved",
+          "synthetic"
+        ]
+      },
+      "assertion": {
+        "enum": [
+          "confirmed",
+          "reported",
+          "probable"
+        ]
+      },
+      "evidence_file": {
+        "type": "string",
+        "pattern": "^evidence/[a-z0-9-]+\\.json$"
+      },
+      "evidence_sha256": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    }
+  }
+}

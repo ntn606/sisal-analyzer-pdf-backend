@@ -1,0 +1,24 @@
+{
+  "id": "test-injury",
+  "team_id": "local:team:newcastle",
+  "event_key": [
+    "36411",
+    "1885",
+    "2026-10-12"
+  ],
+  "category": "injury",
+  "claim_key": "player:synthetic:101",
+  "effective_at": "2026-10-12",
+  "value": "unavailable",
+  "description": "Synthetic test availability statement, not an actual player injury",
+  "source_id": "newcastle",
+  "url": "https://www.newcastleunited.com/synthetic-test-news",
+  "published_at": "2026-10-11T20:00:00Z",
+  "publication_date": null,
+  "collected_at": "2026-10-11T21:00:00Z",
+  "fresh_until": "2026-10-12T00:00:00Z",
+  "origin": "synthetic",
+  "assertion": "confirmed",
+  "evidence_file": "evidence/test-injury.json",
+  "evidence_sha256": "7f770258098323c7ad39b722c12364311d22539c7a9a19112e9f837a2ec2aaae"
+}

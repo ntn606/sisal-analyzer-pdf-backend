@@ -1,0 +1,254 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "web-scout-identity.1"
+    },
+    "events": {
+      "type": "array",
+      "maxItems": 64,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "competition": {
+            "enum": [
+              "SA",
+              "SB",
+              "PL",
+              "PD",
+              "BL1",
+              "FL1",
+              "DED",
+              "PPL",
+              "ELC",
+              "BPL",
+              "CL",
+              "EL",
+              "ECL"
+            ]
+          },
+          "kickoff_utc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "teams": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "home": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "canonical_id": {
+                    "type": "string",
+                    "pattern": "^local:team:[a-z0-9-]+$"
+                  },
+                  "provider_ids": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "api_football": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "football_data": {
+                        "type": "integer",
+                        "minimum": 1
+                      }
+                    },
+                    "required": [
+                      "api_football",
+                      "football_data"
+                    ]
+                  },
+                  "display_name": {
+                    "type": "string",
+                    "maxLength": 100
+                  }
+                },
+                "required": [
+                  "canonical_id",
+                  "provider_ids",
+                  "display_name"
+                ]
+              },
+              "away": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "canonical_id": {
+                    "type": "string",
+                    "pattern": "^local:team:[a-z0-9-]+$"
+                  },
+                  "provider_ids": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "api_football": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "football_data": {
+                        "type": "integer",
+                        "minimum": 1
+                      }
+                    },
+                    "required": [
+                      "api_football",
+                      "football_data"
+                    ]
+                  },
+                  "display_name": {
+                    "type": "string",
+                    "maxLength": 100
+                  }
+                },
+                "required": [
+                  "canonical_id",
+                  "provider_ids",
+                  "display_name"
+                ]
+              }
+            },
+            "required": [
+              "home",
+              "away"
+            ]
+          },
+          "api_football_fixture_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "football_data_match_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "event_key": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "prefixItems": [
+              {
+                "type": "string",
+                "pattern": "^[0-9]{1,20}$"
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]{1,20}$"
+              },
+              {
+                "type": "string",
+                "format": "date"
+              }
+            ]
+          },
+          "local_timezone": {
+            "type": "string",
+            "enum": [
+              "Europe/Rome"
+            ]
+          },
+          "mapping_valid_until": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "identity_reference": {
+            "type": "string",
+            "pattern": "^history-v2:[a-z0-9-]+$"
+          },
+          "current_event_confirmation": {
+            "const": false
+          }
+        },
+        "required": [
+          "competition",
+          "kickoff_utc",
+          "teams",
+          "api_football_fixture_id",
+          "football_data_match_id",
+          "event_key",
+          "local_timezone",
+          "mapping_valid_until",
+          "identity_reference",
+          "current_event_confirmation"
+        ]
+      }
+    },
+    "references": {
+      "type": "array",
+      "maxItems": 64,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^history-v2:[a-z0-9-]+$"
+          },
+          "origin": {
+            "const": "prior_saved_identity_review_reference"
+          },
+          "reference_commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "reference_files": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "pattern": "^research/history-v2-mcp-diagnostic/cases/[a-z0-9-]+/[a-z_]+\\.json$"
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              },
+              "required": [
+                "path",
+                "sha256"
+              ]
+            }
+          },
+          "prior_status": {
+            "const": "diagnostic_available"
+          },
+          "prior_verified_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "new_verification": {
+            "const": false
+          },
+          "identity_projection_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "id",
+          "origin",
+          "reference_commit",
+          "reference_files",
+          "prior_status",
+          "prior_verified_at",
+          "new_verification",
+          "identity_projection_sha256"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "events",
+    "references"
+  ]
+}

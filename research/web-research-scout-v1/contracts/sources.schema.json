@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "web-scout-sources.1"
+    },
+    "sources": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 64,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]{1,50}$"
+          },
+          "hosts": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "items": {
+              "type": "string",
+              "maxLength": 253
+            }
+          },
+          "source_type": {
+            "enum": [
+              "official_competition",
+              "official_club",
+              "official_federation",
+              "public_press",
+              "documented_statistics"
+            ]
+          },
+          "resources": {
+            "type": "object",
+            "minProperties": 1,
+            "maxProperties": 32,
+            "additionalProperties": {
+              "type": "string",
+              "format": "uri",
+              "maxLength": 2048
+            }
+          },
+          "competitions": {
+            "type": "array",
+            "maxItems": 13,
+            "items": {
+              "enum": [
+                "SA",
+                "SB",
+                "PL",
+                "PD",
+                "BL1",
+                "FL1",
+                "DED",
+                "PPL",
+                "ELC",
+                "BPL",
+                "CL",
+                "EL",
+                "ECL"
+              ]
+            }
+          },
+          "team_ids": {
+            "type": "array",
+            "maxItems": 32,
+            "items": {
+              "type": "string",
+              "pattern": "^local:team:[a-z0-9-]+$"
+            }
+          },
+          "review_state": {
+            "enum": [
+              "unverified",
+              "approved",
+              "rejected"
+            ]
+          },
+          "metadata_retention_allowed": {
+            "type": "boolean"
+          },
+          "minimum_interval_seconds": {
+            "type": "integer",
+            "minimum": 5,
+            "maximum": 86400
+          },
+          "terms_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri",
+            "maxLength": 2048
+          },
+          "license": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 240
+          },
+          "attribution": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "retention_rule": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "robots_review": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "allowed_resources": {
+                "type": "array",
+                "maxItems": 32,
+                "items": {
+                  "type": "string",
+                  "maxLength": 80
+                }
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "valid_until": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "crawl_delay_seconds": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 86400
+              }
+            },
+            "required": [
+              "allowed_resources",
+              "reviewed_at",
+              "valid_until",
+              "crawl_delay_seconds"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "hosts",
+          "source_type",
+          "resources",
+          "competitions",
+          "team_ids",
+          "review_state",
+          "metadata_retention_allowed",
+          "minimum_interval_seconds",
+          "terms_url",
+          "license",
+          "attribution",
+          "retention_rule"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "sources"
+  ]
+}

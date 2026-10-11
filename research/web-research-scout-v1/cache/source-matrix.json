@@ -1,0 +1,119 @@
+[
+  {
+    "competition": "SA",
+    "label": "Serie A",
+    "source_id": "serie-a",
+    "coverage": "not_verified",
+    "access_observed": "not_tested",
+    "football_data_prior_declared_free": true,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "SB",
+    "label": "Serie B",
+    "source_id": "serie-b",
+    "coverage": "not_verified",
+    "access_observed": "not_tested",
+    "football_data_prior_declared_free": false,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "PL",
+    "label": "Premier League",
+    "source_id": "premierleague",
+    "coverage": "not_verified",
+    "access_observed": "source_blocked",
+    "football_data_prior_declared_free": true,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "PD",
+    "label": "LaLiga",
+    "source_id": "laliga",
+    "coverage": "not_verified",
+    "access_observed": "source_blocked",
+    "football_data_prior_declared_free": true,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "BL1",
+    "label": "Bundesliga",
+    "source_id": "bundesliga",
+    "coverage": "not_verified",
+    "access_observed": "not_tested",
+    "football_data_prior_declared_free": true,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "FL1",
+    "label": "Ligue 1",
+    "source_id": "ligue1",
+    "coverage": "not_verified",
+    "access_observed": "not_tested",
+    "football_data_prior_declared_free": true,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "DED",
+    "label": "Eredivisie",
+    "source_id": "eredivisie",
+    "coverage": "not_verified",
+    "access_observed": "not_tested",
+    "football_data_prior_declared_free": true,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "PPL",
+    "label": "Primeira Liga",
+    "source_id": "primeira",
+    "coverage": "not_verified",
+    "access_observed": "not_tested",
+    "football_data_prior_declared_free": true,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "ELC",
+    "label": "EFL Championship",
+    "source_id": "efl",
+    "coverage": "not_verified",
+    "access_observed": "not_tested",
+    "football_data_prior_declared_free": true,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "BPL",
+    "label": "Belgian Pro League",
+    "source_id": "belgium",
+    "coverage": "not_verified",
+    "access_observed": "not_tested",
+    "football_data_prior_declared_free": false,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "CL",
+    "label": "UEFA Champions League",
+    "source_id": "uefa",
+    "coverage": "not_verified",
+    "access_observed": "source_blocked",
+    "football_data_prior_declared_free": true,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "EL",
+    "label": "UEFA Europa League",
+    "source_id": "uefa",
+    "coverage": "not_verified",
+    "access_observed": "source_blocked",
+    "football_data_prior_declared_free": false,
+    "real_web_claims_verified": 0
+  },
+  {
+    "competition": "ECL",
+    "label": "UEFA Conference League",
+    "source_id": "uefa",
+    "coverage": "not_verified",
+    "access_observed": "source_blocked",
+    "football_data_prior_declared_free": false,
+    "real_web_claims_verified": 0
+  }
+]

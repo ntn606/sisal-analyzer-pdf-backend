@@ -1,0 +1,337 @@
+{
+  "schema_version": "web-scout-sources.1",
+  "sources": {
+    "serie-a": {
+      "id": "serie-a",
+      "hosts": [
+        "www.legaseriea.it"
+      ],
+      "source_type": "official_competition",
+      "resources": {
+        "robots": "https://www.legaseriea.it/robots.txt",
+        "homepage": "https://www.legaseriea.it/"
+      },
+      "competitions": [
+        "SA"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "serie-b": {
+      "id": "serie-b",
+      "hosts": [
+        "www.legab.it"
+      ],
+      "source_type": "official_competition",
+      "resources": {
+        "robots": "https://www.legab.it/robots.txt",
+        "homepage": "https://www.legab.it/"
+      },
+      "competitions": [
+        "SB"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "premierleague": {
+      "id": "premierleague",
+      "hosts": [
+        "www.premierleague.com"
+      ],
+      "source_type": "official_competition",
+      "resources": {
+        "robots": "https://www.premierleague.com/robots.txt",
+        "homepage": "https://www.premierleague.com/"
+      },
+      "competitions": [
+        "PL"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "laliga": {
+      "id": "laliga",
+      "hosts": [
+        "www.laliga.com"
+      ],
+      "source_type": "official_competition",
+      "resources": {
+        "robots": "https://www.laliga.com/robots.txt",
+        "homepage": "https://www.laliga.com/"
+      },
+      "competitions": [
+        "PD"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "bundesliga": {
+      "id": "bundesliga",
+      "hosts": [
+        "www.bundesliga.com"
+      ],
+      "source_type": "official_competition",
+      "resources": {
+        "robots": "https://www.bundesliga.com/robots.txt",
+        "homepage": "https://www.bundesliga.com/"
+      },
+      "competitions": [
+        "BL1"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "ligue1": {
+      "id": "ligue1",
+      "hosts": [
+        "www.ligue1.com"
+      ],
+      "source_type": "official_competition",
+      "resources": {
+        "robots": "https://www.ligue1.com/robots.txt",
+        "homepage": "https://www.ligue1.com/"
+      },
+      "competitions": [
+        "FL1"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "eredivisie": {
+      "id": "eredivisie",
+      "hosts": [
+        "eredivisie.nl"
+      ],
+      "source_type": "official_competition",
+      "resources": {
+        "robots": "https://eredivisie.nl/robots.txt",
+        "homepage": "https://eredivisie.nl/"
+      },
+      "competitions": [
+        "DED"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "primeira": {
+      "id": "primeira",
+      "hosts": [
+        "www.ligaportugal.pt"
+      ],
+      "source_type": "official_competition",
+      "resources": {
+        "robots": "https://www.ligaportugal.pt/robots.txt",
+        "homepage": "https://www.ligaportugal.pt/"
+      },
+      "competitions": [
+        "PPL"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "efl": {
+      "id": "efl",
+      "hosts": [
+        "www.efl.com"
+      ],
+      "source_type": "official_competition",
+      "resources": {
+        "robots": "https://www.efl.com/robots.txt",
+        "homepage": "https://www.efl.com/"
+      },
+      "competitions": [
+        "ELC"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "belgium": {
+      "id": "belgium",
+      "hosts": [
+        "www.proleague.be"
+      ],
+      "source_type": "official_competition",
+      "resources": {
+        "robots": "https://www.proleague.be/robots.txt",
+        "homepage": "https://www.proleague.be/"
+      },
+      "competitions": [
+        "BPL"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "uefa": {
+      "id": "uefa",
+      "hosts": [
+        "www.uefa.com"
+      ],
+      "source_type": "official_federation",
+      "resources": {
+        "robots": "https://www.uefa.com/robots.txt",
+        "homepage": "https://www.uefa.com/"
+      },
+      "competitions": [
+        "CL",
+        "EL",
+        "ECL"
+      ],
+      "team_ids": [],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "coventry": {
+      "id": "coventry",
+      "hosts": [
+        "www.ccfc.co.uk"
+      ],
+      "source_type": "official_club",
+      "resources": {
+        "robots": "https://www.ccfc.co.uk/robots.txt",
+        "homepage": "https://www.ccfc.co.uk/"
+      },
+      "competitions": [],
+      "team_ids": [
+        "local:team:coventry"
+      ],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "newcastle": {
+      "id": "newcastle",
+      "hosts": [
+        "www.newcastleunited.com"
+      ],
+      "source_type": "official_club",
+      "resources": {
+        "robots": "https://www.newcastleunited.com/robots.txt",
+        "homepage": "https://www.newcastleunited.com/"
+      },
+      "competitions": [],
+      "team_ids": [
+        "local:team:newcastle"
+      ],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "levante": {
+      "id": "levante",
+      "hosts": [
+        "www.levanteud.com"
+      ],
+      "source_type": "official_club",
+      "resources": {
+        "robots": "https://www.levanteud.com/robots.txt",
+        "homepage": "https://www.levanteud.com/"
+      },
+      "competitions": [],
+      "team_ids": [
+        "local:team:levante"
+      ],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    },
+    "sevilla": {
+      "id": "sevilla",
+      "hosts": [
+        "sevillafc.es"
+      ],
+      "source_type": "official_club",
+      "resources": {
+        "robots": "https://sevillafc.es/robots.txt",
+        "homepage": "https://sevillafc.es/"
+      },
+      "competitions": [],
+      "team_ids": [
+        "local:team:sevilla"
+      ],
+      "review_state": "unverified",
+      "metadata_retention_allowed": false,
+      "minimum_interval_seconds": 5,
+      "terms_url": null,
+      "license": null,
+      "attribution": "source URL and acquisition timestamp required; legal conditions not yet verified",
+      "retention_rule": "No article body; metadata collection disabled until explicit source/terms review"
+    }
+  }
+}

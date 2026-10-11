@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "maxItems": 128,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "url": {
+        "type": "string",
+        "format": "uri",
+        "maxLength": 2048
+      },
+      "collected_at": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date-time"
+      },
+      "origin": {
+        "enum": [
+          "real_access_attempt",
+          "real_saved",
+          "unverified"
+        ]
+      },
+      "status": {
+        "enum": [
+          "source_blocked",
+          "reported_unconfirmed"
+        ]
+      },
+      "reason": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      },
+      "http_status": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "minimum": 100,
+        "maximum": 599
+      },
+      "proxy_tunnel_status": {
+        "enum": [
+          403,
+          null
+        ]
+      },
+      "content_retrieved": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "url",
+      "collected_at",
+      "origin",
+      "status",
+      "reason",
+      "http_status",
+      "proxy_tunnel_status",
+      "content_retrieved"
+    ]
+  }
+}

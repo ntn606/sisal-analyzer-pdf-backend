@@ -1,0 +1,33 @@
+name: Web Research Scout V1 offline
+on:
+  push:
+    branches: ['research/web-research-scout-v1-*']
+    paths:
+      - 'research/web-research-scout-v1/**'
+      - '.github/workflows/web-research-scout-v1.yml'
+  pull_request:
+    paths:
+      - 'research/web-research-scout-v1/**'
+      - '.github/workflows/web-research-scout-v1.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      API_FOOTBALL_KEY: ''
+      FOOTBALL_DATA_TOKEN: ''
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Install pinned test dependencies
+        run: python -m pip install --disable-pip-version-check -r research/web-research-scout-v1/requirements-ci.lock
+      - name: Test prototype, local schemas and unchanged backend offline
+        working-directory: research/web-research-scout-v1
+        run: python scripts/run_offline.py --include-backend-regression

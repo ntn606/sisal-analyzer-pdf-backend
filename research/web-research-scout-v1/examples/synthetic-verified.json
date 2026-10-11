@@ -1,0 +1,255 @@
+{
+  "schema_version": "football-web-research-v1.1",
+  "diagnostic_only": true,
+  "ready_for_analysis": false,
+  "ready_for_quant": false,
+  "statistics_usable_in_production": false,
+  "execution_mode": "synthetic_offline_fixture",
+  "status": "diagnostic_available",
+  "requested_event": [
+    "36411",
+    "1885",
+    "2026-10-12"
+  ],
+  "verified_at": "2026-10-11T22:00:00+00:00",
+  "identity": {
+    "canonical_mapping_reference_verified": true,
+    "current_event_verified": false,
+    "basis": "prior_saved_identity_review_not_new_live_validation",
+    "reference": "history-v2:coventry-newcastle",
+    "reference_commit": "68a704878a42c58920ce9294798406a1eacddbcb",
+    "competition": "PL",
+    "kickoff_utc": "2026-10-12T19:00:00+00:00",
+    "teams": {
+      "away": {
+        "canonical_id": "local:team:newcastle",
+        "display_name": "Newcastle",
+        "provider_ids": {
+          "api_football": 34,
+          "football_data": 67
+        }
+      },
+      "home": {
+        "canonical_id": "local:team:coventry",
+        "display_name": "Coventry",
+        "provider_ids": {
+          "api_football": 1346,
+          "football_data": 1076
+        }
+      }
+    },
+    "api_football_fixture_id": 1557420,
+    "football_data_match_id": 560597
+  },
+  "teams": {
+    "away": {
+      "canonical_id": "local:team:newcastle",
+      "provider_ids": {
+        "api_football": 34,
+        "football_data": 67
+      },
+      "categories": {
+        "recent_results": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "standings": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "injury": {
+          "status": "verified",
+          "claims": [
+            {
+              "assertion": "confirmed",
+              "category": "injury",
+              "claim_key": "player:synthetic:101",
+              "collected_at": "2026-10-11T21:00:00Z",
+              "description": "Synthetic test availability statement, not an actual player injury",
+              "effective_at": "2026-10-12",
+              "event_key": [
+                "36411",
+                "1885",
+                "2026-10-12"
+              ],
+              "evidence_file": "evidence/test-injury.json",
+              "evidence_sha256": "7f770258098323c7ad39b722c12364311d22539c7a9a19112e9f837a2ec2aaae",
+              "fresh_until": "2026-10-12T00:00:00Z",
+              "id": "test-injury",
+              "origin": "synthetic",
+              "publication_date": null,
+              "published_at": "2026-10-11T20:00:00Z",
+              "source_id": "newcastle",
+              "team_id": "local:team:newcastle",
+              "url": "https://www.newcastleunited.com/synthetic-test-news",
+              "value": "unavailable",
+              "status": "verified",
+              "eligible_pre_match": true,
+              "reasons": [],
+              "untrusted_source_content": true,
+              "source_type": "official_club"
+            }
+          ],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "suspension": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "availability": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "probable_lineup": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "official_lineup": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "schedule": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "news": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        }
+      },
+      "source_access_observations": [
+        {
+          "url": "https://www.premierleague.com/robots.txt",
+          "collected_at": "2026-10-11T21:48:51.776510+00:00",
+          "origin": "real_access_attempt",
+          "status": "source_blocked",
+          "reason": "proxy_tunnel_denied_403",
+          "http_status": null,
+          "proxy_tunnel_status": 403,
+          "content_retrieved": false
+        },
+        {
+          "url": "https://www.newcastleunited.com/robots.txt",
+          "collected_at": "2026-10-11T21:48:51.794333+00:00",
+          "origin": "real_access_attempt",
+          "status": "source_blocked",
+          "reason": "proxy_tunnel_denied_403",
+          "http_status": null,
+          "proxy_tunnel_status": 403,
+          "content_retrieved": false
+        }
+      ]
+    },
+    "home": {
+      "canonical_id": "local:team:coventry",
+      "provider_ids": {
+        "api_football": 1346,
+        "football_data": 1076
+      },
+      "categories": {
+        "recent_results": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "standings": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "injury": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "suspension": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "availability": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "probable_lineup": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "official_lineup": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "schedule": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        },
+        "news": {
+          "status": "source_blocked",
+          "claims": [],
+          "search_scope": "saved_cache_only",
+          "absence_is_not_proof_of_no_injury_or_suspension": true
+        }
+      },
+      "source_access_observations": [
+        {
+          "url": "https://www.premierleague.com/robots.txt",
+          "collected_at": "2026-10-11T21:48:51.776510+00:00",
+          "origin": "real_access_attempt",
+          "status": "source_blocked",
+          "reason": "proxy_tunnel_denied_403",
+          "http_status": null,
+          "proxy_tunnel_status": 403,
+          "content_retrieved": false
+        },
+        {
+          "url": "https://www.ccfc.co.uk/robots.txt",
+          "collected_at": "2026-10-11T21:48:51.790783+00:00",
+          "origin": "real_access_attempt",
+          "status": "source_blocked",
+          "reason": "proxy_tunnel_denied_403",
+          "http_status": null,
+          "proxy_tunnel_status": 403,
+          "content_retrieved": false
+        }
+      ]
+    }
+  },
+  "blockers": [],
+  "provenance": {
+    "new_web_requests": 0,
+    "cache_revision": "5355942f926f4a0114033a70d191762600b28e365e78acd616613334ee9a601a",
+    "real_web_claims_verified": 0,
+    "untrusted_content_is_data": true,
+    "current_event_revalidated": false,
+    "upstream_statistics_imported": false
+  }
+}
