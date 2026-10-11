@@ -1,0 +1,449 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "teams",
+    "competitions",
+    "bindings",
+    "match_links",
+    "availability",
+    "evidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "history-identity-adapter.1"
+    },
+    "teams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "canonical_id",
+          "provider_ids",
+          "profile",
+          "aliases",
+          "validity",
+          "verification"
+        ],
+        "properties": {
+          "canonical_id": {
+            "type": "string",
+            "pattern": "^local:team:[a-z0-9-]{1,64}$"
+          },
+          "provider_ids": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "api_football",
+              "football_data"
+            ],
+            "properties": {
+              "api_football": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "football_data": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          "profile": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "country",
+              "gender",
+              "squad_kind",
+              "age_group"
+            ],
+            "properties": {
+              "country": {
+                "type": "string",
+                "pattern": "^[A-Z]{2}$"
+              },
+              "gender": {
+                "enum": [
+                  "men",
+                  "women"
+                ]
+              },
+              "squad_kind": {
+                "enum": [
+                  "first",
+                  "reserve",
+                  "youth"
+                ]
+              },
+              "age_group": {
+                "enum": [
+                  "senior",
+                  "U23",
+                  "U21",
+                  "U19",
+                  "U18",
+                  "U17"
+                ]
+              }
+            }
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "provider",
+                "label",
+                "valid_from",
+                "valid_until"
+              ],
+              "properties": {
+                "provider": {
+                  "enum": [
+                    "sisal",
+                    "api_football",
+                    "football_data"
+                  ]
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 160
+                },
+                "valid_from": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "valid_until": {
+                  "type": "string",
+                  "format": "date"
+                }
+              }
+            }
+          },
+          "validity": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "until"
+            ],
+            "properties": {
+              "from": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "until": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "verification": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "state",
+              "reviewed_at",
+              "evidence_id"
+            ],
+            "properties": {
+              "state": {
+                "enum": [
+                  "verified",
+                  "candidate",
+                  "rejected"
+                ]
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "evidence_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "competitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "canonical_id",
+          "api_football_id",
+          "football_data_id",
+          "football_data_code",
+          "validity",
+          "verification"
+        ],
+        "properties": {
+          "canonical_id": {
+            "type": "string",
+            "pattern": "^local:competition:[A-Z0-9-]{1,40}$"
+          },
+          "api_football_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "football_data_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "football_data_code": {
+            "enum": [
+              "SA",
+              "PL",
+              "PD",
+              "BL1",
+              "FL1",
+              "DED",
+              "PPL",
+              "ELC",
+              "CL"
+            ]
+          },
+          "validity": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "until"
+            ],
+            "properties": {
+              "from": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "until": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "verification": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "state",
+              "reviewed_at",
+              "evidence_id"
+            ],
+            "properties": {
+              "state": {
+                "enum": [
+                  "verified",
+                  "candidate",
+                  "rejected"
+                ]
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "evidence_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "palinsesto",
+          "avvenimento",
+          "api_football_fixture_id",
+          "football_data_match_id",
+          "home_canonical_id",
+          "away_canonical_id",
+          "competition_canonical_id",
+          "validity",
+          "verification"
+        ],
+        "properties": {
+          "palinsesto": {
+            "type": "string",
+            "pattern": "^[0-9]{1,20}$"
+          },
+          "avvenimento": {
+            "type": "string",
+            "pattern": "^[0-9]{1,20}$"
+          },
+          "api_football_fixture_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "football_data_match_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "home_canonical_id": {
+            "type": "string",
+            "pattern": "^local:team:[a-z0-9-]{1,64}$"
+          },
+          "away_canonical_id": {
+            "type": "string",
+            "pattern": "^local:team:[a-z0-9-]{1,64}$"
+          },
+          "competition_canonical_id": {
+            "type": "string",
+            "pattern": "^local:competition:[A-Z0-9-]{1,40}$"
+          },
+          "validity": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "until"
+            ],
+            "properties": {
+              "from": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "until": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "verification": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "state",
+              "reviewed_at",
+              "evidence_id"
+            ],
+            "properties": {
+              "state": {
+                "enum": [
+                  "verified",
+                  "candidate",
+                  "rejected"
+                ]
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "evidence_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "match_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "canonical_match_id",
+          "api_football_fixture_id",
+          "football_data_match_id",
+          "validity",
+          "verification"
+        ],
+        "properties": {
+          "canonical_match_id": {
+            "type": "string",
+            "pattern": "^local:match:[a-z0-9-]{1,64}$"
+          },
+          "api_football_fixture_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "football_data_match_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "validity": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "until"
+            ],
+            "properties": {
+              "from": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "until": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "verification": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "state",
+              "reviewed_at",
+              "evidence_id"
+            ],
+            "properties": {
+              "state": {
+                "enum": [
+                  "verified",
+                  "candidate",
+                  "rejected"
+                ]
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "evidence_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "availability": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "file",
+          "sha256"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sisal:history-identity-adapter:registry:1"
+}

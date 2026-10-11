@@ -1,0 +1,80 @@
+{
+  "suite": "backend",
+  "tests_run": 13,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "provider_requests": 0,
+  "external_socket_attempts": 0,
+  "external_dns_attempts": 0,
+  "loopback_socket_connections": 0,
+  "guarded_child_python_processes": 0,
+  "cases": [
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_disallowed_endpoint_precedes_credentials_and_network",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_evidence_propagates_diagnostic_without_bypassing_scout",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_fixture_probe_propagates_safe_diagnostic",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_history_probe_propagates_free_plan_error_for_either_team",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_history_probe_success_is_unchanged",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_http_errors_do_not_expose_body_or_headers",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_internal_errors_keep_existing_blocker_shape",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_invalid_response_and_pagination_stay_blocked",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_missing_key_and_local_budget_never_call_provider",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_provider_errors_are_classified_and_sanitized",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_provider_status_propagates_safe_diagnostic",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_success_is_cached_but_errors_are_not",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_transport_and_json_exceptions_are_sanitized",
+      "data_origin": "mocked_provider_errors_no_live_calls",
+      "outcome": "passed"
+    }
+  ]
+}

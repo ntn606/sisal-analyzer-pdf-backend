@@ -2,14 +2,16 @@
 from pathlib import Path
 from datetime import datetime,timezone
 import hashlib,json,re,ssl,urllib.request
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from history_v2_probe.publication_safety import validate_pdf_excerpt
 PAGE='https://www.sisal.it/scommesse-matchpoint/foglio-quote'
 PDF_URLS=[('https://landing.sisal.it/volantini/Scommesse_Sport/Quote/'+name).encode() for name in ('calcio%20base%20per%20data.pdf','calcio%20base%20per%20manifestazione.pdf','calcio%20base%20per%20manifestazione%20TOP.pdf')]
 def retain_anchors(raw):
  anchors=[m.group() for m in re.finditer(rb'<a\b[^>]*>.*?</a\s*>',raw,re.I|re.S) if any(url in m.group() for url in PDF_URLS)]
  if len(anchors)!=3 or not all(any(url in anchor for anchor in anchors) for url in PDF_URLS):raise ValueError('official_pdf_links_missing_or_ambiguous')
  result=b'\n'.join(anchors)+b'\n'
- # Restrict retained fragments to document links; no endpoint query credentials.
- if b'code=' in result.lower() or b'azure' in result.lower():raise ValueError('unexpected_sensitive_html_fragment')
+ validate_pdf_excerpt(result)
  return result
 class NoRedirect(urllib.request.HTTPRedirectHandler):
  def redirect_request(self,*args,**kwargs):return None

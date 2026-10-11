@@ -1,0 +1,6628 @@
+{
+  "url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+  "competition": "PD",
+  "requested_season": 2026,
+  "schema_version": 2,
+  "cutoff_utc": "2026-10-10T17:58:48.362798+00:00",
+  "requested_at_utc": "2026-10-10T17:59:00.779437+00:00",
+  "http_status": 200,
+  "quota": {
+    "counter_reset_seconds": 48
+  },
+  "state": "retrieved",
+  "raw_match_count": 380,
+  "rejected": {
+    "non_final_or_wrong_competition": 309
+  },
+  "records": [
+    {
+      "match_id": 564634,
+      "utc_date": "2026-08-15T17:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 0
+    },
+    {
+      "match_id": 564633,
+      "utc_date": "2026-08-15T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 1
+    },
+    {
+      "match_id": 564629,
+      "utc_date": "2026-08-16T15:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 2
+    },
+    {
+      "match_id": 564632,
+      "utc_date": "2026-08-16T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 3
+    },
+    {
+      "match_id": 564635,
+      "utc_date": "2026-08-17T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 4
+    },
+    {
+      "match_id": 564628,
+      "utc_date": "2026-08-19T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 5
+    },
+    {
+      "match_id": 564638,
+      "utc_date": "2026-08-20T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 6
+    },
+    {
+      "match_id": 564647,
+      "utc_date": "2026-08-21T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 7
+    },
+    {
+      "match_id": 564641,
+      "utc_date": "2026-08-22T15:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 8
+    },
+    {
+      "match_id": 564643,
+      "utc_date": "2026-08-22T17:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 9
+    },
+    {
+      "match_id": 564645,
+      "utc_date": "2026-08-22T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 10
+    },
+    {
+      "match_id": 564646,
+      "utc_date": "2026-08-23T15:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 11
+    },
+    {
+      "match_id": 564644,
+      "utc_date": "2026-08-23T17:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 12
+    },
+    {
+      "match_id": 564642,
+      "utc_date": "2026-08-23T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 5
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 13
+    },
+    {
+      "match_id": 564639,
+      "utc_date": "2026-08-24T17:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 14
+    },
+    {
+      "match_id": 564640,
+      "utc_date": "2026-08-24T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 15
+    },
+    {
+      "match_id": 564637,
+      "utc_date": "2026-08-25T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 16
+    },
+    {
+      "match_id": 564631,
+      "utc_date": "2026-08-26T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 17
+    },
+    {
+      "match_id": 564636,
+      "utc_date": "2026-08-27T18:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 18
+    },
+    {
+      "match_id": 564630,
+      "utc_date": "2026-08-27T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 19
+    },
+    {
+      "match_id": 564654,
+      "utc_date": "2026-08-28T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 20
+    },
+    {
+      "match_id": 564648,
+      "utc_date": "2026-08-28T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 21
+    },
+    {
+      "match_id": 564655,
+      "utc_date": "2026-08-29T15:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 22
+    },
+    {
+      "match_id": 564653,
+      "utc_date": "2026-08-29T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 23
+    },
+    {
+      "match_id": 564649,
+      "utc_date": "2026-08-29T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 24
+    },
+    {
+      "match_id": 564656,
+      "utc_date": "2026-08-30T15:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 25
+    },
+    {
+      "match_id": 564651,
+      "utc_date": "2026-08-30T17:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 26
+    },
+    {
+      "match_id": 564652,
+      "utc_date": "2026-08-30T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 27
+    },
+    {
+      "match_id": 564657,
+      "utc_date": "2026-08-31T17:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 28
+    },
+    {
+      "match_id": 564650,
+      "utc_date": "2026-08-31T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 29
+    },
+    {
+      "match_id": 564682,
+      "utc_date": "2026-09-03T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 30
+    },
+    {
+      "match_id": 564667,
+      "utc_date": "2026-09-04T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 31
+    },
+    {
+      "match_id": 564663,
+      "utc_date": "2026-09-05T14:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 32
+    },
+    {
+      "match_id": 564660,
+      "utc_date": "2026-09-05T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 33
+    },
+    {
+      "match_id": 564662,
+      "utc_date": "2026-09-05T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 34
+    },
+    {
+      "match_id": 564659,
+      "utc_date": "2026-09-06T14:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 5
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 35
+    },
+    {
+      "match_id": 564664,
+      "utc_date": "2026-09-06T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 36
+    },
+    {
+      "match_id": 564666,
+      "utc_date": "2026-09-06T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 37
+    },
+    {
+      "match_id": 564661,
+      "utc_date": "2026-09-06T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 38
+    },
+    {
+      "match_id": 564665,
+      "utc_date": "2026-09-07T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 39
+    },
+    {
+      "match_id": 564658,
+      "utc_date": "2026-09-07T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 40
+    },
+    {
+      "match_id": 564669,
+      "utc_date": "2026-09-11T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 41
+    },
+    {
+      "match_id": 564670,
+      "utc_date": "2026-09-12T12:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 42
+    },
+    {
+      "match_id": 564673,
+      "utc_date": "2026-09-12T14:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 43
+    },
+    {
+      "match_id": 564676,
+      "utc_date": "2026-09-12T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 44
+    },
+    {
+      "match_id": 564677,
+      "utc_date": "2026-09-12T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 45
+    },
+    {
+      "match_id": 564672,
+      "utc_date": "2026-09-13T12:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 46
+    },
+    {
+      "match_id": 564675,
+      "utc_date": "2026-09-13T14:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 47
+    },
+    {
+      "match_id": 564668,
+      "utc_date": "2026-09-13T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 48
+    },
+    {
+      "match_id": 564674,
+      "utc_date": "2026-09-13T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 49
+    },
+    {
+      "match_id": 564671,
+      "utc_date": "2026-09-14T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 50
+    },
+    {
+      "match_id": 564678,
+      "utc_date": "2026-09-15T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 51
+    },
+    {
+      "match_id": 564680,
+      "utc_date": "2026-09-15T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 52
+    },
+    {
+      "match_id": 564681,
+      "utc_date": "2026-09-15T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 53
+    },
+    {
+      "match_id": 564679,
+      "utc_date": "2026-09-16T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 54
+    },
+    {
+      "match_id": 564684,
+      "utc_date": "2026-09-16T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 55
+    },
+    {
+      "match_id": 564687,
+      "utc_date": "2026-09-16T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "score": {
+        "fullTime": {
+          "home": 7,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 56
+    },
+    {
+      "match_id": 564686,
+      "utc_date": "2026-09-17T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 57
+    },
+    {
+      "match_id": 564683,
+      "utc_date": "2026-09-17T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 58
+    },
+    {
+      "match_id": 564692,
+      "utc_date": "2026-09-18T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 59
+    },
+    {
+      "match_id": 564693,
+      "utc_date": "2026-09-19T12:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 60
+    },
+    {
+      "match_id": 564691,
+      "utc_date": "2026-09-19T14:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 61
+    },
+    {
+      "match_id": 564694,
+      "utc_date": "2026-09-19T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 62
+    },
+    {
+      "match_id": 564690,
+      "utc_date": "2026-09-19T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 63
+    },
+    {
+      "match_id": 564697,
+      "utc_date": "2026-09-20T12:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 64
+    },
+    {
+      "match_id": 564688,
+      "utc_date": "2026-09-20T14:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 65
+    },
+    {
+      "match_id": 564695,
+      "utc_date": "2026-09-20T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 66
+    },
+    {
+      "match_id": 564696,
+      "utc_date": "2026-09-20T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 67
+    },
+    {
+      "match_id": 564689,
+      "utc_date": "2026-09-20T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 68
+    },
+    {
+      "match_id": 564706,
+      "utc_date": "2026-10-09T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 8,
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 69
+    },
+    {
+      "match_id": 564699,
+      "utc_date": "2026-10-10T14:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PD",
+      "competition_id": 2014,
+      "season_id": 2518,
+      "season_start": "2026-08-16",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 8,
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T16:20:19Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+      "response_record_index": 71
+    }
+  ],
+  "status_counts": {
+    "FINISHED": 71,
+    "CANCELLED": 1,
+    "IN_PLAY": 1,
+    "TIMED": 37,
+    "SCHEDULED": 270
+  },
+  "nonfinal_records": [
+    {
+      "match_id": 564698,
+      "utc_date": "2026-10-10T12:00:00+00:00",
+      "status": "CANCELLED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564700,
+      "utc_date": "2026-10-10T16:30:00+00:00",
+      "status": "IN_PLAY",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564702,
+      "utc_date": "2026-10-10T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564703,
+      "utc_date": "2026-10-11T12:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564707,
+      "utc_date": "2026-10-11T14:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564701,
+      "utc_date": "2026-10-11T16:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564705,
+      "utc_date": "2026-10-11T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564704,
+      "utc_date": "2026-10-12T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564716,
+      "utc_date": "2026-10-16T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564710,
+      "utc_date": "2026-10-17T12:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564708,
+      "utc_date": "2026-10-17T14:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564713,
+      "utc_date": "2026-10-17T16:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564711,
+      "utc_date": "2026-10-17T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564715,
+      "utc_date": "2026-10-18T12:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564712,
+      "utc_date": "2026-10-18T14:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564714,
+      "utc_date": "2026-10-18T16:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564709,
+      "utc_date": "2026-10-18T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564717,
+      "utc_date": "2026-10-19T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564685,
+      "utc_date": "2026-10-21T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564719,
+      "utc_date": "2026-10-23T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564718,
+      "utc_date": "2026-10-24T12:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564727,
+      "utc_date": "2026-10-24T14:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564722,
+      "utc_date": "2026-10-24T16:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564724,
+      "utc_date": "2026-10-24T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564720,
+      "utc_date": "2026-10-25T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564725,
+      "utc_date": "2026-10-25T15:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564726,
+      "utc_date": "2026-10-25T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564723,
+      "utc_date": "2026-10-25T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564721,
+      "utc_date": "2026-10-26T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564737,
+      "utc_date": "2026-10-30T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564730,
+      "utc_date": "2026-10-31T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564735,
+      "utc_date": "2026-10-31T15:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564736,
+      "utc_date": "2026-10-31T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564732,
+      "utc_date": "2026-10-31T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564733,
+      "utc_date": "2026-11-01T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564734,
+      "utc_date": "2026-11-01T15:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564728,
+      "utc_date": "2026-11-01T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564729,
+      "utc_date": "2026-11-01T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564731,
+      "utc_date": "2026-11-02T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564738,
+      "utc_date": "2026-11-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564739,
+      "utc_date": "2026-11-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564740,
+      "utc_date": "2026-11-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564741,
+      "utc_date": "2026-11-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564742,
+      "utc_date": "2026-11-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564743,
+      "utc_date": "2026-11-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564744,
+      "utc_date": "2026-11-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564745,
+      "utc_date": "2026-11-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564746,
+      "utc_date": "2026-11-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564747,
+      "utc_date": "2026-11-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564748,
+      "utc_date": "2026-11-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564749,
+      "utc_date": "2026-11-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564750,
+      "utc_date": "2026-11-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564751,
+      "utc_date": "2026-11-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564752,
+      "utc_date": "2026-11-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564753,
+      "utc_date": "2026-11-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564754,
+      "utc_date": "2026-11-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564755,
+      "utc_date": "2026-11-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564756,
+      "utc_date": "2026-11-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564757,
+      "utc_date": "2026-11-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564758,
+      "utc_date": "2026-11-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564759,
+      "utc_date": "2026-11-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564760,
+      "utc_date": "2026-11-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564761,
+      "utc_date": "2026-11-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564762,
+      "utc_date": "2026-11-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564763,
+      "utc_date": "2026-11-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564764,
+      "utc_date": "2026-11-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564765,
+      "utc_date": "2026-11-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564766,
+      "utc_date": "2026-11-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564767,
+      "utc_date": "2026-11-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564768,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564769,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564770,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564771,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564772,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564773,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564774,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564775,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564776,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564777,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564778,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564779,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564780,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564781,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564782,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564783,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564784,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564785,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564786,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564787,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564788,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564789,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564790,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564791,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564792,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564793,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564794,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564795,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564796,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564797,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564798,
+      "utc_date": "2027-01-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564799,
+      "utc_date": "2027-01-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564800,
+      "utc_date": "2027-01-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564801,
+      "utc_date": "2027-01-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564802,
+      "utc_date": "2027-01-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564803,
+      "utc_date": "2027-01-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564804,
+      "utc_date": "2027-01-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564805,
+      "utc_date": "2027-01-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564806,
+      "utc_date": "2027-01-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564807,
+      "utc_date": "2027-01-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564808,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564809,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564810,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564811,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564812,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564813,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564814,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564815,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564816,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564817,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564818,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564819,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564820,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564821,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564822,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564823,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564824,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564825,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564826,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564827,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564828,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564829,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564830,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564831,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564832,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564833,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564834,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564835,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564836,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564837,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564838,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564839,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564840,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564841,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564842,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564843,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564844,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564845,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564846,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564847,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564848,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564849,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564850,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564851,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564852,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564853,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564854,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564855,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564856,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564857,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564858,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564859,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564860,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564861,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564862,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564863,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564864,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564865,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564866,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564867,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564868,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564869,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564870,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564871,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564872,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564873,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564874,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564875,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564876,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564877,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564878,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564879,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564880,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564881,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564882,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564883,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564884,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564885,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564886,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564887,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564888,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564889,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564890,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564891,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564892,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564893,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564894,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564895,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564896,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564897,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564898,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564899,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564900,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564901,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564902,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564903,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564904,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564905,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564906,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564907,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564908,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564909,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564910,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564911,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564912,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564913,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564914,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564915,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564916,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564917,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564918,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564919,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564920,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564921,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564922,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564923,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564924,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564925,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564926,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564927,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564928,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564929,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564930,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564931,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564932,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564933,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564934,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564935,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564936,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564937,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564938,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564939,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564940,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564941,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564942,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564943,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564944,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564945,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564946,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564947,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564948,
+      "utc_date": "2027-04-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564949,
+      "utc_date": "2027-04-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564950,
+      "utc_date": "2027-04-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564951,
+      "utc_date": "2027-04-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564952,
+      "utc_date": "2027-04-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564953,
+      "utc_date": "2027-04-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564954,
+      "utc_date": "2027-04-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564955,
+      "utc_date": "2027-04-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564956,
+      "utc_date": "2027-04-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564957,
+      "utc_date": "2027-04-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564958,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564959,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564960,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564961,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564962,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564963,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564964,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564965,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564966,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564967,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564968,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564969,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564970,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564971,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564972,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564973,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564974,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564975,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564976,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564977,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564978,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564979,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564980,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564981,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564982,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564983,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564984,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564985,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564986,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564987,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564992,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564993,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564994,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "away": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564995,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564996,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "away": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564997,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "away": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564988,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564989,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564990,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564991,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "away": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564998,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 88,
+        "name": "Levante UD"
+      },
+      "away": {
+        "id": 558,
+        "name": "RC Celta de Vigo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 564999,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 565000,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 565001,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 92,
+        "name": "Real Sociedad de Fútbol"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 565002,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 84,
+        "name": "Málaga CF"
+      },
+      "away": {
+        "id": 559,
+        "name": "Sevilla FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 565003,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 285,
+        "name": "Elche CF"
+      },
+      "away": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 565004,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 87,
+        "name": "Rayo Vallecano de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 565005,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 565006,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 82,
+        "name": "Getafe CF"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 565007,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 79,
+        "name": "CA Osasuna"
+      },
+      "away": {
+        "id": 95,
+        "name": "Valencia CF"
+      },
+      "overdue_nonfinal": false
+    }
+  ],
+  "api_reported_count": 380,
+  "sha256_raw_response": "9bd17f20ed1541a87a1ffee821acc8fbfd565eecab397f9e9aa6e971bd134140"
+}

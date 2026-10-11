@@ -1,0 +1,377 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "evidence_mode",
+    "purpose",
+    "verified_at",
+    "sisal_event",
+    "api_football",
+    "football_data",
+    "history_scope"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "history-identity-adapter.1"
+    },
+    "evidence_mode": {
+      "enum": [
+        "real_only",
+        "simulation"
+      ]
+    },
+    "purpose": {
+      "enum": [
+        "diagnostic",
+        "historical_backtest"
+      ]
+    },
+    "verified_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "analysis_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sisal_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "palinsesto",
+        "avvenimento",
+        "home",
+        "away",
+        "competition_canonical_id",
+        "season_start_year",
+        "date",
+        "time",
+        "timezone",
+        "evidence_id"
+      ],
+      "properties": {
+        "palinsesto": {
+          "type": "string",
+          "pattern": "^[0-9]{1,20}$"
+        },
+        "avvenimento": {
+          "type": "string",
+          "pattern": "^[0-9]{1,20}$"
+        },
+        "home": {
+          "type": "string"
+        },
+        "away": {
+          "type": "string"
+        },
+        "competition_canonical_id": {
+          "type": "string",
+          "pattern": "^local:competition:[A-Z0-9-]{1,40}$"
+        },
+        "season_start_year": {
+          "type": "integer",
+          "minimum": 2000,
+          "maximum": 2099
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time": {
+          "type": "string",
+          "pattern": "^[0-9]{2}:[0-9]{2}:[0-9]{2}$"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "utc_offset": {
+          "type": "string",
+          "pattern": "^[+-][0-9]{2}:[0-9]{2}$"
+        },
+        "evidence_id": {
+          "type": "string"
+        }
+      }
+    },
+    "api_football": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state",
+            "fixture_id",
+            "competition_id",
+            "season_start_year",
+            "kickoff",
+            "home",
+            "away",
+            "evidence_id",
+            "history_evidence_ids"
+          ],
+          "properties": {
+            "state": {
+              "enum": [
+                "available",
+                "unavailable"
+              ]
+            },
+            "fixture_id": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "competition_id": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "season_start_year": {
+              "type": "integer",
+              "minimum": 2000,
+              "maximum": 2099
+            },
+            "kickoff": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "home": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "team_id",
+                "name",
+                "profile"
+              ],
+              "properties": {
+                "team_id": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "name": {
+                  "type": "string"
+                },
+                "profile": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "country",
+                    "gender",
+                    "squad_kind",
+                    "age_group"
+                  ],
+                  "properties": {
+                    "country": {
+                      "type": "string",
+                      "pattern": "^[A-Z]{2}$"
+                    },
+                    "gender": {
+                      "enum": [
+                        "men",
+                        "women"
+                      ]
+                    },
+                    "squad_kind": {
+                      "enum": [
+                        "first",
+                        "reserve",
+                        "youth"
+                      ]
+                    },
+                    "age_group": {
+                      "enum": [
+                        "senior",
+                        "U23",
+                        "U21",
+                        "U19",
+                        "U18",
+                        "U17"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "team_id",
+                "name",
+                "profile"
+              ],
+              "properties": {
+                "team_id": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "name": {
+                  "type": "string"
+                },
+                "profile": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "country",
+                    "gender",
+                    "squad_kind",
+                    "age_group"
+                  ],
+                  "properties": {
+                    "country": {
+                      "type": "string",
+                      "pattern": "^[A-Z]{2}$"
+                    },
+                    "gender": {
+                      "enum": [
+                        "men",
+                        "women"
+                      ]
+                    },
+                    "squad_kind": {
+                      "enum": [
+                        "first",
+                        "reserve",
+                        "youth"
+                      ]
+                    },
+                    "age_group": {
+                      "enum": [
+                        "senior",
+                        "U23",
+                        "U21",
+                        "U19",
+                        "U18",
+                        "U17"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "evidence_id": {
+              "type": "string"
+            },
+            "history_evidence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state"
+          ],
+          "properties": {
+            "state": {
+              "const": "unavailable"
+            }
+          }
+        }
+      ]
+    },
+    "football_data": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state",
+            "match_id"
+          ],
+          "properties": {
+            "state": {
+              "enum": [
+                "available",
+                "unavailable"
+              ]
+            },
+            "match_id": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state"
+          ],
+          "properties": {
+            "state": {
+              "const": "unavailable"
+            }
+          }
+        }
+      ]
+    },
+    "history_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "home",
+        "away"
+      ],
+      "properties": {
+        "home": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SA",
+              "PL",
+              "PD",
+              "BL1",
+              "FL1",
+              "DED",
+              "PPL",
+              "ELC",
+              "CL"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "away": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SA",
+              "PL",
+              "PD",
+              "BL1",
+              "FL1",
+              "DED",
+              "PPL",
+              "ELC",
+              "CL"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "purpose": {
+            "const": "historical_backtest"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "analysis_at"
+        ]
+      }
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sisal:history-identity-adapter:request:1"
+}

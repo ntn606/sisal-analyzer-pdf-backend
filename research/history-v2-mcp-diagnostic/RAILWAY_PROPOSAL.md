@@ -1,93 +1,78 @@
-# Proposta precisa di integrazione Railway — non eseguita
+# Railway — proposta diagnostica separata, non eseguita
 
-Stato attuale: wrapper stdio funzionante e isolato, due nuove catene reali,
-162 test offline passati. Nessuna modifica a Railway/server.py e nessun deploy.
-Le prove coprono tre eventi di tre campionati includendo Atalanta–Venezia; non
-certificano automaticamente tutte le 13 competizioni né completezza di tutte
-le coppe. I mapping di questi due nuovi target scadono il 13 ottobre 2026.
+Questo documento propone un futuro servizio cache-only. **Nessun servizio Railway, variabile, deploy o backend è stato modificato. Merge/deployment richiedono la revisione e l’approvazione di Antonio.** Non acquistare o attivare risorse a pagamento in questa fase.
 
-## Primo rilascio proposto: servizio diagnostico separato
+## Contratto del servizio
 
-Dopo revisione del branch, creare un servizio separato nello stesso progetto
-Railway, senza importare Scout/Analyst/Quant o modificare il server MCP corrente.
-Root directory: research/history-v2-mcp-diagnostic. Python 3.12, installazione da
-requirements-mcp.txt (SDK mcp 1.30.0), copie vendor e contratti già inclusi.
-Nessuna richiesta live dalle chiamate del tool; usare snapshot e registry
-revisionati. Non acquistare Redis o altri servizi per questo prototipo.
+Root directory `research/history-v2-mcp-diagnostic`; Python3.12; mcp==1.30.0; uvicorn==0.54.0. Un tool `/mcp` su Streamable HTTP stateless JSON, autenticazione static Bearer, healthcheck `GET /healthz`. Bind0.0.0.0, PORT Railway. Gli output mantengono diagnostic_only=true, ready_for_analysis=false, ready_for_quant=false e statistics_usable_in_production=false. Nessuna chiamata provider, cron di acquisizione, quote o previsioni.
 
-Railway richiede un trasporto di rete: l'attuale entrypoint è volutamente solo
-stdio e **non va deployato tal quale come server HTTP**. Un successivo commit
-revisionabile deve aggiungere un entrypoint streamable-http, porta da PORT,
-host 0.0.0.0, percorso /mcp e healthcheck /healthz. Il healthcheck verifica
-configurazione/lettura dati, senza consumare API. Il processo non viene avviato
-come parte di questo lavoro; nessun URL Railway viene inventato.
+Build proposto:
 
-Mantenere la protezione DNS rebinding del nuovo FastMCP attiva, con allowlist
-esatta dell'host Railway assegnato, e controllo Origin. Aggiungere autenticazione
-MCP Bearer per i client autorizzati prima di rendere accessibile il servizio.
-Non copiare il setting che disabilita questa protezione nel backend attuale.
-Testare inizializzazione/list_tools/call_tool HTTP oltre ai test stdio già eseguiti.
+```bash
+python -m pip install -r requirements-http.txt
+```
 
-## Configurazione proposta, da applicare soltanto nel rilascio approvato
+Avvio proposto, **solo dopo approvazione e preparazione del volume**:
 
-- HISTORY_V2_DATA_ROOT: percorso del catalogo revisionato, contratti e snapshot.
-- PORT: fornita da Railway; nessuna modifica manuale nel backend corrente.
-- HISTORY_V2_MCP_TOKEN: nuovo segreto per autenticare l'eventuale servizio HTTP,
-  da configurare in modo protetto, mai in Git o nei log.
-- API_FOOTBALL_KEY e FOOTBALL_DATA_TOKEN: riusare credenziali protette solo nel
-  processo operatore che acquisisce le prove. Il servizio di lettura cache non
-  ha bisogno di riceverle. Non copiare valori da Codex o dal repository.
+```bash
+python -m history_v2_probe.http_server
+```
 
-Sono proposte di configurazione, non variabili create o modificate in questa
-attività. diagnostic_only=true, ready_for_analysis=false e ready_for_quant=false
-restano invarianti del codice e non feature flag modificabili dal client.
+Il command avvia un worker, disabilita access log e trusted proxy headers, imposta timeout keep-alive 5s e limite32 connessioni/task. Il factory ASGI può essere importato per altri runner, ma il command sopra mantiene i limiti testati. HTTPS pubblico tramite edge Railway; non creare tunnel o bypass. Verificare in staging che il dominio assegnato e la connessione edge siano quelli attesi.
 
-## Dati persistenti e rinnovo delle prove
+## Segreti e hostname
 
-Un volume locale può conservare catalogo, PDF/HTML, snapshot normalizzati,
-metadati di completamento e hash. Usare scritture atomiche di un'intera revisione:
-il servizio vede la versione precedente o quella nuova, mai un registro a metà
-aggiornamento. Registro ed evidenze sono configurazione fidata revisionata,
-non payload MCP. I client inviano solo palinsesto, avvenimento e match_date.
+Nuovo segreto inbound `HISTORY_V2_MCP_TOKEN` inserito **solo** nel servizio dedicato tramite gestione segreti protetta, mai in Git/log/chat/commandline. Non riutilizzare le chiavi dei provider e non montarle: il lettore non ne ha bisogno. Un token URL-safe da 32 byte casuali soddisfa il contratto (43 caratteri codificati); distribuzione ai client per canale protetto. Rotazione: sostituire segreto, riavviare servizio, aggiornare i client; nessuna finestra di doppio token implementata.
 
-Prima del kickoff: acquisire fonte Sisal ufficiale e fixture aggiornati (TTL 1h),
-snapshot FD (TTL 24h) e osservazioni dei risultati necessari. Rivedere il mapping
-se cambiano squadre, competizione, stagione o kickoff. Non promuovere una
-corrispondenza tramite soli nomi. Storie parziali restano etichettate; Conference,
-Europa League e altre coppe richiedono prove/copertura aggiuntive, non riempimenti.
+Variabili nuove proposte, non impostate:
 
-Pubblicazione iniziale del risultato rimane sconosciuta finché non esiste una
-prova esplicita. known_available_by conserva il completamento reale della GET.
-Richieste successive al kickoff sono bloccate e non riutilizzano statistiche in
-cache. Le prove salvate oggi non autorizzano backtest anteriori alla loro
-osservazione.
+| Nome | Valore/azione proposta |
+|---|---|
+| HISTORY_V2_REVISION_ROOT | `/data/history-v2`, mount delle revisioni |
+| HISTORY_V2_ALLOWED_HOSTS | **Hostname esatto assegnato al nuovo servizio**, senza schema, porta implicita443, slash o wildcard |
+| HISTORY_V2_ALLOWED_ORIGINS | Origini HTTPS esatte dei client ammessi; può essere vuoto per client server-to-server senza Origin |
+| HISTORY_V2_MCP_TOKEN | Segreto Bearer protetto, nessun valore suggerito |
+| PORT | Porta fornita dalla piattaforma |
 
-## Budget condiviso con il backend attuale
+Non autorizzare `*.railway.app`, *.up.railway.app, arbitrary localhost o forwarded hostname. L’host `healthcheck.railway.app` è ammesso automaticamente **solo per GET /healthz**, mai per /mcp. Il healthcheck non supporta Origin estranei. Verificare in staging l’Host effettivo del healthcheck; se diverso, aggiungere un hostname esatto con test dedicato in una modifica revisionata, senza allargare l’allowlist.
 
-Le letture di quota non bastano a coordinare processi diversi. Prima di abilitare
-un acquisitore automatico serve una prenotazione atomica per lo stesso account
-API-Football usato da Railway, condivisa anche dal backend: limite minuto/giorno,
-riserva 20/giorno e 2/minuto, timeout, Retry-After/reset e conservazione degli
-header numerici. Header non monotoni non incrementano il saldo.
+Auth client verificata: SDK MCP 1.30 con header Bearer su ogni POST. Questo servizio non implementa OAuth/discovery. Compatibilità ChatGPT o altro configuratore remoto non ancora provata: se il client richiede OAuth, questa release non è pronta per quel collegamento e serve una progettazione successiva. Non attivare il servizio sperando che static Bearer soddisfi un client OAuth.
 
-L'helper ProviderTransport rifiuta chiamate senza callback di budget. Non è
-collegato al tool e non garantisce da solo coordinamento distribuito. Senza
-intervenire sul backend corrente, il primo servizio deve pertanto restare
-cache-only, con acquisizioni manuali coordinate. Un budget condiviso tramite
-infrastruttura già esistente o un file transazionale accessibile a tutti i
-processi è un lavoro futuro distinto. Nessun nuovo servizio a pagamento viene
-introdotto senza approvazione.
+## Persistenza e pubblicazione delle evidenze
 
-## Criteri per promozione e rollback
+Volume POSIX locale, una replica. Layout ACTIVE.json + revisions/<SHA256>/REVISION.json + file ancorati. Preparare un bundle offline dopo review delle prove e scansione; il digest è integrità, non firma/certificazione. Il comando operatore:
 
-Prima dell'attivazione: revisione del mapping/provenienza dei tre casi, prove
-aggiuntive su più competizioni, test del nuovo trasporto/autenticazione HTTP,
-integrità dei volumi, test di scadenza e concorrenza del catalogo, verifica degli
-invarianti diagnostici e assenza di segreti nei log. Copertura parziale mostrata
-esplicitamente. Il monitoraggio registra solo stato/categoria, ID pubblici,
-latenza e contatori; non token, header auth, raw error body o query arbitrarie.
+```bash
+python -m history_v2_probe.revisions --source /bundle/reviewed --store /data/history-v2
+```
 
-Rollback: arrestare/rimuovere soltanto il servizio diagnostico e ripristinare
-l'ultima revisione del catalogo. Backend, Scout, Analyst e Quant rimangono
-indipendenti. L'integrazione di questo tool nel server MCP principale richiede
-un successivo cambiamento approvato; non fa parte di questo branch isolato.
+Nessun accesso provider viene effettuato. Staging, fsync e rename precedono `os.replace` del puntatore; writer coordinati con lock advisory. Il reader verifica una revisione completa e utilizza una copia privata coerente per ogni richiesta. Aggiornamenti concurrenti non mescolano snapshot, mapping o prove. Puntatore invalido blocca le nuove richieste; copie già in volo completano sulla revisione precedente.
+
+Mount read-only nel reader dove possibile; writer offline separato con sole autorizzazioni necessarie. Se la piattaforma non permette writer separato/read-only sul volume, eseguire aggiornamenti con servizio fermo, poi riavviarlo dopo verifica: documentare questa limitazione, non dichiarare immutabilità infrastrutturale già attiva. Conservare almeno revisione precedente e bundle originale per rollback. Directory read-only/hash non proteggono da un amministratore compromesso.
+
+Non attivare un acquisitore o un budget API in questo servizio. Un futuro acquisitore richiederà autorizzazione distinta, fonte/diritti/freschezza, credenziali separate e budget atomico condiviso con l’account Railway; il lettore resta cache-only. Il contenuto attuale è già osservato in ottobre 2026, soggetto a TTL 1h/24h e cutoff: un healthcheck sano non garantisce un campione fresco.
+
+## Risorse e costi da valutare
+
+Primo perimetro: una replica e un worker. Body16 KiB, richieste MCP4 in volo senza coda, 429Retry-After 1, deadline cooperativa 20s, file 5MB, revisione64MB / 2048 file. Budget iniziale suggerito da **misurare in staging**: 0.5–1vCPU, 512MiB–1GiB RAM, volume1GiB; le copie private per revisioni in volo e i dataset possono richiedere più memoria. Non sono benchmark certificati. Imporre un cap CPU/RAM e limiti edge prima di esporre il servizio; un thread Python non è interrompibile forzatamente dalla deadline ASGI.
+
+L’app non richiede database, Redis o servizi aggiuntivi. Railway compute/volume/traffico possono avere costi e disponibilità legati al piano esistente; nessuna tariffa o gratuità è garantita, nessuna risorsa è stata creata. Verificare prezzi e disponibilità con Antonio prima di attivare. Non aggiungere repliche globali: l’atomicità testata è POSIX per richiesta e per singolo reader, non switch globale simultaneo.
+
+## Healthcheck e monitoraggio sicuro
+
+Path `/healthz`, timeout iniziale proposto 5s. Startup rifiuta configurazione segreti/host/store invalida. Risposta200 minima, nessun provider call; store invalido=>503. Freshness/cutoff sono valutati dalla tool call: un dataset scaduto può dare source_stale pur con healthz 200.
+
+Access log disabilitato, SDK CRITICAL, nessuna stampa body/header/token/exceptiontext. L’ASGI mantiene contatori aggregati per codice sicuro (completed/unauthorized/host_not_allowed/etc.), senza endpoint pubblico metrics, ID utente o eventi. Monitoraggio futuro: health status, 401/429/5xx aggregati, tempo/p95 e memoria dal servizio/edge; exportmetrics richiede una modifica revisionata e accesso protetto. Non raccogliere header Authorization né payload MCP negli strumenti piattaforma.
+
+## Gate prima di qualsiasi integrazione
+
+1. Revisione di Antonio del branch e del rapporto sicurezza, senza merge automatico.
+2. Test `python scripts/verify_offline.py`: tutte le suite precedenti, TCP MCP autenticato, guard senza egress, schemi e scan.
+3. Client finale compatibile con Bearer, oppure progetto OAuth autorizzato e testato.
+4. Prove aggiornate ottenute in un incarico separato; mapping locali revisionati e catalogo completo. Nessun cambio della data di acquisizione per superare la TTL.
+5. Staging separato autorizzato: HTTPS, Host/Origin, healthcheck Railway, token assente/errato, fresh/stale, cutoff, RAM, carico e rollback. Nessun collegamento aScout/Analyst/Quant.
+6. Solo con ulteriore approvazione attivare diagnostica remota. La promozione degli output per produzione/analisi resta fuori perimetro.
+
+## Rollback proposto
+
+Disabilitare solo il nuovo servizio diagnostico, senza modificare backend o variabili esistenti. Ripristinare la release precedente; per dati, validare e ripubblicare atomicamente il bundle precedente (stessoSHA); non riscrivere file dentro una revisione. Restart se necessario e verificare /healthz + richiesta diagnostica autenticata. Dati precedenti scaduti restano source_stale: rollback non rinnova prove. In caso di segreto esposto, ruotarlo e invalidare client; non bypassare la scansione o Push Protection.

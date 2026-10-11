@@ -1,0 +1,13 @@
+{
+  "source": "https://www.sisal.it/scommesse-matchpoint/foglio-quote",
+  "method": "GET",
+  "requested_at": "2026-10-10T19:12:30.756699+00:00",
+  "credential_used": false,
+  "tls_verification_enabled": true,
+  "response_body_retained": true,
+  "http_status": 200,
+  "state": "retrieved",
+  "body_sha256": "1ce89475c05f7671b7d1b546f72e9d95af4d6bb95e68d15bb492e11067d55bb6",
+  "body_bytes": 219110,
+  "completed_at": "2026-10-10T19:12:31.771259+00:00"
+}

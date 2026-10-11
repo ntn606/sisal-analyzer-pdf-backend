@@ -1,0 +1,320 @@
+{
+  "suite": "adapter",
+  "tests_run": 61,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "provider_requests": 0,
+  "external_socket_attempts": 0,
+  "external_dns_attempts": 0,
+  "loopback_socket_connections": 0,
+  "guarded_child_python_processes": 0,
+  "cases": [
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_ambiguous_provider_id_mapping_is_distinct_state",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_archived_observation_before_analysis_verifies_only_test_availability",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_competition_mismatch",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_correct_fixture_id_with_wrong_away_team",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_cross_provider_duplicate_counted_once_with_provenance",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_cross_provider_score_conflict_blocks_all_statistics",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_dst_ambiguous_local_time_needs_offset",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_dst_nonexistent_time_is_blocked",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_equivalent_timezone_offsets_pass",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_evidence_path_traversal_is_blocked",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_expired_historical_name_is_blocked",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_explicit_reviewed_abbreviation_passes",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_home_and_away_swap_is_blocked",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_identity_valid_today_is_not_assumed_valid_for_old_results",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_kickoff_mismatch_not_tolerated",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_missing_event_binding_is_not_guessed",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_missing_fd_snapshot_is_provider_unavailable",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_missing_mapping_blocks_all_statistics",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_modified_evidence_hash_blocks_identity",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_numeric_identity_is_not_coerced_from_float",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_observed_result_after_simulated_analysis_is_blocked",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_positive_chain_checks_both_teams",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_provider_unavailable_distinct_from_identity",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_real_mode_rejects_test_identity_evidence",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_reserve_and_youth_profiles_do_not_merge",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_results_explicitly_published_after_analysis_are_blocked",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_season_mismatch",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_similar_names_different_ids_remain_distinct",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_unknown_arguments_not_reflected_in_cli",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_unknown_publication_time_blocks_backtest_statistics",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_unmapped_cross_provider_history_not_joined_by_names",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_unreviewed_abbreviation_is_not_identity",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_adapter.SyntheticTests.test_synthetic_verified_boolean_without_review_is_not_proof",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_hybrid.HybridTests.test_hybrid_arsenal_real_history_pl_and_cl_synthetic_linkage",
+      "data_origin": "hybrid_real_FD_history_synthetic_provider_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_hybrid.HybridTests.test_hybrid_cli_emits_json_and_never_enables_quant",
+      "data_origin": "hybrid_real_FD_history_synthetic_provider_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_hybrid.HybridTests.test_hybrid_leipzig_real_four_results_preserved",
+      "data_origin": "hybrid_real_FD_history_synthetic_provider_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_hybrid.HybridTests.test_hybrid_psg_real_history_fl1_and_cl_synthetic_linkage",
+      "data_origin": "hybrid_real_FD_history_synthetic_provider_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_hybrid.HybridTests.test_hybrid_real_histories_do_not_certify_backtest_publication",
+      "data_origin": "hybrid_real_FD_history_synthetic_provider_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_hybrid.HybridTests.test_hybrid_real_only_cannot_certify_synthetic_bridge",
+      "data_origin": "hybrid_real_FD_history_synthetic_provider_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_hybrid.HybridTests.test_hybrid_roma_real_insufficient_history_preserved",
+      "data_origin": "hybrid_real_FD_history_synthetic_provider_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.RealSavedSisalDocumentTests.test_real_saved_official_pdf_and_page_pass_document_provenance_only",
+      "data_origin": "real_saved_Sisal_document_only_no_cross_provider_identity",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_absolute_document_path_is_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_cli_unavailable_provider_is_explicit_and_blocks_histories",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_document_path_cannot_escape_evidence_root",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_document_provenance_cannot_be_omitted",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_duplicate_href_attributes_do_not_establish_provenance",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_fake_domains_and_userinfo_are_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_html_renamed_pdf_is_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_http_ports_queries_fragments_and_controls_are_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_invalid_hash_type_is_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_official_landing_path_is_allowed_with_provenance",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_page_hash_mismatch_is_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_page_must_contain_the_actual_pdf_link",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_page_observed_after_pdf_evidence_is_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_pdf_hash_mismatch_is_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_provenance_requires_the_exact_official_page",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_schema_supports_unavailable_provider_without_invented_ids",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_script_text_does_not_count_as_a_public_link",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_truncated_pdf_is_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_unapproved_paths_document_types_and_traversal_are_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_sisal_pdf_allowlist.SyntheticAllowlistTests.test_synthetic_wrong_mime_type_is_rejected",
+      "data_origin": "synthetic_identity_or_allowlist_fixtures",
+      "outcome": "passed"
+    }
+  ]
+}

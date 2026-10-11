@@ -1,0 +1,33 @@
+{
+  "scope": "Exact source fingerprints of reviewed synthetic negative tests; no evidence exceptions; changes require fresh review",
+  "files": {
+    "regression/adapter/tests/test_sisal_pdf_allowlist.py": {
+      "sha256": "aec3b1d38ed5374faa31898bfb6758db1e5035e0f19c8125de406b1404ee7399",
+      "rules": [
+        "credential_query"
+      ],
+      "reason": "Explicit offline synthetic negative input, not a credential; source file reviewed and hash-pinned"
+    },
+    "regression/provider/tests/test_provider.py": {
+      "sha256": "416213315a3810cae06ada0067d4b63081c85a8d5d9200b6db4f7db334cf1446",
+      "rules": [
+        "credential_assignment"
+      ],
+      "reason": "Explicit offline synthetic negative input, not a credential; source file reviewed and hash-pinned"
+    },
+    "tests/test_http.py": {
+      "sha256": "2a144f40b2d0f4e60848740c2cbfd6dd247ed58cd282a0f6d74bfd5dcfa44f05",
+      "rules": [
+        "credential_query"
+      ],
+      "reason": "Explicit offline synthetic negative input, not a credential; source file reviewed and hash-pinned"
+    },
+    "tests/test_publication_safety.py": {
+      "sha256": "3c21017a67abefa18a3c8421a804f3f6291240b52576be4ad40c72ec456d35e8",
+      "rules": [
+        "credential_query"
+      ],
+      "reason": "Explicit offline synthetic negative input, not a credential; source file reviewed and hash-pinned"
+    }
+  }
+}

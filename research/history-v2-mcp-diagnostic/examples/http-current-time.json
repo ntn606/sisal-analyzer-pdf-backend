@@ -1,0 +1,51 @@
+{
+  "schema_version": "football-history-v2-probe.1",
+  "diagnostic_only": true,
+  "ready_for_analysis": false,
+  "ready_for_quant": false,
+  "statistics_usable_in_production": false,
+  "status": "source_stale",
+  "diagnostic_statistics_allowed": false,
+  "execution_mode": "cached_real_evidence",
+  "verified_at_utc": "2026-10-11T21:24:33.199187+00:00",
+  "requested_event": {
+    "palinsesto": "36411",
+    "avvenimento": "1885",
+    "match_date": "2026-10-12"
+  },
+  "checks": {
+    "event": {
+      "verified": false,
+      "reasons": []
+    },
+    "teams": {
+      "home": {
+        "identity_verified": false,
+        "state": "identity_unverified",
+        "reasons": []
+      },
+      "away": {
+        "identity_verified": false,
+        "state": "identity_unverified",
+        "reasons": []
+      }
+    }
+  },
+  "histories": {},
+  "temporal": {
+    "backtest_availability_verified": false,
+    "first_publication_time_verified": false
+  },
+  "blockers": [
+    "event_evidence_older_than_one_hour"
+  ],
+  "provenance": {
+    "new_api_requests": 0,
+    "cache": "approved_local_snapshots",
+    "dataset_reused": false,
+    "all_competitions_complete": false,
+    "evidence": [],
+    "cross_provider_duplicate_matches": 0,
+    "catalog_revision": "af0de0e7fb5e330758cecb778e984747861c17df434fcb55df19b5a2a81f2ccc"
+  }
+}

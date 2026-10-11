@@ -1,0 +1,2367 @@
+{
+  "url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+  "competition": "CL",
+  "requested_season": 2026,
+  "schema_version": 2,
+  "cutoff_utc": "2026-10-10T17:58:48.362798+00:00",
+  "requested_at_utc": "2026-10-10T17:59:37.992532+00:00",
+  "http_status": 200,
+  "quota": {
+    "counter_reset_seconds": 11
+  },
+  "state": "retrieved",
+  "raw_match_count": 144,
+  "rejected": {
+    "non_final_or_wrong_competition": 126
+  },
+  "records": [
+    {
+      "match_id": 575323,
+      "utc_date": "2026-09-08T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "away": {
+        "id": 58,
+        "name": "Aston Villa FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 0
+    },
+    {
+      "match_id": 575324,
+      "utc_date": "2026-09-08T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 1899,
+        "name": "PAE AEK"
+      },
+      "away": {
+        "id": 2016,
+        "name": "LASK Linz"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 1
+    },
+    {
+      "match_id": 575325,
+      "utc_date": "2026-09-08T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 2
+    },
+    {
+      "match_id": 575326,
+      "utc_date": "2026-09-08T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 3
+    },
+    {
+      "match_id": 575327,
+      "utc_date": "2026-09-08T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 4
+    },
+    {
+      "match_id": 575328,
+      "utc_date": "2026-09-08T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 5
+    },
+    {
+      "match_id": 575329,
+      "utc_date": "2026-09-09T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 6
+    },
+    {
+      "match_id": 575330,
+      "utc_date": "2026-09-09T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 10,
+        "name": "VfB Stuttgart"
+      },
+      "away": {
+        "id": 5720,
+        "name": "Viking FK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 7
+    },
+    {
+      "match_id": 575331,
+      "utc_date": "2026-09-09T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 8
+    },
+    {
+      "match_id": 575332,
+      "utc_date": "2026-09-09T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava"
+      },
+      "score": {
+        "fullTime": {
+          "home": 6,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 9
+    },
+    {
+      "match_id": 575333,
+      "utc_date": "2026-09-09T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 10
+    },
+    {
+      "match_id": 575334,
+      "utc_date": "2026-09-09T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 11
+    },
+    {
+      "match_id": 575335,
+      "utc_date": "2026-09-10T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 613,
+        "name": "Fenerbahçe SK"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 12
+    },
+    {
+      "match_id": 575336,
+      "utc_date": "2026-09-10T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 13
+    },
+    {
+      "match_id": 575337,
+      "utc_date": "2026-09-10T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 14
+    },
+    {
+      "match_id": 575338,
+      "utc_date": "2026-09-10T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 66,
+        "name": "Manchester United FC"
+      },
+      "away": {
+        "id": 10233,
+        "name": "Sabah FK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 15
+    },
+    {
+      "match_id": 575339,
+      "utc_date": "2026-09-10T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 721,
+        "name": "RB Leipzig"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 16
+    },
+    {
+      "match_id": 575340,
+      "utc_date": "2026-09-10T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2557,
+      "season_start": "2026-09-08",
+      "season_end": "2027-01-27",
+      "requested_season": 2026,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+      "response_record_index": 17
+    }
+  ],
+  "status_counts": {
+    "FINISHED": 18,
+    "TIMED": 126
+  },
+  "nonfinal_records": [
+    {
+      "match_id": 575341,
+      "utc_date": "2026-10-13T16:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575342,
+      "utc_date": "2026-10-13T16:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 10233,
+        "name": "Sabah FK"
+      },
+      "away": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575343,
+      "utc_date": "2026-10-13T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575344,
+      "utc_date": "2026-10-13T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575345,
+      "utc_date": "2026-10-13T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 66,
+        "name": "Manchester United FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575346,
+      "utc_date": "2026-10-13T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575347,
+      "utc_date": "2026-10-13T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5720,
+        "name": "Viking FK"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575348,
+      "utc_date": "2026-10-13T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 721,
+        "name": "RB Leipzig"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575349,
+      "utc_date": "2026-10-13T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575350,
+      "utc_date": "2026-10-14T16:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 2016,
+        "name": "LASK Linz"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575351,
+      "utc_date": "2026-10-14T16:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575352,
+      "utc_date": "2026-10-14T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575353,
+      "utc_date": "2026-10-14T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575354,
+      "utc_date": "2026-10-14T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "away": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575355,
+      "utc_date": "2026-10-14T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 58,
+        "name": "Aston Villa FC"
+      },
+      "away": {
+        "id": 613,
+        "name": "Fenerbahçe SK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575356,
+      "utc_date": "2026-10-14T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575357,
+      "utc_date": "2026-10-14T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk"
+      },
+      "away": {
+        "id": 1899,
+        "name": "PAE AEK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575358,
+      "utc_date": "2026-10-14T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava"
+      },
+      "away": {
+        "id": 10,
+        "name": "VfB Stuttgart"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575359,
+      "utc_date": "2026-10-20T16:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 10233,
+        "name": "Sabah FK"
+      },
+      "away": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575360,
+      "utc_date": "2026-10-20T16:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 613,
+        "name": "Fenerbahçe SK"
+      },
+      "away": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575361,
+      "utc_date": "2026-10-20T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "away": {
+        "id": 1899,
+        "name": "PAE AEK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575362,
+      "utc_date": "2026-10-20T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 10,
+        "name": "VfB Stuttgart"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575363,
+      "utc_date": "2026-10-20T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575364,
+      "utc_date": "2026-10-20T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575365,
+      "utc_date": "2026-10-20T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575366,
+      "utc_date": "2026-10-20T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575367,
+      "utc_date": "2026-10-20T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575368,
+      "utc_date": "2026-10-21T16:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 66,
+        "name": "Manchester United FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575369,
+      "utc_date": "2026-10-21T16:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575370,
+      "utc_date": "2026-10-21T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 721,
+        "name": "RB Leipzig"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575371,
+      "utc_date": "2026-10-21T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575372,
+      "utc_date": "2026-10-21T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575373,
+      "utc_date": "2026-10-21T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575374,
+      "utc_date": "2026-10-21T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 58,
+        "name": "Aston Villa FC"
+      },
+      "away": {
+        "id": 5720,
+        "name": "Viking FK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575375,
+      "utc_date": "2026-10-21T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 2016,
+        "name": "LASK Linz"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575376,
+      "utc_date": "2026-10-21T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575377,
+      "utc_date": "2026-11-03T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575378,
+      "utc_date": "2026-11-03T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "away": {
+        "id": 10,
+        "name": "VfB Stuttgart"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575379,
+      "utc_date": "2026-11-03T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575380,
+      "utc_date": "2026-11-03T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 58,
+        "name": "Aston Villa FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575381,
+      "utc_date": "2026-11-03T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575382,
+      "utc_date": "2026-11-03T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575383,
+      "utc_date": "2026-11-03T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 66,
+        "name": "Manchester United FC"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575384,
+      "utc_date": "2026-11-03T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575385,
+      "utc_date": "2026-11-03T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 2016,
+        "name": "LASK Linz"
+      },
+      "away": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575386,
+      "utc_date": "2026-11-04T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1899,
+        "name": "PAE AEK"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575387,
+      "utc_date": "2026-11-04T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 613,
+        "name": "Fenerbahçe SK"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575388,
+      "utc_date": "2026-11-04T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 721,
+        "name": "RB Leipzig"
+      },
+      "away": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575389,
+      "utc_date": "2026-11-04T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575390,
+      "utc_date": "2026-11-04T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575391,
+      "utc_date": "2026-11-04T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575392,
+      "utc_date": "2026-11-04T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575393,
+      "utc_date": "2026-11-04T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575394,
+      "utc_date": "2026-11-04T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5720,
+        "name": "Viking FK"
+      },
+      "away": {
+        "id": 10233,
+        "name": "Sabah FK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575395,
+      "utc_date": "2026-11-24T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "away": {
+        "id": 58,
+        "name": "Aston Villa FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575396,
+      "utc_date": "2026-11-24T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "away": {
+        "id": 2016,
+        "name": "LASK Linz"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575397,
+      "utc_date": "2026-11-24T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575398,
+      "utc_date": "2026-11-24T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575399,
+      "utc_date": "2026-11-24T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575400,
+      "utc_date": "2026-11-24T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575401,
+      "utc_date": "2026-11-24T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575402,
+      "utc_date": "2026-11-24T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 721,
+        "name": "RB Leipzig"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575403,
+      "utc_date": "2026-11-24T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 1899,
+        "name": "PAE AEK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575404,
+      "utc_date": "2026-11-25T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 10233,
+        "name": "Sabah FK"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575405,
+      "utc_date": "2026-11-25T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575406,
+      "utc_date": "2026-11-25T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 10,
+        "name": "VfB Stuttgart"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575407,
+      "utc_date": "2026-11-25T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 5720,
+        "name": "Viking FK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575408,
+      "utc_date": "2026-11-25T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575409,
+      "utc_date": "2026-11-25T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575410,
+      "utc_date": "2026-11-25T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575411,
+      "utc_date": "2026-11-25T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 66,
+        "name": "Manchester United FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575412,
+      "utc_date": "2026-11-25T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk"
+      },
+      "away": {
+        "id": 613,
+        "name": "Fenerbahçe SK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575413,
+      "utc_date": "2026-12-08T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 10233,
+        "name": "Sabah FK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575414,
+      "utc_date": "2026-12-08T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5720,
+        "name": "Viking FK"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575415,
+      "utc_date": "2026-12-08T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575416,
+      "utc_date": "2026-12-08T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 58,
+        "name": "Aston Villa FC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575417,
+      "utc_date": "2026-12-08T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575418,
+      "utc_date": "2026-12-08T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575419,
+      "utc_date": "2026-12-08T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575420,
+      "utc_date": "2026-12-08T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 66,
+        "name": "Manchester United FC"
+      },
+      "away": {
+        "id": 721,
+        "name": "RB Leipzig"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575421,
+      "utc_date": "2026-12-08T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1899,
+        "name": "PAE AEK"
+      },
+      "away": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575422,
+      "utc_date": "2026-12-09T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575423,
+      "utc_date": "2026-12-09T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava"
+      },
+      "away": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575280,
+      "utc_date": "2026-12-09T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575286,
+      "utc_date": "2026-12-09T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575290,
+      "utc_date": "2026-12-09T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575295,
+      "utc_date": "2026-12-09T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575315,
+      "utc_date": "2026-12-09T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575317,
+      "utc_date": "2026-12-09T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 2016,
+        "name": "LASK Linz"
+      },
+      "away": {
+        "id": 613,
+        "name": "Fenerbahçe SK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575322,
+      "utc_date": "2026-12-09T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 10,
+        "name": "VfB Stuttgart"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575292,
+      "utc_date": "2027-01-19T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575318,
+      "utc_date": "2027-01-19T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575282,
+      "utc_date": "2027-01-19T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 2016,
+        "name": "LASK Linz"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575285,
+      "utc_date": "2027-01-19T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575302,
+      "utc_date": "2027-01-19T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 10,
+        "name": "VfB Stuttgart"
+      },
+      "away": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575303,
+      "utc_date": "2027-01-19T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 58,
+        "name": "Aston Villa FC"
+      },
+      "away": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575307,
+      "utc_date": "2027-01-19T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1899,
+        "name": "PAE AEK"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575308,
+      "utc_date": "2027-01-19T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575321,
+      "utc_date": "2027-01-19T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575314,
+      "utc_date": "2027-01-20T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 613,
+        "name": "Fenerbahçe SK"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575320,
+      "utc_date": "2027-01-20T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 10233,
+        "name": "Sabah FK"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575284,
+      "utc_date": "2027-01-20T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575288,
+      "utc_date": "2027-01-20T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575294,
+      "utc_date": "2027-01-20T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575297,
+      "utc_date": "2027-01-20T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575300,
+      "utc_date": "2027-01-20T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 66,
+        "name": "Manchester United FC"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575312,
+      "utc_date": "2027-01-20T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5720,
+        "name": "Viking FK"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575313,
+      "utc_date": "2027-01-20T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 721,
+        "name": "RB Leipzig"
+      },
+      "away": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575281,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575283,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575287,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575289,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575291,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 613,
+        "name": "Fenerbahçe SK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575293,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575296,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575298,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 10233,
+        "name": "Sabah FK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575299,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575301,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575304,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "away": {
+        "id": 1899,
+        "name": "PAE AEK"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575305,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "away": {
+        "id": 58,
+        "name": "Aston Villa FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575306,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575309,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 2016,
+        "name": "LASK Linz"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575310,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 66,
+        "name": "Manchester United FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575311,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 10,
+        "name": "VfB Stuttgart"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575316,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 721,
+        "name": "RB Leipzig"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 575319,
+      "utc_date": "2027-01-27T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 5720,
+        "name": "Viking FK"
+      },
+      "overdue_nonfinal": false
+    }
+  ],
+  "api_reported_count": 144,
+  "sha256_raw_response": "9ccc60725ac16778d9d21179a33e903a2e8688c140649cc180c35d6ba1697b83"
+}

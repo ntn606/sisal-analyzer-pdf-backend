@@ -1,0 +1,6099 @@
+{
+  "url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+  "competition": "CL",
+  "requested_season": 2025,
+  "schema_version": 2,
+  "cutoff_utc": "2026-10-10T17:58:48.362798+00:00",
+  "requested_at_utc": "2026-10-10T17:59:44.192695+00:00",
+  "http_status": 200,
+  "quota": {
+    "counter_reset_seconds": 5
+  },
+  "state": "retrieved",
+  "raw_match_count": 189,
+  "rejected": {},
+  "records": [
+    {
+      "match_id": 551981,
+      "utc_date": "2025-09-16T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 0
+    },
+    {
+      "match_id": 552049,
+      "utc_date": "2025-09-16T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 3929,
+        "name": "Royale Union Saint-Gilloise"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 1
+    },
+    {
+      "match_id": 551941,
+      "utc_date": "2025-09-16T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 2
+    },
+    {
+      "match_id": 551991,
+      "utc_date": "2025-09-16T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 611,
+        "name": "Qarabağ Ağdam FK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 3
+    },
+    {
+      "match_id": 552012,
+      "utc_date": "2025-09-16T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 4
+    },
+    {
+      "match_id": 551927,
+      "utc_date": "2025-09-16T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 5
+    },
+    {
+      "match_id": 552023,
+      "utc_date": "2025-09-17T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 6
+    },
+    {
+      "match_id": 552031,
+      "utc_date": "2025-09-17T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 654,
+        "name": "PAE Olympiakos SFP"
+      },
+      "away": {
+        "id": 11034,
+        "name": "Paphos FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 7
+    },
+    {
+      "match_id": 551936,
+      "utc_date": "2025-09-17T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 8
+    },
+    {
+      "match_id": 551946,
+      "utc_date": "2025-09-17T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 9
+    },
+    {
+      "match_id": 551959,
+      "utc_date": "2025-09-17T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 10
+    },
+    {
+      "match_id": 551908,
+      "utc_date": "2025-09-17T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 61,
+        "name": "Chelsea FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 11
+    },
+    {
+      "match_id": 551975,
+      "utc_date": "2025-09-18T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 1876,
+        "name": "FC København"
+      },
+      "away": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 12
+    },
+    {
+      "match_id": 551995,
+      "utc_date": "2025-09-18T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 13
+    },
+    {
+      "match_id": 551958,
+      "utc_date": "2025-09-18T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 14
+    },
+    {
+      "match_id": 551965,
+      "utc_date": "2025-09-18T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 15
+    },
+    {
+      "match_id": 552000,
+      "utc_date": "2025-09-18T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 19,
+        "name": "Eintracht Frankfurt"
+      },
+      "away": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 16
+    },
+    {
+      "match_id": 552027,
+      "utc_date": "2025-09-18T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 1,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 10601,
+        "name": "FK Kairat"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 17
+    },
+    {
+      "match_id": 551982,
+      "utc_date": "2025-09-30T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 18
+    },
+    {
+      "match_id": 551930,
+      "utc_date": "2025-09-30T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 10601,
+        "name": "FK Kairat"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 5
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 19
+    },
+    {
+      "match_id": 551951,
+      "utc_date": "2025-09-30T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 20
+    },
+    {
+      "match_id": 551997,
+      "utc_date": "2025-09-30T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 19,
+        "name": "Eintracht Frankfurt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 21
+    },
+    {
+      "match_id": 552015,
+      "utc_date": "2025-09-30T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 22
+    },
+    {
+      "match_id": 552020,
+      "utc_date": "2025-09-30T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "away": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 23
+    },
+    {
+      "match_id": 551915,
+      "utc_date": "2025-09-30T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 11034,
+        "name": "Paphos FC"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 5
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 24
+    },
+    {
+      "match_id": 551917,
+      "utc_date": "2025-09-30T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 61,
+        "name": "Chelsea FC"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 25
+    },
+    {
+      "match_id": 551935,
+      "utc_date": "2025-09-30T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 26
+    },
+    {
+      "match_id": 552039,
+      "utc_date": "2025-10-01T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 611,
+        "name": "Qarabağ Ağdam FK"
+      },
+      "away": {
+        "id": 1876,
+        "name": "FC København"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 27
+    },
+    {
+      "match_id": 552044,
+      "utc_date": "2025-10-01T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 3929,
+        "name": "Royale Union Saint-Gilloise"
+      },
+      "away": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 28
+    },
+    {
+      "match_id": 551944,
+      "utc_date": "2025-10-01T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 29
+    },
+    {
+      "match_id": 551952,
+      "utc_date": "2025-10-01T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 30
+    },
+    {
+      "match_id": 551968,
+      "utc_date": "2025-10-01T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 31
+    },
+    {
+      "match_id": 551972,
+      "utc_date": "2025-10-01T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 32
+    },
+    {
+      "match_id": 551978,
+      "utc_date": "2025-10-01T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 654,
+        "name": "PAE Olympiakos SFP"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 33
+    },
+    {
+      "match_id": 552002,
+      "utc_date": "2025-10-01T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 34
+    },
+    {
+      "match_id": 552026,
+      "utc_date": "2025-10-01T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 2,
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 35
+    },
+    {
+      "match_id": 551955,
+      "utc_date": "2025-10-21T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 654,
+        "name": "PAE Olympiakos SFP"
+      },
+      "score": {
+        "fullTime": {
+          "home": 6,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 36
+    },
+    {
+      "match_id": 552045,
+      "utc_date": "2025-10-21T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 10601,
+        "name": "FK Kairat"
+      },
+      "away": {
+        "id": 11034,
+        "name": "Paphos FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 37
+    },
+    {
+      "match_id": 551938,
+      "utc_date": "2025-10-21T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 3929,
+        "name": "Royale Union Saint-Gilloise"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 38
+    },
+    {
+      "match_id": 551945,
+      "utc_date": "2025-10-21T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 1876,
+        "name": "FC København"
+      },
+      "away": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 39
+    },
+    {
+      "match_id": 551960,
+      "utc_date": "2025-10-21T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 7
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 40
+    },
+    {
+      "match_id": 551964,
+      "utc_date": "2025-10-21T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 41
+    },
+    {
+      "match_id": 551976,
+      "utc_date": "2025-10-21T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 42
+    },
+    {
+      "match_id": 551992,
+      "utc_date": "2025-10-21T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 43
+    },
+    {
+      "match_id": 552048,
+      "utc_date": "2025-10-21T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "score": {
+        "fullTime": {
+          "home": 6,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 44
+    },
+    {
+      "match_id": 552025,
+      "utc_date": "2025-10-22T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 45
+    },
+    {
+      "match_id": 552040,
+      "utc_date": "2025-10-22T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 611,
+        "name": "Qarabağ Ağdam FK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 46
+    },
+    {
+      "match_id": 551947,
+      "utc_date": "2025-10-22T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 19,
+        "name": "Eintracht Frankfurt"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 5
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 47
+    },
+    {
+      "match_id": 551984,
+      "utc_date": "2025-10-22T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 48
+    },
+    {
+      "match_id": 552016,
+      "utc_date": "2025-10-22T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 49
+    },
+    {
+      "match_id": 552022,
+      "utc_date": "2025-10-22T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 50
+    },
+    {
+      "match_id": 551910,
+      "utc_date": "2025-10-22T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 51
+    },
+    {
+      "match_id": 551919,
+      "utc_date": "2025-10-22T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 61,
+        "name": "Chelsea FC"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 52
+    },
+    {
+      "match_id": 551925,
+      "utc_date": "2025-10-22T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 3,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 53
+    },
+    {
+      "match_id": 551979,
+      "utc_date": "2025-11-04T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 54
+    },
+    {
+      "match_id": 551999,
+      "utc_date": "2025-11-04T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 19,
+        "name": "Eintracht Frankfurt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 55
+    },
+    {
+      "match_id": 552003,
+      "utc_date": "2025-11-04T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 56
+    },
+    {
+      "match_id": 552009,
+      "utc_date": "2025-11-04T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 3929,
+        "name": "Royale Union Saint-Gilloise"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 57
+    },
+    {
+      "match_id": 552021,
+      "utc_date": "2025-11-04T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC"
+      },
+      "away": {
+        "id": 1876,
+        "name": "FC København"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 58
+    },
+    {
+      "match_id": 552024,
+      "utc_date": "2025-11-04T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 59
+    },
+    {
+      "match_id": 552029,
+      "utc_date": "2025-11-04T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 654,
+        "name": "PAE Olympiakos SFP"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 60
+    },
+    {
+      "match_id": 551909,
+      "utc_date": "2025-11-04T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 61
+    },
+    {
+      "match_id": 551924,
+      "utc_date": "2025-11-04T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 62
+    },
+    {
+      "match_id": 552014,
+      "utc_date": "2025-11-05T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 11034,
+        "name": "Paphos FC"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 63
+    },
+    {
+      "match_id": 551922,
+      "utc_date": "2025-11-05T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 611,
+        "name": "Qarabağ Ağdam FK"
+      },
+      "away": {
+        "id": 61,
+        "name": "Chelsea FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 64
+    },
+    {
+      "match_id": 551937,
+      "utc_date": "2025-11-05T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 10601,
+        "name": "FK Kairat"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 65
+    },
+    {
+      "match_id": 551939,
+      "utc_date": "2025-11-05T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "away": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 66
+    },
+    {
+      "match_id": 551954,
+      "utc_date": "2025-11-05T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 67
+    },
+    {
+      "match_id": 551971,
+      "utc_date": "2025-11-05T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 68
+    },
+    {
+      "match_id": 551985,
+      "utc_date": "2025-11-05T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 69
+    },
+    {
+      "match_id": 552033,
+      "utc_date": "2025-11-05T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 70
+    },
+    {
+      "match_id": 552047,
+      "utc_date": "2025-11-05T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 4,
+      "home": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 71
+    },
+    {
+      "match_id": 551990,
+      "utc_date": "2025-11-25T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 72
+    },
+    {
+      "match_id": 552043,
+      "utc_date": "2025-11-25T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "away": {
+        "id": 3929,
+        "name": "Royale Union Saint-Gilloise"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 73
+    },
+    {
+      "match_id": 551940,
+      "utc_date": "2025-11-25T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 74
+    },
+    {
+      "match_id": 551963,
+      "utc_date": "2025-11-25T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "away": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 75
+    },
+    {
+      "match_id": 552004,
+      "utc_date": "2025-11-25T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 76
+    },
+    {
+      "match_id": 552017,
+      "utc_date": "2025-11-25T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 77
+    },
+    {
+      "match_id": 552035,
+      "utc_date": "2025-11-25T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 78
+    },
+    {
+      "match_id": 552037,
+      "utc_date": "2025-11-25T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 611,
+        "name": "Qarabağ Ağdam FK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 79
+    },
+    {
+      "match_id": 551916,
+      "utc_date": "2025-11-25T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 61,
+        "name": "Chelsea FC"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 80
+    },
+    {
+      "match_id": 552042,
+      "utc_date": "2025-11-26T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 11034,
+        "name": "Paphos FC"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 81
+    },
+    {
+      "match_id": 552046,
+      "utc_date": "2025-11-26T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 1876,
+        "name": "FC København"
+      },
+      "away": {
+        "id": 10601,
+        "name": "FK Kairat"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 82
+    },
+    {
+      "match_id": 551948,
+      "utc_date": "2025-11-26T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 83
+    },
+    {
+      "match_id": 551961,
+      "utc_date": "2025-11-26T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 84
+    },
+    {
+      "match_id": 551983,
+      "utc_date": "2025-11-26T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 19,
+        "name": "Eintracht Frankfurt"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 85
+    },
+    {
+      "match_id": 551994,
+      "utc_date": "2025-11-26T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 86
+    },
+    {
+      "match_id": 551911,
+      "utc_date": "2025-11-26T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 87
+    },
+    {
+      "match_id": 551928,
+      "utc_date": "2025-11-26T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 654,
+        "name": "PAE Olympiakos SFP"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 88
+    },
+    {
+      "match_id": 551934,
+      "utc_date": "2025-11-26T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 5,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 89
+    },
+    {
+      "match_id": 552032,
+      "utc_date": "2025-12-09T15:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 10601,
+        "name": "FK Kairat"
+      },
+      "away": {
+        "id": 654,
+        "name": "PAE Olympiakos SFP"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 90
+    },
+    {
+      "match_id": 551912,
+      "utc_date": "2025-12-09T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 91
+    },
+    {
+      "match_id": 551953,
+      "utc_date": "2025-12-09T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 19,
+        "name": "Eintracht Frankfurt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 92
+    },
+    {
+      "match_id": 552008,
+      "utc_date": "2025-12-09T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 93
+    },
+    {
+      "match_id": 552018,
+      "utc_date": "2025-12-09T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 3929,
+        "name": "Royale Union Saint-Gilloise"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 94
+    },
+    {
+      "match_id": 552019,
+      "utc_date": "2025-12-09T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC"
+      },
+      "away": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 95
+    },
+    {
+      "match_id": 552041,
+      "utc_date": "2025-12-09T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 96
+    },
+    {
+      "match_id": 551918,
+      "utc_date": "2025-12-09T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 61,
+        "name": "Chelsea FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 97
+    },
+    {
+      "match_id": 551931,
+      "utc_date": "2025-12-09T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 98
+    },
+    {
+      "match_id": 552013,
+      "utc_date": "2025-12-10T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 1876,
+        "name": "FC København"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 99
+    },
+    {
+      "match_id": 552034,
+      "utc_date": "2025-12-10T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 611,
+        "name": "Qarabağ Ağdam FK"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 100
+    },
+    {
+      "match_id": 551942,
+      "utc_date": "2025-12-10T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 101
+    },
+    {
+      "match_id": 551969,
+      "utc_date": "2025-12-10T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 102
+    },
+    {
+      "match_id": 551974,
+      "utc_date": "2025-12-10T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "away": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 103
+    },
+    {
+      "match_id": 551977,
+      "utc_date": "2025-12-10T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 104
+    },
+    {
+      "match_id": 551989,
+      "utc_date": "2025-12-10T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 105
+    },
+    {
+      "match_id": 552005,
+      "utc_date": "2025-12-10T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 11034,
+        "name": "Paphos FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 106
+    },
+    {
+      "match_id": 551923,
+      "utc_date": "2025-12-10T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 6,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 107
+    },
+    {
+      "match_id": 551996,
+      "utc_date": "2026-01-20T15:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 10601,
+        "name": "FK Kairat"
+      },
+      "away": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 108
+    },
+    {
+      "match_id": 551966,
+      "utc_date": "2026-01-20T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "away": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 109
+    },
+    {
+      "match_id": 551943,
+      "utc_date": "2026-01-20T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC"
+      },
+      "away": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 110
+    },
+    {
+      "match_id": 551962,
+      "utc_date": "2026-01-20T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 111
+    },
+    {
+      "match_id": 551973,
+      "utc_date": "2026-01-20T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 654,
+        "name": "PAE Olympiakos SFP"
+      },
+      "away": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 112
+    },
+    {
+      "match_id": 552011,
+      "utc_date": "2026-01-20T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 113
+    },
+    {
+      "match_id": 552038,
+      "utc_date": "2026-01-20T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 1876,
+        "name": "FC København"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 114
+    },
+    {
+      "match_id": 551929,
+      "utc_date": "2026-01-20T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 6,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 115
+    },
+    {
+      "match_id": 551933,
+      "utc_date": "2026-01-20T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 116
+    },
+    {
+      "match_id": 552001,
+      "utc_date": "2026-01-21T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 611,
+        "name": "Qarabağ Ağdam FK"
+      },
+      "away": {
+        "id": 19,
+        "name": "Eintracht Frankfurt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 117
+    },
+    {
+      "match_id": 552010,
+      "utc_date": "2026-01-21T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 118
+    },
+    {
+      "match_id": 551949,
+      "utc_date": "2026-01-21T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 119
+    },
+    {
+      "match_id": 551956,
+      "utc_date": "2026-01-21T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 120
+    },
+    {
+      "match_id": 551986,
+      "utc_date": "2026-01-21T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 121
+    },
+    {
+      "match_id": 551988,
+      "utc_date": "2026-01-21T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 122
+    },
+    {
+      "match_id": 552036,
+      "utc_date": "2026-01-21T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 123
+    },
+    {
+      "match_id": 551914,
+      "utc_date": "2026-01-21T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 3929,
+        "name": "Royale Union Saint-Gilloise"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 124
+    },
+    {
+      "match_id": 551921,
+      "utc_date": "2026-01-21T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 7,
+      "home": {
+        "id": 61,
+        "name": "Chelsea FC"
+      },
+      "away": {
+        "id": 11034,
+        "name": "Paphos FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 125
+    },
+    {
+      "match_id": 551950,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "away": {
+        "id": 611,
+        "name": "Qarabağ Ağdam FK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 6,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 126
+    },
+    {
+      "match_id": 551957,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 1876,
+        "name": "FC København"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 127
+    },
+    {
+      "match_id": 551967,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "away": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 128
+    },
+    {
+      "match_id": 551970,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 129
+    },
+    {
+      "match_id": 551980,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 10601,
+        "name": "FK Kairat"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 130
+    },
+    {
+      "match_id": 551987,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 3929,
+        "name": "Royale Union Saint-Gilloise"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 131
+    },
+    {
+      "match_id": 551993,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 132
+    },
+    {
+      "match_id": 551998,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 19,
+        "name": "Eintracht Frankfurt"
+      },
+      "away": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 133
+    },
+    {
+      "match_id": 552006,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 134
+    },
+    {
+      "match_id": 552007,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 135
+    },
+    {
+      "match_id": 552028,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 77,
+        "name": "Athletic Club"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 136
+    },
+    {
+      "match_id": 552030,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 654,
+        "name": "PAE Olympiakos SFP"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 137
+    },
+    {
+      "match_id": 552050,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 138
+    },
+    {
+      "match_id": 552051,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 11034,
+        "name": "Paphos FC"
+      },
+      "away": {
+        "id": 930,
+        "name": "SK Slavia Praha"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 139
+    },
+    {
+      "match_id": 551913,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 140
+    },
+    {
+      "match_id": 551920,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 61,
+        "name": "Chelsea FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 141
+    },
+    {
+      "match_id": 551926,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 142
+    },
+    {
+      "match_id": 551932,
+      "utc_date": "2026-01-28T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LEAGUE_STAGE",
+      "matchday": 8,
+      "home": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 143
+    },
+    {
+      "match_id": 552055,
+      "utc_date": "2026-02-17T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 1,
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 144
+    },
+    {
+      "match_id": 552052,
+      "utc_date": "2026-02-17T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 1,
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 145
+    },
+    {
+      "match_id": 552053,
+      "utc_date": "2026-02-17T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 1,
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 146
+    },
+    {
+      "match_id": 552057,
+      "utc_date": "2026-02-17T20:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 1,
+      "home": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 147
+    },
+    {
+      "match_id": 552054,
+      "utc_date": "2026-02-18T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 1,
+      "home": {
+        "id": 611,
+        "name": "Qarabağ Ağdam FK"
+      },
+      "away": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 6
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 148
+    },
+    {
+      "match_id": 552056,
+      "utc_date": "2026-02-18T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 1,
+      "home": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 149
+    },
+    {
+      "match_id": 552058,
+      "utc_date": "2026-02-18T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 1,
+      "home": {
+        "id": 654,
+        "name": "PAE Olympiakos SFP"
+      },
+      "away": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 150
+    },
+    {
+      "match_id": 552059,
+      "utc_date": "2026-02-18T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 1,
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 151
+    },
+    {
+      "match_id": 552064,
+      "utc_date": "2026-02-24T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 2,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 851,
+        "name": "Club Brugge KV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 152
+    },
+    {
+      "match_id": 552062,
+      "utc_date": "2026-02-24T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 2,
+      "home": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "away": {
+        "id": 611,
+        "name": "Qarabağ Ağdam FK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 153
+    },
+    {
+      "match_id": 552066,
+      "utc_date": "2026-02-24T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 2,
+      "home": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "away": {
+        "id": 654,
+        "name": "PAE Olympiakos SFP"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 154
+    },
+    {
+      "match_id": 552067,
+      "utc_date": "2026-02-24T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 2,
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 155
+    },
+    {
+      "match_id": 552065,
+      "utc_date": "2026-02-25T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 2,
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 4,
+        "name": "Borussia Dortmund"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 156
+    },
+    {
+      "match_id": 552060,
+      "utc_date": "2026-02-25T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 2,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 157
+    },
+    {
+      "match_id": 552061,
+      "utc_date": "2026-02-25T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 2,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 158
+    },
+    {
+      "match_id": 552063,
+      "utc_date": "2026-02-25T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "PLAYOFFS",
+      "matchday": 2,
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        },
+        "regularTime": {
+          "home": 3,
+          "away": 0
+        },
+        "extraTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "EXTRA_TIME",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 159
+    },
+    {
+      "match_id": 552069,
+      "utc_date": "2026-03-10T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 1,
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 160
+    },
+    {
+      "match_id": 552071,
+      "utc_date": "2026-03-10T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 1,
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 6
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 161
+    },
+    {
+      "match_id": 552072,
+      "utc_date": "2026-03-10T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 1,
+      "home": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 162
+    },
+    {
+      "match_id": 552073,
+      "utc_date": "2026-03-10T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 1,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 163
+    },
+    {
+      "match_id": 552075,
+      "utc_date": "2026-03-11T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 1,
+      "home": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 164
+    },
+    {
+      "match_id": 552068,
+      "utc_date": "2026-03-11T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 1,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 61,
+        "name": "Chelsea FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 165
+    },
+    {
+      "match_id": 552070,
+      "utc_date": "2026-03-11T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 1,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 166
+    },
+    {
+      "match_id": 552074,
+      "utc_date": "2026-03-11T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 1,
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 167
+    },
+    {
+      "match_id": 552082,
+      "utc_date": "2026-03-17T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 2,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 0
+        },
+        "regularTime": {
+          "home": 3,
+          "away": 0
+        },
+        "extraTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "EXTRA_TIME",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 168
+    },
+    {
+      "match_id": 552076,
+      "utc_date": "2026-03-17T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 2,
+      "home": {
+        "id": 61,
+        "name": "Chelsea FC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 169
+    },
+    {
+      "match_id": 552078,
+      "utc_date": "2026-03-17T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 2,
+      "home": {
+        "id": 65,
+        "name": "Manchester City FC"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 170
+    },
+    {
+      "match_id": 552083,
+      "utc_date": "2026-03-17T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 2,
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 171
+    },
+    {
+      "match_id": 552080,
+      "utc_date": "2026-03-18T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 2,
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 67,
+        "name": "Newcastle United FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 7,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 172
+    },
+    {
+      "match_id": 552077,
+      "utc_date": "2026-03-18T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 2,
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "away": {
+        "id": 610,
+        "name": "Galatasaray SK"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 173
+    },
+    {
+      "match_id": 552079,
+      "utc_date": "2026-03-18T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 2,
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 174
+    },
+    {
+      "match_id": 552081,
+      "utc_date": "2026-03-18T20:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "LAST_16",
+      "matchday": 2,
+      "home": {
+        "id": 73,
+        "name": "Tottenham Hotspur FC"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 175
+    },
+    {
+      "match_id": 556719,
+      "utc_date": "2026-04-07T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "QUARTER_FINALS",
+      "matchday": 1,
+      "home": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 176
+    },
+    {
+      "match_id": 556721,
+      "utc_date": "2026-04-07T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "QUARTER_FINALS",
+      "matchday": 1,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 177
+    },
+    {
+      "match_id": 556718,
+      "utc_date": "2026-04-08T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "QUARTER_FINALS",
+      "matchday": 1,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 178
+    },
+    {
+      "match_id": 556720,
+      "utc_date": "2026-04-08T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "QUARTER_FINALS",
+      "matchday": 1,
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 179
+    },
+    {
+      "match_id": 556722,
+      "utc_date": "2026-04-14T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "QUARTER_FINALS",
+      "matchday": 2,
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 180
+    },
+    {
+      "match_id": 556724,
+      "utc_date": "2026-04-14T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "QUARTER_FINALS",
+      "matchday": 2,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 181
+    },
+    {
+      "match_id": 556723,
+      "utc_date": "2026-04-15T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "QUARTER_FINALS",
+      "matchday": 2,
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid CF"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 182
+    },
+    {
+      "match_id": 556725,
+      "utc_date": "2026-04-15T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "QUARTER_FINALS",
+      "matchday": 2,
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 183
+    },
+    {
+      "match_id": 552092,
+      "utc_date": "2026-04-28T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "SEMI_FINALS",
+      "matchday": 1,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 184
+    },
+    {
+      "match_id": 552093,
+      "utc_date": "2026-04-29T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "SEMI_FINALS",
+      "matchday": 1,
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 185
+    },
+    {
+      "match_id": 552095,
+      "utc_date": "2026-05-05T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "SEMI_FINALS",
+      "matchday": 2,
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 186
+    },
+    {
+      "match_id": 552094,
+      "utc_date": "2026-05-06T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "SEMI_FINALS",
+      "matchday": 2,
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 187
+    },
+    {
+      "match_id": 552096,
+      "utc_date": "2026-05-30T16:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "CL",
+      "competition_id": 2001,
+      "season_id": 2454,
+      "season_start": "2025-09-16",
+      "season_end": "2026-05-30",
+      "requested_season": 2025,
+      "stage": "FINAL",
+      "matchday": null,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 57,
+        "name": "Arsenal FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 4
+        },
+        "regularTime": {
+          "home": 1,
+          "away": 1
+        },
+        "extraTime": {
+          "home": 0,
+          "away": 0
+        },
+        "penalties": {
+          "home": 4,
+          "away": 3
+        }
+      },
+      "duration": "PENALTY_SHOOTOUT",
+      "provider_updated_at": "2026-06-13T20:20:17Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2025",
+      "response_record_index": 188
+    }
+  ],
+  "status_counts": {
+    "FINISHED": 189
+  },
+  "nonfinal_records": [],
+  "api_reported_count": 189,
+  "sha256_raw_response": "e0492ec52276ca36aaa10f0348638c3f7b0717de6a731cd3bf43b4879cd98a0d"
+}

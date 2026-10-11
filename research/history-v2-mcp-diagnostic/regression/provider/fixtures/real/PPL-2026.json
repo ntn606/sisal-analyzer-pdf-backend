@@ -1,0 +1,5465 @@
+{
+  "url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+  "competition": "PPL",
+  "requested_season": 2026,
+  "schema_version": 2,
+  "cutoff_utc": "2026-10-10T17:58:48.362798+00:00",
+  "requested_at_utc": "2026-10-10T17:59:25.580036+00:00",
+  "http_status": 200,
+  "quota": {
+    "counter_reset_seconds": 23
+  },
+  "state": "retrieved",
+  "raw_match_count": 306,
+  "rejected": {
+    "non_final_or_wrong_competition": 242
+  },
+  "records": [
+    {
+      "match_id": 567264,
+      "utc_date": "2026-08-07T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 0
+    },
+    {
+      "match_id": 567263,
+      "utc_date": "2026-08-08T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 1
+    },
+    {
+      "match_id": 567258,
+      "utc_date": "2026-08-08T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 2
+    },
+    {
+      "match_id": 567260,
+      "utc_date": "2026-08-08T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 3
+    },
+    {
+      "match_id": 567265,
+      "utc_date": "2026-08-09T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 4
+    },
+    {
+      "match_id": 567259,
+      "utc_date": "2026-08-09T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 5
+    },
+    {
+      "match_id": 567261,
+      "utc_date": "2026-08-09T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 6
+    },
+    {
+      "match_id": 567262,
+      "utc_date": "2026-08-09T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 7
+    },
+    {
+      "match_id": 567257,
+      "utc_date": "2026-08-10T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 8
+    },
+    {
+      "match_id": 567268,
+      "utc_date": "2026-08-14T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 9
+    },
+    {
+      "match_id": 567266,
+      "utc_date": "2026-08-15T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 10
+    },
+    {
+      "match_id": 567273,
+      "utc_date": "2026-08-15T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 11
+    },
+    {
+      "match_id": 567274,
+      "utc_date": "2026-08-15T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 12
+    },
+    {
+      "match_id": 567270,
+      "utc_date": "2026-08-16T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 13
+    },
+    {
+      "match_id": 567272,
+      "utc_date": "2026-08-16T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 14
+    },
+    {
+      "match_id": 567269,
+      "utc_date": "2026-08-16T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 15
+    },
+    {
+      "match_id": 567267,
+      "utc_date": "2026-08-17T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 7
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 16
+    },
+    {
+      "match_id": 567283,
+      "utc_date": "2026-08-22T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 17
+    },
+    {
+      "match_id": 567279,
+      "utc_date": "2026-08-22T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 18
+    },
+    {
+      "match_id": 567275,
+      "utc_date": "2026-08-22T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 19
+    },
+    {
+      "match_id": 567278,
+      "utc_date": "2026-08-23T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 20
+    },
+    {
+      "match_id": 567281,
+      "utc_date": "2026-08-23T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 21
+    },
+    {
+      "match_id": 567280,
+      "utc_date": "2026-08-23T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 22
+    },
+    {
+      "match_id": 567277,
+      "utc_date": "2026-08-24T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 23
+    },
+    {
+      "match_id": 567291,
+      "utc_date": "2026-08-28T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 24
+    },
+    {
+      "match_id": 567285,
+      "utc_date": "2026-08-29T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 25
+    },
+    {
+      "match_id": 567287,
+      "utc_date": "2026-08-29T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 26
+    },
+    {
+      "match_id": 567289,
+      "utc_date": "2026-08-29T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 27
+    },
+    {
+      "match_id": 567286,
+      "utc_date": "2026-08-30T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 28
+    },
+    {
+      "match_id": 567290,
+      "utc_date": "2026-08-30T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 29
+    },
+    {
+      "match_id": 567284,
+      "utc_date": "2026-08-30T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 30
+    },
+    {
+      "match_id": 567288,
+      "utc_date": "2026-08-31T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 31
+    },
+    {
+      "match_id": 567292,
+      "utc_date": "2026-08-31T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 32
+    },
+    {
+      "match_id": 567299,
+      "utc_date": "2026-09-04T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 33
+    },
+    {
+      "match_id": 567297,
+      "utc_date": "2026-09-05T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 34
+    },
+    {
+      "match_id": 567296,
+      "utc_date": "2026-09-05T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 35
+    },
+    {
+      "match_id": 567293,
+      "utc_date": "2026-09-05T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 36
+    },
+    {
+      "match_id": 567298,
+      "utc_date": "2026-09-05T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 37
+    },
+    {
+      "match_id": 567300,
+      "utc_date": "2026-09-06T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 38
+    },
+    {
+      "match_id": 567294,
+      "utc_date": "2026-09-06T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 39
+    },
+    {
+      "match_id": 567301,
+      "utc_date": "2026-09-06T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 40
+    },
+    {
+      "match_id": 567295,
+      "utc_date": "2026-09-07T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 41
+    },
+    {
+      "match_id": 567282,
+      "utc_date": "2026-09-09T19:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 42
+    },
+    {
+      "match_id": 567276,
+      "utc_date": "2026-09-10T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 43
+    },
+    {
+      "match_id": 567306,
+      "utc_date": "2026-09-12T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 44
+    },
+    {
+      "match_id": 567307,
+      "utc_date": "2026-09-12T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 45
+    },
+    {
+      "match_id": 567309,
+      "utc_date": "2026-09-12T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 46
+    },
+    {
+      "match_id": 567304,
+      "utc_date": "2026-09-13T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 47
+    },
+    {
+      "match_id": 567310,
+      "utc_date": "2026-09-13T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 48
+    },
+    {
+      "match_id": 567305,
+      "utc_date": "2026-09-13T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 49
+    },
+    {
+      "match_id": 567303,
+      "utc_date": "2026-09-14T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 50
+    },
+    {
+      "match_id": 567302,
+      "utc_date": "2026-09-14T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 51
+    },
+    {
+      "match_id": 567308,
+      "utc_date": "2026-09-14T19:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 52
+    },
+    {
+      "match_id": 567311,
+      "utc_date": "2026-09-19T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 53
+    },
+    {
+      "match_id": 567312,
+      "utc_date": "2026-09-19T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 54
+    },
+    {
+      "match_id": 567318,
+      "utc_date": "2026-09-19T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 55
+    },
+    {
+      "match_id": 567313,
+      "utc_date": "2026-09-19T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 56
+    },
+    {
+      "match_id": 567315,
+      "utc_date": "2026-09-20T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 57
+    },
+    {
+      "match_id": 567317,
+      "utc_date": "2026-09-20T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 58
+    },
+    {
+      "match_id": 567314,
+      "utc_date": "2026-09-20T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 59
+    },
+    {
+      "match_id": 567319,
+      "utc_date": "2026-09-20T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 60
+    },
+    {
+      "match_id": 567316,
+      "utc_date": "2026-09-20T19:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 61
+    },
+    {
+      "match_id": 567327,
+      "utc_date": "2026-10-09T17:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 8,
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 62
+    },
+    {
+      "match_id": 567326,
+      "utc_date": "2026-10-09T19:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "PPL",
+      "competition_id": 2017,
+      "season_id": 2526,
+      "season_start": "2026-08-08",
+      "season_end": "2027-05-16",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 8,
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/PPL/matches?season=2026",
+      "response_record_index": 63
+    }
+  ],
+  "status_counts": {
+    "FINISHED": 64,
+    "IN_PLAY": 1,
+    "TIMED": 43,
+    "SCHEDULED": 198
+  },
+  "nonfinal_records": [
+    {
+      "match_id": 567323,
+      "utc_date": "2026-10-10T17:00:00+00:00",
+      "status": "IN_PLAY",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567321,
+      "utc_date": "2026-10-10T19:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567322,
+      "utc_date": "2026-10-10T19:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567328,
+      "utc_date": "2026-10-11T14:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567320,
+      "utc_date": "2026-10-11T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567324,
+      "utc_date": "2026-10-11T19:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567325,
+      "utc_date": "2026-10-12T19:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567271,
+      "utc_date": "2026-10-19T19:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567329,
+      "utc_date": "2026-10-23T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567337,
+      "utc_date": "2026-10-24T14:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567333,
+      "utc_date": "2026-10-24T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567335,
+      "utc_date": "2026-10-24T19:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567336,
+      "utc_date": "2026-10-25T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567330,
+      "utc_date": "2026-10-25T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567334,
+      "utc_date": "2026-10-25T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567332,
+      "utc_date": "2026-10-25T20:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567331,
+      "utc_date": "2026-10-26T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567344,
+      "utc_date": "2026-10-30T20:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567343,
+      "utc_date": "2026-10-31T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567338,
+      "utc_date": "2026-10-31T20:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567341,
+      "utc_date": "2026-11-01T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567340,
+      "utc_date": "2026-11-01T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567345,
+      "utc_date": "2026-11-01T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567339,
+      "utc_date": "2026-11-01T20:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567342,
+      "utc_date": "2026-11-02T20:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567346,
+      "utc_date": "2026-11-02T20:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567353,
+      "utc_date": "2026-11-06T20:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567352,
+      "utc_date": "2026-11-07T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567347,
+      "utc_date": "2026-11-07T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567350,
+      "utc_date": "2026-11-07T20:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567348,
+      "utc_date": "2026-11-08T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567351,
+      "utc_date": "2026-11-08T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567349,
+      "utc_date": "2026-11-08T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567354,
+      "utc_date": "2026-11-08T20:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567355,
+      "utc_date": "2026-11-08T20:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567361,
+      "utc_date": "2026-11-27T20:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567357,
+      "utc_date": "2026-11-28T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567362,
+      "utc_date": "2026-11-28T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567364,
+      "utc_date": "2026-11-28T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567356,
+      "utc_date": "2026-11-28T20:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567363,
+      "utc_date": "2026-11-29T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567358,
+      "utc_date": "2026-11-29T20:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567359,
+      "utc_date": "2026-11-30T20:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567360,
+      "utc_date": "2026-11-30T20:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567365,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567366,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567367,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567368,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567369,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567370,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567371,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567372,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567373,
+      "utc_date": "2026-12-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567374,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567375,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567376,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567377,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567378,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567379,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567380,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567381,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567382,
+      "utc_date": "2026-12-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567383,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567384,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567385,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567386,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567387,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567388,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567389,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567390,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567391,
+      "utc_date": "2026-12-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567392,
+      "utc_date": "2026-12-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567393,
+      "utc_date": "2026-12-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567394,
+      "utc_date": "2026-12-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567395,
+      "utc_date": "2026-12-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567396,
+      "utc_date": "2026-12-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567397,
+      "utc_date": "2026-12-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567398,
+      "utc_date": "2026-12-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567399,
+      "utc_date": "2026-12-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567400,
+      "utc_date": "2026-12-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567401,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567402,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567403,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567404,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567405,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567406,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567407,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567408,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567409,
+      "utc_date": "2027-01-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567410,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567411,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567412,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567413,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567414,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567415,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567416,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567417,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567418,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567419,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567420,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567421,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567422,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567423,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567424,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567425,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567426,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567427,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567428,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567429,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567430,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567431,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567432,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567433,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567434,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567435,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567436,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567437,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567438,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567439,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567440,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567441,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567442,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567443,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567444,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567445,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567446,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567447,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567448,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567449,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567450,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567451,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567452,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567453,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567454,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567455,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567456,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567457,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567458,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567459,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567460,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567461,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567462,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567463,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567464,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567465,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567466,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567467,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567468,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567469,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567470,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567471,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567472,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567473,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567474,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567475,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567476,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567477,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567478,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567479,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567480,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567481,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567482,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567483,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567484,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567485,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567486,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567487,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567488,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567489,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567490,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567491,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567492,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567493,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567494,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567495,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567496,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567497,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567498,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567499,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567500,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567501,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567502,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567503,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567504,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567505,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567506,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567507,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567508,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567509,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567510,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567511,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567512,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567513,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567514,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567515,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567516,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567517,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567518,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567519,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567520,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567521,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567522,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567523,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567524,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567525,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567526,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567527,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567528,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567529,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567530,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567531,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567532,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567533,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567534,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567535,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567536,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567537,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567538,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567539,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567540,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567541,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567542,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567543,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567544,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567552,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567553,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567545,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567546,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567547,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "away": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567548,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567549,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567550,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "away": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567551,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "away": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567554,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5575,
+        "name": "CS Marítimo"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567555,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567556,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567557,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567558,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 503,
+        "name": "FC Porto"
+      },
+      "away": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567559,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC"
+      },
+      "away": {
+        "id": 5527,
+        "name": "Académico de Viseu FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567560,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5543,
+        "name": "Vitória SC"
+      },
+      "away": {
+        "id": 5531,
+        "name": "FC Famalicão"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567561,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 567562,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC"
+      },
+      "away": {
+        "id": 496,
+        "name": "Rio Ave FC"
+      },
+      "overdue_nonfinal": false
+    }
+  ],
+  "api_reported_count": 306,
+  "sha256_raw_response": "8d37a5cfd753a04b833cda1505b87602eb3fdccb571def1f5aaa2f48d819f0db"
+}

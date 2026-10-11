@@ -1,0 +1,225 @@
+{
+  "suite": "provider",
+  "tests_run": 42,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "provider_requests": 0,
+  "external_socket_attempts": 0,
+  "external_dns_attempts": 0,
+  "loopback_socket_connections": 0,
+  "guarded_child_python_processes": 0,
+  "cases": [
+    {
+      "test": "test_provider.SyntheticTests.test_180_day_lower_boundary_inclusive_older_results_excluded",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_absence_has_zero_count_and_unresolved_identity",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_conflict_detected_even_if_other_variant_removes_target_team",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_dst_repeated_hour_has_distinct_offsets_and_correct_order",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_exact_upper_boundary_is_exclusive",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_extra_time_does_not_replace_90_minute_goals",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_finished_fixture_after_event_is_excluded",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_finished_fixture_future_to_verification_is_excluded",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_five_old_results_are_insufficient_recent_history",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_future_acquisition_cannot_be_used_at_verification_time",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_identical_duplicates_merge_provenance_and_do_not_fill_five",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_incomplete_duplicate_cannot_hide_behind_complete_record",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_invalid_cli_arguments_are_json_without_reflection",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_invalid_competition_and_identity_are_separate_from_incomplete",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_known_team_without_finished_games_is_insufficient",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_loader_does_not_echo_errors_auth_headers_or_untrusted_urls",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_missing_regular_time_never_falls_back_to_penalty_score",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_missing_scope_source_is_explicit",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_naive_timestamps_are_rejected",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_nonexistent_snapshot_directory_is_safe_json_error",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_partial_statistics_use_actual_sample_size",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_penalty_shootout_uses_explicit_90_minutes_and_counts_draw",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_post_event_snapshot_requires_review_of_historical_availability",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_postponed_cancelled_and_nonfinal_never_become_results",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_same_id_name_alias_does_not_create_another_team",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_scope_and_provenance_cannot_be_reinterpreted",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_score_conflict_quarantines_all_variants",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_season_identity_cannot_be_coerced_from_float",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_similar_names_with_different_ids_never_merge",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_stale_sources_are_not_hidden_by_five_recent_results",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_statistics_overall_home_away_and_means",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_timezone_offsets_are_compared_as_instants",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_provider.SyntheticTests.test_unknown_or_malformed_status_is_rejected_safely",
+      "data_origin": "synthetic_history_fixtures",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_real_snapshots.RealSnapshotTests.test_actual_cancelled_laliga_match_is_never_a_result",
+      "data_origin": "real_saved_FD_snapshots_offline",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_real_snapshots.RealSnapshotTests.test_actual_final_penalty_scores_are_separate",
+      "data_origin": "real_saved_FD_snapshots_offline",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_real_snapshots.RealSnapshotTests.test_all_ten_snapshots_load_without_modification",
+      "data_origin": "real_saved_FD_snapshots_offline",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_real_snapshots.RealSnapshotTests.test_arsenal_aggregates_pl_and_champions_and_statistics",
+      "data_origin": "real_saved_FD_snapshots_offline",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_real_snapshots.RealSnapshotTests.test_champions_five_requires_two_seasons",
+      "data_origin": "real_saved_FD_snapshots_offline",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_real_snapshots.RealSnapshotTests.test_cli_real_json_contains_provenance_without_credentials",
+      "data_origin": "real_saved_FD_snapshots_offline",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_real_snapshots.RealSnapshotTests.test_leipzig_has_four_final_results_and_inplay_excluded",
+      "data_origin": "real_saved_FD_snapshots_offline",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_real_snapshots.RealSnapshotTests.test_psg_aggregates_ligue1_and_champions",
+      "data_origin": "real_saved_FD_snapshots_offline",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_real_snapshots.RealSnapshotTests.test_roma_champions_stays_insufficient",
+      "data_origin": "real_saved_FD_snapshots_offline",
+      "outcome": "passed"
+    }
+  ]
+}

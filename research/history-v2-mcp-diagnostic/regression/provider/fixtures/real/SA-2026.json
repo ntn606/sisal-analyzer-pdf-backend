@@ -1,0 +1,6267 @@
+{
+  "url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+  "competition": "SA",
+  "requested_season": 2026,
+  "schema_version": 2,
+  "cutoff_utc": "2026-10-10T17:58:48.362798+00:00",
+  "requested_at_utc": "2026-10-10T17:58:48.377260+00:00",
+  "http_status": 200,
+  "quota": {
+    "counter_reset_seconds": 60
+  },
+  "state": "retrieved",
+  "raw_match_count": 380,
+  "rejected": {
+    "non_final_or_wrong_competition": 329
+  },
+  "records": [
+    {
+      "match_id": 558629,
+      "utc_date": "2026-08-22T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 0
+    },
+    {
+      "match_id": 558632,
+      "utc_date": "2026-08-22T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 1
+    },
+    {
+      "match_id": 558631,
+      "utc_date": "2026-08-22T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 2
+    },
+    {
+      "match_id": 558636,
+      "utc_date": "2026-08-22T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 3
+    },
+    {
+      "match_id": 558635,
+      "utc_date": "2026-08-23T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 4
+    },
+    {
+      "match_id": 558637,
+      "utc_date": "2026-08-23T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 5
+    },
+    {
+      "match_id": 558633,
+      "utc_date": "2026-08-23T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 6
+    },
+    {
+      "match_id": 558634,
+      "utc_date": "2026-08-23T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 7
+    },
+    {
+      "match_id": 558630,
+      "utc_date": "2026-08-24T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 8
+    },
+    {
+      "match_id": 558638,
+      "utc_date": "2026-08-24T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 9
+    },
+    {
+      "match_id": 558625,
+      "utc_date": "2026-08-28T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 10
+    },
+    {
+      "match_id": 558620,
+      "utc_date": "2026-08-29T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 11
+    },
+    {
+      "match_id": 558624,
+      "utc_date": "2026-08-29T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 12
+    },
+    {
+      "match_id": 558627,
+      "utc_date": "2026-08-29T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 13
+    },
+    {
+      "match_id": 558619,
+      "utc_date": "2026-08-29T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 14
+    },
+    {
+      "match_id": 558626,
+      "utc_date": "2026-08-30T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 15
+    },
+    {
+      "match_id": 558622,
+      "utc_date": "2026-08-30T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 16
+    },
+    {
+      "match_id": 558623,
+      "utc_date": "2026-08-30T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 17
+    },
+    {
+      "match_id": 558621,
+      "utc_date": "2026-08-31T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 18
+    },
+    {
+      "match_id": 558628,
+      "utc_date": "2026-08-31T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 19
+    },
+    {
+      "match_id": 558609,
+      "utc_date": "2026-09-04T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 20
+    },
+    {
+      "match_id": 558616,
+      "utc_date": "2026-09-05T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 21
+    },
+    {
+      "match_id": 558614,
+      "utc_date": "2026-09-05T16:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 22
+    },
+    {
+      "match_id": 558611,
+      "utc_date": "2026-09-05T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 23
+    },
+    {
+      "match_id": 558612,
+      "utc_date": "2026-09-06T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 24
+    },
+    {
+      "match_id": 558615,
+      "utc_date": "2026-09-06T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 25
+    },
+    {
+      "match_id": 558613,
+      "utc_date": "2026-09-06T16:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 26
+    },
+    {
+      "match_id": 558618,
+      "utc_date": "2026-09-06T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 27
+    },
+    {
+      "match_id": 558610,
+      "utc_date": "2026-09-07T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 28
+    },
+    {
+      "match_id": 558617,
+      "utc_date": "2026-09-07T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 29
+    },
+    {
+      "match_id": 558606,
+      "utc_date": "2026-09-11T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 30
+    },
+    {
+      "match_id": 558604,
+      "utc_date": "2026-09-12T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 31
+    },
+    {
+      "match_id": 558600,
+      "utc_date": "2026-09-12T16:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 32
+    },
+    {
+      "match_id": 558607,
+      "utc_date": "2026-09-12T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 33
+    },
+    {
+      "match_id": 558605,
+      "utc_date": "2026-09-13T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 34
+    },
+    {
+      "match_id": 558599,
+      "utc_date": "2026-09-13T16:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 35
+    },
+    {
+      "match_id": 558608,
+      "utc_date": "2026-09-13T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 36
+    },
+    {
+      "match_id": 558602,
+      "utc_date": "2026-09-14T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 37
+    },
+    {
+      "match_id": 558603,
+      "utc_date": "2026-09-14T16:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 38
+    },
+    {
+      "match_id": 558601,
+      "utc_date": "2026-09-14T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 39
+    },
+    {
+      "match_id": 558596,
+      "utc_date": "2026-09-18T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 40
+    },
+    {
+      "match_id": 558598,
+      "utc_date": "2026-09-19T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 41
+    },
+    {
+      "match_id": 558589,
+      "utc_date": "2026-09-19T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 42
+    },
+    {
+      "match_id": 558593,
+      "utc_date": "2026-09-19T16:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 43
+    },
+    {
+      "match_id": 558594,
+      "utc_date": "2026-09-19T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 44
+    },
+    {
+      "match_id": 558591,
+      "utc_date": "2026-09-20T10:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 45
+    },
+    {
+      "match_id": 558592,
+      "utc_date": "2026-09-20T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 46
+    },
+    {
+      "match_id": 558590,
+      "utc_date": "2026-09-20T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 47
+    },
+    {
+      "match_id": 558595,
+      "utc_date": "2026-09-20T16:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 48
+    },
+    {
+      "match_id": 558597,
+      "utc_date": "2026-09-20T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 49
+    },
+    {
+      "match_id": 558588,
+      "utc_date": "2026-10-10T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "SA",
+      "competition_id": 2019,
+      "season_id": 2494,
+      "season_start": "2026-08-23",
+      "season_end": "2027-05-30",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T15:03:31Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches?season=2026",
+      "response_record_index": 50
+    }
+  ],
+  "status_counts": {
+    "FINISHED": 51,
+    "IN_PLAY": 1,
+    "TIMED": 138,
+    "SCHEDULED": 190
+  },
+  "nonfinal_records": [
+    {
+      "match_id": 558582,
+      "utc_date": "2026-10-10T16:00:00+00:00",
+      "status": "IN_PLAY",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558586,
+      "utc_date": "2026-10-10T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558585,
+      "utc_date": "2026-10-11T10:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558581,
+      "utc_date": "2026-10-11T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558583,
+      "utc_date": "2026-10-11T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558580,
+      "utc_date": "2026-10-11T16:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558584,
+      "utc_date": "2026-10-11T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558579,
+      "utc_date": "2026-10-12T16:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558587,
+      "utc_date": "2026-10-12T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558573,
+      "utc_date": "2026-10-16T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558575,
+      "utc_date": "2026-10-17T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558571,
+      "utc_date": "2026-10-17T16:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558572,
+      "utc_date": "2026-10-17T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558574,
+      "utc_date": "2026-10-18T10:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558577,
+      "utc_date": "2026-10-18T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558569,
+      "utc_date": "2026-10-18T16:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558570,
+      "utc_date": "2026-10-18T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558576,
+      "utc_date": "2026-10-19T16:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558578,
+      "utc_date": "2026-10-19T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558567,
+      "utc_date": "2026-10-23T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558560,
+      "utc_date": "2026-10-24T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558561,
+      "utc_date": "2026-10-24T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558564,
+      "utc_date": "2026-10-24T16:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558565,
+      "utc_date": "2026-10-24T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558563,
+      "utc_date": "2026-10-25T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558562,
+      "utc_date": "2026-10-25T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558568,
+      "utc_date": "2026-10-25T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558566,
+      "utc_date": "2026-10-25T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558559,
+      "utc_date": "2026-10-25T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558556,
+      "utc_date": "2026-10-27T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558555,
+      "utc_date": "2026-10-27T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558557,
+      "utc_date": "2026-10-27T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558549,
+      "utc_date": "2026-10-28T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558550,
+      "utc_date": "2026-10-28T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558553,
+      "utc_date": "2026-10-28T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558552,
+      "utc_date": "2026-10-28T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558554,
+      "utc_date": "2026-10-28T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558558,
+      "utc_date": "2026-10-29T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558551,
+      "utc_date": "2026-10-29T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558539,
+      "utc_date": "2026-10-31T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558542,
+      "utc_date": "2026-10-31T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558548,
+      "utc_date": "2026-10-31T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558543,
+      "utc_date": "2026-11-01T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558544,
+      "utc_date": "2026-11-01T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558546,
+      "utc_date": "2026-11-01T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558540,
+      "utc_date": "2026-11-01T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558547,
+      "utc_date": "2026-11-01T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558541,
+      "utc_date": "2026-11-02T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558545,
+      "utc_date": "2026-11-02T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558537,
+      "utc_date": "2026-11-06T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558532,
+      "utc_date": "2026-11-07T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558534,
+      "utc_date": "2026-11-07T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558535,
+      "utc_date": "2026-11-07T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558531,
+      "utc_date": "2026-11-07T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558533,
+      "utc_date": "2026-11-08T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558536,
+      "utc_date": "2026-11-08T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558538,
+      "utc_date": "2026-11-08T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558530,
+      "utc_date": "2026-11-08T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558529,
+      "utc_date": "2026-11-08T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558525,
+      "utc_date": "2026-11-21T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558528,
+      "utc_date": "2026-11-21T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558526,
+      "utc_date": "2026-11-21T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558527,
+      "utc_date": "2026-11-21T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558521,
+      "utc_date": "2026-11-22T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558522,
+      "utc_date": "2026-11-22T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558524,
+      "utc_date": "2026-11-22T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558523,
+      "utc_date": "2026-11-22T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558520,
+      "utc_date": "2026-11-22T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558519,
+      "utc_date": "2026-11-23T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558515,
+      "utc_date": "2026-11-27T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558513,
+      "utc_date": "2026-11-28T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558514,
+      "utc_date": "2026-11-28T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558518,
+      "utc_date": "2026-11-28T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558517,
+      "utc_date": "2026-11-29T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558509,
+      "utc_date": "2026-11-29T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558512,
+      "utc_date": "2026-11-29T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558511,
+      "utc_date": "2026-11-29T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558516,
+      "utc_date": "2026-11-30T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558510,
+      "utc_date": "2026-11-30T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558502,
+      "utc_date": "2026-12-04T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558507,
+      "utc_date": "2026-12-05T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558501,
+      "utc_date": "2026-12-05T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558508,
+      "utc_date": "2026-12-05T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558499,
+      "utc_date": "2026-12-06T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558504,
+      "utc_date": "2026-12-06T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558500,
+      "utc_date": "2026-12-06T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558505,
+      "utc_date": "2026-12-06T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558506,
+      "utc_date": "2026-12-07T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558503,
+      "utc_date": "2026-12-07T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558491,
+      "utc_date": "2026-12-11T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558494,
+      "utc_date": "2026-12-12T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558492,
+      "utc_date": "2026-12-12T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558490,
+      "utc_date": "2026-12-12T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558498,
+      "utc_date": "2026-12-13T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558495,
+      "utc_date": "2026-12-13T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558493,
+      "utc_date": "2026-12-13T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558489,
+      "utc_date": "2026-12-13T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558497,
+      "utc_date": "2026-12-14T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558496,
+      "utc_date": "2026-12-14T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558482,
+      "utc_date": "2026-12-18T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558486,
+      "utc_date": "2026-12-18T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558480,
+      "utc_date": "2026-12-19T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558479,
+      "utc_date": "2026-12-19T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558481,
+      "utc_date": "2026-12-19T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558484,
+      "utc_date": "2026-12-20T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558487,
+      "utc_date": "2026-12-20T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558488,
+      "utc_date": "2026-12-20T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558485,
+      "utc_date": "2026-12-20T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558483,
+      "utc_date": "2026-12-20T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558473,
+      "utc_date": "2027-01-02T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558474,
+      "utc_date": "2027-01-02T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558478,
+      "utc_date": "2027-01-02T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558471,
+      "utc_date": "2027-01-02T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558475,
+      "utc_date": "2027-01-02T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558476,
+      "utc_date": "2027-01-03T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558469,
+      "utc_date": "2027-01-03T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558470,
+      "utc_date": "2027-01-03T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558472,
+      "utc_date": "2027-01-03T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558477,
+      "utc_date": "2027-01-03T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558461,
+      "utc_date": "2027-01-05T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558462,
+      "utc_date": "2027-01-05T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558464,
+      "utc_date": "2027-01-05T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558465,
+      "utc_date": "2027-01-06T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558459,
+      "utc_date": "2027-01-06T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558468,
+      "utc_date": "2027-01-06T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558466,
+      "utc_date": "2027-01-06T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558467,
+      "utc_date": "2027-01-06T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558460,
+      "utc_date": "2027-01-07T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558463,
+      "utc_date": "2027-01-07T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558452,
+      "utc_date": "2027-01-09T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558458,
+      "utc_date": "2027-01-09T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558455,
+      "utc_date": "2027-01-09T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558457,
+      "utc_date": "2027-01-10T11:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558449,
+      "utc_date": "2027-01-10T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558454,
+      "utc_date": "2027-01-10T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558451,
+      "utc_date": "2027-01-10T17:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558453,
+      "utc_date": "2027-01-10T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558456,
+      "utc_date": "2027-01-11T17:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558450,
+      "utc_date": "2027-01-11T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558439,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558440,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558441,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558442,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558443,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558444,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558445,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558446,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558447,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558448,
+      "utc_date": "2027-01-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558429,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558430,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558431,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558432,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558433,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558434,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558435,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558436,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558437,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558438,
+      "utc_date": "2027-01-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558419,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558420,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558421,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558422,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558423,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558424,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558425,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558426,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558427,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558428,
+      "utc_date": "2027-01-31T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558409,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558410,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558411,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558412,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558413,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558414,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558415,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558416,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558417,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558418,
+      "utc_date": "2027-02-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558399,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558400,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558401,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558402,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558403,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558404,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558405,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558406,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558407,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558408,
+      "utc_date": "2027-02-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558389,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558390,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558391,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558392,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558393,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558394,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558395,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558396,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558397,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558398,
+      "utc_date": "2027-02-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558379,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558380,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558381,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558382,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558383,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558384,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558385,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558386,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558387,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558388,
+      "utc_date": "2027-02-28T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558369,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558370,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558371,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558372,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558373,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558374,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558375,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558376,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558377,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558378,
+      "utc_date": "2027-03-07T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558359,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558360,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558361,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558362,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558363,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558364,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558365,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558366,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558367,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558368,
+      "utc_date": "2027-03-14T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558349,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558350,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558351,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558352,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558353,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558354,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558355,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558356,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558357,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558358,
+      "utc_date": "2027-03-21T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558339,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558340,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558341,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558342,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558343,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558344,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558345,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558346,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558347,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558348,
+      "utc_date": "2027-04-04T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558336,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558337,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558338,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558329,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558330,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558331,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558332,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558333,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558334,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558335,
+      "utc_date": "2027-04-11T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558319,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558320,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558321,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558322,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558323,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558324,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558325,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558326,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558327,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558328,
+      "utc_date": "2027-04-18T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558309,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558310,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558311,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558312,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558313,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558314,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558315,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558316,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558317,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558318,
+      "utc_date": "2027-04-25T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558299,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558300,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558301,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558302,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558303,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558304,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558305,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558306,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558307,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558308,
+      "utc_date": "2027-05-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558289,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558290,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558291,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558292,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558293,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558294,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558295,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558296,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558297,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558298,
+      "utc_date": "2027-05-09T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558279,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558280,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558281,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558282,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558283,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558284,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558285,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558286,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558287,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558288,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558269,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "away": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558270,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558271,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558272,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "away": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558273,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "away": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558274,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558275,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558276,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "away": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558277,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558278,
+      "utc_date": "2027-05-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "away": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558259,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 98,
+        "name": "AC Milan"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558260,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 109,
+        "name": "Juventus FC"
+      },
+      "away": {
+        "id": 470,
+        "name": "Frosinone Calcio"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558261,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5911,
+        "name": "AC Monza"
+      },
+      "away": {
+        "id": 586,
+        "name": "Torino FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558262,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558263,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 104,
+        "name": "Cagliari Calcio"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558264,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 110,
+        "name": "SS Lazio"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558265,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 7397,
+        "name": "Como 1907"
+      },
+      "away": {
+        "id": 107,
+        "name": "Genoa CFC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558266,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli"
+      },
+      "away": {
+        "id": 102,
+        "name": "Atalanta BC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558267,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 5890,
+        "name": "US Lecce"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558268,
+      "utc_date": "2027-05-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 103,
+        "name": "Bologna FC 1909"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913"
+      },
+      "overdue_nonfinal": false
+    }
+  ],
+  "api_reported_count": 380,
+  "sha256_raw_response": "e60366e007b18e3062fdd5ac960bf2291d12e1895f9443f930b19f9aa96115e7"
+}

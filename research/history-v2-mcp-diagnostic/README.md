@@ -1,3 +1,7 @@
+# Estensione Secure HTTP
+
+Il nuovo trasporto autenticato cache-only è descritto in [SECURE_HTTP.md](SECURE_HTTP.md), con [rapporto sicurezza](SECURITY_REPORT.md), [test aggiornati](reports/secure-test-summary.json) e [proposta Railway non eseguita](RAILWAY_PROPOSAL.md). I risultati sottostanti descrivono la precedente fase stdio e le acquisizioni salvate; non dichiarano nuove verifiche live.
+
 # History Provider V2 — MCP diagnostico isolato
 
 Due nuove catene reali verificate, oltre al precedente caso Atalanta–Venezia:

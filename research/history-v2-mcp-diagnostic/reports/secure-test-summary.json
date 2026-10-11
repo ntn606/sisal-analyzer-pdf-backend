@@ -1,0 +1,64 @@
+{
+  "tests_run": 212,
+  "all_passed": true,
+  "skipped": 0,
+  "provider_requests": 0,
+  "external_socket_attempts": 0,
+  "external_dns_attempts": 0,
+  "mcp_version": "1.30.0",
+  "suites": [
+    {
+      "suite": "provider",
+      "tests_run": 42,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true,
+      "provider_requests": 0,
+      "external_socket_attempts": 0,
+      "external_dns_attempts": 0,
+      "loopback_socket_connections": 0,
+      "guarded_child_python_processes": 0
+    },
+    {
+      "suite": "adapter",
+      "tests_run": 61,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true,
+      "provider_requests": 0,
+      "external_socket_attempts": 0,
+      "external_dns_attempts": 0,
+      "loopback_socket_connections": 0,
+      "guarded_child_python_processes": 0
+    },
+    {
+      "suite": "backend",
+      "tests_run": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true,
+      "provider_requests": 0,
+      "external_socket_attempts": 0,
+      "external_dns_attempts": 0,
+      "loopback_socket_connections": 0,
+      "guarded_child_python_processes": 0
+    },
+    {
+      "suite": "wrapper",
+      "tests_run": 96,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true,
+      "provider_requests": 0,
+      "external_socket_attempts": 0,
+      "external_dns_attempts": 0,
+      "loopback_socket_connections": 28,
+      "guarded_child_python_processes": 1
+    }
+  ],
+  "note": "HTTP real loopback client + saved evidence, frozen replay clock and ephemeral synthetic authentication; no live acquisition."
+}

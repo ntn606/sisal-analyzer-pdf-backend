@@ -1,0 +1,165 @@
+{
+  "schema_files_checked": 8,
+  "artifact_documents_checked": 43,
+  "passed": true,
+  "documents": [
+    {
+      "file": "cases/coventry-newcastle/request-asof-observation.json",
+      "schema": "adapter/request.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/request-diagnostic.json",
+      "schema": "adapter/request.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/request-asof-observation.json",
+      "schema": "adapter/request.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/request-diagnostic.json",
+      "schema": "adapter/request.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/registry.json",
+      "schema": "adapter/registry.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/registry.json",
+      "schema": "adapter/registry.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560578.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560571.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560558.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-sisal.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560542.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-review.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560563.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-af-fixture.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560561.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560589.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560550.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560588.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560579.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564690.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564675.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-sisal.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-review.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564639.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564679.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-af-fixture.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564669.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564655.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564666.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564661.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564649.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564696.json",
+      "schema": "adapter/evidence.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/real_only-preliminary.json",
+      "schema": "adapter/response.schema.json"
+    },
+    {
+      "file": "cases/coventry-newcastle/real_only.json",
+      "schema": "adapter/response.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/real_only-preliminary.json",
+      "schema": "adapter/response.schema.json"
+    },
+    {
+      "file": "cases/levante-sevilla/real_only.json",
+      "schema": "adapter/response.schema.json"
+    },
+    {
+      "file": "examples/http-current-time.json",
+      "schema": "response.schema.json"
+    },
+    {
+      "file": "examples/levante-sevilla.json",
+      "schema": "response.schema.json"
+    },
+    {
+      "file": "examples/coventry-newcastle.json",
+      "schema": "response.schema.json"
+    }
+  ],
+  "http_response_outputs_checked": 2,
+  "revision_and_pointer_checked": 2
+}

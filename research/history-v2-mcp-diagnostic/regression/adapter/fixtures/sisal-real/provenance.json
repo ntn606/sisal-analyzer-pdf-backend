@@ -1,0 +1,31 @@
+{
+  "origin": "real_saved_public_sisal",
+  "source_directory": "/workspace/research/history-v2-real-validation/evidence",
+  "cross_provider_mapping_verified": false,
+  "files": [
+    {
+      "file": "sisal-calcio-base-per-data.pdf",
+      "sha256": "f2ebb8301a094d5f7db91a368a9e39b7807370b7415502420ba193b5a233333e"
+    },
+    {
+      "file": "sisal-foglio-quote.html",
+      "sha256": "1ecb9cdab08c70d3cf1dd18ea25b879d07c221004d6c88e0d1feb98469519bf3"
+    },
+    {
+      "file": "sisal-candidate-event.json",
+      "sha256": "d6aeed11926114d4ca7c684f12c44529484c28b11f4340c580486a2905b94172"
+    },
+    {
+      "file": "sisal-foglio-quote.meta.json",
+      "sha256": "1e2927f2369fee45b102300dad1a16f2dc2f7efafe12fada8de55ec8adb8663c"
+    }
+  ],
+  "page_minimization": {
+    "method": "exact_original_allowlisted_anchor_bytes",
+    "original_sha256": "1ce89475c05f7671b7d1b546f72e9d95af4d6bb95e68d15bb492e11067d55bb6",
+    "original_bytes": 219110,
+    "retained_sha256": "1ecb9cdab08c70d3cf1dd18ea25b879d07c221004d6c88e0d1feb98469519bf3",
+    "retained_bytes": 467,
+    "reason": "No full HTML embedded service keys are published"
+  }
+}

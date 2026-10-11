@@ -1,0 +1,5483 @@
+{
+  "url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+  "competition": "DED",
+  "requested_season": 2026,
+  "schema_version": 2,
+  "cutoff_utc": "2026-10-10T17:58:48.362798+00:00",
+  "requested_at_utc": "2026-10-10T17:59:19.379872+00:00",
+  "http_status": 200,
+  "quota": {
+    "counter_reset_seconds": 29
+  },
+  "state": "retrieved",
+  "raw_match_count": 306,
+  "rejected": {
+    "non_final_or_wrong_competition": 241
+  },
+  "records": [
+    {
+      "match_id": 558214,
+      "utc_date": "2026-08-07T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 0
+    },
+    {
+      "match_id": 558215,
+      "utc_date": "2026-08-08T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 1
+    },
+    {
+      "match_id": 558216,
+      "utc_date": "2026-08-08T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 2
+    },
+    {
+      "match_id": 558217,
+      "utc_date": "2026-08-08T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 3
+    },
+    {
+      "match_id": 558218,
+      "utc_date": "2026-08-08T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 4
+    },
+    {
+      "match_id": 558219,
+      "utc_date": "2026-08-09T10:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 5
+    },
+    {
+      "match_id": 558220,
+      "utc_date": "2026-08-09T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 6
+    },
+    {
+      "match_id": 558221,
+      "utc_date": "2026-08-09T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 7
+    },
+    {
+      "match_id": 558222,
+      "utc_date": "2026-08-09T14:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 8
+    },
+    {
+      "match_id": 558223,
+      "utc_date": "2026-08-14T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 9
+    },
+    {
+      "match_id": 558224,
+      "utc_date": "2026-08-15T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 10
+    },
+    {
+      "match_id": 558225,
+      "utc_date": "2026-08-15T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 11
+    },
+    {
+      "match_id": 558226,
+      "utc_date": "2026-08-15T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 12
+    },
+    {
+      "match_id": 558227,
+      "utc_date": "2026-08-15T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 13
+    },
+    {
+      "match_id": 558228,
+      "utc_date": "2026-08-16T10:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 14
+    },
+    {
+      "match_id": 558229,
+      "utc_date": "2026-08-16T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 15
+    },
+    {
+      "match_id": 558230,
+      "utc_date": "2026-08-16T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 16
+    },
+    {
+      "match_id": 558231,
+      "utc_date": "2026-08-16T14:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 17
+    },
+    {
+      "match_id": 558232,
+      "utc_date": "2026-08-22T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 18
+    },
+    {
+      "match_id": 558234,
+      "utc_date": "2026-08-22T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 19
+    },
+    {
+      "match_id": 558235,
+      "utc_date": "2026-08-22T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 20
+    },
+    {
+      "match_id": 558236,
+      "utc_date": "2026-08-23T10:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 21
+    },
+    {
+      "match_id": 558237,
+      "utc_date": "2026-08-23T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 22
+    },
+    {
+      "match_id": 558238,
+      "utc_date": "2026-08-23T14:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 5
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 23
+    },
+    {
+      "match_id": 558241,
+      "utc_date": "2026-08-28T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 24
+    },
+    {
+      "match_id": 558242,
+      "utc_date": "2026-08-29T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 25
+    },
+    {
+      "match_id": 558243,
+      "utc_date": "2026-08-29T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 26
+    },
+    {
+      "match_id": 558244,
+      "utc_date": "2026-08-29T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 27
+    },
+    {
+      "match_id": 558245,
+      "utc_date": "2026-08-30T10:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 6
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 28
+    },
+    {
+      "match_id": 558246,
+      "utc_date": "2026-08-30T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 29
+    },
+    {
+      "match_id": 558247,
+      "utc_date": "2026-08-30T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 30
+    },
+    {
+      "match_id": 558248,
+      "utc_date": "2026-08-30T14:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 31
+    },
+    {
+      "match_id": 558249,
+      "utc_date": "2026-08-30T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 32
+    },
+    {
+      "match_id": 558250,
+      "utc_date": "2026-09-04T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 33
+    },
+    {
+      "match_id": 558251,
+      "utc_date": "2026-09-05T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 34
+    },
+    {
+      "match_id": 558253,
+      "utc_date": "2026-09-05T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 35
+    },
+    {
+      "match_id": 558254,
+      "utc_date": "2026-09-05T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 36
+    },
+    {
+      "match_id": 558255,
+      "utc_date": "2026-09-06T10:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 37
+    },
+    {
+      "match_id": 558256,
+      "utc_date": "2026-09-06T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 38
+    },
+    {
+      "match_id": 558257,
+      "utc_date": "2026-09-06T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 39
+    },
+    {
+      "match_id": 558258,
+      "utc_date": "2026-09-06T14:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 40
+    },
+    {
+      "match_id": 558252,
+      "utc_date": "2026-09-08T12:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 41
+    },
+    {
+      "match_id": 558233,
+      "utc_date": "2026-09-08T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 42
+    },
+    {
+      "match_id": 558239,
+      "utc_date": "2026-09-09T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 43
+    },
+    {
+      "match_id": 558899,
+      "utc_date": "2026-09-11T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 44
+    },
+    {
+      "match_id": 558898,
+      "utc_date": "2026-09-12T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 45
+    },
+    {
+      "match_id": 558897,
+      "utc_date": "2026-09-12T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 46
+    },
+    {
+      "match_id": 558896,
+      "utc_date": "2026-09-12T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 5
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 47
+    },
+    {
+      "match_id": 558892,
+      "utc_date": "2026-09-12T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 48
+    },
+    {
+      "match_id": 558894,
+      "utc_date": "2026-09-13T10:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 49
+    },
+    {
+      "match_id": 558895,
+      "utc_date": "2026-09-13T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 50
+    },
+    {
+      "match_id": 558891,
+      "utc_date": "2026-09-13T14:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 7
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 51
+    },
+    {
+      "match_id": 558893,
+      "utc_date": "2026-09-13T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 52
+    },
+    {
+      "match_id": 558240,
+      "utc_date": "2026-09-15T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 53
+    },
+    {
+      "match_id": 558888,
+      "utc_date": "2026-09-18T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 54
+    },
+    {
+      "match_id": 558889,
+      "utc_date": "2026-09-19T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 55
+    },
+    {
+      "match_id": 558890,
+      "utc_date": "2026-09-19T16:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 4
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 56
+    },
+    {
+      "match_id": 558887,
+      "utc_date": "2026-09-19T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 57
+    },
+    {
+      "match_id": 558886,
+      "utc_date": "2026-09-19T19:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 58
+    },
+    {
+      "match_id": 558885,
+      "utc_date": "2026-09-20T10:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 59
+    },
+    {
+      "match_id": 558882,
+      "utc_date": "2026-09-20T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 60
+    },
+    {
+      "match_id": 558884,
+      "utc_date": "2026-09-20T12:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 61
+    },
+    {
+      "match_id": 558883,
+      "utc_date": "2026-09-20T14:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 7,
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 62
+    },
+    {
+      "match_id": 558881,
+      "utc_date": "2026-10-09T18:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 8,
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:36Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 63
+    },
+    {
+      "match_id": 558880,
+      "utc_date": "2026-10-10T14:30:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "DED",
+      "competition_id": 2003,
+      "season_id": 2493,
+      "season_start": "2026-08-07",
+      "season_end": "2027-05-23",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 8,
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T16:29:55Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches?season=2026",
+      "response_record_index": 64
+    }
+  ],
+  "status_counts": {
+    "FINISHED": 65,
+    "IN_PLAY": 1,
+    "TIMED": 140,
+    "SCHEDULED": 100
+  },
+  "nonfinal_records": [
+    {
+      "match_id": 558879,
+      "utc_date": "2026-10-10T16:45:00+00:00",
+      "status": "IN_PLAY",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558877,
+      "utc_date": "2026-10-10T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558878,
+      "utc_date": "2026-10-10T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558876,
+      "utc_date": "2026-10-11T10:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558874,
+      "utc_date": "2026-10-11T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558875,
+      "utc_date": "2026-10-11T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558873,
+      "utc_date": "2026-10-11T14:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558872,
+      "utc_date": "2026-10-16T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558871,
+      "utc_date": "2026-10-17T14:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558869,
+      "utc_date": "2026-10-17T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558868,
+      "utc_date": "2026-10-17T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558867,
+      "utc_date": "2026-10-18T10:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558865,
+      "utc_date": "2026-10-18T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558864,
+      "utc_date": "2026-10-18T14:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558866,
+      "utc_date": "2026-10-18T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558870,
+      "utc_date": "2026-10-18T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558863,
+      "utc_date": "2026-10-23T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558862,
+      "utc_date": "2026-10-24T14:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558861,
+      "utc_date": "2026-10-24T16:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558860,
+      "utc_date": "2026-10-24T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558859,
+      "utc_date": "2026-10-25T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558857,
+      "utc_date": "2026-10-25T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558858,
+      "utc_date": "2026-10-25T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558856,
+      "utc_date": "2026-10-25T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558855,
+      "utc_date": "2026-10-25T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558854,
+      "utc_date": "2026-10-31T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558852,
+      "utc_date": "2026-10-31T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558853,
+      "utc_date": "2026-10-31T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558850,
+      "utc_date": "2026-10-31T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558851,
+      "utc_date": "2026-10-31T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558849,
+      "utc_date": "2026-11-01T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558848,
+      "utc_date": "2026-11-01T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558847,
+      "utc_date": "2026-11-01T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558846,
+      "utc_date": "2026-11-01T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558845,
+      "utc_date": "2026-11-06T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558844,
+      "utc_date": "2026-11-07T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558841,
+      "utc_date": "2026-11-07T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558843,
+      "utc_date": "2026-11-07T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558840,
+      "utc_date": "2026-11-08T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558839,
+      "utc_date": "2026-11-08T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558837,
+      "utc_date": "2026-11-08T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558842,
+      "utc_date": "2026-11-08T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558838,
+      "utc_date": "2026-11-08T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558833,
+      "utc_date": "2026-11-21T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558831,
+      "utc_date": "2026-11-21T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558835,
+      "utc_date": "2026-11-21T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558832,
+      "utc_date": "2026-11-21T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558834,
+      "utc_date": "2026-11-21T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558828,
+      "utc_date": "2026-11-22T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558830,
+      "utc_date": "2026-11-22T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558836,
+      "utc_date": "2026-11-22T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558829,
+      "utc_date": "2026-11-22T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558820,
+      "utc_date": "2026-11-27T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558825,
+      "utc_date": "2026-11-28T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558826,
+      "utc_date": "2026-11-28T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558819,
+      "utc_date": "2026-11-28T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558827,
+      "utc_date": "2026-11-29T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558821,
+      "utc_date": "2026-11-29T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558824,
+      "utc_date": "2026-11-29T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558823,
+      "utc_date": "2026-11-29T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558822,
+      "utc_date": "2026-11-29T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558812,
+      "utc_date": "2026-12-04T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558816,
+      "utc_date": "2026-12-05T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558817,
+      "utc_date": "2026-12-05T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558814,
+      "utc_date": "2026-12-05T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558813,
+      "utc_date": "2026-12-05T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558815,
+      "utc_date": "2026-12-06T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558811,
+      "utc_date": "2026-12-06T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558818,
+      "utc_date": "2026-12-06T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558810,
+      "utc_date": "2026-12-06T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558804,
+      "utc_date": "2026-12-12T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558809,
+      "utc_date": "2026-12-12T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558802,
+      "utc_date": "2026-12-12T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558805,
+      "utc_date": "2026-12-13T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558803,
+      "utc_date": "2026-12-13T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558806,
+      "utc_date": "2026-12-13T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558807,
+      "utc_date": "2026-12-13T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558801,
+      "utc_date": "2026-12-13T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558794,
+      "utc_date": "2026-12-18T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558800,
+      "utc_date": "2026-12-19T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558793,
+      "utc_date": "2026-12-19T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558799,
+      "utc_date": "2026-12-19T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558798,
+      "utc_date": "2026-12-20T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558792,
+      "utc_date": "2026-12-20T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558797,
+      "utc_date": "2026-12-20T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558796,
+      "utc_date": "2026-12-20T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558795,
+      "utc_date": "2026-12-20T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558791,
+      "utc_date": "2027-01-08T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558787,
+      "utc_date": "2027-01-09T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558790,
+      "utc_date": "2027-01-09T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558789,
+      "utc_date": "2027-01-09T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558788,
+      "utc_date": "2027-01-09T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558785,
+      "utc_date": "2027-01-10T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558783,
+      "utc_date": "2027-01-10T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558784,
+      "utc_date": "2027-01-10T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558786,
+      "utc_date": "2027-01-10T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558778,
+      "utc_date": "2027-01-15T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558776,
+      "utc_date": "2027-01-16T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558777,
+      "utc_date": "2027-01-16T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558780,
+      "utc_date": "2027-01-16T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558779,
+      "utc_date": "2027-01-16T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558782,
+      "utc_date": "2027-01-17T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558774,
+      "utc_date": "2027-01-17T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558781,
+      "utc_date": "2027-01-17T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558775,
+      "utc_date": "2027-01-17T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558770,
+      "utc_date": "2027-01-22T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558768,
+      "utc_date": "2027-01-23T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558772,
+      "utc_date": "2027-01-23T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558766,
+      "utc_date": "2027-01-23T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558767,
+      "utc_date": "2027-01-23T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558773,
+      "utc_date": "2027-01-24T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558765,
+      "utc_date": "2027-01-24T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558771,
+      "utc_date": "2027-01-24T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558769,
+      "utc_date": "2027-01-24T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558763,
+      "utc_date": "2027-01-29T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558762,
+      "utc_date": "2027-01-30T15:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558756,
+      "utc_date": "2027-01-30T17:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558761,
+      "utc_date": "2027-01-30T19:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558758,
+      "utc_date": "2027-01-30T20:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558757,
+      "utc_date": "2027-01-31T11:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558759,
+      "utc_date": "2027-01-31T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558760,
+      "utc_date": "2027-01-31T13:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558764,
+      "utc_date": "2027-01-31T15:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558808,
+      "utc_date": "2027-02-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558747,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558748,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558749,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558750,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558751,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558752,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558753,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558754,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558755,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558738,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558739,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558740,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558741,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558742,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558743,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558744,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558745,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558746,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558729,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558730,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558731,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558732,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558733,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558734,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558735,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558736,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558737,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558720,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558721,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558722,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558723,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558724,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558725,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558726,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558727,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558728,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558711,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558712,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558713,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558714,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558715,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558716,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558717,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558718,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558719,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558702,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558703,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558704,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558705,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558706,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558707,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558708,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558709,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558710,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558693,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558694,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558695,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558696,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558697,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558698,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558699,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558700,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558701,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558684,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558685,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558686,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558687,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558688,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558689,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558690,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558691,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558692,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558675,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558676,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558677,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558678,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558679,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558680,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558681,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558682,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558683,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558666,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558667,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558668,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558669,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558670,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558671,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558672,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558673,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558674,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558657,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558658,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558659,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558660,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558661,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558662,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558663,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558664,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558665,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558648,
+      "utc_date": "2027-05-16T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558649,
+      "utc_date": "2027-05-16T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "away": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558650,
+      "utc_date": "2027-05-16T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "away": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558651,
+      "utc_date": "2027-05-16T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "away": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558652,
+      "utc_date": "2027-05-16T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "away": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558653,
+      "utc_date": "2027-05-16T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "away": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558654,
+      "utc_date": "2027-05-16T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "away": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558655,
+      "utc_date": "2027-05-16T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "away": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558656,
+      "utc_date": "2027-05-16T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "away": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558639,
+      "utc_date": "2027-05-23T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1915,
+        "name": "NEC"
+      },
+      "away": {
+        "id": 676,
+        "name": "FC Utrecht"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558640,
+      "utc_date": "2027-05-23T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 673,
+        "name": "SC Heerenveen"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558641,
+      "utc_date": "2027-05-23T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 6806,
+        "name": "Sparta Rotterdam"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558642,
+      "utc_date": "2027-05-23T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1909,
+        "name": "SC Cambuur-Leeuwarden"
+      },
+      "away": {
+        "id": 678,
+        "name": "AFC Ajax"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558643,
+      "utc_date": "2027-05-23T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 684,
+        "name": "PEC Zwolle"
+      },
+      "away": {
+        "id": 666,
+        "name": "FC Twente '65"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558644,
+      "utc_date": "2027-05-23T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam"
+      },
+      "away": {
+        "id": 677,
+        "name": "FC Groningen"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558645,
+      "utc_date": "2027-05-23T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 680,
+        "name": "ADO Den Haag"
+      },
+      "away": {
+        "id": 682,
+        "name": "AZ"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558646,
+      "utc_date": "2027-05-23T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1912,
+        "name": "Telstar 1963"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 558647,
+      "utc_date": "2027-05-23T12:30:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles"
+      },
+      "overdue_nonfinal": false
+    }
+  ],
+  "api_reported_count": 306,
+  "sha256_raw_response": "32813cd137c5972d12f2ff5eebd3bf23272ad2494559bf6c3a7847d21675c97b"
+}

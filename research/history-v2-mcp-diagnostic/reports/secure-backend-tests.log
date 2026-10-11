@@ -1,0 +1,18 @@
+test_disallowed_endpoint_precedes_credentials_and_network (test_api_football_errors.APIErrorTests.test_disallowed_endpoint_precedes_credentials_and_network) ... ok
+test_evidence_propagates_diagnostic_without_bypassing_scout (test_api_football_errors.APIErrorTests.test_evidence_propagates_diagnostic_without_bypassing_scout) ... ok
+test_fixture_probe_propagates_safe_diagnostic (test_api_football_errors.APIErrorTests.test_fixture_probe_propagates_safe_diagnostic) ... ok
+test_history_probe_propagates_free_plan_error_for_either_team (test_api_football_errors.APIErrorTests.test_history_probe_propagates_free_plan_error_for_either_team) ... ok
+test_history_probe_success_is_unchanged (test_api_football_errors.APIErrorTests.test_history_probe_success_is_unchanged) ... ok
+test_http_errors_do_not_expose_body_or_headers (test_api_football_errors.APIErrorTests.test_http_errors_do_not_expose_body_or_headers) ... ok
+test_internal_errors_keep_existing_blocker_shape (test_api_football_errors.APIErrorTests.test_internal_errors_keep_existing_blocker_shape) ... ok
+test_invalid_response_and_pagination_stay_blocked (test_api_football_errors.APIErrorTests.test_invalid_response_and_pagination_stay_blocked) ... ok
+test_missing_key_and_local_budget_never_call_provider (test_api_football_errors.APIErrorTests.test_missing_key_and_local_budget_never_call_provider) ... ok
+test_provider_errors_are_classified_and_sanitized (test_api_football_errors.APIErrorTests.test_provider_errors_are_classified_and_sanitized) ... ok
+test_provider_status_propagates_safe_diagnostic (test_api_football_errors.APIErrorTests.test_provider_status_propagates_safe_diagnostic) ... ok
+test_success_is_cached_but_errors_are_not (test_api_football_errors.APIErrorTests.test_success_is_cached_but_errors_are_not) ... ok
+test_transport_and_json_exceptions_are_sanitized (test_api_football_errors.APIErrorTests.test_transport_and_json_exceptions_are_sanitized) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.011s
+
+OK

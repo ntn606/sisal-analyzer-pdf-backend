@@ -1,0 +1,120 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "origin",
+    "kind",
+    "source",
+    "acquired_at",
+    "record"
+  ],
+  "properties": {
+    "origin": {
+      "enum": [
+        "real_saved",
+        "synthetic"
+      ]
+    },
+    "kind": {
+      "enum": [
+        "review",
+        "sisal_event",
+        "api_football_fixture",
+        "api_football_history",
+        "result_observation"
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "acquired_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "record": {
+      "type": "object"
+    },
+    "document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "file",
+        "sha256",
+        "media_type",
+        "landing_page"
+      ],
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "media_type": {
+          "const": "application/pdf"
+        },
+        "landing_page": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "file",
+            "sha256",
+            "source",
+            "media_type",
+            "acquired_at"
+          ],
+          "properties": {
+            "file": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "source": {
+              "const": "https://www.sisal.it/scommesse-matchpoint/foglio-quote"
+            },
+            "media_type": {
+              "const": "text/html"
+            },
+            "acquired_at": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "origin": {
+            "const": "real_saved"
+          },
+          "kind": {
+            "const": "sisal_event"
+          },
+          "source": {
+            "pattern": "^https://landing\\.sisal\\.it(?::443)?/"
+          }
+        },
+        "required": [
+          "origin",
+          "kind",
+          "source"
+        ]
+      },
+      "then": {
+        "required": [
+          "document"
+        ]
+      }
+    }
+  ],
+  "description": "Record semantics, reviewed equality, hashes and origin/source restrictions are enforced by the module. Hashes do not establish authenticity.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sisal:history-identity-adapter:evidence:1"
+}

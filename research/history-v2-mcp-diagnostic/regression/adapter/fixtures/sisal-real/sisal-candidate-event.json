@@ -1,0 +1,33 @@
+{
+  "origin": "real_new_public_pdf",
+  "cross_provider_identity_verified": false,
+  "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20data.pdf",
+  "acquired_at": "2026-10-10T19:13:07.219490+00:00",
+  "pdf_sha256": "f2ebb8301a094d5f7db91a368a9e39b7807370b7415502420ba193b5a233333e",
+  "pdf_page": 4,
+  "source_date_heading": "domenica, 11 ottobre",
+  "source_update_label": "Dati aggiornati al 10/10/2026 - ore 21:06:24",
+  "record": {
+    "palinsesto": "36411",
+    "avvenimento": "1370",
+    "home": "Como",
+    "away": "Roma",
+    "manifestation": "ITA1",
+    "date": "2026-10-11",
+    "printed_time": "12.30"
+  },
+  "date_basis": "PDF heading plus the printed 2026 update date",
+  "kickoff_interpretation": {
+    "timezone": "Europe/Rome",
+    "local_datetime": "2026-10-11T12:30:00+02:00",
+    "utc_datetime": "2026-10-11T10:30:00+00:00",
+    "basis": "Italian local-time interpretation consistent with the cached football-data.org candidate",
+    "timezone_explicitly_printed_in_pdf": false,
+    "independently_verified_across_three_sources": false
+  },
+  "competition": {
+    "candidate": "Serie A",
+    "provider_mapping_verified": false
+  },
+  "season_explicitly_printed_in_event_row": false
+}

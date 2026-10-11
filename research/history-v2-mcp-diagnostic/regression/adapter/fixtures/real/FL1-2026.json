@@ -1,0 +1,5158 @@
+{
+  "url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+  "competition": "FL1",
+  "requested_season": 2026,
+  "schema_version": 2,
+  "cutoff_utc": "2026-10-10T17:58:48.362798+00:00",
+  "requested_at_utc": "2026-10-10T17:59:13.179735+00:00",
+  "http_status": 200,
+  "quota": {
+    "counter_reset_seconds": 36
+  },
+  "state": "retrieved",
+  "raw_match_count": 306,
+  "rejected": {
+    "non_final_or_wrong_competition": 259
+  },
+  "records": [
+    {
+      "match_id": 559715,
+      "utc_date": "2026-08-21T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 0
+    },
+    {
+      "match_id": 559712,
+      "utc_date": "2026-08-22T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 1
+    },
+    {
+      "match_id": 559711,
+      "utc_date": "2026-08-22T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 2
+    },
+    {
+      "match_id": 559714,
+      "utc_date": "2026-08-22T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 3
+    },
+    {
+      "match_id": 559716,
+      "utc_date": "2026-08-22T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 4
+    },
+    {
+      "match_id": 559718,
+      "utc_date": "2026-08-22T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 5
+    },
+    {
+      "match_id": 559717,
+      "utc_date": "2026-08-23T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 6
+    },
+    {
+      "match_id": 559719,
+      "utc_date": "2026-08-23T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 7
+    },
+    {
+      "match_id": 559713,
+      "utc_date": "2026-08-23T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 1,
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 8
+    },
+    {
+      "match_id": 559702,
+      "utc_date": "2026-08-28T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 9
+    },
+    {
+      "match_id": 559704,
+      "utc_date": "2026-08-29T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 10
+    },
+    {
+      "match_id": 559705,
+      "utc_date": "2026-08-29T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 11
+    },
+    {
+      "match_id": 559706,
+      "utc_date": "2026-08-29T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 12
+    },
+    {
+      "match_id": 559708,
+      "utc_date": "2026-08-29T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 13
+    },
+    {
+      "match_id": 559710,
+      "utc_date": "2026-08-29T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 14
+    },
+    {
+      "match_id": 559707,
+      "utc_date": "2026-08-30T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 15
+    },
+    {
+      "match_id": 559709,
+      "utc_date": "2026-08-30T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 16
+    },
+    {
+      "match_id": 559703,
+      "utc_date": "2026-08-30T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 2,
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 17
+    },
+    {
+      "match_id": 559696,
+      "utc_date": "2026-09-03T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 18
+    },
+    {
+      "match_id": 559699,
+      "utc_date": "2026-09-04T17:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 19
+    },
+    {
+      "match_id": 559697,
+      "utc_date": "2026-09-04T19:05:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 20
+    },
+    {
+      "match_id": 559695,
+      "utc_date": "2026-09-05T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 21
+    },
+    {
+      "match_id": 559693,
+      "utc_date": "2026-09-05T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 22
+    },
+    {
+      "match_id": 559701,
+      "utc_date": "2026-09-05T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 23
+    },
+    {
+      "match_id": 559700,
+      "utc_date": "2026-09-06T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 6
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 24
+    },
+    {
+      "match_id": 559698,
+      "utc_date": "2026-09-06T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 25
+    },
+    {
+      "match_id": 559694,
+      "utc_date": "2026-09-06T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 3,
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 26
+    },
+    {
+      "match_id": 559689,
+      "utc_date": "2026-09-11T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 27
+    },
+    {
+      "match_id": 559687,
+      "utc_date": "2026-09-12T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 28
+    },
+    {
+      "match_id": 559684,
+      "utc_date": "2026-09-12T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 29
+    },
+    {
+      "match_id": 559688,
+      "utc_date": "2026-09-12T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 30
+    },
+    {
+      "match_id": 559690,
+      "utc_date": "2026-09-12T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 31
+    },
+    {
+      "match_id": 559692,
+      "utc_date": "2026-09-12T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 32
+    },
+    {
+      "match_id": 559685,
+      "utc_date": "2026-09-13T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 33
+    },
+    {
+      "match_id": 559686,
+      "utc_date": "2026-09-13T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 34
+    },
+    {
+      "match_id": 559691,
+      "utc_date": "2026-09-13T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 4,
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 35
+    },
+    {
+      "match_id": 559682,
+      "utc_date": "2026-09-18T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 36
+    },
+    {
+      "match_id": 559679,
+      "utc_date": "2026-09-19T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 37
+    },
+    {
+      "match_id": 559677,
+      "utc_date": "2026-09-19T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 38
+    },
+    {
+      "match_id": 559680,
+      "utc_date": "2026-09-19T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 3,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 39
+    },
+    {
+      "match_id": 559681,
+      "utc_date": "2026-09-19T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 40
+    },
+    {
+      "match_id": 559683,
+      "utc_date": "2026-09-19T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "score": {
+        "fullTime": {
+          "home": 4,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 41
+    },
+    {
+      "match_id": 559676,
+      "utc_date": "2026-09-20T13:00:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 42
+    },
+    {
+      "match_id": 559678,
+      "utc_date": "2026-09-20T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 43
+    },
+    {
+      "match_id": 559675,
+      "utc_date": "2026-09-20T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 5,
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 44
+    },
+    {
+      "match_id": 559669,
+      "utc_date": "2026-10-09T18:45:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T00:20:37Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 45
+    },
+    {
+      "match_id": 559674,
+      "utc_date": "2026-10-10T15:15:00+00:00",
+      "status": "FINISHED",
+      "competition_code": "FL1",
+      "competition_id": 2015,
+      "season_id": 2497,
+      "season_start": "2026-08-22",
+      "season_end": "2027-05-29",
+      "requested_season": 2026,
+      "stage": "REGULAR_SEASON",
+      "matchday": 6,
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "score": {
+        "fullTime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "duration": "REGULAR",
+      "provider_updated_at": "2026-10-10T17:17:55Z",
+      "provider": "football-data.org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches?season=2026",
+      "response_record_index": 46
+    }
+  ],
+  "status_counts": {
+    "FINISHED": 47,
+    "TIMED": 67,
+    "SCHEDULED": 192
+  },
+  "nonfinal_records": [
+    {
+      "match_id": 559666,
+      "utc_date": "2026-10-10T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559668,
+      "utc_date": "2026-10-10T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559672,
+      "utc_date": "2026-10-10T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559673,
+      "utc_date": "2026-10-10T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559670,
+      "utc_date": "2026-10-11T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559667,
+      "utc_date": "2026-10-11T15:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559671,
+      "utc_date": "2026-10-11T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559661,
+      "utc_date": "2026-10-16T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559662,
+      "utc_date": "2026-10-17T15:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559659,
+      "utc_date": "2026-10-17T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559660,
+      "utc_date": "2026-10-17T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559664,
+      "utc_date": "2026-10-18T13:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559657,
+      "utc_date": "2026-10-18T15:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559658,
+      "utc_date": "2026-10-18T15:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559663,
+      "utc_date": "2026-10-18T15:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559665,
+      "utc_date": "2026-10-18T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559654,
+      "utc_date": "2026-10-23T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559655,
+      "utc_date": "2026-10-24T15:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559652,
+      "utc_date": "2026-10-24T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559650,
+      "utc_date": "2026-10-25T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559649,
+      "utc_date": "2026-10-25T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559651,
+      "utc_date": "2026-10-25T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559653,
+      "utc_date": "2026-10-25T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559656,
+      "utc_date": "2026-10-25T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559648,
+      "utc_date": "2026-10-25T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559644,
+      "utc_date": "2026-10-30T18:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559639,
+      "utc_date": "2026-10-30T20:05:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559646,
+      "utc_date": "2026-10-31T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559640,
+      "utc_date": "2026-10-31T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559641,
+      "utc_date": "2026-10-31T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559643,
+      "utc_date": "2026-10-31T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559647,
+      "utc_date": "2026-11-01T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559642,
+      "utc_date": "2026-11-01T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559645,
+      "utc_date": "2026-11-01T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559638,
+      "utc_date": "2026-11-06T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559637,
+      "utc_date": "2026-11-07T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559635,
+      "utc_date": "2026-11-07T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559636,
+      "utc_date": "2026-11-08T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559631,
+      "utc_date": "2026-11-08T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559632,
+      "utc_date": "2026-11-08T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559633,
+      "utc_date": "2026-11-08T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559634,
+      "utc_date": "2026-11-08T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559630,
+      "utc_date": "2026-11-08T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559622,
+      "utc_date": "2026-11-20T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559628,
+      "utc_date": "2026-11-21T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559621,
+      "utc_date": "2026-11-21T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559623,
+      "utc_date": "2026-11-21T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559624,
+      "utc_date": "2026-11-21T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559627,
+      "utc_date": "2026-11-21T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559625,
+      "utc_date": "2026-11-22T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559626,
+      "utc_date": "2026-11-22T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559629,
+      "utc_date": "2026-11-22T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559616,
+      "utc_date": "2026-11-27T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559612,
+      "utc_date": "2026-11-28T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559617,
+      "utc_date": "2026-11-28T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559620,
+      "utc_date": "2026-11-28T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559613,
+      "utc_date": "2026-11-28T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559614,
+      "utc_date": "2026-11-28T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559619,
+      "utc_date": "2026-11-29T14:00:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559618,
+      "utc_date": "2026-11-29T16:15:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559615,
+      "utc_date": "2026-11-29T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559603,
+      "utc_date": "2026-12-05T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559604,
+      "utc_date": "2026-12-05T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559605,
+      "utc_date": "2026-12-05T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559606,
+      "utc_date": "2026-12-05T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559607,
+      "utc_date": "2026-12-05T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559608,
+      "utc_date": "2026-12-05T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559609,
+      "utc_date": "2026-12-05T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559610,
+      "utc_date": "2026-12-05T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559611,
+      "utc_date": "2026-12-05T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559595,
+      "utc_date": "2026-12-12T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559596,
+      "utc_date": "2026-12-12T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559597,
+      "utc_date": "2026-12-12T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559598,
+      "utc_date": "2026-12-12T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559599,
+      "utc_date": "2026-12-12T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559600,
+      "utc_date": "2026-12-12T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559601,
+      "utc_date": "2026-12-12T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559602,
+      "utc_date": "2026-12-12T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559594,
+      "utc_date": "2026-12-13T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559586,
+      "utc_date": "2027-01-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559587,
+      "utc_date": "2027-01-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559588,
+      "utc_date": "2027-01-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559589,
+      "utc_date": "2027-01-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559590,
+      "utc_date": "2027-01-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559591,
+      "utc_date": "2027-01-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559592,
+      "utc_date": "2027-01-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559593,
+      "utc_date": "2027-01-02T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559585,
+      "utc_date": "2027-01-03T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559576,
+      "utc_date": "2027-01-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559577,
+      "utc_date": "2027-01-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559578,
+      "utc_date": "2027-01-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559579,
+      "utc_date": "2027-01-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559580,
+      "utc_date": "2027-01-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559581,
+      "utc_date": "2027-01-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559582,
+      "utc_date": "2027-01-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559583,
+      "utc_date": "2027-01-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559584,
+      "utc_date": "2027-01-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559567,
+      "utc_date": "2027-01-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559568,
+      "utc_date": "2027-01-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559569,
+      "utc_date": "2027-01-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559570,
+      "utc_date": "2027-01-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559571,
+      "utc_date": "2027-01-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559572,
+      "utc_date": "2027-01-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559573,
+      "utc_date": "2027-01-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559574,
+      "utc_date": "2027-01-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559575,
+      "utc_date": "2027-01-23T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559558,
+      "utc_date": "2027-01-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559559,
+      "utc_date": "2027-01-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559560,
+      "utc_date": "2027-01-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559561,
+      "utc_date": "2027-01-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559562,
+      "utc_date": "2027-01-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559563,
+      "utc_date": "2027-01-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559564,
+      "utc_date": "2027-01-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559565,
+      "utc_date": "2027-01-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559566,
+      "utc_date": "2027-01-30T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559550,
+      "utc_date": "2027-02-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559551,
+      "utc_date": "2027-02-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559552,
+      "utc_date": "2027-02-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559553,
+      "utc_date": "2027-02-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559554,
+      "utc_date": "2027-02-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559555,
+      "utc_date": "2027-02-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559556,
+      "utc_date": "2027-02-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559557,
+      "utc_date": "2027-02-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559549,
+      "utc_date": "2027-02-07T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559540,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559541,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559542,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559543,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559544,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559545,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559546,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559547,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559548,
+      "utc_date": "2027-02-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559531,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559532,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559533,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559534,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559535,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559536,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559537,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559538,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559539,
+      "utc_date": "2027-02-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559523,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559524,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559525,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559526,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559527,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559528,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559529,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559530,
+      "utc_date": "2027-02-27T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559522,
+      "utc_date": "2027-02-28T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559513,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559514,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559515,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559516,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559517,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559518,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559519,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559520,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559521,
+      "utc_date": "2027-03-06T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559504,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559505,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559506,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559507,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559508,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559509,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559510,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559511,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559512,
+      "utc_date": "2027-03-13T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559496,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559497,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559498,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559499,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559500,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559501,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559502,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559503,
+      "utc_date": "2027-03-20T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559495,
+      "utc_date": "2027-03-21T19:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559486,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559487,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559488,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559489,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559490,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559491,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559492,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559493,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559494,
+      "utc_date": "2027-04-03T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559477,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559478,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559479,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559480,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559481,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559482,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559483,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559484,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559485,
+      "utc_date": "2027-04-10T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559468,
+      "utc_date": "2027-04-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559469,
+      "utc_date": "2027-04-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559470,
+      "utc_date": "2027-04-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559471,
+      "utc_date": "2027-04-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559472,
+      "utc_date": "2027-04-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559473,
+      "utc_date": "2027-04-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559474,
+      "utc_date": "2027-04-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559475,
+      "utc_date": "2027-04-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559476,
+      "utc_date": "2027-04-17T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559459,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559460,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559461,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559462,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559463,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559464,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559465,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559466,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559467,
+      "utc_date": "2027-04-24T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559450,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559451,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559452,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559453,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559454,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559455,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559456,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559457,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559458,
+      "utc_date": "2027-05-01T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559442,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559443,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559444,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559445,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559446,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559447,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559448,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559449,
+      "utc_date": "2027-05-08T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559441,
+      "utc_date": "2027-05-09T18:45:00+00:00",
+      "status": "TIMED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559432,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559433,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559434,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559435,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559436,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559437,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559438,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559439,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559440,
+      "utc_date": "2027-05-16T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559423,
+      "utc_date": "2027-05-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "away": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559424,
+      "utc_date": "2027-05-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559425,
+      "utc_date": "2027-05-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559426,
+      "utc_date": "2027-05-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559427,
+      "utc_date": "2027-05-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "away": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559428,
+      "utc_date": "2027-05-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "away": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559429,
+      "utc_date": "2027-05-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559430,
+      "utc_date": "2027-05-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "away": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559431,
+      "utc_date": "2027-05-22T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559414,
+      "utc_date": "2027-05-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 548,
+        "name": "AS Monaco FC"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559415,
+      "utc_date": "2027-05-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC"
+      },
+      "away": {
+        "id": 511,
+        "name": "Toulouse FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559416,
+      "utc_date": "2027-05-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 521,
+        "name": "Lille OSC"
+      },
+      "away": {
+        "id": 535,
+        "name": "Le Mans FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559417,
+      "utc_date": "2027-05-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 512,
+        "name": "Stade Brestois 29"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559418,
+      "utc_date": "2027-05-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 516,
+        "name": "Olympique de Marseille"
+      },
+      "away": {
+        "id": 525,
+        "name": "FC Lorient"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559419,
+      "utc_date": "2027-05-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901"
+      },
+      "away": {
+        "id": 532,
+        "name": "Angers SCO"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559420,
+      "utc_date": "2027-05-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 523,
+        "name": "Olympique Lyonnais"
+      },
+      "away": {
+        "id": 1045,
+        "name": "Paris FC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559421,
+      "utc_date": "2027-05-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 519,
+        "name": "AJ Auxerre"
+      },
+      "away": {
+        "id": 533,
+        "name": "Le Havre AC"
+      },
+      "overdue_nonfinal": false
+    },
+    {
+      "match_id": 559422,
+      "utc_date": "2027-05-29T00:00:00+00:00",
+      "status": "SCHEDULED",
+      "home": {
+        "id": 576,
+        "name": "RC Strasbourg Alsace"
+      },
+      "away": {
+        "id": 522,
+        "name": "OGC Nice"
+      },
+      "overdue_nonfinal": false
+    }
+  ],
+  "api_reported_count": 306,
+  "sha256_raw_response": "a9831fefb1eb702d837a5e5540cdccc956652d0888f50a3c50d0258faab2a1d3"
+}

@@ -1,0 +1,27 @@
+{
+  "origin": "original_offline_regression_test_source_copies",
+  "test_files": [
+    {
+      "file": "regression/adapter/tests/test_adapter.py",
+      "sha256": "ce686177e57313c818ed68c52ffb5a4d23716d31b082c8b5f61713e04d9015d0"
+    },
+    {
+      "file": "regression/adapter/tests/test_hybrid.py",
+      "sha256": "fba7d23b250cc6e0fe46267051db57e8790cbf5583cc1eed3dd3906d73eb96fa"
+    },
+    {
+      "file": "regression/adapter/tests/test_sisal_pdf_allowlist.py",
+      "sha256": "aec3b1d38ed5374faa31898bfb6758db1e5035e0f19c8125de406b1404ee7399"
+    },
+    {
+      "file": "regression/provider/tests/test_provider.py",
+      "sha256": "416213315a3810cae06ada0067d4b63081c85a8d5d9200b6db4f7db334cf1446"
+    },
+    {
+      "file": "regression/provider/tests/test_real_snapshots.py",
+      "sha256": "9648920f515f439a88d241c68272b0482aad9abb5dae8f6e3f7d0d990a789640"
+    }
+  ],
+  "engine_source": "vendor byte-identical base 6bd9b719b4e3548d05282a560ec4cb1d95297b1b",
+  "fixture_note": "Existing snapshot files reused; Sisal full HTML replaced only by exact original PDF anchors, original SHA retained in its provenance.json"
+}

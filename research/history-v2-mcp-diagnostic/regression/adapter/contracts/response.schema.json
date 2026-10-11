@@ -1,0 +1,327 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "ready_for_quant",
+    "status",
+    "diagnostic_statistics_allowed",
+    "statistics_usable_in_production",
+    "verification_scope",
+    "checks",
+    "histories",
+    "temporal",
+    "blockers",
+    "cross_provider_duplicate_matches",
+    "evidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "history-identity-adapter.1"
+    },
+    "ready_for_quant": {
+      "const": false
+    },
+    "status": {
+      "enum": [
+        "identity_unverified",
+        "provider_unavailable",
+        "temporal_unverified",
+        "insufficient_history",
+        "data_conflict",
+        "data_unverified",
+        "source_stale",
+        "diagnostic_available"
+      ]
+    },
+    "diagnostic_statistics_allowed": {
+      "type": "boolean"
+    },
+    "statistics_usable_in_production": {
+      "const": false
+    },
+    "verification_scope": {
+      "enum": [
+        "unverified",
+        "synthetic_only",
+        "reviewed_real_evidence"
+      ]
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event",
+        "teams"
+      ],
+      "properties": {
+        "event": {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "verified",
+            "reasons"
+          ],
+          "properties": {
+            "verified": {
+              "type": "boolean"
+            },
+            "reasons": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "teams": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "home",
+            "away"
+          ],
+          "properties": {
+            "home": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": [
+                "identity_verified",
+                "state",
+                "reasons"
+              ],
+              "properties": {
+                "identity_verified": {
+                  "type": "boolean"
+                },
+                "state": {
+                  "enum": [
+                    "verified",
+                    "identity_unverified",
+                    "identity_ambiguous"
+                  ]
+                },
+                "reasons": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "away": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": [
+                "identity_verified",
+                "state",
+                "reasons"
+              ],
+              "properties": {
+                "identity_verified": {
+                  "type": "boolean"
+                },
+                "state": {
+                  "enum": [
+                    "verified",
+                    "identity_unverified",
+                    "identity_ambiguous"
+                  ]
+                },
+                "reasons": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "histories": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [],
+      "properties": {
+        "home": {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "history_status",
+            "counts",
+            "statistics",
+            "matches"
+          ],
+          "properties": {
+            "history_status": {
+              "enum": [
+                "sufficient_history",
+                "insufficient_history"
+              ]
+            },
+            "counts": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": [
+                "selected_results"
+              ],
+              "properties": {
+                "selected_results": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 5
+                }
+              }
+            },
+            "statistics": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "matches": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              },
+              "maxItems": 5
+            }
+          }
+        },
+        "away": {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "history_status",
+            "counts",
+            "statistics",
+            "matches"
+          ],
+          "properties": {
+            "history_status": {
+              "enum": [
+                "sufficient_history",
+                "insufficient_history"
+              ]
+            },
+            "counts": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": [
+                "selected_results"
+              ],
+              "properties": {
+                "selected_results": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 5
+                }
+              }
+            },
+            "statistics": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "matches": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              },
+              "maxItems": 5
+            }
+          }
+        }
+      }
+    },
+    "temporal": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "backtest_availability_verified",
+        "first_publication_time_verified"
+      ],
+      "properties": {
+        "backtest_availability_verified": {
+          "type": "boolean"
+        },
+        "first_publication_time_verified": {
+          "type": "boolean"
+        }
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cross_provider_duplicate_matches": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "evidence_id",
+          "sha256",
+          "origin",
+          "source"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "origin": {
+            "enum": [
+              "real_saved",
+              "synthetic"
+            ]
+          },
+          "source": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "event_ids": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "palinsesto",
+        "avvenimento",
+        "api_football_fixture_id",
+        "football_data_match_id"
+      ],
+      "properties": {
+        "palinsesto": {
+          "type": "string",
+          "pattern": "^[0-9]{1,20}$"
+        },
+        "avvenimento": {
+          "type": "string",
+          "pattern": "^[0-9]{1,20}$"
+        },
+        "api_football_fixture_id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "football_data_match_id": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sisal:history-identity-adapter:response:1"
+}
