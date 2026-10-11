@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sisal:football-history-v2-probe:response:1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "diagnostic_only",
+    "ready_for_analysis",
+    "ready_for_quant",
+    "statistics_usable_in_production",
+    "status",
+    "diagnostic_statistics_allowed",
+    "execution_mode",
+    "verified_at_utc",
+    "requested_event",
+    "checks",
+    "histories",
+    "temporal",
+    "blockers",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "football-history-v2-probe.1"
+    },
+    "diagnostic_only": {
+      "const": true
+    },
+    "ready_for_analysis": {
+      "const": false
+    },
+    "ready_for_quant": {
+      "const": false
+    },
+    "statistics_usable_in_production": {
+      "const": false
+    },
+    "status": {
+      "enum": [
+        "diagnostic_available",
+        "identity_unverified",
+        "insufficient_history",
+        "temporal_unverified",
+        "provider_unavailable",
+        "data_unverified",
+        "data_conflict",
+        "source_stale"
+      ]
+    },
+    "diagnostic_statistics_allowed": {
+      "type": "boolean"
+    },
+    "execution_mode": {
+      "enum": [
+        "cached_real_evidence",
+        "offline_replay"
+      ]
+    },
+    "verified_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "requested_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "palinsesto",
+        "avvenimento",
+        "match_date"
+      ],
+      "properties": {
+        "palinsesto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "avvenimento": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "match_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "checks": {
+      "type": "object"
+    },
+    "histories": {
+      "type": "object"
+    },
+    "temporal": {
+      "type": "object"
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "verification_scope": {
+      "enum": [
+        "unverified",
+        "reviewed_real_evidence"
+      ]
+    },
+    "event_ids": {
+      "type": "object"
+    }
+  },
+  "description": "History semantics and real-only identity checks are enforced by the unchanged underlying engines. Schemas do not certify authenticity."
+}

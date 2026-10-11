@@ -1,0 +1,1044 @@
+{
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 26,
+      "sha256": "472f568478bff9056ec56b5c5e8a7ca3d280c651d527321e1eb80892801164be"
+    },
+    {
+      "file": "RAILWAY_PROPOSAL.md",
+      "bytes": 5585,
+      "sha256": "39998fbec8135202dcb999dbc971e97605e7d1893203c99ac69d27ed525ca584"
+    },
+    {
+      "file": "README.md",
+      "bytes": 8053,
+      "sha256": "245106cf34f3bf674059721e6206bfa833cd4ca46760846d9d696c9c125ac0ba"
+    },
+    {
+      "file": "cases/coventry-newcastle/DOSSIER.md",
+      "bytes": 7713,
+      "sha256": "05872d0a5ac39b987bc77104756944b9ab0ae8a3b618414e050b849175a598da"
+    },
+    {
+      "file": "cases/coventry-newcastle/event.json",
+      "bytes": 483,
+      "sha256": "847e8db9268f146a06c31cf79a871092bdb81b3b6cfec1971528435b3248cfe2"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/af-fixture-coventry-newcastle.json",
+      "bytes": 1302,
+      "sha256": "551e83af7972499e676905835deb827c9b022290c0682d213629fa6e80a9d92f"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-event-coventry-newcastle.json",
+      "bytes": 696,
+      "sha256": "67b49407504f5effcc355ead31e143c6ac82f70112916d36b924374486175416"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-result-560542.json",
+      "bytes": 685,
+      "sha256": "bc1d8f79c9b231f795d28bcc09a359d029ecf2e13ff55c85555bdcb881300e2e"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-result-560550.json",
+      "bytes": 683,
+      "sha256": "67a0ffffcc53c9eab7270d55fcbf933f681dcf85d145d555a6f79f25926b6d44"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-result-560558.json",
+      "bytes": 696,
+      "sha256": "cdbf9170b3fc55e2a8f22adcde27bb4456e46c0dc481d77c94a01682c5ffb7cb"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-result-560561.json",
+      "bytes": 689,
+      "sha256": "7404a023e264b2511181732755cc18176caf83489457761769661f3471472265"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-result-560563.json",
+      "bytes": 693,
+      "sha256": "81ccb6bbff0c2963ac3b17cf947a9955477caea8226a5b47a5924f7f0fd26ec8"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-result-560571.json",
+      "bytes": 688,
+      "sha256": "0a3b689bd14d35f50cf90fb774c3e1bb83ebd558da0736c95efb830788a8081e"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-result-560578.json",
+      "bytes": 701,
+      "sha256": "8b4667746d306ddedfe5dbff3a6e956ade4165d3428bcc948895895390e09a50"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-result-560579.json",
+      "bytes": 692,
+      "sha256": "20db5adf4523e4c7149f2d7aeb48feb97430cd24701ae3325c84da7ee06dd3db"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-result-560588.json",
+      "bytes": 690,
+      "sha256": "3e5578987f2af3136adf6f61c1b942485c5cb82dc4546e4c85c81cd6e60f4e24"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-result-560589.json",
+      "bytes": 696,
+      "sha256": "842940a4a7b26b3c2426d52674b7ac01d7780de07789cdbb52ce8a2eb4371568"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-team-1076.json",
+      "bytes": 783,
+      "sha256": "7bb84da3083d358c05f53eceffc435a82825f96454b63a336c7f8321f7f4eb29"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/fd-team-67.json",
+      "bytes": 783,
+      "sha256": "7f42c658983f9c626cc3525b1e56a6525f6a48bf04a0f8f36633f13bceaabf7c"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-af-fixture.json",
+      "bytes": 746,
+      "sha256": "a97a82569bd9399defb15e2e506470255b9eacc9c94e5edf04445d3e83443fa9"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560542.json",
+      "bytes": 430,
+      "sha256": "9f56af5f5852789c2cb8a26520887dce81fee71897f0217f7101ea00c5c01cbb"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560550.json",
+      "bytes": 428,
+      "sha256": "3e45dd3a9803d8f91f6722c52e4c7f56c0e6c5a02dd715926ddce1348b4e1297"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560558.json",
+      "bytes": 428,
+      "sha256": "bc8bb8633e3a6cdbc896441bb7cccd533e83e75fb96fb238fb772197a8c3fbb7"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560561.json",
+      "bytes": 431,
+      "sha256": "8c8d865706070b90fba97f6bf4857b2822f2bd80a86e3c69073e5a56fc7fd307"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560563.json",
+      "bytes": 430,
+      "sha256": "5b57ecabb9b131c7e39d82b0bff1e8ee4e1146c9f91c5b91ee819875a65b0d40"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560571.json",
+      "bytes": 430,
+      "sha256": "af0892348455f9458f9f2f9231bea8c58fb957e0f03e95acdb83b53de8a4b528"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560578.json",
+      "bytes": 431,
+      "sha256": "895e46206039bfb0f9f423de43301bb7374dcf18600b22e393faafc90dc45478"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560579.json",
+      "bytes": 429,
+      "sha256": "e5d604601cdcbd3f1ad0dd804876d6f940cb56ad87363770c5d6c59523552377"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560588.json",
+      "bytes": 429,
+      "sha256": "eeadaa1c0b7fb72538600c7ed7d800902c8b73ef9851692e366986060c924760"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-observation-560589.json",
+      "bytes": 431,
+      "sha256": "326a737dafa91ef346423393fe82840e10aa36ab6caf5f446b930c0d1fb28dc3"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-review.json",
+      "bytes": 7029,
+      "sha256": "d3f6f5046da65e70258d6f460796f8da93addda91e6800b9b81ddcf4ea62e70c"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/proof-sisal.json",
+      "bytes": 1013,
+      "sha256": "4922aeb23a49818acefc0306441b0441c71defdbfbedc1b1e51d303f5049378f"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/sisal-base.pdf",
+      "bytes": 240309,
+      "sha256": "258d07b1b635910f3624066c3d52472126f4397edf563aac522016f1e12897a5"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/sisal-manifestazioni.pdf",
+      "bytes": 257401,
+      "sha256": "b0ea50de3256d2d65d3b20535574d8ea22ce5886a522da37390b62ae1bc533c9"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/sisal-manifestazioni.txt",
+      "bytes": 100864,
+      "sha256": "5d20566eb3d4adc4dafe902b36a1aa7a7d113aad8b8f676a85bac5a075939a83"
+    },
+    {
+      "file": "cases/coventry-newcastle/evidence/sisal-page-excerpt.html",
+      "bytes": 467,
+      "sha256": "1ecb9cdab08c70d3cf1dd18ea25b879d07c221004d6c88e0d1feb98469519bf3"
+    },
+    {
+      "file": "cases/coventry-newcastle/real_only-preliminary.json",
+      "bytes": 38412,
+      "sha256": "8fd380c9b727e2804a0d0747635e7b59d58307e28ffaebdbb0ea230670299b83"
+    },
+    {
+      "file": "cases/coventry-newcastle/real_only.json",
+      "bytes": 38437,
+      "sha256": "c0c0408238362be6771a6c70b42c1802605381ea705259b7029e02858960d128"
+    },
+    {
+      "file": "cases/coventry-newcastle/registry.json",
+      "bytes": 5764,
+      "sha256": "32fe18df9d6b3ea1437aa066e59cf52b3bb8e457b4f4626646bd0fa81a740f7d"
+    },
+    {
+      "file": "cases/coventry-newcastle/request-asof-observation.json",
+      "bytes": 1423,
+      "sha256": "bbc3551db17956ea3aa9204b9b0371dc74e757c696490bd61e43ca2362363a69"
+    },
+    {
+      "file": "cases/coventry-newcastle/request-diagnostic.json",
+      "bytes": 1361,
+      "sha256": "cb0f9a78cfcb52c8a3e7a240e7853fd6222220c496d11b867df19fd1bfb61cd0"
+    },
+    {
+      "file": "cases/levante-sevilla/DOSSIER.md",
+      "bytes": 7607,
+      "sha256": "3d60088c33386de9f4f5a537beab47fdf59f3d3ceb8f32ab94ab3796c75f83b0"
+    },
+    {
+      "file": "cases/levante-sevilla/event.json",
+      "bytes": 469,
+      "sha256": "f1461ddcee2ac74429768275a33ce92d37cb0b76474bae1a034b32ef3cf05ae2"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/af-fixture-levante-sevilla.json",
+      "bytes": 1285,
+      "sha256": "4902fe596d540b1fdc52cdcb4bc7832372e324f49e44e07f0813c3e7895c89f3"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-event-levante-sevilla.json",
+      "bytes": 682,
+      "sha256": "86ed90a263d5952825b85078101b0ddd61d04a9c73c9aa8156e39be5bf492898"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-result-564639.json",
+      "bytes": 674,
+      "sha256": "89a88cbc345c1cdab34433756b562a020c7093397717d172681074d2e23e64ce"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-result-564649.json",
+      "bytes": 694,
+      "sha256": "8ae2ea0fad56b9930b7e4cb4d9c63b0a5e9ffb63e030ce2645da25a44e82ae49"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-result-564655.json",
+      "bytes": 689,
+      "sha256": "060aa7baafe04d4328e1cfa5d47442032ac8f274ac042d3ddd1ef1a84c0db68e"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-result-564661.json",
+      "bytes": 690,
+      "sha256": "562c397e4d4a9f10536b7005906bee0af59e37e49a0f43188dbecab34e29297c"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-result-564666.json",
+      "bytes": 674,
+      "sha256": "e2e6389fa88dbbc0cda17c3e31c64765cf9f6db0686d0ae4e875b1599bbafec5"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-result-564669.json",
+      "bytes": 681,
+      "sha256": "6eb25f884e0a23623df4ceddfeae483e62e41d86dd686fd9ba490d45cccfc7f9"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-result-564675.json",
+      "bytes": 681,
+      "sha256": "f1432be5dea50072cb404ebfbfc7fb5f2151490634100e73b14f80cab828953f"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-result-564679.json",
+      "bytes": 694,
+      "sha256": "f5e5c7cbebecc1aecb47da079dfdfd4fae73c1c4f714087550ff56c88666c289"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-result-564690.json",
+      "bytes": 682,
+      "sha256": "1e24c5a7c9ee410d71ca9a4e61f447fdf56fbb8797a938249bbea652e227b9f1"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-result-564696.json",
+      "bytes": 682,
+      "sha256": "f4391d88edb30c927e8193e7cec4817bcf5fc19b823d286b162218386012de9c"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-team-559.json",
+      "bytes": 624,
+      "sha256": "ded0e60bacf252ada7310cc0fa80d8b6d6e5a22a9fa977ca415acb400a70cf83"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/fd-team-88.json",
+      "bytes": 615,
+      "sha256": "a5a171d44f25f82b6868b4fbc1452ee59cac017bbce18e7e8094bb9f409a1b6c"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-af-fixture.json",
+      "bytes": 744,
+      "sha256": "e6bc154ef9f7059f70457c2c57af859f0c023b47f6517314e9df3caf0cf5df8f"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564639.json",
+      "bytes": 428,
+      "sha256": "04f324254ea0b31cb5f248a3a2296ec79e4b944435ced2169bd52ef61199f3bc"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564649.json",
+      "bytes": 429,
+      "sha256": "0e9a5a5e138258ff9135ca55f1aeb4c607c4e3e84005b2b50bd9a794031fa418"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564655.json",
+      "bytes": 428,
+      "sha256": "2a1f0bb3641539845e01eea607c54fe0d13ab52a66b9b38e57741f9d6d890388"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564661.json",
+      "bytes": 429,
+      "sha256": "95cd7971156a252c0563f7cf5b9cbee6d5aa7cf04d5fbed4201b126935805f91"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564666.json",
+      "bytes": 428,
+      "sha256": "659c409a90489e1576884730c720acf65004003a7264de72f439bda48326824c"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564669.json",
+      "bytes": 429,
+      "sha256": "8480fe1b0b66d77487c66563df5a9e32b9d62d55dc2c8dea5b6fd17e8ba13ed9"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564675.json",
+      "bytes": 428,
+      "sha256": "ee9f0f391c25ccff381ebe9afb8b3e015b8dc2d4c1a994db7d74133fcceb0fb5"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564679.json",
+      "bytes": 430,
+      "sha256": "98867da4d4f8d82b585de259dcd229ec6cd1732f21a942b8a303a680f06f79de"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564690.json",
+      "bytes": 429,
+      "sha256": "c7e61f0641049c7861e9c99d8adfd437ae854386f9ba386df54e7b0e136cbf40"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-observation-564696.json",
+      "bytes": 428,
+      "sha256": "2a9376f91800a1b8e5d36f10c99f6553a47b5e537b5bb8ad375ae05f7d528353"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-review.json",
+      "bytes": 6962,
+      "sha256": "e8752d110398ad2d0c4e634b6c1da6aeb3ed201cf3c4320d9ee65fbcc85435ef"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/proof-sisal.json",
+      "bytes": 1011,
+      "sha256": "c84859df7f49a00aa919bbfd90d3156411d5a70156e5c08bbcbd4b3e934d1946"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/sisal-base.pdf",
+      "bytes": 240309,
+      "sha256": "258d07b1b635910f3624066c3d52472126f4397edf563aac522016f1e12897a5"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/sisal-manifestazioni.pdf",
+      "bytes": 257401,
+      "sha256": "b0ea50de3256d2d65d3b20535574d8ea22ce5886a522da37390b62ae1bc533c9"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/sisal-manifestazioni.txt",
+      "bytes": 100864,
+      "sha256": "5d20566eb3d4adc4dafe902b36a1aa7a7d113aad8b8f676a85bac5a075939a83"
+    },
+    {
+      "file": "cases/levante-sevilla/evidence/sisal-page-excerpt.html",
+      "bytes": 467,
+      "sha256": "1ecb9cdab08c70d3cf1dd18ea25b879d07c221004d6c88e0d1feb98469519bf3"
+    },
+    {
+      "file": "cases/levante-sevilla/real_only-preliminary.json",
+      "bytes": 38313,
+      "sha256": "12ffff6317ba23eea8c614ab02e8265d4e6f7e3fb0fb829b392fcae41bc7c13e"
+    },
+    {
+      "file": "cases/levante-sevilla/real_only.json",
+      "bytes": 38338,
+      "sha256": "af25ded3949262f6a543ca7d8fa6d81d55626d11d1e47de77b2865a6c8175619"
+    },
+    {
+      "file": "cases/levante-sevilla/registry.json",
+      "bytes": 5738,
+      "sha256": "ce9a77634521dc33b35ef992abf17c9996e46ab5c6032eaafb58604a4c6b4d72"
+    },
+    {
+      "file": "cases/levante-sevilla/request-asof-observation.json",
+      "bytes": 1419,
+      "sha256": "05d9834f19eb110083514e57cc17c9b48bc47e7790b7131d65fea2d3cf59b7bc"
+    },
+    {
+      "file": "cases/levante-sevilla/request-diagnostic.json",
+      "bytes": 1357,
+      "sha256": "4a78b6563e5b6d65fa37699273e2e929d82d885c0e9bc9b8923bca3efbcfce95"
+    },
+    {
+      "file": "catalog.json",
+      "bytes": 11066,
+      "sha256": "26b86d91e2cf0e693295ff4d99f25d320f89fa8518cb2966d73a0341c57ba5e3"
+    },
+    {
+      "file": "contracts/adapter/evidence.schema.json",
+      "bytes": 2615,
+      "sha256": "82c9f6362e26bec11311a6d3f73909fa36dd4573e58bc6a18d4c392da41b1364"
+    },
+    {
+      "file": "contracts/adapter/registry.schema.json",
+      "bytes": 11302,
+      "sha256": "62ea6f670ed77ec99b7d22c48702d8087caf5aaf38a93ed5df2dc703c5fc52f3"
+    },
+    {
+      "file": "contracts/adapter/request.schema.json",
+      "bytes": 8976,
+      "sha256": "9cc7a3fe2f53fca6eb87c5b3c532aad561b754b02c56f968b23ec75b19cee26a"
+    },
+    {
+      "file": "contracts/adapter/response.schema.json",
+      "bytes": 7801,
+      "sha256": "37c5b2ddeaad0010df187a11661f58fa832583bc3a05368ceb47997fbfa0dfd1"
+    },
+    {
+      "file": "contracts/request.schema.json",
+      "bytes": 564,
+      "sha256": "b0ba36021cc0207ddc2e86545f9ed3338749c2b0eba9d39052aa36ad3674fe47"
+    },
+    {
+      "file": "contracts/response.schema.json",
+      "bytes": 2554,
+      "sha256": "37344dc7e65da786ad87dc1f1241e7b902fa9551f521f03a997be491f3af3b02"
+    },
+    {
+      "file": "examples/coventry-newcastle.json",
+      "bytes": 39141,
+      "sha256": "baa0e426669ffc62a32113e7bed649876ee1012b1c6bfb851cb07fdcaf824462"
+    },
+    {
+      "file": "examples/levante-sevilla.json",
+      "bytes": 39046,
+      "sha256": "ad4378bd167f98fc598347ba39b063a65ce43152277e1249c8be2127fc072bca"
+    },
+    {
+      "file": "history_v2_probe/__init__.py",
+      "bytes": 243,
+      "sha256": "35c6b19b2ae1eff88a5d7723f6be5eec3c366c59ba346c0af029067f24446949"
+    },
+    {
+      "file": "history_v2_probe/__main__.py",
+      "bytes": 1459,
+      "sha256": "38e9571e981e1941d7e2bd14d626bddc8d076bd0bc18e3b0d5b652444d0ff2ac"
+    },
+    {
+      "file": "history_v2_probe/mcp_server.py",
+      "bytes": 1034,
+      "sha256": "34cf7f63f2a3b2b1e5afb9432e64790e5d1797362c15fa672ec18ae15db7ba52"
+    },
+    {
+      "file": "history_v2_probe/service.py",
+      "bytes": 8561,
+      "sha256": "4ea2e34d4fabbbd15d989a9db2bd93cde87b3c80b087fc98e9614159420ef2e6"
+    },
+    {
+      "file": "history_v2_probe/transport.py",
+      "bytes": 10105,
+      "sha256": "f7c7b1d966c41bf4b04623aa2e7ff47abebe90257a06e80b700d06751fb28be9"
+    },
+    {
+      "file": "live/evidence/af-fixture-coventry-newcastle.json",
+      "bytes": 1302,
+      "sha256": "551e83af7972499e676905835deb827c9b022290c0682d213629fa6e80a9d92f"
+    },
+    {
+      "file": "live/evidence/af-fixture-coventry-newcastle.json.meta.json",
+      "bytes": 563,
+      "sha256": "a3ce2ef222c28621102b7cd987777b66a100c02717fd58d23a924854c6ac7dc0"
+    },
+    {
+      "file": "live/evidence/af-fixture-levante-sevilla.json",
+      "bytes": 1285,
+      "sha256": "4902fe596d540b1fdc52cdcb4bc7832372e324f49e44e07f0813c3e7895c89f3"
+    },
+    {
+      "file": "live/evidence/af-fixture-levante-sevilla.json.meta.json",
+      "bytes": 563,
+      "sha256": "db70fbd87d32df0f251bc9f3c9fc79731febc76b5074d24c0d4833f466a03c6c"
+    },
+    {
+      "file": "live/evidence/af-status.json",
+      "bytes": 127,
+      "sha256": "47204917798024b7a3137ae6a773cb14cc25a9e927e46a57e1d09fcfa0131dda"
+    },
+    {
+      "file": "live/evidence/af-status.json.meta.json",
+      "bytes": 550,
+      "sha256": "0f030cf4874c896350c7ab736b7378bb382d2a9198a36e8038a5db8700c69adf"
+    },
+    {
+      "file": "live/evidence/cl-cache-reuse.json",
+      "bytes": 325,
+      "sha256": "0bcfd78e1be529c4e760de4c9bc07aa540f3a5443d14117f8a1d5a2cf5344c4b"
+    },
+    {
+      "file": "live/evidence/credentials-presence.json",
+      "bytes": 141,
+      "sha256": "322019150505988b4ed2f655631a13165c2b1fe6b6edd0fdcbad212472c1290a"
+    },
+    {
+      "file": "live/evidence/fd-PD-snapshot-acquisition.json",
+      "bytes": 330,
+      "sha256": "877638449635a169d312e4f0c06f0cc8d86be620f5d14220dcb273f74a680cf5"
+    },
+    {
+      "file": "live/evidence/fd-PL-snapshot-acquisition.json",
+      "bytes": 330,
+      "sha256": "9b726f2e72738b6d18c8ebd8b4cc7d0f6bfe0dd4d5fcc351427a86cdae9d6bc8"
+    },
+    {
+      "file": "live/evidence/fd-event-coventry-newcastle.json",
+      "bytes": 696,
+      "sha256": "67b49407504f5effcc355ead31e143c6ac82f70112916d36b924374486175416"
+    },
+    {
+      "file": "live/evidence/fd-event-coventry-newcastle.json.meta.json",
+      "bytes": 487,
+      "sha256": "b9a0e97f80f5ad0fb61a06f028ee00d74fe80d1f84709641833efd3218fa0f52"
+    },
+    {
+      "file": "live/evidence/fd-event-levante-sevilla.json",
+      "bytes": 682,
+      "sha256": "86ed90a263d5952825b85078101b0ddd61d04a9c73c9aa8156e39be5bf492898"
+    },
+    {
+      "file": "live/evidence/fd-event-levante-sevilla.json.meta.json",
+      "bytes": 487,
+      "sha256": "8412a64453a2eb6eb5e4767528968ee24a4bd0b2b80fb7721714babe78591cb8"
+    },
+    {
+      "file": "live/evidence/fd-result-560542.json",
+      "bytes": 685,
+      "sha256": "bc1d8f79c9b231f795d28bcc09a359d029ecf2e13ff55c85555bdcb881300e2e"
+    },
+    {
+      "file": "live/evidence/fd-result-560542.json.meta.json",
+      "bytes": 487,
+      "sha256": "6d358b7deb24ac76615952ff70756acd5f5796a9eb75f01ac8029b781a2fc380"
+    },
+    {
+      "file": "live/evidence/fd-result-560550.json",
+      "bytes": 683,
+      "sha256": "67a0ffffcc53c9eab7270d55fcbf933f681dcf85d145d555a6f79f25926b6d44"
+    },
+    {
+      "file": "live/evidence/fd-result-560550.json.meta.json",
+      "bytes": 487,
+      "sha256": "0cb4c1cd957f7ad981bbd9b235d063fc436bcb835abe2369111aada319d3e065"
+    },
+    {
+      "file": "live/evidence/fd-result-560558.json",
+      "bytes": 696,
+      "sha256": "cdbf9170b3fc55e2a8f22adcde27bb4456e46c0dc481d77c94a01682c5ffb7cb"
+    },
+    {
+      "file": "live/evidence/fd-result-560558.json.meta.json",
+      "bytes": 487,
+      "sha256": "11649549e5a378c5c80952fb160c1161271a20d1144a3f2aff0e443eb5dadbb3"
+    },
+    {
+      "file": "live/evidence/fd-result-560561.json",
+      "bytes": 689,
+      "sha256": "7404a023e264b2511181732755cc18176caf83489457761769661f3471472265"
+    },
+    {
+      "file": "live/evidence/fd-result-560561.json.meta.json",
+      "bytes": 487,
+      "sha256": "6ad89ee5596683eb4a6d69ee740a2fba2e59102e204e2109bc7f031fa08c091e"
+    },
+    {
+      "file": "live/evidence/fd-result-560563.json",
+      "bytes": 693,
+      "sha256": "81ccb6bbff0c2963ac3b17cf947a9955477caea8226a5b47a5924f7f0fd26ec8"
+    },
+    {
+      "file": "live/evidence/fd-result-560563.json.meta.json",
+      "bytes": 487,
+      "sha256": "4aa0d274c302eea622f9914b7ef229fc18861687940a53443cc671ec33d3609e"
+    },
+    {
+      "file": "live/evidence/fd-result-560571.json",
+      "bytes": 688,
+      "sha256": "0a3b689bd14d35f50cf90fb774c3e1bb83ebd558da0736c95efb830788a8081e"
+    },
+    {
+      "file": "live/evidence/fd-result-560571.json.meta.json",
+      "bytes": 486,
+      "sha256": "0d994a1621074298a7e77a82253ab96816b599c5ebcb1bf6f6f8816198817a0a"
+    },
+    {
+      "file": "live/evidence/fd-result-560578.json",
+      "bytes": 701,
+      "sha256": "8b4667746d306ddedfe5dbff3a6e956ade4165d3428bcc948895895390e09a50"
+    },
+    {
+      "file": "live/evidence/fd-result-560578.json.meta.json",
+      "bytes": 487,
+      "sha256": "011f7fb3da050aef80980ef3c19251f0becee6a201df78bb1380ee146943b322"
+    },
+    {
+      "file": "live/evidence/fd-result-560579.json",
+      "bytes": 692,
+      "sha256": "20db5adf4523e4c7149f2d7aeb48feb97430cd24701ae3325c84da7ee06dd3db"
+    },
+    {
+      "file": "live/evidence/fd-result-560579.json.meta.json",
+      "bytes": 487,
+      "sha256": "800546425404585da249e058a82eff6ee42767ebbc911c2eba4da43c0c855b6b"
+    },
+    {
+      "file": "live/evidence/fd-result-560588.json",
+      "bytes": 690,
+      "sha256": "3e5578987f2af3136adf6f61c1b942485c5cb82dc4546e4c85c81cd6e60f4e24"
+    },
+    {
+      "file": "live/evidence/fd-result-560588.json.meta.json",
+      "bytes": 487,
+      "sha256": "f9a894634f90819222b32646b620b1c302b0528679403225dd6363995ee03ec3"
+    },
+    {
+      "file": "live/evidence/fd-result-560589.json",
+      "bytes": 696,
+      "sha256": "842940a4a7b26b3c2426d52674b7ac01d7780de07789cdbb52ce8a2eb4371568"
+    },
+    {
+      "file": "live/evidence/fd-result-560589.json.meta.json",
+      "bytes": 487,
+      "sha256": "46f5a52e74c13d59746c12262990e84eb14bf27f0a30143efb4a3c63cc592007"
+    },
+    {
+      "file": "live/evidence/fd-result-564639.json",
+      "bytes": 674,
+      "sha256": "89a88cbc345c1cdab34433756b562a020c7093397717d172681074d2e23e64ce"
+    },
+    {
+      "file": "live/evidence/fd-result-564639.json.meta.json",
+      "bytes": 487,
+      "sha256": "afb700256bc6278448be01897d5050c8f1b10570f263dbdebd68f2272e61b22a"
+    },
+    {
+      "file": "live/evidence/fd-result-564649.json",
+      "bytes": 694,
+      "sha256": "8ae2ea0fad56b9930b7e4cb4d9c63b0a5e9ffb63e030ce2645da25a44e82ae49"
+    },
+    {
+      "file": "live/evidence/fd-result-564649.json.meta.json",
+      "bytes": 487,
+      "sha256": "fe8cfe75405704d9ad2bff438bca5c27ffe6e8778b551e02da810068c78a6a4d"
+    },
+    {
+      "file": "live/evidence/fd-result-564655.json",
+      "bytes": 689,
+      "sha256": "060aa7baafe04d4328e1cfa5d47442032ac8f274ac042d3ddd1ef1a84c0db68e"
+    },
+    {
+      "file": "live/evidence/fd-result-564655.json.meta.json",
+      "bytes": 487,
+      "sha256": "324ca34c442e58dfe5129b49cbe19ea9a18e9df6eeadd5a418008ae5cb334bdd"
+    },
+    {
+      "file": "live/evidence/fd-result-564661.json",
+      "bytes": 690,
+      "sha256": "562c397e4d4a9f10536b7005906bee0af59e37e49a0f43188dbecab34e29297c"
+    },
+    {
+      "file": "live/evidence/fd-result-564661.json.meta.json",
+      "bytes": 487,
+      "sha256": "c84c0fe3e1e769749206c12be120ec0e3a86fe7a298c25ddd82ee5a9d10d06dd"
+    },
+    {
+      "file": "live/evidence/fd-result-564666.json",
+      "bytes": 674,
+      "sha256": "e2e6389fa88dbbc0cda17c3e31c64765cf9f6db0686d0ae4e875b1599bbafec5"
+    },
+    {
+      "file": "live/evidence/fd-result-564666.json.meta.json",
+      "bytes": 487,
+      "sha256": "21ef5cf69f7b4243187954317cbce059167f83730f53448185a5526cd6c1fd2e"
+    },
+    {
+      "file": "live/evidence/fd-result-564669.json",
+      "bytes": 681,
+      "sha256": "6eb25f884e0a23623df4ceddfeae483e62e41d86dd686fd9ba490d45cccfc7f9"
+    },
+    {
+      "file": "live/evidence/fd-result-564669.json.meta.json",
+      "bytes": 487,
+      "sha256": "b72e12e923be1e71c9d909c9a221bae7fd60ab526feec70ae364f1e960ec03c6"
+    },
+    {
+      "file": "live/evidence/fd-result-564675.json",
+      "bytes": 681,
+      "sha256": "f1432be5dea50072cb404ebfbfc7fb5f2151490634100e73b14f80cab828953f"
+    },
+    {
+      "file": "live/evidence/fd-result-564675.json.meta.json",
+      "bytes": 487,
+      "sha256": "9deaae699731c0dfe587a90be390af99ee4d77882b44b9e9a30784e0bf7e97c1"
+    },
+    {
+      "file": "live/evidence/fd-result-564679.json",
+      "bytes": 694,
+      "sha256": "f5e5c7cbebecc1aecb47da079dfdfd4fae73c1c4f714087550ff56c88666c289"
+    },
+    {
+      "file": "live/evidence/fd-result-564679.json.meta.json",
+      "bytes": 487,
+      "sha256": "026c92069913c8368afe8c6e49255b67f2f752c00cfdb3fd7f6e33ea6f4e84bd"
+    },
+    {
+      "file": "live/evidence/fd-result-564690.json",
+      "bytes": 682,
+      "sha256": "1e24c5a7c9ee410d71ca9a4e61f447fdf56fbb8797a938249bbea652e227b9f1"
+    },
+    {
+      "file": "live/evidence/fd-result-564690.json.meta.json",
+      "bytes": 486,
+      "sha256": "44b352e1d551a661a12068819e35d7c902e4ccc0928adc421901207d182735c4"
+    },
+    {
+      "file": "live/evidence/fd-result-564696.json",
+      "bytes": 682,
+      "sha256": "f4391d88edb30c927e8193e7cec4817bcf5fc19b823d286b162218386012de9c"
+    },
+    {
+      "file": "live/evidence/fd-result-564696.json.meta.json",
+      "bytes": 487,
+      "sha256": "6f0744da8774ee4296cfbf71ac43cd8339dcbe5b3484c72c3022be169b37c3b8"
+    },
+    {
+      "file": "live/evidence/fd-team-1076.json",
+      "bytes": 783,
+      "sha256": "7bb84da3083d358c05f53eceffc435a82825f96454b63a336c7f8321f7f4eb29"
+    },
+    {
+      "file": "live/evidence/fd-team-1076.json.meta.json",
+      "bytes": 483,
+      "sha256": "6d1ee746f698025aa9054fb54442fb71a69ccfeb5922dcf3696aeea71d97f3e7"
+    },
+    {
+      "file": "live/evidence/fd-team-559.json",
+      "bytes": 624,
+      "sha256": "ded0e60bacf252ada7310cc0fa80d8b6d6e5a22a9fa977ca415acb400a70cf83"
+    },
+    {
+      "file": "live/evidence/fd-team-559.json.meta.json",
+      "bytes": 482,
+      "sha256": "dface5190fb247da3e4de113e1313fab31f503ebf48e58527796024f4c2716bd"
+    },
+    {
+      "file": "live/evidence/fd-team-67.json",
+      "bytes": 783,
+      "sha256": "7f42c658983f9c626cc3525b1e56a6525f6a48bf04a0f8f36633f13bceaabf7c"
+    },
+    {
+      "file": "live/evidence/fd-team-67.json.meta.json",
+      "bytes": 481,
+      "sha256": "71289888fb1258ac428272772182c63b0607c119dc22c2be2b929ae40cecf101"
+    },
+    {
+      "file": "live/evidence/fd-team-88.json",
+      "bytes": 615,
+      "sha256": "a5a171d44f25f82b6868b4fbc1452ee59cac017bbce18e7e8094bb9f409a1b6c"
+    },
+    {
+      "file": "live/evidence/fd-team-88.json.meta.json",
+      "bytes": 481,
+      "sha256": "7fe1f3d7c7f9cf119b56efc813c7a4b23604101f70221c5ff885417cfcb29ce6"
+    },
+    {
+      "file": "live/evidence/selected-events.json",
+      "bytes": 1205,
+      "sha256": "8edb4e8d6c550bd0fbc9d636e1937fa399dc8cd4a245878c36974fd0a06d8871"
+    },
+    {
+      "file": "live/evidence/sisal-base.pdf",
+      "bytes": 240309,
+      "sha256": "258d07b1b635910f3624066c3d52472126f4397edf563aac522016f1e12897a5"
+    },
+    {
+      "file": "live/evidence/sisal-base.pdf.meta.json",
+      "bytes": 471,
+      "sha256": "0e58bc87b0b2952e8f1187bc17fed775763af51f8e1cd7a934a5e5f81de5a0ad"
+    },
+    {
+      "file": "live/evidence/sisal-base.txt",
+      "bytes": 98031,
+      "sha256": "1888ddf27a2c0e1d27e9c3e108274fd31a016c7a53fda41f74aafad72e02b570"
+    },
+    {
+      "file": "live/evidence/sisal-manifestazioni.pdf",
+      "bytes": 257401,
+      "sha256": "b0ea50de3256d2d65d3b20535574d8ea22ce5886a522da37390b62ae1bc533c9"
+    },
+    {
+      "file": "live/evidence/sisal-manifestazioni.pdf.meta.json",
+      "bytes": 481,
+      "sha256": "c1923d1e4d4b1d410597a3d958a8443e670b17f75cd8401c476c678d2961a85e"
+    },
+    {
+      "file": "live/evidence/sisal-manifestazioni.txt",
+      "bytes": 100864,
+      "sha256": "5d20566eb3d4adc4dafe902b36a1aa7a7d113aad8b8f676a85bac5a075939a83"
+    },
+    {
+      "file": "live/evidence/sisal-page-excerpt.html",
+      "bytes": 467,
+      "sha256": "1ecb9cdab08c70d3cf1dd18ea25b879d07c221004d6c88e0d1feb98469519bf3"
+    },
+    {
+      "file": "live/evidence/sisal-page-excerpt.html.meta.json",
+      "bytes": 608,
+      "sha256": "01845e038d20e2193912be03a2a048d1679dfb67cfe725e310e1a486fb912b6e"
+    },
+    {
+      "file": "live/snapshots/CL-2026.json",
+      "bytes": 53556,
+      "sha256": "e96f59cfafd447386acddc1e74a0a24d2ba4163a4739fe8519db478b62035730"
+    },
+    {
+      "file": "live/snapshots/PD-2026.json",
+      "bytes": 158370,
+      "sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7"
+    },
+    {
+      "file": "live/snapshots/PL-2026.json",
+      "bytes": 147173,
+      "sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d"
+    },
+    {
+      "file": "reports/adapter-tests.log",
+      "bytes": 9677,
+      "sha256": "dd50e329ccc8b2cc03e4390a62e0bd597635dff60048f9535f330886c30233ab"
+    },
+    {
+      "file": "reports/backend-regression-tests.log",
+      "bytes": 2033,
+      "sha256": "2ac7344dde994bd9e8d0f012b94d53efc5ec9312d1afd64968fb1673f2acc16e"
+    },
+    {
+      "file": "reports/baseline-protected-files.json",
+      "bytes": 1778,
+      "sha256": "0a1738e55b46826df2b1b32a13662bedac475adbddc4e6db38d5a6ff6680d983"
+    },
+    {
+      "file": "reports/integrity-security.json",
+      "bytes": 4601,
+      "sha256": "0dda5294289a36f88ef4e5131b4fc2ce61bba9e5ad9311efeafc2042e56abea8"
+    },
+    {
+      "file": "reports/live-summary.json",
+      "bytes": 8995,
+      "sha256": "51a9910715583d654d4ec60cecf9e0a16156a987e8afe8dce69e707fa12b064c"
+    },
+    {
+      "file": "reports/mcp-stdio-server.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "reports/portable-replay.json",
+      "bytes": 39141,
+      "sha256": "baa0e426669ffc62a32113e7bed649876ee1012b1c6bfb851cb07fdcaf824462"
+    },
+    {
+      "file": "reports/provider-tests.log",
+      "bytes": 6224,
+      "sha256": "131342d42c1c3e37b5edcf241edb19d1b0ce3559bf030b85b76123cc62a4871f"
+    },
+    {
+      "file": "reports/reuse-provenance.json",
+      "bytes": 1923,
+      "sha256": "abb903f4c6de1c5b962259847af81e1b7d279b20263b966026129531e6f1efba"
+    },
+    {
+      "file": "reports/runtime-version.json",
+      "bytes": 139,
+      "sha256": "13d1d9baeed82d156ee4dab4cc995f34998137fa66eaefc3ab5a1b9dffd052b5"
+    },
+    {
+      "file": "reports/schema-validation.json",
+      "bytes": 5486,
+      "sha256": "82ace6fc875ce429d621508964e8e974f7ef48527ba10736b205a63ae2230729"
+    },
+    {
+      "file": "reports/sisal-page-minimization.json",
+      "bytes": 756,
+      "sha256": "04e36baccc933de8fe7d092020b4cffed120d4b01ef08b1143e72e9fcf52462d"
+    },
+    {
+      "file": "reports/test-summary.json",
+      "bytes": 10864,
+      "sha256": "79f1ddacc61c94a2df6f8fe656743f5bbce452abf4266588c65076fcb791b4d5"
+    },
+    {
+      "file": "reports/wrapper-coventry-newcastle.json",
+      "bytes": 39141,
+      "sha256": "baa0e426669ffc62a32113e7bed649876ee1012b1c6bfb851cb07fdcaf824462"
+    },
+    {
+      "file": "reports/wrapper-levante-sevilla.json",
+      "bytes": 39046,
+      "sha256": "ad4378bd167f98fc598347ba39b063a65ce43152277e1249c8be2127fc072bca"
+    },
+    {
+      "file": "reports/wrapper-tests.json",
+      "bytes": 10182,
+      "sha256": "c0e725cf5754974504e900271db3daa6e4a86bbb3d72167dc2ceb11e4793f013"
+    },
+    {
+      "file": "reports/wrapper-tests.log",
+      "bytes": 6382,
+      "sha256": "cf911033386812afa51f50230b88ea6ab96d79d1dbe1b3549bf188b5b59f68c3"
+    },
+    {
+      "file": "requirements-mcp.txt",
+      "bytes": 12,
+      "sha256": "4fe75062c5d424bbc86a8cd58c63ab19aeffe4f0a0e100022252c8032e12ee5b"
+    },
+    {
+      "file": "scripts/acquire_replicas.py",
+      "bytes": 5869,
+      "sha256": "77af4367d4f4180a766060719e438a6dff955fc58f3cc84df1cf115bcd9ae69a"
+    },
+    {
+      "file": "scripts/build_replicas.py",
+      "bytes": 8614,
+      "sha256": "535aec36d9c6c7f86ec0a3577baaa772952726ecec8430983ef54cc551e21217"
+    },
+    {
+      "file": "scripts/document_results.py",
+      "bytes": 9429,
+      "sha256": "8ccecdb2e25da43957167aef43bf69007cffec4825e5b4a59c3530f382d08841"
+    },
+    {
+      "file": "scripts/minimize_sisal_page.py",
+      "bytes": 2495,
+      "sha256": "97d0616d82bbffa1d9e5de8aff69cb52598a15739de7324018256b3ea55f095e"
+    },
+    {
+      "file": "scripts/observe_replicas.py",
+      "bytes": 4209,
+      "sha256": "1dc9fcbd2907ee9e0e0d7e5def9015fb992030ef05df00f3b48215f29a8af083"
+    },
+    {
+      "file": "scripts/reused/collect_evidence.py",
+      "bytes": 8548,
+      "sha256": "6e42121932ed94a0c1982b212a56b46de02db726abbf067c9c54242d9061a98f"
+    },
+    {
+      "file": "scripts/reused/collect_fd.py",
+      "bytes": 2342,
+      "sha256": "df01dc567b7b9dde3472e47031ec5da8cd9474fa813bb796cbc109cf5dc351ef"
+    },
+    {
+      "file": "scripts/reused/collect_observations.py",
+      "bytes": 3752,
+      "sha256": "a59222e8ffceb7e2d6953fe49c3634b117a7d7d121a8e2e923d57d61021420cb"
+    },
+    {
+      "file": "scripts/reused/probe_free.py",
+      "bytes": 17778,
+      "sha256": "2bfdac0145686075ab7449b777201fb4def331df4feb9568ca0d6ddd64c9220b"
+    },
+    {
+      "file": "scripts/run_tests.py",
+      "bytes": 1340,
+      "sha256": "24fbc0cd327adee57cc23ccae57254eb489f4f92ac7720427d0d9457401ffbbf"
+    },
+    {
+      "file": "tests/test_mcp_stdio.py",
+      "bytes": 2557,
+      "sha256": "2c9ca979660becdf5d29ee33011c09e0e3e65a4e7e9d25cc6d2f8177d3931fc1"
+    },
+    {
+      "file": "tests/test_page_minimization.py",
+      "bytes": 1110,
+      "sha256": "aa286cf6c135eaa2f63dcd5451430c9ad86399d8d1fedd45b30eb99016f040d3"
+    },
+    {
+      "file": "tests/test_transport.py",
+      "bytes": 7049,
+      "sha256": "6679c5f72d8df7889c89ce941e2c8cca62cc4983475979814d4b06a5b1462133"
+    },
+    {
+      "file": "tests/test_wrapper.py",
+      "bytes": 10680,
+      "sha256": "766e1b0eff7e33e8c555f11e59ae4cea2d6e1f2f8988c322f3ff4ad8f6058e20"
+    },
+    {
+      "file": "vendor/history_provider_v2/__init__.py",
+      "bytes": 248,
+      "sha256": "d41576147c73c7d2170eca2314a95bfc4f4571bfa473e5e6803a1e864ca9ab15"
+    },
+    {
+      "file": "vendor/history_provider_v2/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "file": "vendor/history_provider_v2/cli.py",
+      "bytes": 2018,
+      "sha256": "2b7dcfb891dbefde86fd26b89d497467e9a6d64635ae79163be2f354ca1276dd"
+    },
+    {
+      "file": "vendor/history_provider_v2/provider.py",
+      "bytes": 21467,
+      "sha256": "022aecd1355d0e6360f2f975eb2cea13edbc38293ef970a11a9a5b4ebec6d4c7"
+    },
+    {
+      "file": "vendor/identity_adapter/__init__.py",
+      "bytes": 237,
+      "sha256": "bfe10dbc375612e2e144fee7d8616c09e439d82f9207ebb995d63c89a333dec5"
+    },
+    {
+      "file": "vendor/identity_adapter/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "file": "vendor/identity_adapter/cli.py",
+      "bytes": 1324,
+      "sha256": "a487b6c7e7a741fa87ac6c454c80847d69351a8001d2cbcd51c84850be737eb1"
+    },
+    {
+      "file": "vendor/identity_adapter/core.py",
+      "bytes": 32245,
+      "sha256": "e25e159e1f3466c12eee08e248dd1b95d8c314f176cea6dfee3c9f3779009de1"
+    }
+  ],
+  "production_integration": false,
+  "diagnostic_only": true,
+  "ready_for_analysis": false,
+  "ready_for_quant": false,
+  "full_sisal_html_retained": false
+}

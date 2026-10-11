@@ -1,0 +1,26 @@
+{
+  "id": 88,
+  "name": "Levante UD",
+  "shortName": "Levante",
+  "tla": "LEV",
+  "address": "Calle San Vicente de Paúl, 44 Valencia 46019",
+  "website": "http://www.levanteud.com",
+  "founded": 1909,
+  "venue": "Estadio Ciudad de Valencia",
+  "area": {
+    "id": 2224,
+    "name": "Spain",
+    "code": "ESP",
+    "flag": "https://crests.football-data.org/760.svg"
+  },
+  "runningCompetitions": [
+    {
+      "id": 2014,
+      "name": "Primera Division",
+      "code": "PD",
+      "type": "LEAGUE",
+      "emblem": "https://crests.football-data.org/laliga.png"
+    }
+  ],
+  "lastUpdated": "2024-07-29T17:11:36Z"
+}

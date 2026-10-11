@@ -1,0 +1,39 @@
+{
+  "id": 564639,
+  "utcDate": "2026-08-24T17:30:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "DRAW",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 0,
+      "away": 0
+    },
+    "halfTime": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 2,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2014,
+    "name": "Primera Division",
+    "code": "PD",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2518,
+    "startDate": "2026-08-16",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 79,
+    "name": "CA Osasuna"
+  },
+  "awayTeam": {
+    "id": 88,
+    "name": "Levante UD"
+  }
+}

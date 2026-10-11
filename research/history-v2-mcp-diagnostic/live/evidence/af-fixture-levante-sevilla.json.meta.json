@@ -1,0 +1,16 @@
+{
+  "source": "https://v3.football.api-sports.io/fixtures?id=1570407",
+  "request_started_at": "2026-10-11T20:20:01.339175+00:00",
+  "http_status": 200,
+  "tls_verification_enabled": true,
+  "state": "retrieved",
+  "quota": {
+    "x-ratelimit-requests-limit": 100,
+    "x-ratelimit-requests-remaining": 97,
+    "x-ratelimit-limit": 10,
+    "x-ratelimit-remaining": 9
+  },
+  "content_type": "application/json",
+  "retained_sha256": "4902fe596d540b1fdc52cdcb4bc7832372e324f49e44e07f0813c3e7895c89f3",
+  "response_completed_at": "2026-10-11T20:20:02.121027+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "source": "https://api.football-data.org/v4/teams/67",
+  "request_started_at": "2026-10-11T20:20:11.277558+00:00",
+  "http_status": 200,
+  "tls_verification_enabled": true,
+  "state": "retrieved",
+  "quota": {
+    "x-requests-available-minute": 9,
+    "x-requestcounter-reset": 51
+  },
+  "content_type": "application/json",
+  "retained_sha256": "7f42c658983f9c626cc3525b1e56a6525f6a48bf04a0f8f36633f13bceaabf7c",
+  "response_completed_at": "2026-10-11T20:20:12.057619+00:00"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 564675,
+  "utcDate": "2026-09-13T14:15:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "AWAY_TEAM",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 2,
+      "away": 4
+    },
+    "halfTime": {
+      "home": 0,
+      "away": 2
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 5,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2014,
+    "name": "Primera Division",
+    "code": "PD",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2518,
+    "startDate": "2026-08-16",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 88,
+    "name": "Levante UD"
+  },
+  "awayTeam": {
+    "id": 81,
+    "name": "FC Barcelona"
+  }
+}

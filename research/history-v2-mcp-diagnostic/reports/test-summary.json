@@ -1,0 +1,267 @@
+{
+  "tests_run": 162,
+  "all_passed": true,
+  "provider_api_requests_in_tests": 0,
+  "suites": [
+    {
+      "suite": "identity_adapter",
+      "tests_run": 61,
+      "successful": true,
+      "log": "adapter-tests.log",
+      "provider_api_requests": 0
+    },
+    {
+      "suite": "history_provider",
+      "tests_run": 42,
+      "successful": true,
+      "log": "provider-tests.log",
+      "provider_api_requests": 0
+    },
+    {
+      "suite": "backend_regression",
+      "tests_run": 13,
+      "successful": true,
+      "log": "backend-regression-tests.log",
+      "provider_api_requests": 0
+    },
+    {
+      "suite": "wrapper_transport_mcp",
+      "tests_run": 46,
+      "successful": true,
+      "log": "wrapper-tests.log",
+      "provider_api_requests": 0
+    }
+  ],
+  "new_case_origins": [
+    {
+      "test": "test_mcp_stdio.MCPStdioTests.test_single_tool_three_arguments_and_real_structured_output",
+      "data_origin": "real_saved_evidence_native_mcp_stdio_frozen_clock_replay_no_provider_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_page_minimization.SimulatedPageMinimizationTests.test_credential_in_retained_anchor_is_blocked",
+      "data_origin": "synthetic_html_security_fixture_not_live_evidence",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_page_minimization.SimulatedPageMinimizationTests.test_embedded_non_document_key_is_not_retained",
+      "data_origin": "synthetic_html_security_fixture_not_live_evidence",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_page_minimization.SimulatedPageMinimizationTests.test_missing_authorized_document_link_is_blocked",
+      "data_origin": "synthetic_html_security_fixture_not_live_evidence",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_429_honors_retry_after_without_automatic_retry",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_authentication_failure_does_not_return_provider_body",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_cached_success_does_not_repeat_request",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_daily_reserve_protects_railway_budget",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_external_atomic_budget_denial_precedes_network",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_free_plan_error_with_http_200_is_not_success",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_https_and_documented_auth_header_are_used",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_missing_credential_is_explicit",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_no_live_request_without_shared_budget",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_nonmonotonic_quota_never_increases_balance",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_provider_echoing_credential_is_rejected_before_cache",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_quota_reset_waits_when_one_request_remains",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_redirect_response_is_not_followed",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_timeout_returns_safe_error",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_unallowed_endpoint_cannot_send_a_credential",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_transport.SimulatedTransportTests.test_unsafe_exception_is_not_exposed",
+      "data_origin": "synthetic_mocked_provider_responses_no_live_calls",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.RealSavedReplayTests.test_real_premier_league_both_verified_and_five_results",
+      "data_origin": "real_saved_official_evidence_local_review_offline_replay",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.RealSavedReplayTests.test_real_laliga_distinct_competition_preserved",
+      "data_origin": "real_saved_official_evidence_local_review_offline_replay",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.RealSavedReplayTests.test_real_availability_observed_not_first_publication",
+      "data_origin": "real_saved_official_evidence_local_review_offline_replay",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.RealSavedReplayTests.test_real_repeated_probe_reuses_dataset_without_network",
+      "data_origin": "real_saved_official_evidence_local_review_offline_replay",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_invalid_or_sensitive_input_is_not_echoed",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_missing_mapping_blocks_both_histories",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_wrong_team_identifier_is_blocked",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_wrong_competition_is_blocked",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_provider_unavailable_is_explicit",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_four_results_are_insufficient",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_identical_duplicate_does_not_inflate_count",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_conflicting_duplicate_blocks_statistics",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_missing_availability_proof_is_temporal_unverified",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_call_at_kickoff_blocks_cached_statistics",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_call_after_kickoff_is_blocked",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_old_event_evidence_is_stale",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_duplicate_binding_is_ambiguous",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_unreviewed_synthetic_evidence_is_rejected",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_path_traversal_is_rejected",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_tampered_snapshot_cannot_use_old_dataset",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_future_finished_match_is_not_selected",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_missing_snapshot_is_provider_unavailable",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_no_history_preserves_zero_count",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_wrong_event_date_is_not_matched",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_no_odds_or_prediction_keys_in_response",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    },
+    {
+      "test": "test_wrapper.SyntheticMutationTests.test_future_observation_is_temporal_unverified",
+      "data_origin": "synthetic_mutation_of_real_saved_inputs_not_live_validation",
+      "outcome": "passed"
+    }
+  ]
+}

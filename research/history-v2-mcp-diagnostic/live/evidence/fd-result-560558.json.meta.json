@@ -1,0 +1,14 @@
+{
+  "source": "https://api.football-data.org/v4/matches/560558",
+  "request_started_at": "2026-10-11T20:24:46.941945+00:00",
+  "http_status": 200,
+  "tls_verification_enabled": true,
+  "state": "retrieved",
+  "quota": {
+    "x-requests-available-minute": 9,
+    "x-requestcounter-reset": 60
+  },
+  "content_type": "application/json",
+  "retained_sha256": "cdbf9170b3fc55e2a8f22adcde27bb4456e46c0dc481d77c94a01682c5ffb7cb",
+  "response_completed_at": "2026-10-11T20:24:47.134954+00:00"
+}

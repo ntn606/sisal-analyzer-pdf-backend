@@ -1,0 +1,21 @@
+{
+  "key": "coventry-newcastle",
+  "palinsesto": "36411",
+  "avvenimento": "1885",
+  "home": "Coventry",
+  "away": "Newcastle",
+  "competition": "PL",
+  "sisal_competition": "ING Premier League",
+  "fixture_id": 1557420,
+  "fd_match_id": 560597,
+  "fd_team_ids": [
+    1076,
+    67
+  ],
+  "actual_sisal_heading": "ENG Premier League",
+  "manifest_pdf_page": 2,
+  "date": "2026-10-12",
+  "time": "21:00:00",
+  "timezone": "Europe/Rome",
+  "kickoff_utc": "2026-10-12T19:00:00+00:00"
+}

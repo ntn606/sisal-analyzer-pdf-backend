@@ -1,0 +1,39 @@
+{
+  "id": 564704,
+  "utcDate": "2026-10-12T19:00:00Z",
+  "status": "TIMED",
+  "score": {
+    "winner": null,
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": null,
+      "away": null
+    },
+    "halfTime": {
+      "home": null,
+      "away": null
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 8,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2014,
+    "name": "Primera Division",
+    "code": "PD",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2518,
+    "startDate": "2026-08-16",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 88,
+    "name": "Levante UD"
+  },
+  "awayTeam": {
+    "id": 559,
+    "name": "Sevilla FC"
+  }
+}

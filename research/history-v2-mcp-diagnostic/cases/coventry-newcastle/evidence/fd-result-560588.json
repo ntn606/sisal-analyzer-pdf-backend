@@ -1,0 +1,39 @@
+{
+  "id": 560588,
+  "utcDate": "2026-09-19T14:00:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "HOME_TEAM",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 2,
+      "away": 1
+    },
+    "halfTime": {
+      "home": 2,
+      "away": 0
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 5,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2021,
+    "name": "Premier League",
+    "code": "PL",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2502,
+    "startDate": "2026-08-21",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 67,
+    "name": "Newcastle United FC"
+  },
+  "awayTeam": {
+    "id": 322,
+    "name": "Hull City AFC"
+  }
+}

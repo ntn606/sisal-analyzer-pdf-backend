@@ -1,0 +1,67 @@
+{
+  "results": 1,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "fixture": {
+        "id": 1570407,
+        "timezone": "UTC",
+        "date": "2026-10-12T19:00:00+00:00",
+        "timestamp": 1791831600,
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        },
+        "venue": {
+          "id": 1482,
+          "name": "Estadio Ciudad de Valencia",
+          "city": "Valencia"
+        }
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "season": 2026,
+        "round": "Regular Season - 8"
+      },
+      "teams": {
+        "home": {
+          "id": 539,
+          "name": "Levante"
+        },
+        "away": {
+          "id": 536,
+          "name": "Sevilla"
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    }
+  ]
+}

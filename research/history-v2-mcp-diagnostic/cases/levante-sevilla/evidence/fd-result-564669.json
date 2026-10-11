@@ -1,0 +1,39 @@
+{
+  "id": 564669,
+  "utcDate": "2026-09-11T19:00:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "HOME_TEAM",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 1,
+      "away": 0
+    },
+    "halfTime": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 5,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2014,
+    "name": "Primera Division",
+    "code": "PD",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2518,
+    "startDate": "2026-08-16",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 559,
+    "name": "Sevilla FC"
+  },
+  "awayTeam": {
+    "id": 95,
+    "name": "Valencia CF"
+  }
+}

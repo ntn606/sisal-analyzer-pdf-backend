@@ -1,0 +1,193 @@
+{
+  "schema_version": "history-identity-adapter.1",
+  "teams": [
+    {
+      "canonical_id": "local:team:levante",
+      "provider_ids": {
+        "api_football": 539,
+        "football_data": 88
+      },
+      "profile": {
+        "country": "ES",
+        "gender": "men",
+        "squad_kind": "first",
+        "age_group": "senior"
+      },
+      "aliases": [
+        {
+          "provider": "sisal",
+          "label": "Levante",
+          "valid_from": "2026-08-16",
+          "valid_until": "2026-10-12"
+        },
+        {
+          "provider": "api_football",
+          "label": "Levante",
+          "valid_from": "2026-08-16",
+          "valid_until": "2026-10-12"
+        },
+        {
+          "provider": "football_data",
+          "label": "Levante UD",
+          "valid_from": "2026-08-16",
+          "valid_until": "2026-10-12"
+        }
+      ],
+      "validity": {
+        "from": "2026-08-16T00:00:00Z",
+        "until": "2026-10-13T00:00:00Z"
+      },
+      "verification": {
+        "state": "verified",
+        "reviewed_at": "2026-10-11T20:23:03.373694+00:00",
+        "evidence_id": "review"
+      }
+    },
+    {
+      "canonical_id": "local:team:sevilla",
+      "provider_ids": {
+        "api_football": 536,
+        "football_data": 559
+      },
+      "profile": {
+        "country": "ES",
+        "gender": "men",
+        "squad_kind": "first",
+        "age_group": "senior"
+      },
+      "aliases": [
+        {
+          "provider": "sisal",
+          "label": "Siviglia",
+          "valid_from": "2026-08-16",
+          "valid_until": "2026-10-12"
+        },
+        {
+          "provider": "api_football",
+          "label": "Sevilla",
+          "valid_from": "2026-08-16",
+          "valid_until": "2026-10-12"
+        },
+        {
+          "provider": "football_data",
+          "label": "Sevilla FC",
+          "valid_from": "2026-08-16",
+          "valid_until": "2026-10-12"
+        }
+      ],
+      "validity": {
+        "from": "2026-08-16T00:00:00Z",
+        "until": "2026-10-13T00:00:00Z"
+      },
+      "verification": {
+        "state": "verified",
+        "reviewed_at": "2026-10-11T20:23:03.373694+00:00",
+        "evidence_id": "review"
+      }
+    }
+  ],
+  "competitions": [
+    {
+      "canonical_id": "local:competition:PD",
+      "api_football_id": 140,
+      "football_data_id": 2014,
+      "football_data_code": "PD",
+      "validity": {
+        "from": "2026-08-16T00:00:00Z",
+        "until": "2026-10-13T00:00:00Z"
+      },
+      "verification": {
+        "state": "verified",
+        "reviewed_at": "2026-10-11T20:23:03.373694+00:00",
+        "evidence_id": "review"
+      }
+    }
+  ],
+  "bindings": [
+    {
+      "palinsesto": "36411",
+      "avvenimento": "2282",
+      "api_football_fixture_id": 1570407,
+      "football_data_match_id": 564704,
+      "home_canonical_id": "local:team:levante",
+      "away_canonical_id": "local:team:sevilla",
+      "competition_canonical_id": "local:competition:PD",
+      "validity": {
+        "from": "2026-08-16T00:00:00Z",
+        "until": "2026-10-13T00:00:00Z"
+      },
+      "verification": {
+        "state": "verified",
+        "reviewed_at": "2026-10-11T20:23:03.373694+00:00",
+        "evidence_id": "review"
+      }
+    }
+  ],
+  "match_links": [],
+  "availability": {
+    "564696": "observation-564696",
+    "564675": "observation-564675",
+    "564666": "observation-564666",
+    "564655": "observation-564655",
+    "564639": "observation-564639",
+    "564690": "observation-564690",
+    "564679": "observation-564679",
+    "564669": "observation-564669",
+    "564661": "observation-564661",
+    "564649": "observation-564649"
+  },
+  "evidence": {
+    "sisal": {
+      "file": "proof-sisal.json",
+      "sha256": "c84859df7f49a00aa919bbfd90d3156411d5a70156e5c08bbcbd4b3e934d1946"
+    },
+    "af-fixture": {
+      "file": "proof-af-fixture.json",
+      "sha256": "e6bc154ef9f7059f70457c2c57af859f0c023b47f6517314e9df3caf0cf5df8f"
+    },
+    "review": {
+      "file": "proof-review.json",
+      "sha256": "e8752d110398ad2d0c4e634b6c1da6aeb3ed201cf3c4320d9ee65fbcc85435ef"
+    },
+    "observation-564696": {
+      "file": "proof-observation-564696.json",
+      "sha256": "2a9376f91800a1b8e5d36f10c99f6553a47b5e537b5bb8ad375ae05f7d528353"
+    },
+    "observation-564675": {
+      "file": "proof-observation-564675.json",
+      "sha256": "ee9f0f391c25ccff381ebe9afb8b3e015b8dc2d4c1a994db7d74133fcceb0fb5"
+    },
+    "observation-564666": {
+      "file": "proof-observation-564666.json",
+      "sha256": "659c409a90489e1576884730c720acf65004003a7264de72f439bda48326824c"
+    },
+    "observation-564655": {
+      "file": "proof-observation-564655.json",
+      "sha256": "2a1f0bb3641539845e01eea607c54fe0d13ab52a66b9b38e57741f9d6d890388"
+    },
+    "observation-564639": {
+      "file": "proof-observation-564639.json",
+      "sha256": "04f324254ea0b31cb5f248a3a2296ec79e4b944435ced2169bd52ef61199f3bc"
+    },
+    "observation-564690": {
+      "file": "proof-observation-564690.json",
+      "sha256": "c7e61f0641049c7861e9c99d8adfd437ae854386f9ba386df54e7b0e136cbf40"
+    },
+    "observation-564679": {
+      "file": "proof-observation-564679.json",
+      "sha256": "98867da4d4f8d82b585de259dcd229ec6cd1732f21a942b8a303a680f06f79de"
+    },
+    "observation-564669": {
+      "file": "proof-observation-564669.json",
+      "sha256": "8480fe1b0b66d77487c66563df5a9e32b9d62d55dc2c8dea5b6fd17e8ba13ed9"
+    },
+    "observation-564661": {
+      "file": "proof-observation-564661.json",
+      "sha256": "95cd7971156a252c0563f7cf5b9cbee6d5aa7cf04d5fbed4201b126935805f91"
+    },
+    "observation-564649": {
+      "file": "proof-observation-564649.json",
+      "sha256": "0e9a5a5e138258ff9135ca55f1aeb4c607c4e3e84005b2b50bd9a794031fa418"
+    }
+  }
+}

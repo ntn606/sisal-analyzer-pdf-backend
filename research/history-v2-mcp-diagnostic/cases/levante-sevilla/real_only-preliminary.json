@@ -1,0 +1,1113 @@
+{
+  "schema_version": "history-identity-adapter.1",
+  "ready_for_quant": false,
+  "status": "diagnostic_available",
+  "diagnostic_statistics_allowed": true,
+  "statistics_usable_in_production": false,
+  "verification_scope": "reviewed_real_evidence",
+  "checks": {
+    "event": {
+      "verified": true,
+      "reasons": [],
+      "kickoff_utc": "2026-10-12T19:00:00+00:00",
+      "football_data_source": {
+        "match_id": 564704,
+        "home_team_id": 88,
+        "away_team_id": 559,
+        "kickoff_utc": "2026-10-12T19:00:00+00:00",
+        "competition_id": 2014,
+        "competition_code": "PD",
+        "season_start_year": 2026,
+        "snapshot_id": "PD-2026.json",
+        "source_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7"
+      }
+    },
+    "teams": {
+      "home": {
+        "identity_verified": true,
+        "state": "verified",
+        "canonical_id": "local:team:levante",
+        "reasons": [],
+        "provider_ids": {
+          "api_football": 539,
+          "football_data": 88
+        },
+        "profile": {
+          "country": "ES",
+          "gender": "men",
+          "squad_kind": "first",
+          "age_group": "senior"
+        }
+      },
+      "away": {
+        "identity_verified": true,
+        "state": "verified",
+        "canonical_id": "local:team:sevilla",
+        "reasons": [],
+        "provider_ids": {
+          "api_football": 536,
+          "football_data": 559
+        },
+        "profile": {
+          "country": "ES",
+          "gender": "men",
+          "squad_kind": "first",
+          "age_group": "senior"
+        }
+      }
+    }
+  },
+  "histories": {
+    "home": {
+      "schema_version": "history-provider-v2.prototype.1",
+      "mode": "offline_snapshots",
+      "status": "verified_sample",
+      "history_status": "sufficient_history",
+      "team": {
+        "canonical_id": "football-data.org:team:88",
+        "provider": "football-data.org",
+        "provider_id": 88,
+        "observed_names": [
+          "Levante UD"
+        ],
+        "identity_status": "exact_provider_id",
+        "cross_provider_mapping_verified": false
+      },
+      "scope": {
+        "requested_competitions": [
+          "CL",
+          "PD"
+        ],
+        "observed_competitions": [
+          "PD"
+        ],
+        "all_competitions_complete": false,
+        "dataset_completeness_independently_verified": false
+      },
+      "temporal_policy": {
+        "event_kickoff_utc": "2026-10-12T19:00:00+00:00",
+        "verified_at_utc": "2026-10-11T20:26:18.083091+00:00",
+        "effective_cutoff_utc": "2026-10-11T20:26:18.083091+00:00",
+        "upper_bound": "exclusive",
+        "freshness_days": 180,
+        "freshness_lower_bound": "inclusive",
+        "display_timezone": "Europe/Rome",
+        "match_time_basis": "kickoff; FINISHED observed in saved snapshot",
+        "exact_finished_at_available": false,
+        "historical_publication_time_certified": false,
+        "max_source_age_hours": 24
+      },
+      "counts": {
+        "requested_results": 5,
+        "valid_results_before_freshness": 6,
+        "valid_results_within_180_days": 6,
+        "selected_results": 5
+      },
+      "statistics": {
+        "criterion": "90_minutes; selected sample only; shootouts excluded; 3/1/0 descriptive points",
+        "sample_complete": true,
+        "overall": {
+          "played": 5,
+          "wins": 1,
+          "draws": 2,
+          "losses": 2,
+          "goals_for": 8,
+          "goals_against": 9,
+          "average_goals_for": 1.6,
+          "average_goals_against": 1.8,
+          "points_90_minutes_3_1_0": 5,
+          "points_per_game": 1.0
+        },
+        "home": {
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "goals_for": 7,
+          "goals_against": 6,
+          "average_goals_for": 3.5,
+          "average_goals_against": 3.0,
+          "points_90_minutes_3_1_0": 3,
+          "points_per_game": 1.5
+        },
+        "away": {
+          "played": 3,
+          "wins": 0,
+          "draws": 2,
+          "losses": 1,
+          "goals_for": 1,
+          "goals_against": 3,
+          "average_goals_for": 0.3333,
+          "average_goals_against": 1.0,
+          "points_90_minutes_3_1_0": 2,
+          "points_per_game": 0.6667
+        }
+      },
+      "matches": [
+        {
+          "match_id": 564696,
+          "canonical_match_id": "football-data.org:match:564696",
+          "utc_date": "2026-09-20T16:30:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PD",
+            "id": 2014
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:94",
+            "provider_id": 94,
+            "name": "Villarreal CF"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:88",
+            "provider_id": 88,
+            "name": "Levante UD"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2518,
+            "start_date": "2026-08-16",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 3,
+              "away": 1
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 3,
+            "away": 1
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+              "snapshot_id": "PD-2026.json",
+              "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+              "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 67
+            }
+          ],
+          "team_id": "football-data.org:team:88",
+          "venue": "away",
+          "opponent": {
+            "canonical_id": "football-data.org:team:94",
+            "provider_id": 94,
+            "name": "Villarreal CF"
+          },
+          "date_local": "2026-09-20T18:30:00+02:00",
+          "goals_for_90_minutes": 1,
+          "goals_against_90_minutes": 3,
+          "result_90_minutes": "L",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:25:03.506078+00:00",
+            "verified_by_analysis_time": false
+          }
+        },
+        {
+          "match_id": 564675,
+          "canonical_match_id": "football-data.org:match:564675",
+          "utc_date": "2026-09-13T14:15:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PD",
+            "id": 2014
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:88",
+            "provider_id": 88,
+            "name": "Levante UD"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:81",
+            "provider_id": 81,
+            "name": "FC Barcelona"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2518,
+            "start_date": "2026-08-16",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 2,
+              "away": 4
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 2,
+            "away": 4
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+              "snapshot_id": "PD-2026.json",
+              "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+              "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 47
+            }
+          ],
+          "team_id": "football-data.org:team:88",
+          "venue": "home",
+          "opponent": {
+            "canonical_id": "football-data.org:team:81",
+            "provider_id": 81,
+            "name": "FC Barcelona"
+          },
+          "date_local": "2026-09-13T16:15:00+02:00",
+          "goals_for_90_minutes": 2,
+          "goals_against_90_minutes": 4,
+          "result_90_minutes": "L",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:25:11.845996+00:00",
+            "verified_by_analysis_time": false
+          }
+        },
+        {
+          "match_id": 564666,
+          "canonical_match_id": "football-data.org:match:564666",
+          "utc_date": "2026-09-06T16:30:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PD",
+            "id": 2014
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:84",
+            "provider_id": 84,
+            "name": "Málaga CF"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:88",
+            "provider_id": 88,
+            "name": "Levante UD"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2518,
+            "start_date": "2026-08-16",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 0,
+              "away": 0
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 0,
+            "away": 0
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+              "snapshot_id": "PD-2026.json",
+              "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+              "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 37
+            }
+          ],
+          "team_id": "football-data.org:team:88",
+          "venue": "away",
+          "opponent": {
+            "canonical_id": "football-data.org:team:84",
+            "provider_id": 84,
+            "name": "Málaga CF"
+          },
+          "date_local": "2026-09-06T18:30:00+02:00",
+          "goals_for_90_minutes": 0,
+          "goals_against_90_minutes": 0,
+          "result_90_minutes": "D",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:25:20.005690+00:00",
+            "verified_by_analysis_time": false
+          }
+        },
+        {
+          "match_id": 564655,
+          "canonical_match_id": "football-data.org:match:564655",
+          "utc_date": "2026-08-29T15:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PD",
+            "id": 2014
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:88",
+            "provider_id": 88,
+            "name": "Levante UD"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:90",
+            "provider_id": 90,
+            "name": "Real Betis Balompié"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2518,
+            "start_date": "2026-08-16",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 5,
+              "away": 2
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 5,
+            "away": 2
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+              "snapshot_id": "PD-2026.json",
+              "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+              "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 22
+            }
+          ],
+          "team_id": "football-data.org:team:88",
+          "venue": "home",
+          "opponent": {
+            "canonical_id": "football-data.org:team:90",
+            "provider_id": 90,
+            "name": "Real Betis Balompié"
+          },
+          "date_local": "2026-08-29T17:00:00+02:00",
+          "goals_for_90_minutes": 5,
+          "goals_against_90_minutes": 2,
+          "result_90_minutes": "W",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:25:28.214826+00:00",
+            "verified_by_analysis_time": false
+          }
+        },
+        {
+          "match_id": 564639,
+          "canonical_match_id": "football-data.org:match:564639",
+          "utc_date": "2026-08-24T17:30:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PD",
+            "id": 2014
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:79",
+            "provider_id": 79,
+            "name": "CA Osasuna"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:88",
+            "provider_id": 88,
+            "name": "Levante UD"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2518,
+            "start_date": "2026-08-16",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 0,
+              "away": 0
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 0,
+            "away": 0
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+              "snapshot_id": "PD-2026.json",
+              "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+              "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 14
+            }
+          ],
+          "team_id": "football-data.org:team:88",
+          "venue": "away",
+          "opponent": {
+            "canonical_id": "football-data.org:team:79",
+            "provider_id": 79,
+            "name": "CA Osasuna"
+          },
+          "date_local": "2026-08-24T19:30:00+02:00",
+          "goals_for_90_minutes": 0,
+          "goals_against_90_minutes": 0,
+          "result_90_minutes": "D",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:25:36.612596+00:00",
+            "verified_by_analysis_time": false
+          }
+        }
+      ],
+      "sources": [
+        {
+          "provider": "football-data.org",
+          "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+          "snapshot_id": "CL-2026.json",
+          "retained_sha256": "e96f59cfafd447386acddc1e74a0a24d2ba4163a4739fe8519db478b62035730",
+          "acquired_at_utc": "2026-10-11T20:04:57.189432+00:00",
+          "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+          "competition": "CL",
+          "season": 2026,
+          "age_hours_at_verification": 0.355804,
+          "issues": []
+        },
+        {
+          "provider": "football-data.org",
+          "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+          "snapshot_id": "PD-2026.json",
+          "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+          "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+          "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+          "competition": "PD",
+          "season": 2026,
+          "age_hours_at_verification": 0.08842,
+          "issues": []
+        }
+      ],
+      "diagnostics": {
+        "identity": [],
+        "incomplete": [],
+        "conflicts": [],
+        "sources": [],
+        "duplicate_records": 0,
+        "name_aliases": [],
+        "nonfinal_status_counts": {
+          "SCHEDULED": 27,
+          "TIMED": 5
+        },
+        "exclusions": {},
+        "load": []
+      },
+      "adapter_canonical_team_id": "local:team:levante"
+    },
+    "away": {
+      "schema_version": "history-provider-v2.prototype.1",
+      "mode": "offline_snapshots",
+      "status": "verified_sample",
+      "history_status": "sufficient_history",
+      "team": {
+        "canonical_id": "football-data.org:team:559",
+        "provider": "football-data.org",
+        "provider_id": 559,
+        "observed_names": [
+          "Sevilla FC"
+        ],
+        "identity_status": "exact_provider_id",
+        "cross_provider_mapping_verified": false
+      },
+      "scope": {
+        "requested_competitions": [
+          "CL",
+          "PD"
+        ],
+        "observed_competitions": [
+          "PD"
+        ],
+        "all_competitions_complete": false,
+        "dataset_completeness_independently_verified": false
+      },
+      "temporal_policy": {
+        "event_kickoff_utc": "2026-10-12T19:00:00+00:00",
+        "verified_at_utc": "2026-10-11T20:26:18.083091+00:00",
+        "effective_cutoff_utc": "2026-10-11T20:26:18.083091+00:00",
+        "upper_bound": "exclusive",
+        "freshness_days": 180,
+        "freshness_lower_bound": "inclusive",
+        "display_timezone": "Europe/Rome",
+        "match_time_basis": "kickoff; FINISHED observed in saved snapshot",
+        "exact_finished_at_available": false,
+        "historical_publication_time_certified": false,
+        "max_source_age_hours": 24
+      },
+      "counts": {
+        "requested_results": 5,
+        "valid_results_before_freshness": 7,
+        "valid_results_within_180_days": 7,
+        "selected_results": 5
+      },
+      "statistics": {
+        "criterion": "90_minutes; selected sample only; shootouts excluded; 3/1/0 descriptive points",
+        "sample_complete": true,
+        "overall": {
+          "played": 5,
+          "wins": 2,
+          "draws": 1,
+          "losses": 2,
+          "goals_for": 5,
+          "goals_against": 7,
+          "average_goals_for": 1.0,
+          "average_goals_against": 1.4,
+          "points_90_minutes_3_1_0": 7,
+          "points_per_game": 1.4
+        },
+        "home": {
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goals_for": 3,
+          "goals_against": 6,
+          "average_goals_for": 1.0,
+          "average_goals_against": 2.0,
+          "points_90_minutes_3_1_0": 3,
+          "points_per_game": 1.0
+        },
+        "away": {
+          "played": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "goals_for": 2,
+          "goals_against": 1,
+          "average_goals_for": 1.0,
+          "average_goals_against": 0.5,
+          "points_90_minutes_3_1_0": 4,
+          "points_per_game": 2.0
+        }
+      },
+      "matches": [
+        {
+          "match_id": 564690,
+          "canonical_match_id": "football-data.org:match:564690",
+          "utc_date": "2026-09-19T19:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PD",
+            "id": 2014
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:559",
+            "provider_id": 559,
+            "name": "Sevilla FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:81",
+            "provider_id": 81,
+            "name": "FC Barcelona"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2518,
+            "start_date": "2026-08-16",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 1,
+              "away": 3
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 1,
+            "away": 3
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+              "snapshot_id": "PD-2026.json",
+              "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+              "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 63
+            }
+          ],
+          "team_id": "football-data.org:team:559",
+          "venue": "home",
+          "opponent": {
+            "canonical_id": "football-data.org:team:81",
+            "provider_id": 81,
+            "name": "FC Barcelona"
+          },
+          "date_local": "2026-09-19T21:00:00+02:00",
+          "goals_for_90_minutes": 1,
+          "goals_against_90_minutes": 3,
+          "result_90_minutes": "L",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:25:44.782161+00:00",
+            "verified_by_analysis_time": false
+          }
+        },
+        {
+          "match_id": 564679,
+          "canonical_match_id": "football-data.org:match:564679",
+          "utc_date": "2026-09-16T17:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PD",
+            "id": 2014
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:560",
+            "provider_id": 560,
+            "name": "RC Deportivo La Coruña"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:559",
+            "provider_id": 559,
+            "name": "Sevilla FC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2518,
+            "start_date": "2026-08-16",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 0,
+              "away": 1
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 0,
+            "away": 1
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+              "snapshot_id": "PD-2026.json",
+              "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+              "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 54
+            }
+          ],
+          "team_id": "football-data.org:team:559",
+          "venue": "away",
+          "opponent": {
+            "canonical_id": "football-data.org:team:560",
+            "provider_id": 560,
+            "name": "RC Deportivo La Coruña"
+          },
+          "date_local": "2026-09-16T19:00:00+02:00",
+          "goals_for_90_minutes": 1,
+          "goals_against_90_minutes": 0,
+          "result_90_minutes": "W",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:25:53.220981+00:00",
+            "verified_by_analysis_time": false
+          }
+        },
+        {
+          "match_id": 564669,
+          "canonical_match_id": "football-data.org:match:564669",
+          "utc_date": "2026-09-11T19:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PD",
+            "id": 2014
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:559",
+            "provider_id": 559,
+            "name": "Sevilla FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:95",
+            "provider_id": 95,
+            "name": "Valencia CF"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2518,
+            "start_date": "2026-08-16",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 1,
+              "away": 0
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 1,
+            "away": 0
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+              "snapshot_id": "PD-2026.json",
+              "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+              "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 41
+            }
+          ],
+          "team_id": "football-data.org:team:559",
+          "venue": "home",
+          "opponent": {
+            "canonical_id": "football-data.org:team:95",
+            "provider_id": 95,
+            "name": "Valencia CF"
+          },
+          "date_local": "2026-09-11T21:00:00+02:00",
+          "goals_for_90_minutes": 1,
+          "goals_against_90_minutes": 0,
+          "result_90_minutes": "W",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:26:01.510924+00:00",
+            "verified_by_analysis_time": false
+          }
+        },
+        {
+          "match_id": 564661,
+          "canonical_match_id": "football-data.org:match:564661",
+          "utc_date": "2026-09-06T19:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PD",
+            "id": 2014
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:80",
+            "provider_id": 80,
+            "name": "RCD Espanyol de Barcelona"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:559",
+            "provider_id": 559,
+            "name": "Sevilla FC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2518,
+            "start_date": "2026-08-16",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 1,
+              "away": 1
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 1,
+            "away": 1
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+              "snapshot_id": "PD-2026.json",
+              "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+              "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 38
+            }
+          ],
+          "team_id": "football-data.org:team:559",
+          "venue": "away",
+          "opponent": {
+            "canonical_id": "football-data.org:team:80",
+            "provider_id": 80,
+            "name": "RCD Espanyol de Barcelona"
+          },
+          "date_local": "2026-09-06T21:00:00+02:00",
+          "goals_for_90_minutes": 1,
+          "goals_against_90_minutes": 1,
+          "result_90_minutes": "D",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:26:09.732794+00:00",
+            "verified_by_analysis_time": false
+          }
+        },
+        {
+          "match_id": 564649,
+          "canonical_match_id": "football-data.org:match:564649",
+          "utc_date": "2026-08-29T19:30:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PD",
+            "id": 2014
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:559",
+            "provider_id": 559,
+            "name": "Sevilla FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:78",
+            "provider_id": 78,
+            "name": "Club Atlético de Madrid"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2518,
+            "start_date": "2026-08-16",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 1,
+              "away": 3
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 1,
+            "away": 3
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+              "snapshot_id": "PD-2026.json",
+              "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+              "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 24
+            }
+          ],
+          "team_id": "football-data.org:team:559",
+          "venue": "home",
+          "opponent": {
+            "canonical_id": "football-data.org:team:78",
+            "provider_id": 78,
+            "name": "Club Atlético de Madrid"
+          },
+          "date_local": "2026-08-29T21:30:00+02:00",
+          "goals_for_90_minutes": 1,
+          "goals_against_90_minutes": 3,
+          "result_90_minutes": "L",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:26:17.900218+00:00",
+            "verified_by_analysis_time": false
+          }
+        }
+      ],
+      "sources": [
+        {
+          "provider": "football-data.org",
+          "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+          "snapshot_id": "CL-2026.json",
+          "retained_sha256": "e96f59cfafd447386acddc1e74a0a24d2ba4163a4739fe8519db478b62035730",
+          "acquired_at_utc": "2026-10-11T20:04:57.189432+00:00",
+          "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+          "competition": "CL",
+          "season": 2026,
+          "age_hours_at_verification": 0.355804,
+          "issues": []
+        },
+        {
+          "provider": "football-data.org",
+          "source_url": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+          "snapshot_id": "PD-2026.json",
+          "retained_sha256": "66361911418ab1e2d65a6ede139719860a6c4bcbf5ecaba46dbae51a3439f2e7",
+          "acquired_at_utc": "2026-10-11T20:20:59.772558+00:00",
+          "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+          "competition": "PD",
+          "season": 2026,
+          "age_hours_at_verification": 0.08842,
+          "issues": []
+        }
+      ],
+      "diagnostics": {
+        "identity": [],
+        "incomplete": [],
+        "conflicts": [],
+        "sources": [],
+        "duplicate_records": 0,
+        "name_aliases": [],
+        "nonfinal_status_counts": {
+          "SCHEDULED": 27,
+          "TIMED": 4
+        },
+        "exclusions": {},
+        "load": []
+      },
+      "adapter_canonical_team_id": "local:team:sevilla"
+    }
+  },
+  "temporal": {
+    "state": "not_certified",
+    "backtest_availability_verified": false,
+    "first_publication_time_verified": false,
+    "reasons": [],
+    "event_kickoff_utc": "2026-10-12T19:00:00+00:00",
+    "analysis_at_utc": "2026-10-11T20:26:18.083091+00:00",
+    "purpose": "diagnostic"
+  },
+  "blockers": [],
+  "cross_provider_duplicate_matches": 0,
+  "evidence": [
+    {
+      "evidence_id": "af-fixture",
+      "sha256": "e6bc154ef9f7059f70457c2c57af859f0c023b47f6517314e9df3caf0cf5df8f",
+      "kind": "api_football_fixture",
+      "origin": "real_saved",
+      "source": "https://v3.football.api-sports.io/fixtures?id=1570407",
+      "acquired_at": "2026-10-11T20:20:02.121027+00:00"
+    },
+    {
+      "evidence_id": "observation-564639",
+      "sha256": "04f324254ea0b31cb5f248a3a2296ec79e4b944435ced2169bd52ef61199f3bc",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/564639",
+      "acquired_at": "2026-10-11T20:25:36.612596+00:00"
+    },
+    {
+      "evidence_id": "observation-564649",
+      "sha256": "0e9a5a5e138258ff9135ca55f1aeb4c607c4e3e84005b2b50bd9a794031fa418",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/564649",
+      "acquired_at": "2026-10-11T20:26:17.900218+00:00"
+    },
+    {
+      "evidence_id": "observation-564655",
+      "sha256": "2a1f0bb3641539845e01eea607c54fe0d13ab52a66b9b38e57741f9d6d890388",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/564655",
+      "acquired_at": "2026-10-11T20:25:28.214826+00:00"
+    },
+    {
+      "evidence_id": "observation-564661",
+      "sha256": "95cd7971156a252c0563f7cf5b9cbee6d5aa7cf04d5fbed4201b126935805f91",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/564661",
+      "acquired_at": "2026-10-11T20:26:09.732794+00:00"
+    },
+    {
+      "evidence_id": "observation-564666",
+      "sha256": "659c409a90489e1576884730c720acf65004003a7264de72f439bda48326824c",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/564666",
+      "acquired_at": "2026-10-11T20:25:20.005690+00:00"
+    },
+    {
+      "evidence_id": "observation-564669",
+      "sha256": "8480fe1b0b66d77487c66563df5a9e32b9d62d55dc2c8dea5b6fd17e8ba13ed9",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/564669",
+      "acquired_at": "2026-10-11T20:26:01.510924+00:00"
+    },
+    {
+      "evidence_id": "observation-564675",
+      "sha256": "ee9f0f391c25ccff381ebe9afb8b3e015b8dc2d4c1a994db7d74133fcceb0fb5",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/564675",
+      "acquired_at": "2026-10-11T20:25:11.845996+00:00"
+    },
+    {
+      "evidence_id": "observation-564679",
+      "sha256": "98867da4d4f8d82b585de259dcd229ec6cd1732f21a942b8a303a680f06f79de",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/564679",
+      "acquired_at": "2026-10-11T20:25:53.220981+00:00"
+    },
+    {
+      "evidence_id": "observation-564690",
+      "sha256": "c7e61f0641049c7861e9c99d8adfd437ae854386f9ba386df54e7b0e136cbf40",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/564690",
+      "acquired_at": "2026-10-11T20:25:44.782161+00:00"
+    },
+    {
+      "evidence_id": "observation-564696",
+      "sha256": "2a9376f91800a1b8e5d36f10c99f6553a47b5e537b5bb8ad375ae05f7d528353",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/564696",
+      "acquired_at": "2026-10-11T20:25:03.506078+00:00"
+    },
+    {
+      "evidence_id": "review",
+      "sha256": "e8752d110398ad2d0c4e634b6c1da6aeb3ed201cf3c4320d9ee65fbcc85435ef",
+      "kind": "review",
+      "origin": "real_saved",
+      "source": "urn:local:review:levante-sevilla-2026-10-12",
+      "acquired_at": "2026-10-11T20:23:03.373694+00:00"
+    },
+    {
+      "evidence_id": "sisal",
+      "sha256": "c84859df7f49a00aa919bbfd90d3156411d5a70156e5c08bbcbd4b3e934d1946",
+      "kind": "sisal_event",
+      "origin": "real_saved",
+      "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20data.pdf",
+      "acquired_at": "2026-10-11T20:19:48.235711+00:00"
+    }
+  ],
+  "event_ids": {
+    "palinsesto": "36411",
+    "avvenimento": "2282",
+    "api_football_fixture_id": 1570407,
+    "football_data_match_id": 564704
+  }
+}

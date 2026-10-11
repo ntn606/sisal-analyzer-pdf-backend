@@ -1,0 +1,39 @@
+{
+  "id": 564655,
+  "utcDate": "2026-08-29T15:00:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "HOME_TEAM",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 5,
+      "away": 2
+    },
+    "halfTime": {
+      "home": 2,
+      "away": 2
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 3,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2014,
+    "name": "Primera Division",
+    "code": "PD",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2518,
+    "startDate": "2026-08-16",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 88,
+    "name": "Levante UD"
+  },
+  "awayTeam": {
+    "id": 90,
+    "name": "Real Betis Balompié"
+  }
+}

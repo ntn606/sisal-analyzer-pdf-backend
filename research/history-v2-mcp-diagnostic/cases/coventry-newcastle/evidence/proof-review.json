@@ -1,0 +1,210 @@
+{
+  "origin": "real_saved",
+  "kind": "review",
+  "source": "urn:local:review:coventry-newcastle-2026-10-12",
+  "acquired_at": "2026-10-11T20:23:03.194734+00:00",
+  "record": {
+    "reviewed_at": "2026-10-11T20:23:03.194734+00:00",
+    "reviewer_ref": "local-research-review",
+    "entries": [
+      {
+        "entry_kind": "team",
+        "value": {
+          "canonical_id": "local:team:coventry",
+          "provider_ids": {
+            "api_football": 1346,
+            "football_data": 1076
+          },
+          "profile": {
+            "country": "GB",
+            "gender": "men",
+            "squad_kind": "first",
+            "age_group": "senior"
+          },
+          "aliases": [
+            {
+              "provider": "sisal",
+              "label": "Coventry",
+              "valid_from": "2026-08-21",
+              "valid_until": "2026-10-12"
+            },
+            {
+              "provider": "api_football",
+              "label": "Coventry",
+              "valid_from": "2026-08-21",
+              "valid_until": "2026-10-12"
+            },
+            {
+              "provider": "football_data",
+              "label": "Coventry City FC",
+              "valid_from": "2026-08-21",
+              "valid_until": "2026-10-12"
+            }
+          ],
+          "validity": {
+            "from": "2026-08-21T00:00:00Z",
+            "until": "2026-10-13T00:00:00Z"
+          }
+        }
+      },
+      {
+        "entry_kind": "team",
+        "value": {
+          "canonical_id": "local:team:newcastle",
+          "provider_ids": {
+            "api_football": 34,
+            "football_data": 67
+          },
+          "profile": {
+            "country": "GB",
+            "gender": "men",
+            "squad_kind": "first",
+            "age_group": "senior"
+          },
+          "aliases": [
+            {
+              "provider": "sisal",
+              "label": "Newcastle",
+              "valid_from": "2026-08-21",
+              "valid_until": "2026-10-12"
+            },
+            {
+              "provider": "api_football",
+              "label": "Newcastle",
+              "valid_from": "2026-08-21",
+              "valid_until": "2026-10-12"
+            },
+            {
+              "provider": "football_data",
+              "label": "Newcastle United FC",
+              "valid_from": "2026-08-21",
+              "valid_until": "2026-10-12"
+            }
+          ],
+          "validity": {
+            "from": "2026-08-21T00:00:00Z",
+            "until": "2026-10-13T00:00:00Z"
+          }
+        }
+      },
+      {
+        "entry_kind": "competition",
+        "value": {
+          "canonical_id": "local:competition:PL",
+          "api_football_id": 39,
+          "football_data_id": 2021,
+          "football_data_code": "PL",
+          "validity": {
+            "from": "2026-08-21T00:00:00Z",
+            "until": "2026-10-13T00:00:00Z"
+          }
+        }
+      },
+      {
+        "entry_kind": "binding",
+        "value": {
+          "palinsesto": "36411",
+          "avvenimento": "1885",
+          "api_football_fixture_id": 1557420,
+          "football_data_match_id": 560597,
+          "home_canonical_id": "local:team:coventry",
+          "away_canonical_id": "local:team:newcastle",
+          "competition_canonical_id": "local:competition:PL",
+          "validity": {
+            "from": "2026-08-21T00:00:00Z",
+            "until": "2026-10-13T00:00:00Z"
+          }
+        }
+      }
+    ],
+    "rationales": [
+      {
+        "side": "home",
+        "canonical_id": "local:team:coventry",
+        "name_only_matching": false,
+        "checks": [
+          "official match same home/away position and opposing team",
+          "exact UTC kickoff after timezone conversion",
+          "same country, league and 2026 season",
+          "FD official team ID equals calendar ID and declares competition membership"
+        ],
+        "profile_basis": "Contextual normalization from senior male first-team national league, not invented raw API profile fields",
+        "evidence_files": [
+          {
+            "file": "sisal-base.pdf",
+            "sha256": "258d07b1b635910f3624066c3d52472126f4397edf563aac522016f1e12897a5"
+          },
+          {
+            "file": "sisal-manifestazioni.pdf",
+            "sha256": "b0ea50de3256d2d65d3b20535574d8ea22ce5886a522da37390b62ae1bc533c9"
+          },
+          {
+            "file": "af-fixture-coventry-newcastle.json",
+            "sha256": "551e83af7972499e676905835deb827c9b022290c0682d213629fa6e80a9d92f"
+          },
+          {
+            "file": "fd-event-coventry-newcastle.json",
+            "sha256": "67b49407504f5effcc355ead31e143c6ac82f70112916d36b924374486175416"
+          },
+          {
+            "file": "fd-team-1076.json",
+            "sha256": "7bb84da3083d358c05f53eceffc435a82825f96454b63a336c7f8321f7f4eb29"
+          },
+          {
+            "file": "fd-team-67.json",
+            "sha256": "7f42c658983f9c626cc3525b1e56a6525f6a48bf04a0f8f36633f13bceaabf7c"
+          }
+        ]
+      },
+      {
+        "side": "away",
+        "canonical_id": "local:team:newcastle",
+        "name_only_matching": false,
+        "checks": [
+          "official match same home/away position and opposing team",
+          "exact UTC kickoff after timezone conversion",
+          "same country, league and 2026 season",
+          "FD official team ID equals calendar ID and declares competition membership"
+        ],
+        "profile_basis": "Contextual normalization from senior male first-team national league, not invented raw API profile fields",
+        "evidence_files": [
+          {
+            "file": "sisal-base.pdf",
+            "sha256": "258d07b1b635910f3624066c3d52472126f4397edf563aac522016f1e12897a5"
+          },
+          {
+            "file": "sisal-manifestazioni.pdf",
+            "sha256": "b0ea50de3256d2d65d3b20535574d8ea22ce5886a522da37390b62ae1bc533c9"
+          },
+          {
+            "file": "af-fixture-coventry-newcastle.json",
+            "sha256": "551e83af7972499e676905835deb827c9b022290c0682d213629fa6e80a9d92f"
+          },
+          {
+            "file": "fd-event-coventry-newcastle.json",
+            "sha256": "67b49407504f5effcc355ead31e143c6ac82f70112916d36b924374486175416"
+          },
+          {
+            "file": "fd-team-1076.json",
+            "sha256": "7bb84da3083d358c05f53eceffc435a82825f96454b63a336c7f8321f7f4eb29"
+          },
+          {
+            "file": "fd-team-67.json",
+            "sha256": "7f42c658983f9c626cc3525b1e56a6525f6a48bf04a0f8f36633f13bceaabf7c"
+          }
+        ]
+      },
+      {
+        "independent_home_venue_match": {
+          "id": 11896,
+          "name": "Coventry Building Society Arena",
+          "city": "Coventry"
+        },
+        "fd_home_venue": "Coventry Building Society Arena",
+        "cross_provider_venue_equal": true
+      }
+    ],
+    "sisal_heading": "ENG Premier League",
+    "review_scope": "Single real event; local research review, not provider-issued cross-provider certification"
+  }
+}

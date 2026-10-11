@@ -1,0 +1,193 @@
+{
+  "schema_version": "history-identity-adapter.1",
+  "teams": [
+    {
+      "canonical_id": "local:team:coventry",
+      "provider_ids": {
+        "api_football": 1346,
+        "football_data": 1076
+      },
+      "profile": {
+        "country": "GB",
+        "gender": "men",
+        "squad_kind": "first",
+        "age_group": "senior"
+      },
+      "aliases": [
+        {
+          "provider": "sisal",
+          "label": "Coventry",
+          "valid_from": "2026-08-21",
+          "valid_until": "2026-10-12"
+        },
+        {
+          "provider": "api_football",
+          "label": "Coventry",
+          "valid_from": "2026-08-21",
+          "valid_until": "2026-10-12"
+        },
+        {
+          "provider": "football_data",
+          "label": "Coventry City FC",
+          "valid_from": "2026-08-21",
+          "valid_until": "2026-10-12"
+        }
+      ],
+      "validity": {
+        "from": "2026-08-21T00:00:00Z",
+        "until": "2026-10-13T00:00:00Z"
+      },
+      "verification": {
+        "state": "verified",
+        "reviewed_at": "2026-10-11T20:23:03.194734+00:00",
+        "evidence_id": "review"
+      }
+    },
+    {
+      "canonical_id": "local:team:newcastle",
+      "provider_ids": {
+        "api_football": 34,
+        "football_data": 67
+      },
+      "profile": {
+        "country": "GB",
+        "gender": "men",
+        "squad_kind": "first",
+        "age_group": "senior"
+      },
+      "aliases": [
+        {
+          "provider": "sisal",
+          "label": "Newcastle",
+          "valid_from": "2026-08-21",
+          "valid_until": "2026-10-12"
+        },
+        {
+          "provider": "api_football",
+          "label": "Newcastle",
+          "valid_from": "2026-08-21",
+          "valid_until": "2026-10-12"
+        },
+        {
+          "provider": "football_data",
+          "label": "Newcastle United FC",
+          "valid_from": "2026-08-21",
+          "valid_until": "2026-10-12"
+        }
+      ],
+      "validity": {
+        "from": "2026-08-21T00:00:00Z",
+        "until": "2026-10-13T00:00:00Z"
+      },
+      "verification": {
+        "state": "verified",
+        "reviewed_at": "2026-10-11T20:23:03.194734+00:00",
+        "evidence_id": "review"
+      }
+    }
+  ],
+  "competitions": [
+    {
+      "canonical_id": "local:competition:PL",
+      "api_football_id": 39,
+      "football_data_id": 2021,
+      "football_data_code": "PL",
+      "validity": {
+        "from": "2026-08-21T00:00:00Z",
+        "until": "2026-10-13T00:00:00Z"
+      },
+      "verification": {
+        "state": "verified",
+        "reviewed_at": "2026-10-11T20:23:03.194734+00:00",
+        "evidence_id": "review"
+      }
+    }
+  ],
+  "bindings": [
+    {
+      "palinsesto": "36411",
+      "avvenimento": "1885",
+      "api_football_fixture_id": 1557420,
+      "football_data_match_id": 560597,
+      "home_canonical_id": "local:team:coventry",
+      "away_canonical_id": "local:team:newcastle",
+      "competition_canonical_id": "local:competition:PL",
+      "validity": {
+        "from": "2026-08-21T00:00:00Z",
+        "until": "2026-10-13T00:00:00Z"
+      },
+      "verification": {
+        "state": "verified",
+        "reviewed_at": "2026-10-11T20:23:03.194734+00:00",
+        "evidence_id": "review"
+      }
+    }
+  ],
+  "match_links": [],
+  "availability": {
+    "560589": "observation-560589",
+    "560578": "observation-560578",
+    "560563": "observation-560563",
+    "560561": "observation-560561",
+    "560542": "observation-560542",
+    "560588": "observation-560588",
+    "560579": "observation-560579",
+    "560571": "observation-560571",
+    "560558": "observation-560558",
+    "560550": "observation-560550"
+  },
+  "evidence": {
+    "sisal": {
+      "file": "proof-sisal.json",
+      "sha256": "4922aeb23a49818acefc0306441b0441c71defdbfbedc1b1e51d303f5049378f"
+    },
+    "af-fixture": {
+      "file": "proof-af-fixture.json",
+      "sha256": "a97a82569bd9399defb15e2e506470255b9eacc9c94e5edf04445d3e83443fa9"
+    },
+    "review": {
+      "file": "proof-review.json",
+      "sha256": "d3f6f5046da65e70258d6f460796f8da93addda91e6800b9b81ddcf4ea62e70c"
+    },
+    "observation-560589": {
+      "file": "proof-observation-560589.json",
+      "sha256": "326a737dafa91ef346423393fe82840e10aa36ab6caf5f446b930c0d1fb28dc3"
+    },
+    "observation-560578": {
+      "file": "proof-observation-560578.json",
+      "sha256": "895e46206039bfb0f9f423de43301bb7374dcf18600b22e393faafc90dc45478"
+    },
+    "observation-560563": {
+      "file": "proof-observation-560563.json",
+      "sha256": "5b57ecabb9b131c7e39d82b0bff1e8ee4e1146c9f91c5b91ee819875a65b0d40"
+    },
+    "observation-560561": {
+      "file": "proof-observation-560561.json",
+      "sha256": "8c8d865706070b90fba97f6bf4857b2822f2bd80a86e3c69073e5a56fc7fd307"
+    },
+    "observation-560542": {
+      "file": "proof-observation-560542.json",
+      "sha256": "9f56af5f5852789c2cb8a26520887dce81fee71897f0217f7101ea00c5c01cbb"
+    },
+    "observation-560588": {
+      "file": "proof-observation-560588.json",
+      "sha256": "eeadaa1c0b7fb72538600c7ed7d800902c8b73ef9851692e366986060c924760"
+    },
+    "observation-560579": {
+      "file": "proof-observation-560579.json",
+      "sha256": "e5d604601cdcbd3f1ad0dd804876d6f940cb56ad87363770c5d6c59523552377"
+    },
+    "observation-560571": {
+      "file": "proof-observation-560571.json",
+      "sha256": "af0892348455f9458f9f2f9231bea8c58fb957e0f03e95acdb83b53de8a4b528"
+    },
+    "observation-560558": {
+      "file": "proof-observation-560558.json",
+      "sha256": "bc8bb8633e3a6cdbc896441bb7cccd533e83e75fb96fb238fb772197a8c3fbb7"
+    },
+    "observation-560550": {
+      "file": "proof-observation-560550.json",
+      "sha256": "3e45dd3a9803d8f91f6722c52e4c7f56c0e6c5a02dd715926ddce1348b4e1297"
+    }
+  }
+}

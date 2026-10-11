@@ -1,0 +1,47 @@
+{
+  "verified_context_at": "2026-10-11T20:23:03.546482+00:00",
+  "targets": [
+    {
+      "key": "coventry-newcastle",
+      "palinsesto": "36411",
+      "avvenimento": "1885",
+      "home": "Coventry",
+      "away": "Newcastle",
+      "competition": "PL",
+      "sisal_competition": "ING Premier League",
+      "fixture_id": 1557420,
+      "fd_match_id": 560597,
+      "fd_team_ids": [
+        1076,
+        67
+      ],
+      "actual_sisal_heading": "ENG Premier League",
+      "manifest_pdf_page": 2,
+      "date": "2026-10-12",
+      "time": "21:00:00",
+      "timezone": "Europe/Rome",
+      "kickoff_utc": "2026-10-12T19:00:00+00:00"
+    },
+    {
+      "key": "levante-sevilla",
+      "palinsesto": "36411",
+      "avvenimento": "2282",
+      "home": "Levante",
+      "away": "Siviglia",
+      "competition": "PD",
+      "sisal_competition": "SPA Primera Division",
+      "fixture_id": 1570407,
+      "fd_match_id": 564704,
+      "fd_team_ids": [
+        88,
+        559
+      ],
+      "actual_sisal_heading": "ESP Liga",
+      "manifest_pdf_page": 2,
+      "date": "2026-10-12",
+      "time": "21:00:00",
+      "timezone": "Europe/Rome",
+      "kickoff_utc": "2026-10-12T19:00:00+00:00"
+    }
+  ]
+}

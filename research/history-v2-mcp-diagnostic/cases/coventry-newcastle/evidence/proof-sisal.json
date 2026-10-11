@@ -1,0 +1,30 @@
+{
+  "origin": "real_saved",
+  "kind": "sisal_event",
+  "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20data.pdf",
+  "acquired_at": "2026-10-11T20:19:48.235711+00:00",
+  "record": {
+    "palinsesto": "36411",
+    "avvenimento": "1885",
+    "home": "Coventry",
+    "away": "Newcastle",
+    "date": "2026-10-12",
+    "time": "21:00:00",
+    "timezone": "Europe/Rome",
+    "competition_canonical_id": "local:competition:PL",
+    "season_start_year": 2026,
+    "utc_offset": "+02:00"
+  },
+  "document": {
+    "file": "sisal-base.pdf",
+    "sha256": "258d07b1b635910f3624066c3d52472126f4397edf563aac522016f1e12897a5",
+    "media_type": "application/pdf",
+    "landing_page": {
+      "file": "sisal-page-excerpt.html",
+      "sha256": "1ecb9cdab08c70d3cf1dd18ea25b879d07c221004d6c88e0d1feb98469519bf3",
+      "source": "https://www.sisal.it/scommesse-matchpoint/foglio-quote",
+      "media_type": "text/html",
+      "acquired_at": "2026-10-11T20:19:45.971436+00:00"
+    }
+  }
+}

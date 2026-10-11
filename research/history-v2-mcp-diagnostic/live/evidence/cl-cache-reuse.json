@@ -1,0 +1,7 @@
+{
+  "original_file": "/workspace/research/history-v2-real-e2e-2026-10-11/snapshots/CL-2026.json",
+  "source": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+  "original_request_started_at": "2026-10-11T20:04:57.189432+00:00",
+  "reused_at": "2026-10-11T20:21:00.474159+00:00",
+  "new_api_calls": 0
+}

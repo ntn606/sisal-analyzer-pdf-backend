@@ -1,0 +1,39 @@
+{
+  "id": 560571,
+  "utcDate": "2026-09-05T11:30:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "DRAW",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 2,
+      "away": 2
+    },
+    "halfTime": {
+      "home": 1,
+      "away": 2
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 3,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2021,
+    "name": "Premier League",
+    "code": "PL",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2502,
+    "startDate": "2026-08-21",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 67,
+    "name": "Newcastle United FC"
+  },
+  "awayTeam": {
+    "id": 1044,
+    "name": "AFC Bournemouth"
+  }
+}

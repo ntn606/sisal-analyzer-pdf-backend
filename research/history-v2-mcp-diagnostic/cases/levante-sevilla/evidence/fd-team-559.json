@@ -1,0 +1,26 @@
+{
+  "id": 559,
+  "name": "Sevilla FC",
+  "shortName": "Sevilla FC",
+  "tla": "SEV",
+  "address": "Calle Sevilla Fútbol Club, s/n Sevilla 41005",
+  "website": "http://www.sevillafc.es",
+  "founded": 1905,
+  "venue": "Estadio Ramón Sánchez Pizjuán",
+  "area": {
+    "id": 2224,
+    "name": "Spain",
+    "code": "ESP",
+    "flag": "https://crests.football-data.org/760.svg"
+  },
+  "runningCompetitions": [
+    {
+      "id": 2014,
+      "name": "Primera Division",
+      "code": "PD",
+      "type": "LEAGUE",
+      "emblem": "https://crests.football-data.org/laliga.png"
+    }
+  ],
+  "lastUpdated": "2024-07-29T17:09:57Z"
+}

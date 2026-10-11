@@ -1,0 +1,12 @@
+{
+  "source": "https://www.sisal.it/scommesse-matchpoint/foglio-quote",
+  "source_acquired_at": "2026-10-11T20:19:45.971436+00:00",
+  "original_document_sha256": "0e68b8b74dfc26aa21f6ddf4e334a47ba4a64335bd66cf958bb4310aed308e93",
+  "retained_excerpt_sha256": "1ecb9cdab08c70d3cf1dd18ea25b879d07c221004d6c88e0d1feb98469519bf3",
+  "retained_anchor_count": 3,
+  "extraction": "Exact original byte fragments of the three authorized PDF anchor elements; no generated anchors or synthetic HTML",
+  "full_html_retained_in_publication": false,
+  "reason": "GitHub push protection detected an embedded Azure Function Key in the full public page; protection was not bypassed",
+  "new_api_requests": 0,
+  "extraction_created_at": "2026-10-11T20:47:02.300262+00:00"
+}

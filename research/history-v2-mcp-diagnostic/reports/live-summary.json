@@ -1,0 +1,287 @@
+{
+  "events": [
+    {
+      "event": {
+        "key": "coventry-newcastle",
+        "palinsesto": "36411",
+        "avvenimento": "1885",
+        "home": "Coventry",
+        "away": "Newcastle",
+        "competition": "PL",
+        "sisal_competition": "ING Premier League",
+        "fixture_id": 1557420,
+        "fd_match_id": 560597,
+        "fd_team_ids": [
+          1076,
+          67
+        ],
+        "actual_sisal_heading": "ENG Premier League",
+        "manifest_pdf_page": 2,
+        "date": "2026-10-12",
+        "time": "21:00:00",
+        "timezone": "Europe/Rome",
+        "kickoff_utc": "2026-10-12T19:00:00+00:00"
+      },
+      "status": "diagnostic_available",
+      "temporal": {
+        "state": "verified_as_of_observation",
+        "backtest_availability_verified": true,
+        "first_publication_time_verified": false,
+        "reasons": [],
+        "event_kickoff_utc": "2026-10-12T19:00:00+00:00",
+        "analysis_at_utc": "2026-10-11T20:26:17.907540+00:00",
+        "purpose": "historical_backtest"
+      },
+      "teams": [
+        {
+          "side": "home",
+          "name": "Coventry",
+          "counts": {
+            "requested_results": 5,
+            "valid_results_before_freshness": 5,
+            "valid_results_within_180_days": 5,
+            "selected_results": 5
+          },
+          "newest": "2026-09-19T16:30:00+00:00",
+          "oldest": "2026-08-21T19:00:00+00:00",
+          "statistics": {
+            "criterion": "90_minutes; selected sample only; shootouts excluded; 3/1/0 descriptive points",
+            "sample_complete": true,
+            "overall": {
+              "played": 5,
+              "wins": 1,
+              "draws": 0,
+              "losses": 4,
+              "goals_for": 1,
+              "goals_against": 10,
+              "average_goals_for": 0.2,
+              "average_goals_against": 2.0,
+              "points_90_minutes_3_1_0": 3,
+              "points_per_game": 0.6
+            },
+            "home": {
+              "played": 2,
+              "wins": 0,
+              "draws": 0,
+              "losses": 2,
+              "goals_for": 0,
+              "goals_against": 6,
+              "average_goals_for": 0.0,
+              "average_goals_against": 3.0,
+              "points_90_minutes_3_1_0": 0,
+              "points_per_game": 0.0
+            },
+            "away": {
+              "played": 3,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "goals_for": 1,
+              "goals_against": 4,
+              "average_goals_for": 0.3333,
+              "average_goals_against": 1.3333,
+              "points_90_minutes_3_1_0": 3,
+              "points_per_game": 1.0
+            }
+          }
+        },
+        {
+          "side": "away",
+          "name": "Newcastle",
+          "counts": {
+            "requested_results": 5,
+            "valid_results_before_freshness": 5,
+            "valid_results_within_180_days": 5,
+            "selected_results": 5
+          },
+          "newest": "2026-09-19T14:00:00+00:00",
+          "oldest": "2026-08-23T15:30:00+00:00",
+          "statistics": {
+            "criterion": "90_minutes; selected sample only; shootouts excluded; 3/1/0 descriptive points",
+            "sample_complete": true,
+            "overall": {
+              "played": 5,
+              "wins": 2,
+              "draws": 2,
+              "losses": 1,
+              "goals_for": 9,
+              "goals_against": 9,
+              "average_goals_for": 1.8,
+              "average_goals_against": 1.8,
+              "points_90_minutes_3_1_0": 8,
+              "points_per_game": 1.6
+            },
+            "home": {
+              "played": 3,
+              "wins": 1,
+              "draws": 2,
+              "losses": 0,
+              "goals_for": 6,
+              "goals_against": 5,
+              "average_goals_for": 2.0,
+              "average_goals_against": 1.6667,
+              "points_90_minutes_3_1_0": 5,
+              "points_per_game": 1.6667
+            },
+            "away": {
+              "played": 2,
+              "wins": 1,
+              "draws": 0,
+              "losses": 1,
+              "goals_for": 3,
+              "goals_against": 4,
+              "average_goals_for": 1.5,
+              "average_goals_against": 2.0,
+              "points_90_minutes_3_1_0": 3,
+              "points_per_game": 1.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "event": {
+        "key": "levante-sevilla",
+        "palinsesto": "36411",
+        "avvenimento": "2282",
+        "home": "Levante",
+        "away": "Siviglia",
+        "competition": "PD",
+        "sisal_competition": "SPA Primera Division",
+        "fixture_id": 1570407,
+        "fd_match_id": 564704,
+        "fd_team_ids": [
+          88,
+          559
+        ],
+        "actual_sisal_heading": "ESP Liga",
+        "manifest_pdf_page": 2,
+        "date": "2026-10-12",
+        "time": "21:00:00",
+        "timezone": "Europe/Rome",
+        "kickoff_utc": "2026-10-12T19:00:00+00:00"
+      },
+      "status": "diagnostic_available",
+      "temporal": {
+        "state": "verified_as_of_observation",
+        "backtest_availability_verified": true,
+        "first_publication_time_verified": false,
+        "reasons": [],
+        "event_kickoff_utc": "2026-10-12T19:00:00+00:00",
+        "analysis_at_utc": "2026-10-11T20:26:18.083084+00:00",
+        "purpose": "historical_backtest"
+      },
+      "teams": [
+        {
+          "side": "home",
+          "name": "Levante",
+          "counts": {
+            "requested_results": 5,
+            "valid_results_before_freshness": 6,
+            "valid_results_within_180_days": 6,
+            "selected_results": 5
+          },
+          "newest": "2026-09-20T16:30:00+00:00",
+          "oldest": "2026-08-24T17:30:00+00:00",
+          "statistics": {
+            "criterion": "90_minutes; selected sample only; shootouts excluded; 3/1/0 descriptive points",
+            "sample_complete": true,
+            "overall": {
+              "played": 5,
+              "wins": 1,
+              "draws": 2,
+              "losses": 2,
+              "goals_for": 8,
+              "goals_against": 9,
+              "average_goals_for": 1.6,
+              "average_goals_against": 1.8,
+              "points_90_minutes_3_1_0": 5,
+              "points_per_game": 1.0
+            },
+            "home": {
+              "played": 2,
+              "wins": 1,
+              "draws": 0,
+              "losses": 1,
+              "goals_for": 7,
+              "goals_against": 6,
+              "average_goals_for": 3.5,
+              "average_goals_against": 3.0,
+              "points_90_minutes_3_1_0": 3,
+              "points_per_game": 1.5
+            },
+            "away": {
+              "played": 3,
+              "wins": 0,
+              "draws": 2,
+              "losses": 1,
+              "goals_for": 1,
+              "goals_against": 3,
+              "average_goals_for": 0.3333,
+              "average_goals_against": 1.0,
+              "points_90_minutes_3_1_0": 2,
+              "points_per_game": 0.6667
+            }
+          }
+        },
+        {
+          "side": "away",
+          "name": "Siviglia",
+          "counts": {
+            "requested_results": 5,
+            "valid_results_before_freshness": 7,
+            "valid_results_within_180_days": 7,
+            "selected_results": 5
+          },
+          "newest": "2026-09-19T19:00:00+00:00",
+          "oldest": "2026-08-29T19:30:00+00:00",
+          "statistics": {
+            "criterion": "90_minutes; selected sample only; shootouts excluded; 3/1/0 descriptive points",
+            "sample_complete": true,
+            "overall": {
+              "played": 5,
+              "wins": 2,
+              "draws": 1,
+              "losses": 2,
+              "goals_for": 5,
+              "goals_against": 7,
+              "average_goals_for": 1.0,
+              "average_goals_against": 1.4,
+              "points_90_minutes_3_1_0": 7,
+              "points_per_game": 1.4
+            },
+            "home": {
+              "played": 3,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "goals_for": 3,
+              "goals_against": 6,
+              "average_goals_for": 1.0,
+              "average_goals_against": 2.0,
+              "points_90_minutes_3_1_0": 3,
+              "points_per_game": 1.0
+            },
+            "away": {
+              "played": 2,
+              "wins": 1,
+              "draws": 1,
+              "losses": 0,
+              "goals_for": 2,
+              "goals_against": 1,
+              "average_goals_for": 1.0,
+              "average_goals_against": 0.5,
+              "points_90_minutes_3_1_0": 4,
+              "points_per_game": 2.0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "api_football_requests": 3,
+  "football_data_requests": 28,
+  "sisal_requests": 3,
+  "new_requests_after_acquisition": 0,
+  "synthetic_inputs_in_live_cases": 0
+}

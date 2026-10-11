@@ -1,0 +1,39 @@
+{
+  "id": 560597,
+  "utcDate": "2026-10-12T19:00:00Z",
+  "status": "TIMED",
+  "score": {
+    "winner": null,
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": null,
+      "away": null
+    },
+    "halfTime": {
+      "home": null,
+      "away": null
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 6,
+  "lastUpdated": "2026-10-11T01:32:02Z",
+  "competition": {
+    "id": 2021,
+    "name": "Premier League",
+    "code": "PL",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2502,
+    "startDate": "2026-08-21",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 1076,
+    "name": "Coventry City FC"
+  },
+  "awayTeam": {
+    "id": 67,
+    "name": "Newcastle United FC"
+  }
+}

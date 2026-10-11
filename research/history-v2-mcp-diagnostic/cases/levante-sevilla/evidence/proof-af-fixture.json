@@ -1,0 +1,32 @@
+{
+  "origin": "real_saved",
+  "kind": "api_football_fixture",
+  "source": "https://v3.football.api-sports.io/fixtures?id=1570407",
+  "acquired_at": "2026-10-11T20:20:02.121027+00:00",
+  "record": {
+    "fixture_id": 1570407,
+    "competition_id": 140,
+    "season_start_year": 2026,
+    "kickoff": "2026-10-12T19:00:00+00:00",
+    "home": {
+      "team_id": 539,
+      "name": "Levante",
+      "profile": {
+        "country": "ES",
+        "gender": "men",
+        "squad_kind": "first",
+        "age_group": "senior"
+      }
+    },
+    "away": {
+      "team_id": 536,
+      "name": "Sevilla",
+      "profile": {
+        "country": "ES",
+        "gender": "men",
+        "squad_kind": "first",
+        "age_group": "senior"
+      }
+    }
+  }
+}

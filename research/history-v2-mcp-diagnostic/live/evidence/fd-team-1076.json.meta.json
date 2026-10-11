@@ -1,0 +1,14 @@
+{
+  "source": "https://api.football-data.org/v4/teams/1076",
+  "request_started_at": "2026-10-11T20:20:02.127064+00:00",
+  "http_status": 200,
+  "tls_verification_enabled": true,
+  "state": "retrieved",
+  "quota": {
+    "x-requests-available-minute": 9,
+    "x-requestcounter-reset": 60
+  },
+  "content_type": "application/json",
+  "retained_sha256": "7bb84da3083d358c05f53eceffc435a82825f96454b63a336c7f8321f7f4eb29",
+  "response_completed_at": "2026-10-11T20:20:03.272053+00:00"
+}

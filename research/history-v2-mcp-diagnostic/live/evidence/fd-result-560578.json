@@ -1,0 +1,39 @@
+{
+  "id": 560578,
+  "utcDate": "2026-09-13T13:00:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "AWAY_TEAM",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 0,
+      "away": 5
+    },
+    "halfTime": {
+      "home": 0,
+      "away": 1
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 4,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2021,
+    "name": "Premier League",
+    "code": "PL",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2502,
+    "startDate": "2026-08-21",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 1076,
+    "name": "Coventry City FC"
+  },
+  "awayTeam": {
+    "id": 397,
+    "name": "Brighton & Hove Albion FC"
+  }
+}

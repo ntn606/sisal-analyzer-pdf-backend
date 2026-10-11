@@ -1,0 +1,11 @@
+{
+  "source": "https://api.football-data.org/v4/competitions/PD/matches?season=2026",
+  "request_started_at": "2026-10-11T20:20:59.772558+00:00",
+  "known_received_by": "2026-10-11T20:21:00.472908+00:00",
+  "state": "retrieved",
+  "http_status": 200,
+  "quota": {
+    "remaining_requests": 3,
+    "counter_reset_seconds": 3
+  }
+}

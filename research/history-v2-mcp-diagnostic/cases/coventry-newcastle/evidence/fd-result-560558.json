@@ -1,0 +1,39 @@
+{
+  "id": 560558,
+  "utcDate": "2026-08-29T16:30:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "AWAY_TEAM",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 0,
+      "away": 2
+    },
+    "halfTime": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 2,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2021,
+    "name": "Premier League",
+    "code": "PL",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2502,
+    "startDate": "2026-08-21",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 73,
+    "name": "Tottenham Hotspur FC"
+  },
+  "awayTeam": {
+    "id": 67,
+    "name": "Newcastle United FC"
+  }
+}

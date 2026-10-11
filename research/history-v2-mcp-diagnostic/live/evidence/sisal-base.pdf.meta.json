@@ -1,0 +1,12 @@
+{
+  "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20data.pdf",
+  "request_started_at": "2026-10-11T20:19:45.991496+00:00",
+  "http_status": 200,
+  "tls_verification_enabled": true,
+  "state": "retrieved",
+  "quota": {},
+  "content_type": "application/pdf",
+  "retained_sha256": "258d07b1b635910f3624066c3d52472126f4397edf563aac522016f1e12897a5",
+  "bytes": 240309,
+  "response_completed_at": "2026-10-11T20:19:48.235711+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "origin": "real_saved",
+  "kind": "api_football_fixture",
+  "source": "https://v3.football.api-sports.io/fixtures?id=1557420",
+  "acquired_at": "2026-10-11T20:19:53.329766+00:00",
+  "record": {
+    "fixture_id": 1557420,
+    "competition_id": 39,
+    "season_start_year": 2026,
+    "kickoff": "2026-10-12T19:00:00+00:00",
+    "home": {
+      "team_id": 1346,
+      "name": "Coventry",
+      "profile": {
+        "country": "GB",
+        "gender": "men",
+        "squad_kind": "first",
+        "age_group": "senior"
+      }
+    },
+    "away": {
+      "team_id": 34,
+      "name": "Newcastle",
+      "profile": {
+        "country": "GB",
+        "gender": "men",
+        "squad_kind": "first",
+        "age_group": "senior"
+      }
+    }
+  }
+}

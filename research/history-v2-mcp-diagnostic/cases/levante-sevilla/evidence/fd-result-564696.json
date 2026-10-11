@@ -1,0 +1,39 @@
+{
+  "id": 564696,
+  "utcDate": "2026-09-20T16:30:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "HOME_TEAM",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 3,
+      "away": 1
+    },
+    "halfTime": {
+      "home": 1,
+      "away": 1
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 7,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2014,
+    "name": "Primera Division",
+    "code": "PD",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2518,
+    "startDate": "2026-08-16",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 94,
+    "name": "Villarreal CF"
+  },
+  "awayTeam": {
+    "id": 88,
+    "name": "Levante UD"
+  }
+}

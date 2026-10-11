@@ -1,0 +1,1111 @@
+{
+  "schema_version": "history-identity-adapter.1",
+  "ready_for_quant": false,
+  "status": "diagnostic_available",
+  "diagnostic_statistics_allowed": true,
+  "statistics_usable_in_production": false,
+  "verification_scope": "reviewed_real_evidence",
+  "checks": {
+    "event": {
+      "verified": true,
+      "reasons": [],
+      "kickoff_utc": "2026-10-12T19:00:00+00:00",
+      "football_data_source": {
+        "match_id": 560597,
+        "home_team_id": 1076,
+        "away_team_id": 67,
+        "kickoff_utc": "2026-10-12T19:00:00+00:00",
+        "competition_id": 2021,
+        "competition_code": "PL",
+        "season_start_year": 2026,
+        "snapshot_id": "PL-2026.json",
+        "source_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d"
+      }
+    },
+    "teams": {
+      "home": {
+        "identity_verified": true,
+        "state": "verified",
+        "canonical_id": "local:team:coventry",
+        "reasons": [],
+        "provider_ids": {
+          "api_football": 1346,
+          "football_data": 1076
+        },
+        "profile": {
+          "country": "GB",
+          "gender": "men",
+          "squad_kind": "first",
+          "age_group": "senior"
+        }
+      },
+      "away": {
+        "identity_verified": true,
+        "state": "verified",
+        "canonical_id": "local:team:newcastle",
+        "reasons": [],
+        "provider_ids": {
+          "api_football": 34,
+          "football_data": 67
+        },
+        "profile": {
+          "country": "GB",
+          "gender": "men",
+          "squad_kind": "first",
+          "age_group": "senior"
+        }
+      }
+    }
+  },
+  "histories": {
+    "home": {
+      "schema_version": "history-provider-v2.prototype.1",
+      "mode": "offline_snapshots",
+      "status": "verified_sample",
+      "history_status": "sufficient_history",
+      "team": {
+        "canonical_id": "football-data.org:team:1076",
+        "provider": "football-data.org",
+        "provider_id": 1076,
+        "observed_names": [
+          "Coventry City FC"
+        ],
+        "identity_status": "exact_provider_id",
+        "cross_provider_mapping_verified": false
+      },
+      "scope": {
+        "requested_competitions": [
+          "CL",
+          "PL"
+        ],
+        "observed_competitions": [
+          "PL"
+        ],
+        "all_competitions_complete": false,
+        "dataset_completeness_independently_verified": false
+      },
+      "temporal_policy": {
+        "event_kickoff_utc": "2026-10-11T20:26:17.907540+00:00",
+        "verified_at_utc": "2026-10-11T20:26:17.907547+00:00",
+        "effective_cutoff_utc": "2026-10-11T20:26:17.907540+00:00",
+        "upper_bound": "exclusive",
+        "freshness_days": 180,
+        "freshness_lower_bound": "inclusive",
+        "display_timezone": "Europe/Rome",
+        "match_time_basis": "kickoff; FINISHED observed in saved snapshot",
+        "exact_finished_at_available": false,
+        "historical_publication_time_certified": false,
+        "max_source_age_hours": 24
+      },
+      "counts": {
+        "requested_results": 5,
+        "valid_results_before_freshness": 5,
+        "valid_results_within_180_days": 5,
+        "selected_results": 5
+      },
+      "statistics": {
+        "criterion": "90_minutes; selected sample only; shootouts excluded; 3/1/0 descriptive points",
+        "sample_complete": true,
+        "overall": {
+          "played": 5,
+          "wins": 1,
+          "draws": 0,
+          "losses": 4,
+          "goals_for": 1,
+          "goals_against": 10,
+          "average_goals_for": 0.2,
+          "average_goals_against": 2.0,
+          "points_90_minutes_3_1_0": 3,
+          "points_per_game": 0.6
+        },
+        "home": {
+          "played": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "goals_for": 0,
+          "goals_against": 6,
+          "average_goals_for": 0.0,
+          "average_goals_against": 3.0,
+          "points_90_minutes_3_1_0": 0,
+          "points_per_game": 0.0
+        },
+        "away": {
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goals_for": 1,
+          "goals_against": 4,
+          "average_goals_for": 0.3333,
+          "average_goals_against": 1.3333,
+          "points_90_minutes_3_1_0": 3,
+          "points_per_game": 1.0
+        }
+      },
+      "matches": [
+        {
+          "match_id": 560589,
+          "canonical_match_id": "football-data.org:match:560589",
+          "utc_date": "2026-09-19T16:30:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PL",
+            "id": 2021
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:351",
+            "provider_id": 351,
+            "name": "Nottingham Forest FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:1076",
+            "provider_id": 1076,
+            "name": "Coventry City FC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2502,
+            "start_date": "2026-08-21",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 0,
+              "away": 1
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 0,
+            "away": 1
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+              "snapshot_id": "PL-2026.json",
+              "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+              "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 45
+            }
+          ],
+          "team_id": "football-data.org:team:1076",
+          "venue": "away",
+          "opponent": {
+            "canonical_id": "football-data.org:team:351",
+            "provider_id": 351,
+            "name": "Nottingham Forest FC"
+          },
+          "date_local": "2026-09-19T18:30:00+02:00",
+          "goals_for_90_minutes": 1,
+          "goals_against_90_minutes": 0,
+          "result_90_minutes": "W",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:23:40.797699+00:00",
+            "verified_by_analysis_time": true
+          }
+        },
+        {
+          "match_id": 560578,
+          "canonical_match_id": "football-data.org:match:560578",
+          "utc_date": "2026-09-13T13:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PL",
+            "id": 2021
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:1076",
+            "provider_id": 1076,
+            "name": "Coventry City FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:397",
+            "provider_id": 397,
+            "name": "Brighton & Hove Albion FC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2502,
+            "start_date": "2026-08-21",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 0,
+              "away": 5
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 0,
+            "away": 5
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+              "snapshot_id": "PL-2026.json",
+              "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+              "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 37
+            }
+          ],
+          "team_id": "football-data.org:team:1076",
+          "venue": "home",
+          "opponent": {
+            "canonical_id": "football-data.org:team:397",
+            "provider_id": 397,
+            "name": "Brighton & Hove Albion FC"
+          },
+          "date_local": "2026-09-13T15:00:00+02:00",
+          "goals_for_90_minutes": 0,
+          "goals_against_90_minutes": 5,
+          "result_90_minutes": "L",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:23:49.063632+00:00",
+            "verified_by_analysis_time": true
+          }
+        },
+        {
+          "match_id": 560563,
+          "canonical_match_id": "football-data.org:match:560563",
+          "utc_date": "2026-09-05T14:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PL",
+            "id": 2021
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:65",
+            "provider_id": 65,
+            "name": "Manchester City FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:1076",
+            "provider_id": 1076,
+            "name": "Coventry City FC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2502,
+            "start_date": "2026-08-21",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 1,
+              "away": 0
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 1,
+            "away": 0
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+              "snapshot_id": "PL-2026.json",
+              "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+              "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 23
+            }
+          ],
+          "team_id": "football-data.org:team:1076",
+          "venue": "away",
+          "opponent": {
+            "canonical_id": "football-data.org:team:65",
+            "provider_id": 65,
+            "name": "Manchester City FC"
+          },
+          "date_local": "2026-09-05T16:00:00+02:00",
+          "goals_for_90_minutes": 0,
+          "goals_against_90_minutes": 1,
+          "result_90_minutes": "L",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:23:57.456742+00:00",
+            "verified_by_analysis_time": true
+          }
+        },
+        {
+          "match_id": 560561,
+          "canonical_match_id": "football-data.org:match:560561",
+          "utc_date": "2026-08-29T14:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PL",
+            "id": 2021
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:1076",
+            "provider_id": 1076,
+            "name": "Coventry City FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:322",
+            "provider_id": 322,
+            "name": "Hull City AFC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2502,
+            "start_date": "2026-08-21",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 0,
+              "away": 1
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 0,
+            "away": 1
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+              "snapshot_id": "PL-2026.json",
+              "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+              "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 13
+            }
+          ],
+          "team_id": "football-data.org:team:1076",
+          "venue": "home",
+          "opponent": {
+            "canonical_id": "football-data.org:team:322",
+            "provider_id": 322,
+            "name": "Hull City AFC"
+          },
+          "date_local": "2026-08-29T16:00:00+02:00",
+          "goals_for_90_minutes": 0,
+          "goals_against_90_minutes": 1,
+          "result_90_minutes": "L",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:24:05.715793+00:00",
+            "verified_by_analysis_time": true
+          }
+        },
+        {
+          "match_id": 560542,
+          "canonical_match_id": "football-data.org:match:560542",
+          "utc_date": "2026-08-21T19:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PL",
+            "id": 2021
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:57",
+            "provider_id": 57,
+            "name": "Arsenal FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:1076",
+            "provider_id": 1076,
+            "name": "Coventry City FC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2502,
+            "start_date": "2026-08-21",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 3,
+              "away": 0
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 3,
+            "away": 0
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+              "snapshot_id": "PL-2026.json",
+              "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+              "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 0
+            }
+          ],
+          "team_id": "football-data.org:team:1076",
+          "venue": "away",
+          "opponent": {
+            "canonical_id": "football-data.org:team:57",
+            "provider_id": 57,
+            "name": "Arsenal FC"
+          },
+          "date_local": "2026-08-21T21:00:00+02:00",
+          "goals_for_90_minutes": 0,
+          "goals_against_90_minutes": 3,
+          "result_90_minutes": "L",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:24:14.161328+00:00",
+            "verified_by_analysis_time": true
+          }
+        }
+      ],
+      "sources": [
+        {
+          "provider": "football-data.org",
+          "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+          "snapshot_id": "CL-2026.json",
+          "retained_sha256": "e96f59cfafd447386acddc1e74a0a24d2ba4163a4739fe8519db478b62035730",
+          "acquired_at_utc": "2026-10-11T20:04:57.189432+00:00",
+          "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+          "competition": "CL",
+          "season": 2026,
+          "age_hours_at_verification": 0.355755,
+          "issues": []
+        },
+        {
+          "provider": "football-data.org",
+          "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+          "snapshot_id": "PL-2026.json",
+          "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+          "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+          "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+          "competition": "PL",
+          "season": 2026,
+          "age_hours_at_verification": 0.090093,
+          "issues": []
+        }
+      ],
+      "diagnostics": {
+        "identity": [],
+        "incomplete": [],
+        "conflicts": [],
+        "sources": [],
+        "duplicate_records": 0,
+        "name_aliases": [],
+        "nonfinal_status_counts": {
+          "TIMED": 33
+        },
+        "exclusions": {},
+        "load": []
+      },
+      "adapter_canonical_team_id": "local:team:coventry"
+    },
+    "away": {
+      "schema_version": "history-provider-v2.prototype.1",
+      "mode": "offline_snapshots",
+      "status": "verified_sample",
+      "history_status": "sufficient_history",
+      "team": {
+        "canonical_id": "football-data.org:team:67",
+        "provider": "football-data.org",
+        "provider_id": 67,
+        "observed_names": [
+          "Newcastle United FC"
+        ],
+        "identity_status": "exact_provider_id",
+        "cross_provider_mapping_verified": false
+      },
+      "scope": {
+        "requested_competitions": [
+          "CL",
+          "PL"
+        ],
+        "observed_competitions": [
+          "PL"
+        ],
+        "all_competitions_complete": false,
+        "dataset_completeness_independently_verified": false
+      },
+      "temporal_policy": {
+        "event_kickoff_utc": "2026-10-11T20:26:17.907540+00:00",
+        "verified_at_utc": "2026-10-11T20:26:17.907547+00:00",
+        "effective_cutoff_utc": "2026-10-11T20:26:17.907540+00:00",
+        "upper_bound": "exclusive",
+        "freshness_days": 180,
+        "freshness_lower_bound": "inclusive",
+        "display_timezone": "Europe/Rome",
+        "match_time_basis": "kickoff; FINISHED observed in saved snapshot",
+        "exact_finished_at_available": false,
+        "historical_publication_time_certified": false,
+        "max_source_age_hours": 24
+      },
+      "counts": {
+        "requested_results": 5,
+        "valid_results_before_freshness": 5,
+        "valid_results_within_180_days": 5,
+        "selected_results": 5
+      },
+      "statistics": {
+        "criterion": "90_minutes; selected sample only; shootouts excluded; 3/1/0 descriptive points",
+        "sample_complete": true,
+        "overall": {
+          "played": 5,
+          "wins": 2,
+          "draws": 2,
+          "losses": 1,
+          "goals_for": 9,
+          "goals_against": 9,
+          "average_goals_for": 1.8,
+          "average_goals_against": 1.8,
+          "points_90_minutes_3_1_0": 8,
+          "points_per_game": 1.6
+        },
+        "home": {
+          "played": 3,
+          "wins": 1,
+          "draws": 2,
+          "losses": 0,
+          "goals_for": 6,
+          "goals_against": 5,
+          "average_goals_for": 2.0,
+          "average_goals_against": 1.6667,
+          "points_90_minutes_3_1_0": 5,
+          "points_per_game": 1.6667
+        },
+        "away": {
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "goals_for": 3,
+          "goals_against": 4,
+          "average_goals_for": 1.5,
+          "average_goals_against": 2.0,
+          "points_90_minutes_3_1_0": 3,
+          "points_per_game": 1.5
+        }
+      },
+      "matches": [
+        {
+          "match_id": 560588,
+          "canonical_match_id": "football-data.org:match:560588",
+          "utc_date": "2026-09-19T14:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PL",
+            "id": 2021
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:67",
+            "provider_id": 67,
+            "name": "Newcastle United FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:322",
+            "provider_id": 322,
+            "name": "Hull City AFC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2502,
+            "start_date": "2026-08-21",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 2,
+              "away": 1
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 2,
+            "away": 1
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+              "snapshot_id": "PL-2026.json",
+              "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+              "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 44
+            }
+          ],
+          "team_id": "football-data.org:team:67",
+          "venue": "home",
+          "opponent": {
+            "canonical_id": "football-data.org:team:322",
+            "provider_id": 322,
+            "name": "Hull City AFC"
+          },
+          "date_local": "2026-09-19T16:00:00+02:00",
+          "goals_for_90_minutes": 2,
+          "goals_against_90_minutes": 1,
+          "result_90_minutes": "W",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:24:22.408252+00:00",
+            "verified_by_analysis_time": true
+          }
+        },
+        {
+          "match_id": 560579,
+          "canonical_match_id": "football-data.org:match:560579",
+          "utc_date": "2026-09-14T19:00:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PL",
+            "id": 2021
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:341",
+            "provider_id": 341,
+            "name": "Leeds United FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:67",
+            "provider_id": 67,
+            "name": "Newcastle United FC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2502,
+            "start_date": "2026-08-21",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 4,
+              "away": 1
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 4,
+            "away": 1
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+              "snapshot_id": "PL-2026.json",
+              "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+              "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 39
+            }
+          ],
+          "team_id": "football-data.org:team:67",
+          "venue": "away",
+          "opponent": {
+            "canonical_id": "football-data.org:team:341",
+            "provider_id": 341,
+            "name": "Leeds United FC"
+          },
+          "date_local": "2026-09-14T21:00:00+02:00",
+          "goals_for_90_minutes": 1,
+          "goals_against_90_minutes": 4,
+          "result_90_minutes": "L",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:24:30.653716+00:00",
+            "verified_by_analysis_time": true
+          }
+        },
+        {
+          "match_id": 560571,
+          "canonical_match_id": "football-data.org:match:560571",
+          "utc_date": "2026-09-05T11:30:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PL",
+            "id": 2021
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:67",
+            "provider_id": 67,
+            "name": "Newcastle United FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:1044",
+            "provider_id": 1044,
+            "name": "AFC Bournemouth"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2502,
+            "start_date": "2026-08-21",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 2,
+              "away": 2
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 2,
+            "away": 2
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+              "snapshot_id": "PL-2026.json",
+              "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+              "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 21
+            }
+          ],
+          "team_id": "football-data.org:team:67",
+          "venue": "home",
+          "opponent": {
+            "canonical_id": "football-data.org:team:1044",
+            "provider_id": 1044,
+            "name": "AFC Bournemouth"
+          },
+          "date_local": "2026-09-05T13:30:00+02:00",
+          "goals_for_90_minutes": 2,
+          "goals_against_90_minutes": 2,
+          "result_90_minutes": "D",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:24:38.936516+00:00",
+            "verified_by_analysis_time": true
+          }
+        },
+        {
+          "match_id": 560558,
+          "canonical_match_id": "football-data.org:match:560558",
+          "utc_date": "2026-08-29T16:30:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PL",
+            "id": 2021
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:73",
+            "provider_id": 73,
+            "name": "Tottenham Hotspur FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:67",
+            "provider_id": 67,
+            "name": "Newcastle United FC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2502,
+            "start_date": "2026-08-21",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 0,
+              "away": 2
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 0,
+            "away": 2
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+              "snapshot_id": "PL-2026.json",
+              "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+              "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 14
+            }
+          ],
+          "team_id": "football-data.org:team:67",
+          "venue": "away",
+          "opponent": {
+            "canonical_id": "football-data.org:team:73",
+            "provider_id": 73,
+            "name": "Tottenham Hotspur FC"
+          },
+          "date_local": "2026-08-29T18:30:00+02:00",
+          "goals_for_90_minutes": 2,
+          "goals_against_90_minutes": 0,
+          "result_90_minutes": "W",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:24:47.134954+00:00",
+            "verified_by_analysis_time": true
+          }
+        },
+        {
+          "match_id": 560550,
+          "canonical_match_id": "football-data.org:match:560550",
+          "utc_date": "2026-08-23T15:30:00+00:00",
+          "status": "FINISHED",
+          "competition": {
+            "provider": "football-data.org",
+            "code": "PL",
+            "id": 2021
+          },
+          "home": {
+            "canonical_id": "football-data.org:team:67",
+            "provider_id": 67,
+            "name": "Newcastle United FC"
+          },
+          "away": {
+            "canonical_id": "football-data.org:team:64",
+            "provider_id": 64,
+            "name": "Liverpool FC"
+          },
+          "season": {
+            "start_year": 2026,
+            "id": 2502,
+            "start_date": "2026-08-21",
+            "end_date": "2027-05-30"
+          },
+          "duration": "REGULAR",
+          "score_periods": {
+            "fullTime": {
+              "home": 2,
+              "away": 2
+            }
+          },
+          "stage": "REGULAR_SEASON",
+          "provider_updated_at": "2026-10-11T00:20:32+00:00",
+          "score_90_minutes": {
+            "home": 2,
+            "away": 2
+          },
+          "provenance": [
+            {
+              "provider": "football-data.org",
+              "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+              "snapshot_id": "PL-2026.json",
+              "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+              "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+              "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+              "response_record_index": 8
+            }
+          ],
+          "team_id": "football-data.org:team:67",
+          "venue": "home",
+          "opponent": {
+            "canonical_id": "football-data.org:team:64",
+            "provider_id": 64,
+            "name": "Liverpool FC"
+          },
+          "date_local": "2026-08-23T17:30:00+02:00",
+          "goals_for_90_minutes": 2,
+          "goals_against_90_minutes": 2,
+          "result_90_minutes": "D",
+          "availability": {
+            "first_published_at": null,
+            "known_available_by": "2026-10-11T20:24:55.320644+00:00",
+            "verified_by_analysis_time": true
+          }
+        }
+      ],
+      "sources": [
+        {
+          "provider": "football-data.org",
+          "source_url": "https://api.football-data.org/v4/competitions/CL/matches?season=2026",
+          "snapshot_id": "CL-2026.json",
+          "retained_sha256": "e96f59cfafd447386acddc1e74a0a24d2ba4163a4739fe8519db478b62035730",
+          "acquired_at_utc": "2026-10-11T20:04:57.189432+00:00",
+          "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+          "competition": "CL",
+          "season": 2026,
+          "age_hours_at_verification": 0.355755,
+          "issues": []
+        },
+        {
+          "provider": "football-data.org",
+          "source_url": "https://api.football-data.org/v4/competitions/PL/matches?season=2026",
+          "snapshot_id": "PL-2026.json",
+          "retained_sha256": "c5da82447be0846719154084ab425aaf9151ab4e114f1d6091356eb0be81a09d",
+          "acquired_at_utc": "2026-10-11T20:20:53.572340+00:00",
+          "acquisition_timestamp_basis": "request_start_from_original_snapshot",
+          "competition": "PL",
+          "season": 2026,
+          "age_hours_at_verification": 0.090093,
+          "issues": []
+        }
+      ],
+      "diagnostics": {
+        "identity": [],
+        "incomplete": [],
+        "conflicts": [],
+        "sources": [],
+        "duplicate_records": 0,
+        "name_aliases": [],
+        "nonfinal_status_counts": {
+          "TIMED": 33
+        },
+        "exclusions": {},
+        "load": []
+      },
+      "adapter_canonical_team_id": "local:team:newcastle"
+    }
+  },
+  "temporal": {
+    "state": "verified_as_of_observation",
+    "backtest_availability_verified": true,
+    "first_publication_time_verified": false,
+    "reasons": [],
+    "event_kickoff_utc": "2026-10-12T19:00:00+00:00",
+    "analysis_at_utc": "2026-10-11T20:26:17.907540+00:00",
+    "purpose": "historical_backtest"
+  },
+  "blockers": [],
+  "cross_provider_duplicate_matches": 0,
+  "evidence": [
+    {
+      "evidence_id": "af-fixture",
+      "sha256": "a97a82569bd9399defb15e2e506470255b9eacc9c94e5edf04445d3e83443fa9",
+      "kind": "api_football_fixture",
+      "origin": "real_saved",
+      "source": "https://v3.football.api-sports.io/fixtures?id=1557420",
+      "acquired_at": "2026-10-11T20:19:53.329766+00:00"
+    },
+    {
+      "evidence_id": "observation-560542",
+      "sha256": "9f56af5f5852789c2cb8a26520887dce81fee71897f0217f7101ea00c5c01cbb",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/560542",
+      "acquired_at": "2026-10-11T20:24:14.161328+00:00"
+    },
+    {
+      "evidence_id": "observation-560550",
+      "sha256": "3e45dd3a9803d8f91f6722c52e4c7f56c0e6c5a02dd715926ddce1348b4e1297",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/560550",
+      "acquired_at": "2026-10-11T20:24:55.320644+00:00"
+    },
+    {
+      "evidence_id": "observation-560558",
+      "sha256": "bc8bb8633e3a6cdbc896441bb7cccd533e83e75fb96fb238fb772197a8c3fbb7",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/560558",
+      "acquired_at": "2026-10-11T20:24:47.134954+00:00"
+    },
+    {
+      "evidence_id": "observation-560561",
+      "sha256": "8c8d865706070b90fba97f6bf4857b2822f2bd80a86e3c69073e5a56fc7fd307",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/560561",
+      "acquired_at": "2026-10-11T20:24:05.715793+00:00"
+    },
+    {
+      "evidence_id": "observation-560563",
+      "sha256": "5b57ecabb9b131c7e39d82b0bff1e8ee4e1146c9f91c5b91ee819875a65b0d40",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/560563",
+      "acquired_at": "2026-10-11T20:23:57.456742+00:00"
+    },
+    {
+      "evidence_id": "observation-560571",
+      "sha256": "af0892348455f9458f9f2f9231bea8c58fb957e0f03e95acdb83b53de8a4b528",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/560571",
+      "acquired_at": "2026-10-11T20:24:38.936516+00:00"
+    },
+    {
+      "evidence_id": "observation-560578",
+      "sha256": "895e46206039bfb0f9f423de43301bb7374dcf18600b22e393faafc90dc45478",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/560578",
+      "acquired_at": "2026-10-11T20:23:49.063632+00:00"
+    },
+    {
+      "evidence_id": "observation-560579",
+      "sha256": "e5d604601cdcbd3f1ad0dd804876d6f940cb56ad87363770c5d6c59523552377",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/560579",
+      "acquired_at": "2026-10-11T20:24:30.653716+00:00"
+    },
+    {
+      "evidence_id": "observation-560588",
+      "sha256": "eeadaa1c0b7fb72538600c7ed7d800902c8b73ef9851692e366986060c924760",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/560588",
+      "acquired_at": "2026-10-11T20:24:22.408252+00:00"
+    },
+    {
+      "evidence_id": "observation-560589",
+      "sha256": "326a737dafa91ef346423393fe82840e10aa36ab6caf5f446b930c0d1fb28dc3",
+      "kind": "result_observation",
+      "origin": "real_saved",
+      "source": "https://api.football-data.org/v4/matches/560589",
+      "acquired_at": "2026-10-11T20:23:40.797699+00:00"
+    },
+    {
+      "evidence_id": "review",
+      "sha256": "d3f6f5046da65e70258d6f460796f8da93addda91e6800b9b81ddcf4ea62e70c",
+      "kind": "review",
+      "origin": "real_saved",
+      "source": "urn:local:review:coventry-newcastle-2026-10-12",
+      "acquired_at": "2026-10-11T20:23:03.194734+00:00"
+    },
+    {
+      "evidence_id": "sisal",
+      "sha256": "4922aeb23a49818acefc0306441b0441c71defdbfbedc1b1e51d303f5049378f",
+      "kind": "sisal_event",
+      "origin": "real_saved",
+      "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20data.pdf",
+      "acquired_at": "2026-10-11T20:19:48.235711+00:00"
+    }
+  ],
+  "event_ids": {
+    "palinsesto": "36411",
+    "avvenimento": "1885",
+    "api_football_fixture_id": 1557420,
+    "football_data_match_id": 560597
+  }
+}

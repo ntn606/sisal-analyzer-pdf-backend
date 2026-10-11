@@ -1,0 +1,17 @@
+{
+  "origin": "real_saved",
+  "kind": "result_observation",
+  "source": "https://api.football-data.org/v4/matches/564679",
+  "acquired_at": "2026-10-11T20:25:53.220981+00:00",
+  "record": {
+    "football_data_match_id": 564679,
+    "status": "FINISHED",
+    "home_team_id": 560,
+    "away_team_id": 559,
+    "score_90_minutes": {
+      "home": 0,
+      "away": 1
+    },
+    "observed_at": "2026-10-11T20:25:53.220981+00:00"
+  }
+}

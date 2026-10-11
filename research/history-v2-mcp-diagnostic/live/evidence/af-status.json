@@ -1,0 +1,10 @@
+{
+  "requests": {
+    "current": 2,
+    "limit_day": 100
+  },
+  "subscription": {
+    "plan": "Free",
+    "active": true
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "python": "3.12.14",
+  "mcp_tested": "1.30.0",
+  "platform": "Linux",
+  "backend_dependencies_installed_in_isolated_test_venv": true
+}

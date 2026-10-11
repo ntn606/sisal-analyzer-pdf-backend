@@ -1,0 +1,12 @@
+{
+  "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20manifestazione.pdf",
+  "request_started_at": "2026-10-11T20:19:48.307607+00:00",
+  "http_status": 200,
+  "tls_verification_enabled": true,
+  "state": "retrieved",
+  "quota": {},
+  "content_type": "application/pdf",
+  "retained_sha256": "b0ea50de3256d2d65d3b20535574d8ea22ce5886a522da37390b62ae1bc533c9",
+  "bytes": 257401,
+  "response_completed_at": "2026-10-11T20:19:49.499687+00:00"
+}

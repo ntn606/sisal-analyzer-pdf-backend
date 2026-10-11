@@ -1,0 +1,51 @@
+test_single_tool_three_arguments_and_real_structured_output (test_mcp_stdio.MCPStdioTests.test_single_tool_three_arguments_and_real_structured_output) ... ok
+test_credential_in_retained_anchor_is_blocked (test_page_minimization.SimulatedPageMinimizationTests.test_credential_in_retained_anchor_is_blocked) ... ok
+test_embedded_non_document_key_is_not_retained (test_page_minimization.SimulatedPageMinimizationTests.test_embedded_non_document_key_is_not_retained) ... ok
+test_missing_authorized_document_link_is_blocked (test_page_minimization.SimulatedPageMinimizationTests.test_missing_authorized_document_link_is_blocked) ... ok
+test_429_honors_retry_after_without_automatic_retry (test_transport.SimulatedTransportTests.test_429_honors_retry_after_without_automatic_retry) ... ok
+test_authentication_failure_does_not_return_provider_body (test_transport.SimulatedTransportTests.test_authentication_failure_does_not_return_provider_body) ... ok
+test_cached_success_does_not_repeat_request (test_transport.SimulatedTransportTests.test_cached_success_does_not_repeat_request) ... ok
+test_daily_reserve_protects_railway_budget (test_transport.SimulatedTransportTests.test_daily_reserve_protects_railway_budget) ... ok
+test_external_atomic_budget_denial_precedes_network (test_transport.SimulatedTransportTests.test_external_atomic_budget_denial_precedes_network) ... ok
+test_free_plan_error_with_http_200_is_not_success (test_transport.SimulatedTransportTests.test_free_plan_error_with_http_200_is_not_success) ... ok
+test_https_and_documented_auth_header_are_used (test_transport.SimulatedTransportTests.test_https_and_documented_auth_header_are_used) ... ok
+test_missing_credential_is_explicit (test_transport.SimulatedTransportTests.test_missing_credential_is_explicit) ... ok
+test_no_live_request_without_shared_budget (test_transport.SimulatedTransportTests.test_no_live_request_without_shared_budget) ... ok
+test_nonmonotonic_quota_never_increases_balance (test_transport.SimulatedTransportTests.test_nonmonotonic_quota_never_increases_balance) ... ok
+test_provider_echoing_credential_is_rejected_before_cache (test_transport.SimulatedTransportTests.test_provider_echoing_credential_is_rejected_before_cache) ... ok
+test_quota_reset_waits_when_one_request_remains (test_transport.SimulatedTransportTests.test_quota_reset_waits_when_one_request_remains) ... ok
+test_redirect_response_is_not_followed (test_transport.SimulatedTransportTests.test_redirect_response_is_not_followed) ... ok
+test_timeout_returns_safe_error (test_transport.SimulatedTransportTests.test_timeout_returns_safe_error) ... ok
+test_unallowed_endpoint_cannot_send_a_credential (test_transport.SimulatedTransportTests.test_unallowed_endpoint_cannot_send_a_credential) ... ok
+test_unsafe_exception_is_not_exposed (test_transport.SimulatedTransportTests.test_unsafe_exception_is_not_exposed) ... ok
+test_real_premier_league_both_verified_and_five_results (test_wrapper.RealSavedReplayTests.test_real_premier_league_both_verified_and_five_results) ... ok
+test_real_laliga_distinct_competition_preserved (test_wrapper.RealSavedReplayTests.test_real_laliga_distinct_competition_preserved) ... ok
+test_real_availability_observed_not_first_publication (test_wrapper.RealSavedReplayTests.test_real_availability_observed_not_first_publication) ... ok
+test_real_repeated_probe_reuses_dataset_without_network (test_wrapper.RealSavedReplayTests.test_real_repeated_probe_reuses_dataset_without_network) ... ok
+test_invalid_or_sensitive_input_is_not_echoed (test_wrapper.SyntheticMutationTests.test_invalid_or_sensitive_input_is_not_echoed) ... ok
+test_missing_mapping_blocks_both_histories (test_wrapper.SyntheticMutationTests.test_missing_mapping_blocks_both_histories) ... ok
+test_wrong_team_identifier_is_blocked (test_wrapper.SyntheticMutationTests.test_wrong_team_identifier_is_blocked) ... ok
+test_wrong_competition_is_blocked (test_wrapper.SyntheticMutationTests.test_wrong_competition_is_blocked) ... ok
+test_provider_unavailable_is_explicit (test_wrapper.SyntheticMutationTests.test_provider_unavailable_is_explicit) ... ok
+test_four_results_are_insufficient (test_wrapper.SyntheticMutationTests.test_four_results_are_insufficient) ... ok
+test_identical_duplicate_does_not_inflate_count (test_wrapper.SyntheticMutationTests.test_identical_duplicate_does_not_inflate_count) ... ok
+test_conflicting_duplicate_blocks_statistics (test_wrapper.SyntheticMutationTests.test_conflicting_duplicate_blocks_statistics) ... ok
+test_missing_availability_proof_is_temporal_unverified (test_wrapper.SyntheticMutationTests.test_missing_availability_proof_is_temporal_unverified) ... ok
+test_call_at_kickoff_blocks_cached_statistics (test_wrapper.SyntheticMutationTests.test_call_at_kickoff_blocks_cached_statistics) ... ok
+test_call_after_kickoff_is_blocked (test_wrapper.SyntheticMutationTests.test_call_after_kickoff_is_blocked) ... ok
+test_old_event_evidence_is_stale (test_wrapper.SyntheticMutationTests.test_old_event_evidence_is_stale) ... ok
+test_duplicate_binding_is_ambiguous (test_wrapper.SyntheticMutationTests.test_duplicate_binding_is_ambiguous) ... ok
+test_unreviewed_synthetic_evidence_is_rejected (test_wrapper.SyntheticMutationTests.test_unreviewed_synthetic_evidence_is_rejected) ... ok
+test_path_traversal_is_rejected (test_wrapper.SyntheticMutationTests.test_path_traversal_is_rejected) ... ok
+test_tampered_snapshot_cannot_use_old_dataset (test_wrapper.SyntheticMutationTests.test_tampered_snapshot_cannot_use_old_dataset) ... ok
+test_future_finished_match_is_not_selected (test_wrapper.SyntheticMutationTests.test_future_finished_match_is_not_selected) ... ok
+test_missing_snapshot_is_provider_unavailable (test_wrapper.SyntheticMutationTests.test_missing_snapshot_is_provider_unavailable) ... ok
+test_no_history_preserves_zero_count (test_wrapper.SyntheticMutationTests.test_no_history_preserves_zero_count) ... ok
+test_wrong_event_date_is_not_matched (test_wrapper.SyntheticMutationTests.test_wrong_event_date_is_not_matched) ... ok
+test_no_odds_or_prediction_keys_in_response (test_wrapper.SyntheticMutationTests.test_no_odds_or_prediction_keys_in_response) ... ok
+test_future_observation_is_temporal_unverified (test_wrapper.SyntheticMutationTests.test_future_observation_is_temporal_unverified) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 1.128s
+
+OK

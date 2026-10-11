@@ -1,0 +1,39 @@
+{
+  "id": 560589,
+  "utcDate": "2026-09-19T16:30:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "AWAY_TEAM",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 0,
+      "away": 1
+    },
+    "halfTime": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 5,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2021,
+    "name": "Premier League",
+    "code": "PL",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2502,
+    "startDate": "2026-08-21",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 351,
+    "name": "Nottingham Forest FC"
+  },
+  "awayTeam": {
+    "id": 1076,
+    "name": "Coventry City FC"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "history-identity-adapter.1",
+  "evidence_mode": "real_only",
+  "purpose": "historical_backtest",
+  "verified_at": "2026-10-11T20:26:18.083091+00:00",
+  "sisal_event": {
+    "palinsesto": "36411",
+    "avvenimento": "2282",
+    "home": "Levante",
+    "away": "Siviglia",
+    "date": "2026-10-12",
+    "time": "21:00:00",
+    "timezone": "Europe/Rome",
+    "competition_canonical_id": "local:competition:PD",
+    "season_start_year": 2026,
+    "utc_offset": "+02:00",
+    "evidence_id": "sisal"
+  },
+  "api_football": {
+    "state": "available",
+    "fixture_id": 1570407,
+    "competition_id": 140,
+    "season_start_year": 2026,
+    "kickoff": "2026-10-12T19:00:00+00:00",
+    "evidence_id": "af-fixture",
+    "history_evidence_ids": [],
+    "home": {
+      "team_id": 539,
+      "name": "Levante",
+      "profile": {
+        "country": "ES",
+        "gender": "men",
+        "squad_kind": "first",
+        "age_group": "senior"
+      }
+    },
+    "away": {
+      "team_id": 536,
+      "name": "Sevilla",
+      "profile": {
+        "country": "ES",
+        "gender": "men",
+        "squad_kind": "first",
+        "age_group": "senior"
+      }
+    }
+  },
+  "football_data": {
+    "state": "available",
+    "match_id": 564704
+  },
+  "history_scope": {
+    "home": [
+      "PD",
+      "CL"
+    ],
+    "away": [
+      "PD",
+      "CL"
+    ]
+  },
+  "analysis_at": "2026-10-11T20:26:18.083084+00:00"
+}

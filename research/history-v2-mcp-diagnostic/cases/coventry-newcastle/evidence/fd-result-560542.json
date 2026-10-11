@@ -1,0 +1,39 @@
+{
+  "id": 560542,
+  "utcDate": "2026-08-21T19:00:00Z",
+  "status": "FINISHED",
+  "score": {
+    "winner": "HOME_TEAM",
+    "duration": "REGULAR",
+    "fullTime": {
+      "home": 3,
+      "away": 0
+    },
+    "halfTime": {
+      "home": 2,
+      "away": 0
+    }
+  },
+  "stage": "REGULAR_SEASON",
+  "matchday": 1,
+  "lastUpdated": "2026-10-11T00:20:32Z",
+  "competition": {
+    "id": 2021,
+    "name": "Premier League",
+    "code": "PL",
+    "type": "LEAGUE"
+  },
+  "season": {
+    "id": 2502,
+    "startDate": "2026-08-21",
+    "endDate": "2027-05-30"
+  },
+  "homeTeam": {
+    "id": 57,
+    "name": "Arsenal FC"
+  },
+  "awayTeam": {
+    "id": 1076,
+    "name": "Coventry City FC"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "protected_files_unchanged": true,
+  "protected_checks": [
+    {
+      "file": "/workspace/sisal-analyzer-pdf-backend/server.py",
+      "sha256": "265f40d9b52dc673f02cd3d20fb19caae8353b7b2186039761ef753ce7f7b019",
+      "unchanged": true
+    },
+    {
+      "file": "/workspace/sisal-analyzer-pdf-backend/requirements.txt",
+      "sha256": "93184b019233d587155d4f75e57bb3fd019af5fc2527afe05441c7d2abbc2c68",
+      "unchanged": true
+    },
+    {
+      "file": "/workspace/research/history-v2-identity-adapter/identity_adapter/cli.py",
+      "sha256": "a487b6c7e7a741fa87ac6c454c80847d69351a8001d2cbcd51c84850be737eb1",
+      "unchanged": true
+    },
+    {
+      "file": "/workspace/research/history-v2-identity-adapter/identity_adapter/core.py",
+      "sha256": "e25e159e1f3466c12eee08e248dd1b95d8c314f176cea6dfee3c9f3779009de1",
+      "unchanged": true
+    },
+    {
+      "file": "/workspace/research/history-v2-identity-adapter/identity_adapter/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "unchanged": true
+    },
+    {
+      "file": "/workspace/research/history-v2-identity-adapter/identity_adapter/__init__.py",
+      "sha256": "bfe10dbc375612e2e144fee7d8616c09e439d82f9207ebb995d63c89a333dec5",
+      "unchanged": true
+    },
+    {
+      "file": "/workspace/research/history-provider-v2-prototype/history_provider_v2/cli.py",
+      "sha256": "2b7dcfb891dbefde86fd26b89d497467e9a6d64635ae79163be2f354ca1276dd",
+      "unchanged": true
+    },
+    {
+      "file": "/workspace/research/history-provider-v2-prototype/history_provider_v2/provider.py",
+      "sha256": "022aecd1355d0e6360f2f975eb2cea13edbc38293ef970a11a9a5b4ebec6d4c7",
+      "unchanged": true
+    },
+    {
+      "file": "/workspace/research/history-provider-v2-prototype/history_provider_v2/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "unchanged": true
+    },
+    {
+      "file": "/workspace/research/history-provider-v2-prototype/history_provider_v2/__init__.py",
+      "sha256": "d41576147c73c7d2170eca2314a95bfc4f4571bfa473e5e6803a1e864ca9ab15",
+      "unchanged": true
+    }
+  ],
+  "vendor_copies_byte_identical": true,
+  "reuse_checks": [
+    {
+      "original": "/workspace/research/history-v2-identity-adapter/identity_adapter/cli.py",
+      "copy": "vendor/identity_adapter/cli.py",
+      "sha256": "a487b6c7e7a741fa87ac6c454c80847d69351a8001d2cbcd51c84850be737eb1",
+      "byte_identical": true
+    },
+    {
+      "original": "/workspace/research/history-v2-identity-adapter/identity_adapter/core.py",
+      "copy": "vendor/identity_adapter/core.py",
+      "sha256": "e25e159e1f3466c12eee08e248dd1b95d8c314f176cea6dfee3c9f3779009de1",
+      "byte_identical": true
+    },
+    {
+      "original": "/workspace/research/history-v2-identity-adapter/identity_adapter/__main__.py",
+      "copy": "vendor/identity_adapter/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "byte_identical": true
+    },
+    {
+      "original": "/workspace/research/history-v2-identity-adapter/identity_adapter/__init__.py",
+      "copy": "vendor/identity_adapter/__init__.py",
+      "sha256": "bfe10dbc375612e2e144fee7d8616c09e439d82f9207ebb995d63c89a333dec5",
+      "byte_identical": true
+    },
+    {
+      "original": "/workspace/research/history-v2-identity-adapter/vendor/history_provider_v2/cli.py",
+      "copy": "vendor/history_provider_v2/cli.py",
+      "sha256": "2b7dcfb891dbefde86fd26b89d497467e9a6d64635ae79163be2f354ca1276dd",
+      "byte_identical": true
+    },
+    {
+      "original": "/workspace/research/history-v2-identity-adapter/vendor/history_provider_v2/provider.py",
+      "copy": "vendor/history_provider_v2/provider.py",
+      "sha256": "022aecd1355d0e6360f2f975eb2cea13edbc38293ef970a11a9a5b4ebec6d4c7",
+      "byte_identical": true
+    },
+    {
+      "original": "/workspace/research/history-v2-identity-adapter/vendor/history_provider_v2/__main__.py",
+      "copy": "vendor/history_provider_v2/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "byte_identical": true
+    },
+    {
+      "original": "/workspace/research/history-v2-identity-adapter/vendor/history_provider_v2/__init__.py",
+      "copy": "vendor/history_provider_v2/__init__.py",
+      "sha256": "d41576147c73c7d2170eca2314a95bfc4f4571bfa473e5e6803a1e864ca9ab15",
+      "byte_identical": true
+    }
+  ],
+  "secret_value_scan_passed": true,
+  "sensitive_files": [],
+  "production_integration": false,
+  "railway_changes": false
+}

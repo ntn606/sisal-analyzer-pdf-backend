@@ -1,0 +1,210 @@
+{
+  "origin": "real_saved",
+  "kind": "review",
+  "source": "urn:local:review:levante-sevilla-2026-10-12",
+  "acquired_at": "2026-10-11T20:23:03.373694+00:00",
+  "record": {
+    "reviewed_at": "2026-10-11T20:23:03.373694+00:00",
+    "reviewer_ref": "local-research-review",
+    "entries": [
+      {
+        "entry_kind": "team",
+        "value": {
+          "canonical_id": "local:team:levante",
+          "provider_ids": {
+            "api_football": 539,
+            "football_data": 88
+          },
+          "profile": {
+            "country": "ES",
+            "gender": "men",
+            "squad_kind": "first",
+            "age_group": "senior"
+          },
+          "aliases": [
+            {
+              "provider": "sisal",
+              "label": "Levante",
+              "valid_from": "2026-08-16",
+              "valid_until": "2026-10-12"
+            },
+            {
+              "provider": "api_football",
+              "label": "Levante",
+              "valid_from": "2026-08-16",
+              "valid_until": "2026-10-12"
+            },
+            {
+              "provider": "football_data",
+              "label": "Levante UD",
+              "valid_from": "2026-08-16",
+              "valid_until": "2026-10-12"
+            }
+          ],
+          "validity": {
+            "from": "2026-08-16T00:00:00Z",
+            "until": "2026-10-13T00:00:00Z"
+          }
+        }
+      },
+      {
+        "entry_kind": "team",
+        "value": {
+          "canonical_id": "local:team:sevilla",
+          "provider_ids": {
+            "api_football": 536,
+            "football_data": 559
+          },
+          "profile": {
+            "country": "ES",
+            "gender": "men",
+            "squad_kind": "first",
+            "age_group": "senior"
+          },
+          "aliases": [
+            {
+              "provider": "sisal",
+              "label": "Siviglia",
+              "valid_from": "2026-08-16",
+              "valid_until": "2026-10-12"
+            },
+            {
+              "provider": "api_football",
+              "label": "Sevilla",
+              "valid_from": "2026-08-16",
+              "valid_until": "2026-10-12"
+            },
+            {
+              "provider": "football_data",
+              "label": "Sevilla FC",
+              "valid_from": "2026-08-16",
+              "valid_until": "2026-10-12"
+            }
+          ],
+          "validity": {
+            "from": "2026-08-16T00:00:00Z",
+            "until": "2026-10-13T00:00:00Z"
+          }
+        }
+      },
+      {
+        "entry_kind": "competition",
+        "value": {
+          "canonical_id": "local:competition:PD",
+          "api_football_id": 140,
+          "football_data_id": 2014,
+          "football_data_code": "PD",
+          "validity": {
+            "from": "2026-08-16T00:00:00Z",
+            "until": "2026-10-13T00:00:00Z"
+          }
+        }
+      },
+      {
+        "entry_kind": "binding",
+        "value": {
+          "palinsesto": "36411",
+          "avvenimento": "2282",
+          "api_football_fixture_id": 1570407,
+          "football_data_match_id": 564704,
+          "home_canonical_id": "local:team:levante",
+          "away_canonical_id": "local:team:sevilla",
+          "competition_canonical_id": "local:competition:PD",
+          "validity": {
+            "from": "2026-08-16T00:00:00Z",
+            "until": "2026-10-13T00:00:00Z"
+          }
+        }
+      }
+    ],
+    "rationales": [
+      {
+        "side": "home",
+        "canonical_id": "local:team:levante",
+        "name_only_matching": false,
+        "checks": [
+          "official match same home/away position and opposing team",
+          "exact UTC kickoff after timezone conversion",
+          "same country, league and 2026 season",
+          "FD official team ID equals calendar ID and declares competition membership"
+        ],
+        "profile_basis": "Contextual normalization from senior male first-team national league, not invented raw API profile fields",
+        "evidence_files": [
+          {
+            "file": "sisal-base.pdf",
+            "sha256": "258d07b1b635910f3624066c3d52472126f4397edf563aac522016f1e12897a5"
+          },
+          {
+            "file": "sisal-manifestazioni.pdf",
+            "sha256": "b0ea50de3256d2d65d3b20535574d8ea22ce5886a522da37390b62ae1bc533c9"
+          },
+          {
+            "file": "af-fixture-levante-sevilla.json",
+            "sha256": "4902fe596d540b1fdc52cdcb4bc7832372e324f49e44e07f0813c3e7895c89f3"
+          },
+          {
+            "file": "fd-event-levante-sevilla.json",
+            "sha256": "86ed90a263d5952825b85078101b0ddd61d04a9c73c9aa8156e39be5bf492898"
+          },
+          {
+            "file": "fd-team-88.json",
+            "sha256": "a5a171d44f25f82b6868b4fbc1452ee59cac017bbce18e7e8094bb9f409a1b6c"
+          },
+          {
+            "file": "fd-team-559.json",
+            "sha256": "ded0e60bacf252ada7310cc0fa80d8b6d6e5a22a9fa977ca415acb400a70cf83"
+          }
+        ]
+      },
+      {
+        "side": "away",
+        "canonical_id": "local:team:sevilla",
+        "name_only_matching": false,
+        "checks": [
+          "official match same home/away position and opposing team",
+          "exact UTC kickoff after timezone conversion",
+          "same country, league and 2026 season",
+          "FD official team ID equals calendar ID and declares competition membership"
+        ],
+        "profile_basis": "Contextual normalization from senior male first-team national league, not invented raw API profile fields",
+        "evidence_files": [
+          {
+            "file": "sisal-base.pdf",
+            "sha256": "258d07b1b635910f3624066c3d52472126f4397edf563aac522016f1e12897a5"
+          },
+          {
+            "file": "sisal-manifestazioni.pdf",
+            "sha256": "b0ea50de3256d2d65d3b20535574d8ea22ce5886a522da37390b62ae1bc533c9"
+          },
+          {
+            "file": "af-fixture-levante-sevilla.json",
+            "sha256": "4902fe596d540b1fdc52cdcb4bc7832372e324f49e44e07f0813c3e7895c89f3"
+          },
+          {
+            "file": "fd-event-levante-sevilla.json",
+            "sha256": "86ed90a263d5952825b85078101b0ddd61d04a9c73c9aa8156e39be5bf492898"
+          },
+          {
+            "file": "fd-team-88.json",
+            "sha256": "a5a171d44f25f82b6868b4fbc1452ee59cac017bbce18e7e8094bb9f409a1b6c"
+          },
+          {
+            "file": "fd-team-559.json",
+            "sha256": "ded0e60bacf252ada7310cc0fa80d8b6d6e5a22a9fa977ca415acb400a70cf83"
+          }
+        ]
+      },
+      {
+        "independent_home_venue_match": {
+          "id": 1482,
+          "name": "Estadio Ciudad de Valencia",
+          "city": "Valencia"
+        },
+        "fd_home_venue": "Estadio Ciudad de Valencia",
+        "cross_provider_venue_equal": true
+      }
+    ],
+    "sisal_heading": "ESP Liga",
+    "review_scope": "Single real event; local research review, not provider-issued cross-provider certification"
+  }
+}
