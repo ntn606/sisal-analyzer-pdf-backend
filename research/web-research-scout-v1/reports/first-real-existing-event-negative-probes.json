@@ -1,0 +1,119 @@
+{
+  "origin": "real_local_probe_execution_over_saved_identity_references_not_new_web_evidence",
+  "clock_override_used": false,
+  "linked_to_selected_source": false,
+  "outputs": [
+    {
+      "schema_version": "football-web-research-v1.1",
+      "diagnostic_only": true,
+      "ready_for_analysis": false,
+      "ready_for_quant": false,
+      "statistics_usable_in_production": false,
+      "execution_mode": "real_only_cache",
+      "status": "temporal_unverified",
+      "requested_event": [
+        "36411",
+        "1885",
+        "2026-10-12"
+      ],
+      "verified_at": "2026-10-12T20:28:05.832246+00:00",
+      "identity": {
+        "canonical_mapping_reference_verified": true,
+        "current_event_verified": false,
+        "basis": "prior_saved_identity_review_not_new_live_validation",
+        "reference": "history-v2:coventry-newcastle",
+        "reference_commit": "68a704878a42c58920ce9294798406a1eacddbcb",
+        "competition": "PL",
+        "kickoff_utc": "2026-10-12T19:00:00+00:00",
+        "teams": {
+          "away": {
+            "canonical_id": "local:team:newcastle",
+            "display_name": "Newcastle",
+            "provider_ids": {
+              "api_football": 34,
+              "football_data": 67
+            }
+          },
+          "home": {
+            "canonical_id": "local:team:coventry",
+            "display_name": "Coventry",
+            "provider_ids": {
+              "api_football": 1346,
+              "football_data": 1076
+            }
+          }
+        },
+        "api_football_fixture_id": 1557420,
+        "football_data_match_id": 560597
+      },
+      "teams": {},
+      "blockers": [
+        "event_already_started"
+      ],
+      "provenance": {
+        "new_web_requests": 0,
+        "cache_revision": "39e909166916198e12c217b12882da4d6f06c31c631a8356b2d8898cc97c1b0f",
+        "real_web_claims_verified": 0,
+        "untrusted_content_is_data": true,
+        "current_event_revalidated": false,
+        "upstream_statistics_imported": false
+      }
+    },
+    {
+      "schema_version": "football-web-research-v1.1",
+      "diagnostic_only": true,
+      "ready_for_analysis": false,
+      "ready_for_quant": false,
+      "statistics_usable_in_production": false,
+      "execution_mode": "real_only_cache",
+      "status": "temporal_unverified",
+      "requested_event": [
+        "36411",
+        "2282",
+        "2026-10-12"
+      ],
+      "verified_at": "2026-10-12T20:28:05.838755+00:00",
+      "identity": {
+        "canonical_mapping_reference_verified": true,
+        "current_event_verified": false,
+        "basis": "prior_saved_identity_review_not_new_live_validation",
+        "reference": "history-v2:levante-sevilla",
+        "reference_commit": "68a704878a42c58920ce9294798406a1eacddbcb",
+        "competition": "PD",
+        "kickoff_utc": "2026-10-12T19:00:00+00:00",
+        "teams": {
+          "away": {
+            "canonical_id": "local:team:sevilla",
+            "display_name": "Siviglia",
+            "provider_ids": {
+              "api_football": 536,
+              "football_data": 559
+            }
+          },
+          "home": {
+            "canonical_id": "local:team:levante",
+            "display_name": "Levante",
+            "provider_ids": {
+              "api_football": 539,
+              "football_data": 88
+            }
+          }
+        },
+        "api_football_fixture_id": 1570407,
+        "football_data_match_id": 564704
+      },
+      "teams": {},
+      "blockers": [
+        "event_already_started"
+      ],
+      "provenance": {
+        "new_web_requests": 0,
+        "cache_revision": "39e909166916198e12c217b12882da4d6f06c31c631a8356b2d8898cc97c1b0f",
+        "real_web_claims_verified": 0,
+        "untrusted_content_is_data": true,
+        "current_event_revalidated": false,
+        "upstream_statistics_imported": false
+      }
+    }
+  ]
+}

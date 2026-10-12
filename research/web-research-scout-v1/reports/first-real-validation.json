@@ -1,0 +1,118 @@
+{
+  "schema_version": "web-scout-first-real-validation.1",
+  "executed_at": "2026-10-12T20:29:17.863051+00:00",
+  "reference_commit": "f114b32bc58339978949303edfd39b80a3f1a274",
+  "environment": "Linux x86_64, Python 3.12.14, mcp 1.30.0, jsonschema 4.26.0",
+  "command": "python -m unittest -v test_https_pin_regression test_offline_guard test_mcp_cli",
+  "command_environment": "provider credential variables removed; WEB_SCOUT_OFFLINE_TESTS=1; PYTHONPATH=offline_guard:project:tests; PYTHONDONTWRITEBYTECODE=1",
+  "tests_passed": 12,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "python_and_linux_seccomp_guard_active": true,
+  "external_connections_during_tests": 0,
+  "new_football_source_requests": 0,
+  "new_football_provider_requests": 0,
+  "new_synthetic_football_evidence_created": false,
+  "negative_event_probes": {
+    "count": 2,
+    "clock": "real_default_utc_no_override",
+    "statuses": [
+      "temporal_unverified",
+      "temporal_unverified"
+    ],
+    "json_schema": "contracts/response.schema.json",
+    "linked_to_new_source": false
+  },
+  "audit_validation": {
+    "no_football_evidence_or_claims": true,
+    "unknown_acquisition_and_publication_preserved_as_null": true,
+    "no_event_link_or_invented_ids": true,
+    "local_network_policy_hash_matches": true,
+    "cache_revision_unchanged": true
+  },
+  "schemas_checked": 11,
+  "cache_and_example_json_validated": 18,
+  "negative_probe_json_validated": 2,
+  "json_artifacts_security_scan": "passed",
+  "publishable_file_secret_scan": "passed",
+  "new_runtime_functionality": "none_blocked_dossier_only",
+  "history_tests_rerun": false,
+  "backend_tests_rerun": false,
+  "backend_regression_reason": "no backend or runtime code changes; run only pertinent transport and MCP regressions",
+  "github_ci": {
+    "workflow_changed": false,
+    "branch_matches_existing_trigger": true,
+    "remote_result": "not_verified",
+    "github_api_retried": false,
+    "reason": "previously_denied_host_not_retried_without_new_authorization"
+  },
+  "files_added": [
+    "research/web-research-scout-v1/FIRST_REAL_EVIDENCE.md",
+    "research/web-research-scout-v1/MANUAL_IMPORT_PROPOSAL.md",
+    "research/web-research-scout-v1/reports/first-real-source-check.json",
+    "research/web-research-scout-v1/reports/first-real-existing-event-negative-probes.json",
+    "research/web-research-scout-v1/reports/first-real-validation.json"
+  ],
+  "tests": [
+    {
+      "test": "test_https_pin_regression.HTTPSPinRegressionTests.test_collector_passes_exact_approved_addresses_to_reader.test_collector_passes_exact_approved_addresses_to_reader",
+      "result": "ok",
+      "data_origin": "existing_synthetic_security_regression_not_new_football_evidence"
+    },
+    {
+      "test": "test_https_pin_regression.HTTPSPinRegressionTests.test_collector_real_reader_and_http_stack_use_public_pin_and_tls_hostname.test_collector_real_reader_and_http_stack_use_public_pin_and_tls_hostname",
+      "result": "ok",
+      "data_origin": "existing_synthetic_security_regression_not_new_football_evidence"
+    },
+    {
+      "test": "test_https_pin_regression.HTTPSPinRegressionTests.test_configured_proxy_still_blocks_real_reader_without_fallback.test_configured_proxy_still_blocks_real_reader_without_fallback",
+      "result": "ok",
+      "data_origin": "existing_synthetic_security_regression_not_new_football_evidence"
+    },
+    {
+      "test": "test_https_pin_regression.HTTPSPinRegressionTests.test_default_live_disabled_before_dns_or_real_reader.test_default_live_disabled_before_dns_or_real_reader",
+      "result": "ok",
+      "data_origin": "existing_synthetic_security_regression_not_new_football_evidence"
+    },
+    {
+      "test": "test_https_pin_regression.HTTPSPinRegressionTests.test_private_mixed_mapped_or_changed_dns_blocks_real_reader.test_private_mixed_mapped_or_changed_dns_blocks_real_reader",
+      "result": "ok",
+      "data_origin": "existing_synthetic_security_regression_not_new_football_evidence"
+    },
+    {
+      "test": "test_offline_guard.OfflineGuardTests.test_dns_and_connections_for_all_provider_hosts_blocked.test_dns_and_connections_for_all_provider_hosts_blocked",
+      "result": "ok",
+      "data_origin": "existing_synthetic_security_regression_not_new_football_evidence"
+    },
+    {
+      "test": "test_offline_guard.OfflineGuardTests.test_guard_inherited_by_cli_and_mcp_children.test_guard_inherited_by_cli_and_mcp_children",
+      "result": "ok",
+      "data_origin": "existing_synthetic_security_regression_not_new_football_evidence"
+    },
+    {
+      "test": "test_offline_guard.OfflineGuardTests.test_native_socket_cannot_bypass_python_guard.test_native_socket_cannot_bypass_python_guard",
+      "result": "ok",
+      "data_origin": "existing_synthetic_security_regression_not_new_football_evidence"
+    },
+    {
+      "test": "test_mcp_cli.MCPAndCLITests.test_cli_collection_disabled_without_opt_in.test_cli_collection_disabled_without_opt_in",
+      "result": "ok",
+      "data_origin": "real_sdk_local_stdio_and_cli_over_saved_cache"
+    },
+    {
+      "test": "test_mcp_cli.MCPAndCLITests.test_cli_probe_outputs_valid_json.test_cli_probe_outputs_valid_json",
+      "result": "ok",
+      "data_origin": "real_sdk_local_stdio_and_cli_over_saved_cache"
+    },
+    {
+      "test": "test_mcp_cli.MCPAndCLITests.test_exact_sdk_version.test_exact_sdk_version",
+      "result": "ok",
+      "data_origin": "real_sdk_local_stdio_and_cli_over_saved_cache"
+    },
+    {
+      "test": "test_mcp_cli.MCPAndCLITests.test_real_stdio_initialize_list_call_and_invalid_identity.test_real_stdio_initialize_list_call_and_invalid_identity",
+      "result": "ok",
+      "data_origin": "real_sdk_local_stdio_and_cli_over_saved_cache"
+    }
+  ]
+}

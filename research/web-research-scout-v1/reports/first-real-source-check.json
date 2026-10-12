@@ -1,0 +1,95 @@
+{
+  "schema_version": "web-scout-first-real-source-check.1",
+  "reference_commit": "f114b32bc58339978949303edfd39b80a3f1a274",
+  "observed_at": "2026-10-12T20:27:12.632281+00:00",
+  "origin": "local_environment_observation_not_football_evidence",
+  "diagnostic_only": true,
+  "ready_for_analysis": false,
+  "ready_for_quant": false,
+  "statistics_usable_in_production": false,
+  "status": "source_blocked",
+  "source": {
+    "candidate_name": "Arsenal FC",
+    "candidate_type": "official_club",
+    "candidate_homepage": "https://www.arsenal.com/",
+    "candidate_robots_url": "https://www.arsenal.com/robots.txt",
+    "hostname": "www.arsenal.com",
+    "identity_review_state": "unverified",
+    "discovery_basis": "prior_saved_football_data_documentation_example_not_live_identity_verification",
+    "prior_document_reference": {
+      "workspace_relative_path": "research/history-v2-priority-13/evidence/reused/football-data-quickstart.txt",
+      "sha256": "866f8fcc3bfb247261cbed0bef5b6fa3f045254b39fa5f344a781ebc02b65d28",
+      "basis": "website_field_in_documentation_example_only",
+      "new_download": false
+    },
+    "selected_article_url": null,
+    "terms_url_verified": null,
+    "terms_review_state": "unverified",
+    "license_verified": null,
+    "robots_review_state": "not_acquired",
+    "metadata_retention_permission": "unverified",
+    "attribution_conditions": "unverified",
+    "article_access_checked": false,
+    "source_requests_attempted": 0,
+    "target_http_status": null,
+    "proxy_http_status": null
+  },
+  "network_preconditions": {
+    "local_policy_version": 1,
+    "local_policy_sha256": "30f2ede0cbbeec2304389d374bab11bf356191d6899a460ad332815774b844e2",
+    "local_policy_mode": "restricted",
+    "host_in_local_rules": false,
+    "runtime_observations_current": true,
+    "runtime_policy_state": "unknown",
+    "host_in_runtime_effective_hosts": false,
+    "configured_proxy_present": true,
+    "collector_proxy_destination_integrity_verifiable": false,
+    "live_collection_enabled": false,
+    "previously_blocked_hosts_retried": [],
+    "previously_blocked_hosts_not_contacted": [
+      "sevillafc.es",
+      "www.ccfc.co.uk",
+      "www.laliga.com",
+      "www.levanteud.com",
+      "www.newcastleunited.com",
+      "www.premierleague.com",
+      "www.uefa.com"
+    ],
+    "new_football_provider_requests": 0,
+    "proxy_bypassed": false,
+    "cloud_configuration_changed": false
+  },
+  "football_evidence": {
+    "obtained": false,
+    "source_acquired_at": null,
+    "published_at": null,
+    "category": null,
+    "description": null,
+    "team_canonical_id": null,
+    "player_ids": [],
+    "provider_team_ids": null,
+    "evidence_sha256": null,
+    "saved_document_reference": null
+  },
+  "verification_levels": {
+    "authentic_football_evidence_obtained": false,
+    "claim_verified": false,
+    "usable_for_pre_match_analysis": false
+  },
+  "event_link": null,
+  "cache": {
+    "active_revision": "39e909166916198e12c217b12882da4d6f06c31c631a8356b2d8898cc97c1b0f",
+    "new_revision_activated": false,
+    "claims_added": 0
+  },
+  "blockers": [
+    "target_missing_from_network_policy_snapshot",
+    "runtime_network_policy_readiness_unknown",
+    "configured_proxy_destination_integrity_unverified",
+    "source_identity_not_reviewed",
+    "terms_and_retention_permission_unverified",
+    "robots_and_attribution_unverified",
+    "no_authentic_football_document_available",
+    "no_new_verified_future_event"
+  ]
+}
