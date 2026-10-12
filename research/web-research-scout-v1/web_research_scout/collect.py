@@ -248,7 +248,7 @@ class Collector:
             ):
                 raise SafeError("dns_changed_before_request")
             code, ctype, raw, retry = self.reader.read(
-                url, timeout=15, max_bytes=256_000
+                url, timeout=15, max_bytes=256_000, destination_addresses=addresses
             )
             output["http_status"] = code
             if code == 429:

@@ -253,7 +253,7 @@ class FakeReader:
         self.result = result
         self.calls = 0
 
-    def read(self, *args, **kw):
+    def read(self, url, timeout, max_bytes, *, destination_addresses):
         self.calls += 1
         if isinstance(self.result, Exception):
             raise self.result

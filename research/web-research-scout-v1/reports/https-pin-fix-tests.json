@@ -1,0 +1,659 @@
+{
+  "schema_version": "web-scout-https-pin-fix-tests.1",
+  "executed_at": "2026-10-12T20:09:45.413131+00:00",
+  "reference_commit": "5f18c73b1e79f442e18b127eb6ea49783deeb478",
+  "branch": "research/web-research-scout-v1-pin-fix-20261012",
+  "environment": "Linux x86_64, Python 3.12.14, mcp 1.30.0, jsonschema 4.26.0",
+  "collector_sha256_before": "0e95d6bcf447236dd7bc30e205befed16b62ec541d55782ff7f9d2e3757c1e63",
+  "collector_sha256_after": "2856157df712fced74eedc6c5ad35b148c31215278792b144311ccdf0ac82075",
+  "regression_before_fix": {
+    "tests": 5,
+    "passed": 3,
+    "failed": 2,
+    "exit_code": 1,
+    "expected_regression_failures": [
+      "reader_called_without_destination_addresses",
+      "real_reader_returned_destination_pin_missing"
+    ],
+    "offline_guard": true
+  },
+  "regression_after_fix": {
+    "tests": 5,
+    "passed": 5,
+    "failed": 0,
+    "exit_code": 0,
+    "offline_guard": true
+  },
+  "final_suite": {
+    "command": "python scripts/run_offline.py --include-backend-regression",
+    "prototype_tests": 107,
+    "backend_regression_tests": 13,
+    "passed": 120,
+    "failed": 0,
+    "skipped": 0,
+    "exit_code": 0,
+    "offline_python_and_linux_seccomp_guard": true,
+    "new_external_connections": 0,
+    "new_live_provider_requests": 0,
+    "real_credentials_used_in_tests": false,
+    "history_suite_rerun": false
+  },
+  "http_transport_verification": {
+    "synthetic_approved_source": true,
+    "controlled_official_hostname_dns_resolutions": 2,
+    "same_public_address_set": true,
+    "reader_received_exact_approved_set": true,
+    "uncontrolled_hostname_resolutions": 0,
+    "literal_ip_local_conversion": 1,
+    "os_socket_and_tls_wire_mocked": true,
+    "tls_hostname_and_cert_settings_preserved": true,
+    "tls_handshake_live_tested": false
+  },
+  "schemas_checked": 11,
+  "json_documents_validated": 18,
+  "tests": [
+    {
+      "test": "test_cache.CacheTests.test_activate_roundtrip_and_immutable_name.test_activate_roundtrip_and_immutable_name",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_concurrent_activation_read_is_coherent.test_concurrent_activation_read_is_coherent",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_concurrent_identical_revision_activation.test_concurrent_identical_revision_activation",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_corrupt_existing_revision_cannot_replace_good_pointer.test_corrupt_existing_revision_cannot_replace_good_pointer",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_file_and_count_limits.test_file_and_count_limits",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_missing_document.test_missing_document",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_missing_snapshot.test_missing_snapshot",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_one_read_materialized_snapshot_survives_activation.test_one_read_materialized_snapshot_survives_activation",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_symlink_documents_and_active_pointer_rejected.test_symlink_documents_and_active_pointer_rejected",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_tampered_manifest.test_tampered_manifest",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_tampered_snapshot_hash.test_tampered_snapshot_hash",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_cache.CacheTests.test_traversal_absolute_reserved_paths_rejected.test_traversal_absolute_reserved_paths_rejected",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_https_pin_regression.HTTPSPinRegressionTests.test_collector_passes_exact_approved_addresses_to_reader.test_collector_passes_exact_approved_addresses_to_reader",
+      "result": "ok",
+      "data_origin": "synthetic_approved_source_dns_http_and_tls_transport"
+    },
+    {
+      "test": "test_https_pin_regression.HTTPSPinRegressionTests.test_collector_real_reader_and_http_stack_use_public_pin_and_tls_hostname.test_collector_real_reader_and_http_stack_use_public_pin_and_tls_hostname",
+      "result": "ok",
+      "data_origin": "synthetic_approved_source_dns_http_and_tls_transport"
+    },
+    {
+      "test": "test_https_pin_regression.HTTPSPinRegressionTests.test_configured_proxy_still_blocks_real_reader_without_fallback.test_configured_proxy_still_blocks_real_reader_without_fallback",
+      "result": "ok",
+      "data_origin": "synthetic_approved_source_dns_http_and_tls_transport"
+    },
+    {
+      "test": "test_https_pin_regression.HTTPSPinRegressionTests.test_default_live_disabled_before_dns_or_real_reader.test_default_live_disabled_before_dns_or_real_reader",
+      "result": "ok",
+      "data_origin": "synthetic_approved_source_dns_http_and_tls_transport"
+    },
+    {
+      "test": "test_https_pin_regression.HTTPSPinRegressionTests.test_private_mixed_mapped_or_changed_dns_blocks_real_reader.test_private_mixed_mapped_or_changed_dns_blocks_real_reader",
+      "result": "ok",
+      "data_origin": "synthetic_approved_source_dns_http_and_tls_transport"
+    },
+    {
+      "test": "test_mcp_cli.MCPAndCLITests.test_cli_collection_disabled_without_opt_in.test_cli_collection_disabled_without_opt_in",
+      "result": "ok",
+      "data_origin": "real_sdk_local_stdio_over_saved_data_no_live_news"
+    },
+    {
+      "test": "test_mcp_cli.MCPAndCLITests.test_cli_probe_outputs_valid_json.test_cli_probe_outputs_valid_json",
+      "result": "ok",
+      "data_origin": "real_sdk_local_stdio_over_saved_data_no_live_news"
+    },
+    {
+      "test": "test_mcp_cli.MCPAndCLITests.test_exact_sdk_version.test_exact_sdk_version",
+      "result": "ok",
+      "data_origin": "real_sdk_local_stdio_over_saved_data_no_live_news"
+    },
+    {
+      "test": "test_mcp_cli.MCPAndCLITests.test_real_stdio_initialize_list_call_and_invalid_identity.test_real_stdio_initialize_list_call_and_invalid_identity",
+      "result": "ok",
+      "data_origin": "real_sdk_local_stdio_over_saved_data_no_live_news"
+    },
+    {
+      "test": "test_offline_guard.OfflineGuardTests.test_dns_and_connections_for_all_provider_hosts_blocked.test_dns_and_connections_for_all_provider_hosts_blocked",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_offline_guard.OfflineGuardTests.test_guard_inherited_by_cli_and_mcp_children.test_guard_inherited_by_cli_and_mcp_children",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_offline_guard.OfflineGuardTests.test_native_socket_cannot_bypass_python_guard.test_native_socket_cannot_bypass_python_guard",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SavedRealLimitTests.test_live_provider_and_web_readers_are_never_called_by_probe.test_live_provider_and_web_readers_are_never_called_by_probe",
+      "result": "ok",
+      "data_origin": "real_saved_identity_reference_and_proxy_denials_no_live_news"
+    },
+    {
+      "test": "test_probe.SavedRealLimitTests.test_real_candidates_have_zero_verified_web_claims.test_real_candidates_have_zero_verified_web_claims",
+      "result": "ok",
+      "data_origin": "real_saved_identity_reference_and_proxy_denials_no_live_news"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_ambiguous_mapping.test_ambiguous_mapping",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_assertion_tampering_cannot_upgrade_report_to_fact.test_assertion_tampering_cannot_upgrade_report_to_fact",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_at_and_after_kickoff_no_history_or_claims.test_at_and_after_kickoff_no_history_or_claims",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_betting_content_is_not_returned.test_betting_content_is_not_returned",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_conflict_preserves_both_sources.test_conflict_preserves_both_sources",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_conflicting_duplicate_id_blocks_probe.test_conflicting_duplicate_id_blocks_probe",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_date_only_does_not_invent_midnight.test_date_only_does_not_invent_midnight",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_default_real_only_rejects_synthetic.test_default_real_only_rejects_synthetic",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_duplicate_claim_does_not_inflate_count.test_duplicate_claim_does_not_inflate_count",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_fresh_collection_does_not_refresh_old_publication.test_fresh_collection_does_not_refresh_old_publication",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_identity_review_not_available_in_backtest.test_identity_review_not_available_in_backtest",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_invalid_request_does_not_echo_input.test_invalid_request_does_not_echo_input",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_local_match_date_cannot_disagree_with_kickoff.test_local_match_date_cannot_disagree_with_kickoff",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_malformed_record_does_not_emit_raw_error.test_malformed_record_does_not_emit_raw_error",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_mapping_expiry_blocks.test_mapping_expiry_blocks",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_missing_category_is_cache_absence_not_no_injury.test_missing_category_is_cache_absence_not_no_injury",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_missing_mapping.test_missing_mapping",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_missing_proof.test_missing_proof",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_missing_source.test_missing_source",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_observation_after_historical_analysis_is_withheld.test_observation_after_historical_analysis_is_withheld",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_observation_extra_sensitive_fields_are_filtered.test_observation_extra_sensitive_fields_are_filtered",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_obsolete_evidence.test_obsolete_evidence",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_official_lineup_requires_explicit_proof.test_official_lineup_requires_explicit_proof",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_positive_confirmed_official_reviewed_claim.test_positive_confirmed_official_reviewed_claim",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_post_kickoff_publication_and_observation_withheld.test_post_kickoff_publication_and_observation_withheld",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_probable_lineup_is_not_official.test_probable_lineup_is_not_official",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_prompt_injection_is_quarantined_not_returned.test_prompt_injection_is_quarantined_not_returned",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_publication_after_observation.test_publication_after_observation",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_reported_rumor_is_not_confirmed.test_reported_rumor_is_not_confirmed",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_review_before_acquisition_is_withheld.test_review_before_acquisition_is_withheld",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_same_name_different_official_id_does_not_match_reference.test_same_name_different_official_id_does_not_match_reference",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_secret_shaped_text_is_never_returned.test_secret_shaped_text_is_never_returned",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_tampered_projection_is_not_a_verified_fact.test_tampered_projection_is_not_a_verified_fact",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_terms_unknown_withholds_description.test_terms_unknown_withholds_description",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_unapproved_url_is_not_returned.test_unapproved_url_is_not_returned",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_unknown_publication_is_never_collection_date.test_unknown_publication_is_never_collection_date",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_wrong_fixture_id_reference_is_not_repaired_by_name.test_wrong_fixture_id_reference_is_not_repaired_by_name",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_wrong_official_club_identity_withholds.test_wrong_official_club_identity_withholds",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_probe.SyntheticClaimTests.test_wrong_team_id_is_blocked.test_wrong_team_id_is_blocked",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_429_sets_shared_backoff_no_retry.test_429_sets_shared_backoff_no_retry",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_approved_metadata_still_requires_manual_review.test_approved_metadata_still_requires_manual_review",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_corrupted_domain_budget_fails_closed.test_corrupted_domain_budget_fails_closed",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_dns_change_prevents_request.test_dns_change_prevents_request",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_domain_rate_limit_blocks_repetition.test_domain_rate_limit_blocks_repetition",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_governance_is_not_license_or_news.test_governance_is_not_license_or_news",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_large_or_wrong_type_response_rejected.test_large_or_wrong_type_response_rejected",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_live_disabled_by_default_no_dns_or_network.test_live_disabled_by_default_no_dns_or_network",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_network_error_never_exposed.test_network_error_never_exposed",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_private_dns_prevents_request.test_private_dns_prevents_request",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_redirect_never_followed.test_redirect_never_followed",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_robots_crawl_delay_enforced.test_robots_crawl_delay_enforced",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_robots_permission_missing_before_network.test_robots_permission_missing_before_network",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.CollectorTests.test_terms_unknown_before_dns_or_network.test_terms_unknown_before_dns_or_network",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_date_only_not_timestamp.test_date_only_not_timestamp",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_invalid_utf8_and_content_type_rejected.test_invalid_utf8_and_content_type_rejected",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_jsonld_extracts_never_executes_js.test_jsonld_extracts_never_executes_js",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_malformed_jsonld_ignored.test_malformed_jsonld_ignored",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_naive_invalid_and_impossible_dates_remain_unknown.test_naive_invalid_and_impossible_dates_remain_unknown",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_only_metadata_saved_body_not_included.test_only_metadata_saved_body_not_included",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_title_injection_not_returned.test_title_injection_not_returned",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_title_max_length.test_title_max_length",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_unknown_graph_type_ignored.test_unknown_graph_type_ignored",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_unknown_publication_stays_unknown.test_unknown_publication_stays_unknown",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ParserTests.test_wrong_metadata_type_is_safe_error.test_wrong_metadata_type_is_safe_error",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ReaderTests.test_429_retry_after_respected_without_reading_body.test_429_retry_after_respected_without_reading_body",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ReaderTests.test_configured_proxy_fails_closed_never_direct_fallback.test_configured_proxy_fails_closed_never_direct_fallback",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ReaderTests.test_http_redirect_and_raw_location_not_returned.test_http_redirect_and_raw_location_not_returned",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ReaderTests.test_no_destination_pin_is_rejected.test_no_destination_pin_is_rejected",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ReaderTests.test_pinned_connection_keeps_official_tls_hostname.test_pinned_connection_keeps_official_tls_hostname",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ReaderTests.test_proxy_denial_is_sanitized.test_proxy_denial_is_sanitized",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.ReaderTests.test_transport_itself_rejects_private_or_mapped_pin.test_transport_itself_rejects_private_or_mapped_pin",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.SecurityTests.test_additional_credential_formats_quarantined.test_additional_credential_formats_quarantined",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.SecurityTests.test_duplicate_json_keys_rejected.test_duplicate_json_keys_rejected",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.SecurityTests.test_even_operator_registered_ip_or_internal_url_is_rejected.test_even_operator_registered_ip_or_internal_url_is_rejected",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.SecurityTests.test_failed_or_empty_dns_safe.test_failed_or_empty_dns_safe",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.SecurityTests.test_injection_in_italian_and_embedded_html.test_injection_in_italian_and_embedded_html",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.SecurityTests.test_naive_time_rejected_and_timezone_normalized.test_naive_time_rejected_and_timezone_normalized",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.SecurityTests.test_private_mixed_and_mapped_dns_rejected.test_private_mixed_and_mapped_dns_rejected",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.SecurityTests.test_public_dns_allowed.test_public_dns_allowed",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.SecurityTests.test_reviewed_exact_https_url.test_reviewed_exact_https_url",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_security_collection.SecurityTests.test_url_attacks_all_rejected.test_url_attacks_all_rejected",
+      "result": "ok",
+      "data_origin": "synthetic_offline_inputs"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_disallowed_endpoint_precedes_credentials_and_network.test_disallowed_endpoint_precedes_credentials_and_network",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_evidence_propagates_diagnostic_without_bypassing_scout.test_evidence_propagates_diagnostic_without_bypassing_scout",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_fixture_probe_propagates_safe_diagnostic.test_fixture_probe_propagates_safe_diagnostic",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_history_probe_propagates_free_plan_error_for_either_team.test_history_probe_propagates_free_plan_error_for_either_team",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_history_probe_success_is_unchanged.test_history_probe_success_is_unchanged",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_http_errors_do_not_expose_body_or_headers.test_http_errors_do_not_expose_body_or_headers",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_internal_errors_keep_existing_blocker_shape.test_internal_errors_keep_existing_blocker_shape",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_invalid_response_and_pagination_stay_blocked.test_invalid_response_and_pagination_stay_blocked",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_missing_key_and_local_budget_never_call_provider.test_missing_key_and_local_budget_never_call_provider",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_provider_errors_are_classified_and_sanitized.test_provider_errors_are_classified_and_sanitized",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_provider_status_propagates_safe_diagnostic.test_provider_status_propagates_safe_diagnostic",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_success_is_cached_but_errors_are_not.test_success_is_cached_but_errors_are_not",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    },
+    {
+      "test": "test_api_football_errors.APIErrorTests.test_transport_and_json_exceptions_are_sanitized.test_transport_and_json_exceptions_are_sanitized",
+      "result": "ok",
+      "data_origin": "synthetic_mocked_provider_backend_regression"
+    }
+  ],
+  "publishable_json_scanned": 21,
+  "prototype_files_secret_scanned": 65,
+  "secret_pattern_matches": 0
+}

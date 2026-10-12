@@ -1,4 +1,18 @@
-# Elenco completo dei file aggiunti
+# File della correzione HTTPS
+
+Rispetto al commit 5f18c73b1e79f442e18b127eb6ea49783deeb478, il nuovo branch research/web-research-scout-v1-pin-fix-20261012 modifica soltanto 7 file nella directory isolata:
+
+- web_research_scout/collect.py — passaggio degli indirizzi approvati.
+- tests/test_security_collection.py — fake con keyword obbligatoria.
+- tests/test_https_pin_regression.py — nuovo test di contratto e percorso reader reale.
+- HTTPS_PIN_FIX.md — dossier della correzione.
+- reports/https-pin-fix-tests.json — rapporto delle fasi e suite completa.
+- RESULTS.md — esito aggiornato e distinzione dalla consegna precedente.
+- CHANGED_FILES.md — questo elenco.
+
+Nessuna modifica a backend, workflow, cache, fonti o dipendenze. Il branch originale non viene modificato.
+
+## Elenco dei file aggiunti nella consegna originale
 
 Base main:304cb2cf06d9f8f226eb89b701d3ec57beba6a38. Nessun file preesistente modificato. Nuova directory isolata e un workflow dedicato.
 

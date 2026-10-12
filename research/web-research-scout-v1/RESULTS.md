@@ -1,6 +1,12 @@
 # Risultati e prove effettive
 
-## Esito dell'incarico
+## Correzione HTTPS — 12 ottobre 2026
+
+Sul branch research/web-research-scout-v1-pin-fix-20261012, il parametro destination_addresses viene ora trasmesso dal Collector al lettore reale. **107 test prototipo + 13 backend superati (120/120), zero falliti o saltati**, senza connessioni esterne. I due test principali fallivano sul commit precedente e passano dopo la modifica. Fonte e trasporto dei nuovi casi interamente sintetici; nessuna nuova acquisizione reale.
+
+[Rapporto correzione](HTTPS_PIN_FIX.md) e [risultati JSON](reports/https-pin-fix-tests.json). I risultati seguenti documentano la consegna originale al commit 5f18c73b1e79f442e18b127eb6ea49783deeb478.
+
+## Esito del prototipo iniziale — 11 ottobre 2026
 
 Prototipo eseguibile, isolato e offline. **102 test del prototipo +13 regressioni del backend, tutti superati**, senza nuove richieste ai provider. Non è stata ripetuta la suite History V2. SDK MCP reale1.30.0, client stdio e subprocess locali, Python3.12.14 su Linux x86_64.
 
