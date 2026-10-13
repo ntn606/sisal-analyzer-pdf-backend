@@ -5,6 +5,7 @@ import pdfplumber
 import threading
 import time
 from typing import Optional
+from functools import lru_cache
 
 from curl_cffi import requests
 from pypdf import PdfReader
@@ -419,62 +420,181 @@ def extract_events(text: str):
     return events
 
 
+MATCH_COMPETITIONS = {
+    "EUCHL": (
+        "UEFA Champions League",
+        ("champions", "champions league", "uefa champions league"),
+    ),
+    "EUUYL": ("UEFA Youth League", ("youth league", "uefa youth league")),
+}
+
+
+def _match_query(event, query):
+    q = " ".join(query.casefold().split())
+    # Competition aliases are exact: Champions must never include Youth League,
+    # women's competitions or another code sharing a prefix.
+    for code, (_, aliases) in MATCH_COMPETITIONS.items():
+        if q == code.casefold() or q in aliases:
+            return event["manifestazione"] == code
+    return (
+        q in event["match"].casefold()
+        or q in event["manifestazione"].casefold()
+        or q == event["palinsesto"]
+        or q == event["avvenimento"]
+    )
+
+
+@lru_cache(maxsize=2)
+def _match_events_from_pdf(pdf_bytes):
+    """Read identity columns in spatial order, independently of odds cells."""
+    events = []
+    seen = {}
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        for page_number, page in enumerate(pdf.pages, 1):
+            words = page.extract_words(
+                x_tolerance=1,
+                y_tolerance=2,
+                keep_blank_chars=False,
+                use_text_flow=False,
+            )
+            header = None
+            for word in words:
+                if word["text"] != "Ora":
+                    continue
+                row = sorted(
+                    (w for w in words if abs(w["top"] - word["top"]) <= 2),
+                    key=lambda w: w["x0"],
+                )
+                labels = {
+                    label: [w for w in row if w["text"] == label]
+                    for label in ("Ora", "Manif.", "Pal.", "Avv.", "Squadra")
+                }
+                if (
+                    all(len(labels[k]) == 1 for k in ("Ora", "Manif.", "Pal.", "Avv."))
+                    and len(labels["Squadra"]) == 2
+                ):
+                    header = labels
+                    break
+            if header is None:
+                raise ValueError("event_header_not_recognized")
+            center = lambda w: (w["x0"] + w["x1"]) / 2
+            ora = header["Ora"][0]
+            manif = header["Manif."][0]
+            pal = header["Pal."][0]
+            avv = header["Avv."][0]
+            home, away = header["Squadra"]
+            ordered = [ora, manif, pal, avv, home, away]
+            if not all(a["x0"] < b["x0"] for a, b in zip(ordered, ordered[1:])):
+                raise ValueError("event_columns_not_ordered")
+            market_words = [
+                w
+                for w in words
+                if abs(w["top"] - ora["top"]) <= 2
+                and w["x0"] > away["x1"]
+                and w["text"] == "L"
+            ]
+            if not market_words:
+                raise ValueError("event_column_end_missing")
+            name_end = min(w["x0"] for w in market_words) - 1
+            time_end = (center(ora) + center(manif)) / 2
+            pal_start = (center(manif) + center(pal)) / 2
+            avv_start = (center(pal) + center(avv)) / 2
+            home_start, away_start = home["x0"] - 1, away["x0"] - 1
+            pal_words = [
+                w
+                for w in words
+                if pal_start <= center(w) < avv_start
+                and re.fullmatch(r"\d{3,6}", w["text"])
+            ]
+            for pal_word in pal_words:
+                row = sorted(
+                    (w for w in words if abs(w["top"] - pal_word["top"]) <= 2),
+                    key=lambda w: w["x0"],
+                )
+                cells = [
+                    [w["text"] for w in row if center(w) < time_end],
+                    [w["text"] for w in row if time_end <= center(w) < pal_start],
+                    [w["text"] for w in row if pal_start <= center(w) < avv_start],
+                    [w["text"] for w in row if avv_start <= center(w) < home_start],
+                ]
+                if any(len(cell) != 1 for cell in cells):
+                    raise ValueError("ambiguous_event_identity_cells")
+                time_value, code, pal_value, avv_value = [cell[0] for cell in cells]
+                if (
+                    not re.fullmatch(r"(?:[01]?\d|2[0-3])[.:][0-5]\d", time_value)
+                    or not re.fullmatch(r"[A-Z0-9]{2,16}", code)
+                    or not re.fullmatch(r"\d{1,6}", avv_value)
+                ):
+                    raise ValueError("invalid_event_identity_cells")
+                home_name = " ".join(
+                    w["text"] for w in row if home_start <= w["x0"] < away_start
+                ).strip()
+                away_name = " ".join(
+                    w["text"] for w in row if away_start <= w["x0"] < name_end
+                ).strip()
+                if not home_name or not away_name:
+                    raise ValueError("event_names_missing")
+                event = {
+                    "time": time_value.replace(".", ":"),
+                    "manifestazione": code,
+                    "match": home_name + " " + away_name,
+                    "palinsesto": pal_value,
+                    "avvenimento": avv_value,
+                    "home_printed": home_name,
+                    "away_printed": away_name,
+                    "competition": MATCH_COMPETITIONS.get(code, (code, ()))[0],
+                    "page": page_number,
+                    "raw": " ".join(w["text"] for w in row),
+                }
+                key = (pal_value, avv_value)
+                identity = (event["time"], code, home_name, away_name)
+                if key in seen:
+                    if seen[key] != identity:
+                        raise ValueError("conflicting_event_identity")
+                    continue
+                seen[key] = identity
+                events.append(event)
+    return tuple(events)
+
+
 @mcp.tool()
 def get_matches(
     query: Optional[str] = None,
     limit: int = 100,
+    offset: int = 0,
 ):
+    """Elenca eventi dal PDF Base: identita' per colonne, senza leggere quote.
+
+    Champions/EUCHL e Youth League/EUUYL sono ricerche distinte. count indica
+    tutti i risultati filtrati; offset/next_offset permettono di sfogliarli.
     """
-    Elenca gli eventi calcistici presenti nel Foglio Quote
-    ufficiale Sisal "Calcio Base per Data".
-
-    Restituisce ora, manifestazione, nome evento,
-    Palinsesto e Avvenimento.
-    """
-
-    text = get_cached_text("base")
-
-    if not text:
-        return {
-            "ok": False,
-            "state": "source_not_ready",
-            "count": 0,
-            "matches": [],
-        }
-
-    events = extract_events(text)
-
-    if query:
-        q = query.casefold().strip()
-
-        events = [
-            event
-            for event in events
-            if (
-                q in event["match"].casefold()
-                or q in event[
-                    "manifestazione"
-                ].casefold()
-                or q == event[
-                    "palinsesto"
-                ].casefold()
-                or q == event[
-                    "avvenimento"
-                ].casefold()
-            )
-        ]
-
-    limit = max(
-        1,
-        min(limit, 300),
-    )
-
+    # Text and PDF must come from the same cache publication.
+    with CACHE_LOCK:
+        cached = CACHE.get("base", {})
+        text, pdf_bytes = cached.get("text"), cached.get("pdf_bytes")
+    if not text or not pdf_bytes:
+        return {"ok": False, "state": "source_not_ready", "count": 0, "matches": []}
+    try:
+        events = _match_events_from_pdf(pdf_bytes)
+    except Exception:
+        return {"ok": False, "state": "source_parse_error", "count": 0, "matches": []}
+    if query and query.strip():
+        events = [event for event in events if _match_query(event, query)]
+    limit = max(1, min(limit, 300))
+    offset = max(0, offset)
+    selected = [dict(event) for event in events[offset : offset + limit]]
+    next_offset = offset + len(selected)
     return {
         "ok": True,
         "source": BASE + SHEETS["base"],
         "updated": get_updated_timestamp(text),
         "count": len(events),
-        "matches": events[:limit],
+        "matches": selected,
+        "returned_count": len(selected),
+        "limit": limit,
+        "offset": offset,
+        "truncated": len(selected) < len(events),
+        "next_offset": next_offset if next_offset < len(events) else None,
     }
     
 @mcp.tool()

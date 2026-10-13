@@ -1,0 +1,346 @@
+{
+  "origin": "real_archived_pdf_20261011_not_live_20261013",
+  "queries": {
+    "Champions": {
+      "ok": true,
+      "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20data.pdf",
+      "updated": "11/10/2026 - ore 21:05:12 1",
+      "count": 18,
+      "matches": [
+        {
+          "time": "18:45",
+          "manifestazione": "EUCHL",
+          "match": "Sabah Slavia Praga",
+          "palinsesto": "36421",
+          "avvenimento": "7212",
+          "home_printed": "Sabah",
+          "away_printed": "Slavia Praga",
+          "competition": "UEFA Champions League",
+          "page": 5,
+          "raw": "18.45 EUCHL 36421 7212 Sabah Slavia Praga 3,40 3,60 2,10 -1 1,70 3,75 3,60 1,75 1,30 1,27 4,25 1,16 2,20 1,60 1,48 2,40 1,52 2,40 1,25 3,40 1,13 5,00"
+        },
+        {
+          "time": "18:45",
+          "manifestazione": "EUCHL",
+          "match": "Lens Sporting Lisbona",
+          "palinsesto": "36421",
+          "avvenimento": "7219",
+          "home_printed": "Lens",
+          "away_printed": "Sporting Lisbona",
+          "competition": "UEFA Champions League",
+          "page": 5,
+          "raw": "18.45 EUCHL 36421 7219 Lens Sporting Lisbona 2,45 3,60 2,60 1 4,50 4,25 1,50 1,48 1,52 1,28 4,50 1,15 2,40 1,52 1,52 2,30 1,45 2,60 1,15 4,60 1,17 4,25"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Atletico Madrid Manchester United",
+          "palinsesto": "36421",
+          "avvenimento": "7215",
+          "home_printed": "Atletico Madrid",
+          "away_printed": "Manchester United",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7215 Atletico Madrid Manchester United 1,90 3,75 3,50 1 3,20 3,60 1,80 1,27 1,85 1,24 5,00 1,12 2,60 1,45 1,62 2,10 1,40 2,75 1,08 6,25 1,21 3,80"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Villarreal Napoli",
+          "palinsesto": "36421",
+          "avvenimento": "7217",
+          "home_printed": "Villarreal",
+          "away_printed": "Napoli",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7217 Villarreal Napoli 2,05 3,60 3,20 1 3,60 3,75 1,67 1,30 1,72 1,27 4,25 1,16 2,20 1,60 1,48 2,40 1,52 2,40 1,13 4,80 1,25 3,40"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Viking Fk Bayern Monaco",
+          "palinsesto": "36421",
+          "avvenimento": "7220",
+          "home_printed": "Viking Fk",
+          "away_printed": "Bayern Monaco",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7220 Viking Fk Bayern Monaco 19,0013,00 1,08 -1 7,00 6,50 1,19 7,50 1,02 11,00 1,01 5,00 1,14 2,90 1,36 1,75 1,95 1,70 1,98 24,00"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Inter Club Brugge",
+          "palinsesto": "36421",
+          "avvenimento": "7223",
+          "home_printed": "Inter",
+          "away_printed": "Club Brugge",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7223 Inter Club Brugge 1,25 6,00 10,00 1 1,65 3,75 3,60 1,04 3,75 1,11 5,50 1,10 2,75 1,40 1,70 2,00 1,75 1,95 11,00 1,62 2,05"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Arsenal Lille",
+          "palinsesto": "36421",
+          "avvenimento": "7224",
+          "home_printed": "Arsenal",
+          "away_printed": "Lille",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7224 Arsenal Lille 1,20 6,50 12,00 1 1,60 3,75 4,00 1,02 4,25 1,10 4,50 1,15 2,25 1,57 1,48 2,40 2,10 1,65 1,01 9,75 2,05 1,65"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Galatasaray Barcellona",
+          "palinsesto": "36421",
+          "avvenimento": "7225",
+          "home_printed": "Galatasaray",
+          "away_printed": "Barcellona",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7225 Galatasaray Barcellona 8,50 6,50 1,25 -1 3,60 4,25 1,57 3,75 1,05 1,09 9,00 1,03 4,25 1,18 2,40 1,48 1,45 2,60 1,33 2,85 16,00"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Lipsia Psv Eindhoven",
+          "palinsesto": "36421",
+          "avvenimento": "7226",
+          "home_printed": "Lipsia",
+          "away_printed": "Psv Eindhoven",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7226 Lipsia Psv Eindhoven 1,75 4,25 3,75 1 2,60 3,75 2,00 1,22 2,05 1,19 6,00 1,08 3,10 1,33 1,80 1,85 1,36 2,90 1,04 7,75 1,18 4,10"
+        },
+        {
+          "time": "18:45",
+          "manifestazione": "EUCHL",
+          "match": "Feyenoord Como",
+          "palinsesto": "36421",
+          "avvenimento": "7214",
+          "home_printed": "Feyenoord",
+          "away_printed": "Como",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "18.45 EUCHL 36421 7214 Feyenoord Como 3,50 4,00 1,85 -1 1,85 3,75 3,00 1,85 1,28 1,22 5,50 1,10 2,90 1,36 1,72 1,95 1,40 2,75 1,18 4,10 1,06 7,00"
+        },
+        {
+          "time": "18:45",
+          "manifestazione": "EUCHL",
+          "match": "Lask Liverpool",
+          "palinsesto": "36421",
+          "avvenimento": "7222",
+          "home_printed": "Lask",
+          "away_printed": "Liverpool",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "18.45 EUCHL 36421 7222 Lask Liverpool 9,00 6,00 1,27 -1 3,60 4,00 1,65 3,75 1,05 1,11 6,00 1,08 3,10 1,33 1,80 1,85 1,65 2,10 1,52 2,30 12,00"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Slovan Bratislava Stoccarda",
+          "palinsesto": "36421",
+          "avvenimento": "7209",
+          "home_printed": "Slovan Bratislava",
+          "away_printed": "Stoccarda",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7209 Slovan Bratislava Stoccarda 8,50 5,75 1,28 -1 3,25 3,75 1,75 3,40 1,05 1,12 6,50 1,07 3,10 1,33 1,85 1,80 1,57 2,25 1,48 2,35 12,00"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Manchester City Paris Saint-germain",
+          "palinsesto": "36421",
+          "avvenimento": "7210",
+          "home_printed": "Manchester City",
+          "away_printed": "Paris Saint-germain",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7210 Manchester City Paris Saint-germain 2,10 4,00 2,90 1 3,50 4,00 1,62 1,40 1,67 1,22 5,50 1,10 2,75 1,40 1,70 2,00 1,40 2,75 1,09 5,75 1,15 4,50"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Shakhtar Donetsk Aek Atene",
+          "palinsesto": "36421",
+          "avvenimento": "7211",
+          "home_printed": "Shakhtar Donetsk",
+          "away_printed": "Aek Atene",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7211 Shakhtar Donetsk Aek Atene 2,60 3,50 2,50 -1 1,47 4,00 4,75 1,48 1,48 1,27 3,50 1,25 1,95 1,80 1,36 2,90 1,65 2,10 1,24 3,50 1,23 3,60"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Roma Real Madrid",
+          "palinsesto": "36421",
+          "avvenimento": "7213",
+          "home_printed": "Roma",
+          "away_printed": "Real Madrid",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7213 Roma Real Madrid 3,60 3,75 1,90 -1 1,80 3,60 3,10 1,85 1,27 1,24 5,50 1,10 2,90 1,36 1,72 1,95 1,36 2,90 1,18 4,10 1,05 7,00"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Aston Villa Fenerbahce",
+          "palinsesto": "36421",
+          "avvenimento": "7216",
+          "home_printed": "Aston Villa",
+          "away_printed": "Fenerbahce",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7216 Aston Villa Fenerbahce 1,62 4,00 5,00 1 2,60 3,40 2,15 1,15 2,20 1,22 4,25 1,16 2,20 1,60 1,48 2,40 1,60 2,20 1,07 6,25 1,40 2,65"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Bodo Glimt Borussia Dortmund",
+          "palinsesto": "36421",
+          "avvenimento": "7218",
+          "home_printed": "Bodo Glimt",
+          "away_printed": "Borussia Dortmund",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7218 Bodo Glimt Borussia Dortmund 3,10 3,75 2,05 -1 1,70 4,00 3,40 1,75 1,33 1,22 6,00 1,08 3,10 1,36 1,80 1,85 1,33 3,10 1,15 4,50 1,06 6,50"
+        },
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Betis Porto",
+          "palinsesto": "36421",
+          "avvenimento": "7221",
+          "home_printed": "Betis",
+          "away_printed": "Porto",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7221 Betis Porto 2,00 3,50 3,50 1 3,50 3,60 1,72 1,27 1,75 1,28 4,00 1,18 2,10 1,65 1,42 2,60 1,57 2,25 1,13 4,80 1,29 3,20"
+        }
+      ],
+      "returned_count": 18,
+      "limit": 100,
+      "offset": 0,
+      "truncated": false,
+      "next_offset": null
+    },
+    "Roma": {
+      "ok": true,
+      "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20data.pdf",
+      "updated": "11/10/2026 - ore 21:05:12 1",
+      "count": 2,
+      "matches": [
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Roma Real Madrid",
+          "palinsesto": "36421",
+          "avvenimento": "7213",
+          "home_printed": "Roma",
+          "away_printed": "Real Madrid",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7213 Roma Real Madrid 3,60 3,75 1,90 -1 1,80 3,60 3,10 1,85 1,27 1,24 5,50 1,10 2,90 1,36 1,72 1,95 1,36 2,90 1,18 4,10 1,05 7,00"
+        },
+        {
+          "time": "20:45",
+          "manifestazione": "ITA1",
+          "match": "Roma Genoa",
+          "palinsesto": "36421",
+          "avvenimento": "1159",
+          "home_printed": "Roma",
+          "away_printed": "Genoa",
+          "competition": "ITA1",
+          "page": 8,
+          "raw": "20.45 ITA1 36421 1159 Roma Genoa 1,36 4,75 9,00 1 2,00 3,25 2,90 1,05 3,00 1,17 4,00 1,18 2,20 1,60 1,45 2,50 1,80 1,90 1,04 8,00 1,72 1,95"
+        }
+      ],
+      "returned_count": 2,
+      "limit": 100,
+      "offset": 0,
+      "truncated": false,
+      "next_offset": null
+    },
+    "Roma Real Madrid": {
+      "ok": true,
+      "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20data.pdf",
+      "updated": "11/10/2026 - ore 21:05:12 1",
+      "count": 1,
+      "matches": [
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Roma Real Madrid",
+          "palinsesto": "36421",
+          "avvenimento": "7213",
+          "home_printed": "Roma",
+          "away_printed": "Real Madrid",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7213 Roma Real Madrid 3,60 3,75 1,90 -1 1,80 3,60 3,10 1,85 1,27 1,24 5,50 1,10 2,90 1,36 1,72 1,95 1,36 2,90 1,18 4,10 1,05 7,00"
+        }
+      ],
+      "returned_count": 1,
+      "limit": 100,
+      "offset": 0,
+      "truncated": false,
+      "next_offset": null
+    },
+    "Manchester City Paris": {
+      "ok": true,
+      "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20data.pdf",
+      "updated": "11/10/2026 - ore 21:05:12 1",
+      "count": 1,
+      "matches": [
+        {
+          "time": "21:00",
+          "manifestazione": "EUCHL",
+          "match": "Manchester City Paris Saint-germain",
+          "palinsesto": "36421",
+          "avvenimento": "7210",
+          "home_printed": "Manchester City",
+          "away_printed": "Paris Saint-germain",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "21.00 EUCHL 36421 7210 Manchester City Paris Saint-germain 2,10 4,00 2,90 1 3,50 4,00 1,62 1,40 1,67 1,22 5,50 1,10 2,75 1,40 1,70 2,00 1,40 2,75 1,09 5,75 1,15 4,50"
+        }
+      ],
+      "returned_count": 1,
+      "limit": 100,
+      "offset": 0,
+      "truncated": false,
+      "next_offset": null
+    },
+    "Feyenoord Como": {
+      "ok": true,
+      "source": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20base%20per%20data.pdf",
+      "updated": "11/10/2026 - ore 21:05:12 1",
+      "count": 1,
+      "matches": [
+        {
+          "time": "18:45",
+          "manifestazione": "EUCHL",
+          "match": "Feyenoord Como",
+          "palinsesto": "36421",
+          "avvenimento": "7214",
+          "home_printed": "Feyenoord",
+          "away_printed": "Como",
+          "competition": "UEFA Champions League",
+          "page": 6,
+          "raw": "18.45 EUCHL 36421 7214 Feyenoord Como 3,50 4,00 1,85 -1 1,85 3,75 3,00 1,85 1,28 1,22 5,50 1,10 2,90 1,36 1,72 1,95 1,40 2,75 1,18 4,10 1,06 7,00"
+        }
+      ],
+      "returned_count": 1,
+      "limit": 100,
+      "offset": 0,
+      "truncated": false,
+      "next_offset": null
+    }
+  }
+}

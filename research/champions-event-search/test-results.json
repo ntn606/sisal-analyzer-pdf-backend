@@ -1,0 +1,193 @@
+{
+  "reference_main_commit": "304cb2cf06d9f8f226eb89b701d3ec57beba6a38",
+  "tested_at": "2026-10-13T21:29:56.498131+00:00",
+  "branch": "research/fix-champions-event-search-20261013",
+  "regression_before": {
+    "test_methods_run": 3,
+    "expected_assertion_failures": 5,
+    "unexpected_errors": 0,
+    "data": "same_real_archived_pdf_and_new_regression_tests"
+  },
+  "regression_after": {
+    "tests_run": 31,
+    "passed": 31,
+    "failed": 0,
+    "skipped": 0,
+    "backend_api_error_regressions": 13,
+    "event_search_regressions": 18
+  },
+  "offline_python_and_native_seccomp_guard": true,
+  "external_connections_in_tests": 0,
+  "pdf_origin": "real_official_archived_20261011_not_observed_live_20261013",
+  "original_event_parser_recognized": 188,
+  "spatial_transcript_event_count": 472,
+  "corrected_index_count": 472,
+  "protected_functions_ast_checks": 58,
+  "base_odds_snapshot_cases_unchanged": [
+    "36421/7213",
+    "36421/7210",
+    "36421/7214"
+  ],
+  "extra_and_combinate_pdf_fixtures_available": false,
+  "extra_and_combinate_verification": "unchanged function fingerprints and source_not_ready behavior; no live ready claim",
+  "history_v2_modified_or_tested": false,
+  "analyst_or_quant_modified": false,
+  "github_ci": "remote_read_denied_by_proxy_Forbidden_workflow_added_no_green_claim",
+  "tests": [
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_disallowed_endpoint_precedes_credentials_and_network.test_disallowed_endpoint_precedes_credentials_and_network",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_evidence_propagates_diagnostic_without_bypassing_scout.test_evidence_propagates_diagnostic_without_bypassing_scout",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_fixture_probe_propagates_safe_diagnostic.test_fixture_probe_propagates_safe_diagnostic",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_history_probe_propagates_free_plan_error_for_either_team.test_history_probe_propagates_free_plan_error_for_either_team",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_history_probe_success_is_unchanged.test_history_probe_success_is_unchanged",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_http_errors_do_not_expose_body_or_headers.test_http_errors_do_not_expose_body_or_headers",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_internal_errors_keep_existing_blocker_shape.test_internal_errors_keep_existing_blocker_shape",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_invalid_response_and_pagination_stay_blocked.test_invalid_response_and_pagination_stay_blocked",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_missing_key_and_local_budget_never_call_provider.test_missing_key_and_local_budget_never_call_provider",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_provider_errors_are_classified_and_sanitized.test_provider_errors_are_classified_and_sanitized",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_provider_status_propagates_safe_diagnostic.test_provider_status_propagates_safe_diagnostic",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_success_is_cached_but_errors_are_not.test_success_is_cached_but_errors_are_not",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_api_football_errors.APIErrorTests.test_transport_and_json_exceptions_are_sanitized.test_transport_and_json_exceptions_are_sanitized",
+      "result": "ok",
+      "data_origin": "mocked_api_provider"
+    },
+    {
+      "name": "test_match_search.CompetitionSeparationTests.test_champions_alias_never_includes_youth_or_womens_codes.test_champions_alias_never_includes_youth_or_womens_codes",
+      "result": "ok",
+      "data_origin": "competition_code_classification_without_events"
+    },
+    {
+      "name": "test_match_search.CompetitionSeparationTests.test_original_function_asts_are_unchanged_except_get_matches.test_original_function_asts_are_unchanged_except_get_matches",
+      "result": "ok",
+      "data_origin": "competition_code_classification_without_events"
+    },
+    {
+      "name": "test_match_search.CompetitionSeparationTests.test_youth_alias_is_separate.test_youth_alias_is_separate",
+      "result": "ok",
+      "data_origin": "competition_code_classification_without_events"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_base_quote_parsers_return_unchanged_archived_prices.test_base_quote_parsers_return_unchanged_archived_prices",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_cached_index_does_not_mutate_through_returned_matches.test_cached_index_does_not_mutate_through_returned_matches",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_champions_alias_finds_all_senior_events.test_champions_alias_finds_all_senior_events",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_competition_code_and_ids_are_searchable.test_competition_code_and_ids_are_searchable",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_mcp_existing_query_and_limit_arguments_remain_valid.test_mcp_existing_query_and_limit_arguments_remain_valid",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_numeric_competition_code_is_not_discarded.test_numeric_competition_code_is_not_discarded",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_official_pdf_hash.test_official_pdf_hash",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_offline_guard_blocks_native_socket_and_dns.test_offline_guard_blocks_native_socket_and_dns",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_pagination_keeps_every_real_row_without_duplicates.test_pagination_keeps_every_real_row_without_duplicates",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_pdf_missing_or_corrupt_is_explicitly_blocked.test_pdf_missing_or_corrupt_is_explicitly_blocked",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_real_under20_and_womens_rows_keep_printed_names_and_codes.test_real_under20_and_womens_rows_keep_printed_names_and_codes",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_roma_query_keeps_senior_roma.test_roma_query_keeps_senior_roma",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_scout_archived_replay_and_actual_stale_guard.test_scout_archived_replay_and_actual_stale_guard",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_search_odds_and_get_matches_find_same_real_events.test_search_odds_and_get_matches_find_same_real_events",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    },
+    {
+      "name": "test_match_search.MatchSearchTests.test_three_reported_events_have_exact_printed_identity.test_three_reported_events_have_exact_printed_identity",
+      "result": "ok",
+      "data_origin": "real_archived_pdf_and_policy_replay"
+    }
+  ]
+}
