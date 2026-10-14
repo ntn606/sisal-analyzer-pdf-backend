@@ -109,10 +109,14 @@ def evaluate(prediction, result, *, mode="real_only", _clock=utc_now):
         issues.append("prediction_not_pre_kickoff")
     if issues:
         return answer("not_evaluable", issues)
-    if (
-        dossier["decision"]["status"] == "no_bet"
-        or dossier["decision"]["candidate_id"] is None
-    ):
+    # Only candidate decisions are approved selections in evaluator V1.
+    # Watch observations remain in the journal, even when a quote is present.
+    decision_status = dossier["decision"]["status"]
+    if decision_status == "watch":
+        return answer("not_evaluable", ["watch_not_approved_selection"])
+    if decision_status == "no_bet":
+        return answer("not_evaluable", ["no_bet_decision"])
+    if dossier["decision"]["candidate_id"] is None:
         return answer("not_evaluable", ["no_selection_recorded"])
     candidate = next(
         (

@@ -135,5 +135,13 @@ void_all è una regola di esercizio esplicitamente scelta, non una regola
 attribuita a Sisal. Nessun ricalcolo della quota o regolamento del pagamento.
 
 Un rinvio/cancellazione non è automaticamente void; una istruzione di void
-verificata richiede settlement_proof separata. no_bet => not_evaluable.
+verificata richiede settlement_proof separata.
+
+Da A1.1, il valutatore applica le regole del mercato soltanto a candidate.
+watch => not_evaluable con watch_not_approved_selection, con o senza quota;
+no_bet => not_evaluable con no_bet_decision. Le osservazioni watch restano nel
+registro per analisi successive e non sono selezioni approvate. Questi controlli
+precedono anche l'istruzione di void. Per no_bet, il motivo no_selection_recorded
+di A1 è sostituito da no_bet_decision; nessun campo o firma API cambia.
+I controlli preliminari di integrità, fonte, identità e tempi mantengono priorità.
 Nessuna valutazione V1 certifica un pagamento ufficiale del bookmaker.

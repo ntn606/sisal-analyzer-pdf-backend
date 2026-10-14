@@ -1,3 +1,75 @@
+# Revisione A1.1 — idoneità della decisione alla valutazione
+
+Branch di partenza: research/football-evidence-validation-v1-a1-20261014.
+Commit verificato: 07c198bbfa9fdbdc9139dff2dbb12e49097e2d72.
+La revisione indipendente ha confermato la CI remota verde di A1 (informazione
+fornita dall'operatore). Tale risultato non certifica la nuova revisione A1.1.
+
+## Correzione e compatibilità
+
+Soltanto candidate accede alle regole del mercato. watch, con o senza quota,
+restituisce not_evaluable / watch_not_approved_selection. no_bet restituisce
+not_evaluable / no_bet_decision: motivo distinto dall'osservazione watch.
+
+Per no_bet il precedente motivo generico no_selection_recorded è quindi
+sostituito; no_selection_recorded resta per una selezione candidate mancante.
+Nessun campo JSON, versione dello schema o firma API cambia. Integrità,
+provenienza, identità e controlli temporali mantengono la precedenza: un esito
+non verificato continua a riportare il relativo blocco preliminare.
+
+Il registro non è modificato: watch resta conservabile, inclusi mercato e quota
+se presenti. Gli outcome diagnostici sono separati e non alterano lo snapshot.
+Non vengono conteggiati come selezioni approvate; non esiste un nuovo contatore
+o un calcolo di performance.
+
+## Risultati A1.1
+
+Esecuzione locale del 14 ottobre 2026, Python 3.12.14/Linux:
+
+| Gruppo | Test | Esito |
+|---|---:|---|
+| Contratto, schemi, CLI ed esempi | 8 | superati |
+| Valutatore (tre nuove regressioni) | 23 | superati |
+| Registro | 19 | superati |
+| Dossier e validazioni | 34 | superati |
+| Regressioni backend | 13 | superati |
+| Totale | 97 | superati, nessun fallimento |
+
+Runner invariato:
+python research/football-evidence-validation-v1/tools/check_offline.py
+
+Network attempts: 0. Live provider acquisitions: 0.
+Tutti i nuovi casi sono sintetici e dichiarati come tali.
+
+I test nuovi, eseguiti prima della modifica del valutatore, riproducono winning,
+losing e void per watch sia con quota sia senza alcuna evidenza odds. Dopo la
+correzione questi casi restituiscono sempre not_evaluable con il motivo specifico.
+Le stesse regressioni verificano la conservazione di watch nel registro, la
+persistenza degli outcome diagnostici e l'integrità dello snapshot originale.
+La terza regressione conferma winning/losing per candidate con quota valida.
+Il test no_bet preesistente verifica ora il suo motivo distinto.
+
+Regole Multigol, Over/Under, BTTS, combinazioni e My Combo: suite preesistente
+superata e AST di _settle identico al commit di partenza. Schemi JSON,
+generatori, registro, validator, CLI, esempi e API invariati. Cinque schemi
+rigenerati senza diff; Ruff F/E9 e formattazione superati; pip check superato.
+
+## CI e isolamento
+
+Workflow ereditato invariato:
+.github/workflows/football-evidence-validation-v1.yml
+
+Il nome del nuovo branch rientra nel filtro push del workflow, che usa gli
+stessi 97 test offline e dipendenze fissate. Un esito remoto della nuova revisione
+non va dedotto da quello di A1: sarà dichiarato soltanto se verificabile.
+Nessuna modifica di produzione, server.py, Railway, parser quote, Scout,
+Analyst, History V2 o Quant. Nessuna acquisizione live, credenziale reale,
+servizio aggiunto, merge o deployment.
+
+---
+
+## Rapporto storico A1, conservato per riferimento
+
 # Rapporto di verifica A1
 
 Esecuzione locale del 14 ottobre 2026 su Python 3.12.14/Linux.

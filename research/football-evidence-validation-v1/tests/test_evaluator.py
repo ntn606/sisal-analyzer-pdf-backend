@@ -257,4 +257,74 @@ class EvaluatorTests(unittest.TestCase):
             prediction, result(), mode="synthetic_test", _clock=lambda: AFTER
         )
         self.assertEqual(report["status"], "not_evaluable")
-        self.assertEqual(report["reasons"], ["no_selection_recorded"])
+        self.assertEqual(report["reasons"], ["no_bet_decision"])
+
+    def test_watch_with_quote_is_not_an_approved_selection(self):
+        self._assert_watch_not_evaluable(with_quote=True)
+
+    def test_watch_without_quote_is_not_an_approved_selection(self):
+        self._assert_watch_not_evaluable(with_quote=False)
+
+    def _assert_watch_not_evaluable(self, *, with_quote):
+        data = dossier()
+        data["decision"]["status"] = "watch"
+        if not with_quote:
+            data["candidates"][0]["quote_id"] = None
+            data["candidates"][0]["evidence_refs"] = ["stats-1"]
+            data["evidence"] = [e for e in data["evidence"] if e["kind"] != "odds"]
+        with tempfile.TemporaryDirectory() as directory:
+            registry = Registry(directory, mode="synthetic_test", _clock=lambda: NOW)
+            prediction = registry.record_prediction(data)
+            # Both a would-be win and a would-be loss remain observations.
+            # Explicit void instructions cannot settle a watch either.
+            outcomes = [result(), result({"home": 0, "away": 1}), result()]
+            outcomes[2]["settlement"] = "verified_void"
+            outcomes[2]["settlement_proof"] = source(
+                "void", "2026-10-16T20:10:00Z", "2026-10-16T20:05:00Z"
+            )
+            later = Registry(directory, mode="synthetic_test", _clock=lambda: AFTER)
+            for outcome in outcomes:
+                with self.subTest(
+                    with_quote=with_quote,
+                    score=outcome["regular_time"],
+                    settlement=outcome["settlement"],
+                ):
+                    report = evaluate(
+                        prediction, outcome, mode="synthetic_test", _clock=lambda: AFTER
+                    )
+                    self.assertEqual(report["status"], "not_evaluable")
+                    self.assertEqual(
+                        report["reasons"], ["watch_not_approved_selection"]
+                    )
+                    self.assertEqual(schema_errors(report, "evaluation"), [])
+                    saved = later.record_outcome(prediction["record_id"], outcome)
+                    self.assertEqual(saved["data"]["evaluation"], report)
+            # The original watch is retained byte-for-byte by the registry.
+            self.assertEqual(later.get(prediction["record_id"]), prediction)
+            self.assertEqual(later.verify()["count"], 4)
+            self.assertEqual(prediction["data"]["decision"]["status"], "watch")
+            self.assertEqual(
+                prediction["data"]["evaluated_quote"], "2.10" if with_quote else None
+            )
+
+    def test_candidate_with_valid_quote_remains_evaluable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            prediction = Registry(
+                directory, mode="synthetic_test", _clock=lambda: NOW
+            ).record_prediction(dossier())
+        self.assertEqual(prediction["data"]["decision"]["status"], "candidate")
+        self.assertEqual(prediction["data"]["evaluated_quote"], "2.10")
+        for score, expected in (
+            ({"home": 2, "away": 1}, "winning"),
+            ({"home": 0, "away": 1}, "losing"),
+        ):
+            with self.subTest(score=score):
+                report = evaluate(
+                    prediction,
+                    result(score),
+                    mode="synthetic_test",
+                    _clock=lambda: AFTER,
+                )
+                self.assertEqual(report["status"], expected)
+                self.assertEqual(report["reasons"], ["experimental_regular_time_rules"])
+                self.assertEqual(schema_errors(report, "evaluation"), [])

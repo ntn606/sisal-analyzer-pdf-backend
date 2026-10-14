@@ -42,6 +42,13 @@ effettivo. Un dossier approvato in precedenza può essere bloccato se nel fratte
 è scaduta una quota o è iniziata la partita. Una decisione no_bet può essere
 registrata senza selezione o quote; non è valutata come previsione perdente.
 
+Revisione A1.1: soltanto una decisione candidate entra nella valutazione del
+mercato. watch resta registrabile con o senza quota e restituisce not_evaluable
+con motivo watch_not_approved_selection; no_bet restituisce not_evaluable con
+motivo no_bet_decision. Entrambe restano escluse dalle selezioni approvate.
+Schemi, firme delle API, CLI e regole dei mercati sono invariati. I controlli
+di integrità, identità, provenienza e tempo precedono questa distinzione.
+
 ## Schemi e interfaccia
 
 I cinque schemi Draft 2020-12 sono in schemas/:
