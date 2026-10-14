@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.0.0",
+  "data_origin": "synthetic",
+  "diagnostic_only": true,
+  "ready_for_analysis": false,
+  "ready_for_quant": false,
+  "statistics_usable_in_production": false,
+  "analysis_at": "2026-10-14T10:00:00Z",
+  "identity": {
+    "match_id": "synthetic:fixture-1",
+    "home": {
+      "id": "synthetic:home",
+      "name": "Test Club A",
+      "category": "men_senior"
+    },
+    "away": {
+      "id": "synthetic:away",
+      "name": "Test Club B",
+      "category": "men_senior"
+    },
+    "competition": {
+      "id": "synthetic:league",
+      "name": "Synthetic League",
+      "season": "2026-2027"
+    },
+    "match_date": "2026-10-16",
+    "kickoff_utc": "2026-10-16T18:00:00Z",
+    "kickoff_local": "2026-10-16T20:00:00+02:00",
+    "timezone": "Europe/Rome",
+    "verification": "verified",
+    "proof": {
+      "source_id": "synthetic:identity",
+      "uri": "urn:synthetic:identity",
+      "content_sha256": "038347a36672ed3f4fa1bc8c5462ebbde826f78ed1fe9d03ed770aa5a8c6a08b",
+      "published_at": "2026-10-14T09:50:00Z",
+      "observed_at": "2026-10-14T09:55:00Z",
+      "availability_verified": true,
+      "verification": "verified",
+      "data_origin": "synthetic"
+    },
+    "sisal": {
+      "palinsesto": "synthetic-1",
+      "avvenimento": "synthetic-2",
+      "verified": true,
+      "proof": {
+        "source_id": "synthetic:sisal",
+        "uri": "urn:synthetic:sisal",
+        "content_sha256": "2d2281b142152d876f50b6c7ec3c7a9d88a3d3fa5817d3aaa41afae27a53079b",
+        "published_at": "2026-10-14T09:50:00Z",
+        "observed_at": "2026-10-14T09:55:00Z",
+        "availability_verified": true,
+        "verification": "verified",
+        "data_origin": "synthetic"
+      }
+    },
+    "providers": [
+      {
+        "provider": "synthetic-provider",
+        "match_id": "synthetic-provider:fixture",
+        "home_team_id": "synthetic-provider:home",
+        "away_team_id": "synthetic-provider:away",
+        "canonical_home_id": "synthetic:home",
+        "canonical_away_id": "synthetic:away",
+        "competition_id": "synthetic-provider:league",
+        "verified": true,
+        "canonical_competition_id": "synthetic:league",
+        "season": "2026-2027",
+        "kickoff_utc": "2026-10-16T18:00:00Z",
+        "proof": {
+          "source_id": "synthetic:provider",
+          "uri": "urn:synthetic:provider",
+          "content_sha256": "f64da17865cba0a64a91d926dc8a22ac862b5638387cc456223d941a619f5314",
+          "published_at": "2026-10-14T09:50:00Z",
+          "observed_at": "2026-10-14T09:55:00Z",
+          "availability_verified": true,
+          "verification": "verified",
+          "data_origin": "synthetic"
+        }
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "id": "quote-1",
+      "kind": "odds",
+      "assessment": "confirmed",
+      "use_as_evidence": true,
+      "source": {
+        "source_id": "synthetic:odds",
+        "uri": "urn:synthetic:odds",
+        "content_sha256": "e8fbd5c3bcfdf4583e76ed1f12aaadb1a1f1e289d7ce24b907a553144b5ee1fe",
+        "published_at": "2026-10-14T09:50:00Z",
+        "observed_at": "2026-10-14T09:55:00Z",
+        "availability_verified": true,
+        "verification": "verified",
+        "data_origin": "synthetic"
+      },
+      "payload": {
+        "market": {
+          "family": "1x2",
+          "selection": "home",
+          "period": "regular_time"
+        },
+        "decimal": "2.10",
+        "valid_until": "2026-10-14T10:55:00Z"
+      },
+      "limitations": []
+    },
+    {
+      "id": "stats-1",
+      "kind": "statistics",
+      "assessment": "confirmed",
+      "use_as_evidence": true,
+      "source": {
+        "source_id": "synthetic:stats",
+        "uri": "urn:synthetic:stats",
+        "content_sha256": "ff35152ef94035b58a83e213efdc08442e0d8f4e4a2db482fc97a47a1b76755a",
+        "published_at": "2026-10-14T09:50:00Z",
+        "observed_at": "2026-10-14T09:55:00Z",
+        "availability_verified": true,
+        "verification": "verified",
+        "data_origin": "synthetic"
+      },
+      "payload": {
+        "team_id": "synthetic:home",
+        "sample_size": 1,
+        "results": [
+          {
+            "match_id": "synthetic-provider:history-1",
+            "team_id": "synthetic:home",
+            "opponent_id": "synthetic:other",
+            "competition_id": "synthetic:league",
+            "season": "2026-2027",
+            "kickoff": "2026-10-12T18:00:00Z",
+            "status": "FINISHED",
+            "venue": "home",
+            "goals_for_90": 1,
+            "goals_against_90": 1,
+            "source": {
+              "source_id": "synthetic:history-1",
+              "uri": "urn:synthetic:history-1",
+              "content_sha256": "7f87c23a9164c46525d3fce819e35daab6c71149a3d0c072b1dd518d7c430394",
+              "published_at": "2026-10-12T20:20:00Z",
+              "observed_at": "2026-10-12T20:30:00Z",
+              "availability_verified": true,
+              "verification": "verified",
+              "data_origin": "synthetic"
+            }
+          }
+        ],
+        "sample_start": "2026-10-12T18:00:00Z",
+        "sample_end": "2026-10-12T18:00:00Z",
+        "limits": [
+          "Synthetic sample of one match; no inference"
+        ]
+      },
+      "limitations": [
+        "Synthetic only"
+      ]
+    },
+    {
+      "id": "news-1",
+      "kind": "news",
+      "assessment": "hypothesis",
+      "use_as_evidence": false,
+      "source": {
+        "source_id": "synthetic:news",
+        "uri": "urn:synthetic:news",
+        "content_sha256": "04e8754773af09385d0996da39bbf49811302f3e67fdbf1fdecf0d801c8d358b",
+        "published_at": "2026-10-14T09:50:00Z",
+        "observed_at": "2026-10-14T09:55:00Z",
+        "availability_verified": true,
+        "verification": "verified",
+        "data_origin": "synthetic"
+      },
+      "payload": {
+        "team_id": "synthetic:away",
+        "category": "probable_lineup",
+        "basis": "probable",
+        "description": "Synthetic probable lineup, not official",
+        "player_ids": []
+      },
+      "limitations": [
+        "Unconfirmed"
+      ]
+    },
+    {
+      "id": "news-missing",
+      "kind": "news",
+      "assessment": "missing",
+      "use_as_evidence": false,
+      "source": null,
+      "payload": null,
+      "limitations": [
+        "No synthetic official injury bulletin"
+      ]
+    },
+    {
+      "id": "news-conflict",
+      "kind": "news",
+      "assessment": "contradictory",
+      "use_as_evidence": false,
+      "source": {
+        "source_id": "synthetic:conflict",
+        "uri": "urn:synthetic:conflict",
+        "content_sha256": "446141ae9a23291fa1a2268fbed8c88dd88473791afc20eb90cb1a6dbea50e03",
+        "published_at": "2026-10-14T09:50:00Z",
+        "observed_at": "2026-10-14T09:55:00Z",
+        "availability_verified": true,
+        "verification": "verified",
+        "data_origin": "synthetic"
+      },
+      "payload": {
+        "team_id": "synthetic:home",
+        "category": "statement",
+        "basis": "reported",
+        "description": "Synthetic conflicting availability report",
+        "player_ids": []
+      },
+      "limitations": [
+        "Conflict unresolved; excluded"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "candidate-1",
+      "market": {
+        "family": "1x2",
+        "selection": "home",
+        "period": "regular_time"
+      },
+      "quote_id": "quote-1",
+      "favorable_reasons": [
+        "Synthetic operator-supplied review reason"
+      ],
+      "risks": [
+        "Unconfirmed lineup; small sample"
+      ],
+      "evidence_refs": [
+        "quote-1",
+        "stats-1"
+      ]
+    }
+  ],
+  "decision": {
+    "status": "candidate",
+    "candidate_id": "candidate-1",
+    "reasons": [
+      "Synthetic contract exercise, not a recommendation"
+    ]
+  }
+}

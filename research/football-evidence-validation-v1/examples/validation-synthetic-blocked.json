@@ -1,0 +1,37 @@
+{
+  "diagnostic_only": true,
+  "ready_for_analysis": false,
+  "ready_for_quant": false,
+  "statistics_usable_in_production": false,
+  "status": "blocked",
+  "reasons": [
+    "candidate-1:quote_unavailable",
+    "candidate-1:unusable_evidence_reference",
+    "identity_unverified",
+    "quote-1:availability_unverified",
+    "quote-1:odds_expired"
+  ],
+  "usable_evidence_ids": [
+    "stats-1"
+  ],
+  "withheld_evidence": [
+    {
+      "id": "news-1",
+      "assessment": "hypothesis"
+    },
+    {
+      "id": "news-missing",
+      "assessment": "missing"
+    },
+    {
+      "id": "news-conflict",
+      "assessment": "contradictory"
+    }
+  ],
+  "data_origin": "synthetic",
+  "freshness_policy": {
+    "odds_max_age_seconds": 3600,
+    "history_max_age_days": 180
+  },
+  "verification_scope": "operator_attested_offline_not_independently_certified"
+}

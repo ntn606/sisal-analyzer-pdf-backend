@@ -1,0 +1,1369 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sisal:football-validation:v1:dossier",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "data_origin": {
+      "enum": [
+        "synthetic",
+        "archived_real"
+      ]
+    },
+    "diagnostic_only": {
+      "const": true
+    },
+    "ready_for_analysis": {
+      "const": false
+    },
+    "ready_for_quant": {
+      "const": false
+    },
+    "statistics_usable_in_production": {
+      "const": false
+    },
+    "analysis_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "identity": {
+      "$ref": "#/$defs/identity"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      },
+      "maxItems": 200
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/candidate"
+      },
+      "maxItems": 200
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "candidate",
+            "watch",
+            "no_bet"
+          ]
+        },
+        "candidate_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "maxItems": 200,
+          "minItems": 1
+        }
+      },
+      "required": [
+        "status",
+        "candidate_id",
+        "reasons"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "data_origin",
+    "diagnostic_only",
+    "ready_for_analysis",
+    "ready_for_quant",
+    "statistics_usable_in_production",
+    "analysis_at",
+    "identity",
+    "evidence",
+    "candidates",
+    "decision"
+  ],
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "market": {
+          "$ref": "#/$defs/market"
+        },
+        "quote_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "favorable_reasons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "maxItems": 200
+        },
+        "risks": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "maxItems": 200
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+          },
+          "maxItems": 200
+        }
+      },
+      "required": [
+        "id",
+        "market",
+        "quote_id",
+        "favorable_reasons",
+        "risks",
+        "evidence_refs"
+      ]
+    },
+    "evidence": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            "kind": {
+              "const": "odds"
+            },
+            "assessment": {
+              "enum": [
+                "confirmed",
+                "hypothesis",
+                "contradictory"
+              ]
+            },
+            "use_as_evidence": {
+              "type": "boolean"
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "market": {
+                  "$ref": "#/$defs/market"
+                },
+                "decimal": {
+                  "type": "string",
+                  "pattern": "^[0-9]{1,4}(\\.[0-9]{1,6})?$"
+                },
+                "valid_until": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "market",
+                "decimal",
+                "valid_until"
+              ]
+            },
+            "limitations": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "maxItems": 200
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "assessment",
+            "use_as_evidence",
+            "source",
+            "payload",
+            "limitations"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            "kind": {
+              "const": "statistics"
+            },
+            "assessment": {
+              "enum": [
+                "confirmed",
+                "hypothesis",
+                "contradictory"
+              ]
+            },
+            "use_as_evidence": {
+              "type": "boolean"
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "team_id": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+                },
+                "sample_size": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 200
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/historical_match"
+                  },
+                  "maxItems": 200
+                },
+                "sample_start": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "sample_end": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "limits": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1000
+                  },
+                  "maxItems": 200
+                }
+              },
+              "required": [
+                "team_id",
+                "sample_size",
+                "results",
+                "sample_start",
+                "sample_end",
+                "limits"
+              ]
+            },
+            "limitations": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "maxItems": 200
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "assessment",
+            "use_as_evidence",
+            "source",
+            "payload",
+            "limitations"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            "kind": {
+              "const": "news"
+            },
+            "assessment": {
+              "enum": [
+                "confirmed",
+                "hypothesis",
+                "contradictory"
+              ]
+            },
+            "use_as_evidence": {
+              "type": "boolean"
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "team_id": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+                },
+                "category": {
+                  "enum": [
+                    "absence",
+                    "suspension",
+                    "probable_lineup",
+                    "official_lineup",
+                    "statement"
+                  ]
+                },
+                "basis": {
+                  "enum": [
+                    "official",
+                    "reported",
+                    "probable"
+                  ]
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1000
+                },
+                "player_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+                  },
+                  "maxItems": 200
+                }
+              },
+              "required": [
+                "team_id",
+                "category",
+                "basis",
+                "description",
+                "player_ids"
+              ]
+            },
+            "limitations": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "maxItems": 200
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "assessment",
+            "use_as_evidence",
+            "source",
+            "payload",
+            "limitations"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            "kind": {
+              "enum": [
+                "odds",
+                "statistics",
+                "news"
+              ]
+            },
+            "assessment": {
+              "const": "missing"
+            },
+            "use_as_evidence": {
+              "const": false
+            },
+            "source": {
+              "type": "null"
+            },
+            "payload": {
+              "type": "null"
+            },
+            "limitations": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "maxItems": 200,
+              "minItems": 1
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "assessment",
+            "use_as_evidence",
+            "source",
+            "payload",
+            "limitations"
+          ]
+        }
+      ]
+    },
+    "historical_match": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "match_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "team_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "opponent_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "competition_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "season": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "kickoff": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "enum": [
+            "FINISHED",
+            "POSTPONED",
+            "CANCELLED",
+            "IN_PLAY"
+          ]
+        },
+        "venue": {
+          "enum": [
+            "home",
+            "away"
+          ]
+        },
+        "goals_for_90": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "goals_against_90": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        }
+      },
+      "required": [
+        "match_id",
+        "team_id",
+        "opponent_id",
+        "competition_id",
+        "season",
+        "kickoff",
+        "status",
+        "venue",
+        "goals_for_90",
+        "goals_against_90",
+        "source"
+      ]
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "match_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "home": {
+          "$ref": "#/$defs/team"
+        },
+        "away": {
+          "$ref": "#/$defs/team"
+        },
+        "competition": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "season": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "season"
+          ]
+        },
+        "match_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "kickoff_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "kickoff_local": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timezone": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "verification": {
+          "enum": [
+            "verified",
+            "identity_unverified"
+          ]
+        },
+        "proof": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sisal": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "palinsesto": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+                },
+                "avvenimento": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+                },
+                "verified": {
+                  "const": true
+                },
+                "proof": {
+                  "$ref": "#/$defs/source"
+                }
+              },
+              "required": [
+                "palinsesto",
+                "avvenimento",
+                "verified",
+                "proof"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "providers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/provider_id"
+          },
+          "maxItems": 200
+        }
+      },
+      "required": [
+        "match_id",
+        "home",
+        "away",
+        "competition",
+        "match_date",
+        "kickoff_utc",
+        "kickoff_local",
+        "timezone",
+        "verification",
+        "proof",
+        "sisal",
+        "providers"
+      ]
+    },
+    "market": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "1x2"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "enum": [
+                "home",
+                "draw",
+                "away"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "double_chance"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "enum": [
+                "home_draw",
+                "home_away",
+                "draw_away"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "over_under"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "direction": {
+                  "enum": [
+                    "over",
+                    "under"
+                  ]
+                },
+                "line": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 50
+                },
+                "scope": {
+                  "enum": [
+                    "match",
+                    "home",
+                    "away"
+                  ]
+                }
+              },
+              "required": [
+                "direction",
+                "line",
+                "scope"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "btts"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "enum": [
+                "yes",
+                "no"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "multigoal"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "min": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 50
+                },
+                "max": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 50
+                },
+                "scope": {
+                  "enum": [
+                    "match",
+                    "home",
+                    "away"
+                  ]
+                }
+              },
+              "required": [
+                "min",
+                "max",
+                "scope"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "unsupported"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1000
+                },
+                "required_data": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1000
+                  },
+                  "maxItems": 200,
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "label",
+                "required_data"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "enum": [
+                "combination",
+                "my_combo"
+              ]
+            },
+            "period": {
+              "const": "regular_time"
+            },
+            "selection": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "legs": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/simple_market"
+                  },
+                  "maxItems": 10,
+                  "minItems": 2
+                },
+                "void_policy": {
+                  "enum": [
+                    "unknown",
+                    "void_all"
+                  ]
+                }
+              },
+              "required": [
+                "legs",
+                "void_policy"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        }
+      ]
+    },
+    "provider_id": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "match_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "home_team_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "away_team_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "competition_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "canonical_competition_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "canonical_home_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "canonical_away_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "kickoff_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "season": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "verified": {
+          "const": true
+        },
+        "proof": {
+          "$ref": "#/$defs/source"
+        }
+      },
+      "required": [
+        "provider",
+        "match_id",
+        "home_team_id",
+        "away_team_id",
+        "competition_id",
+        "canonical_competition_id",
+        "canonical_home_id",
+        "canonical_away_id",
+        "kickoff_utc",
+        "season",
+        "verified",
+        "proof"
+      ]
+    },
+    "simple_market": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "1x2"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "enum": [
+                "home",
+                "draw",
+                "away"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "double_chance"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "enum": [
+                "home_draw",
+                "home_away",
+                "draw_away"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "over_under"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "direction": {
+                  "enum": [
+                    "over",
+                    "under"
+                  ]
+                },
+                "line": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 50
+                },
+                "scope": {
+                  "enum": [
+                    "match",
+                    "home",
+                    "away"
+                  ]
+                }
+              },
+              "required": [
+                "direction",
+                "line",
+                "scope"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "btts"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "enum": [
+                "yes",
+                "no"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "multigoal"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "min": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 50
+                },
+                "max": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 50
+                },
+                "scope": {
+                  "enum": [
+                    "match",
+                    "home",
+                    "away"
+                  ]
+                }
+              },
+              "required": [
+                "min",
+                "max",
+                "scope"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "family": {
+              "const": "unsupported"
+            },
+            "period": {
+              "enum": [
+                "regular_time",
+                "first_half",
+                "extra_time",
+                "penalties"
+              ]
+            },
+            "selection": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1000
+                },
+                "required_data": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1000
+                  },
+                  "maxItems": 200,
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "label",
+                "required_data"
+              ]
+            }
+          },
+          "required": [
+            "family",
+            "period",
+            "selection"
+          ]
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "uri": {
+          "type": "string",
+          "format": "uri",
+          "maxLength": 2000
+        },
+        "content_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "published_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "availability_verified": {
+          "type": "boolean"
+        },
+        "verification": {
+          "enum": [
+            "verified",
+            "reported_unconfirmed"
+          ]
+        },
+        "data_origin": {
+          "enum": [
+            "synthetic",
+            "archived_real"
+          ]
+        }
+      },
+      "required": [
+        "source_id",
+        "uri",
+        "content_sha256",
+        "published_at",
+        "observed_at",
+        "availability_verified",
+        "verification",
+        "data_origin"
+      ]
+    },
+    "team": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "category": {
+          "enum": [
+            "men_senior",
+            "women_senior",
+            "u19",
+            "u20",
+            "reserve",
+            "other"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "category"
+      ]
+    }
+  }
+}

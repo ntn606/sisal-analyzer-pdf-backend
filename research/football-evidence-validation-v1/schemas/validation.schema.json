@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sisal:football-validation:v1:validation",
+  "$ref": "#/$defs/validation",
+  "$defs": {
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "diagnostic_only": {
+          "const": true
+        },
+        "ready_for_analysis": {
+          "const": false
+        },
+        "ready_for_quant": {
+          "const": false
+        },
+        "statistics_usable_in_production": {
+          "const": false
+        },
+        "status": {
+          "enum": [
+            "validated",
+            "blocked"
+          ]
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "maxItems": 200
+        },
+        "usable_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+          },
+          "maxItems": 200
+        },
+        "withheld_evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+              },
+              "assessment": {
+                "enum": [
+                  "confirmed",
+                  "hypothesis",
+                  "contradictory",
+                  "missing"
+                ]
+              },
+              "reasons": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1000
+                },
+                "maxItems": 200
+              }
+            },
+            "required": [
+              "id",
+              "assessment"
+            ]
+          },
+          "maxItems": 200
+        },
+        "data_origin": {
+          "enum": [
+            "synthetic",
+            "archived_real"
+          ]
+        },
+        "freshness_policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "odds_max_age_seconds": {
+              "const": 3600
+            },
+            "history_max_age_days": {
+              "const": 180
+            }
+          },
+          "required": [
+            "odds_max_age_seconds",
+            "history_max_age_days"
+          ]
+        },
+        "verification_scope": {
+          "const": "operator_attested_offline_not_independently_certified"
+        }
+      },
+      "required": [
+        "diagnostic_only",
+        "ready_for_analysis",
+        "ready_for_quant",
+        "statistics_usable_in_production",
+        "status",
+        "reasons",
+        "usable_evidence_ids",
+        "withheld_evidence",
+        "data_origin",
+        "freshness_policy",
+        "verification_scope"
+      ]
+    }
+  }
+}

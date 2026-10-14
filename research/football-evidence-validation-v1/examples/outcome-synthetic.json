@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "diagnostic_only": true,
+  "ready_for_analysis": false,
+  "ready_for_quant": false,
+  "statistics_usable_in_production": false,
+  "sequence": 2,
+  "record_id": "1a11a682-6870-4915-8438-962cfa54ab47",
+  "record_type": "outcome",
+  "recorded_at": "2026-10-16T21:00:00Z",
+  "previous_hash": "90ac267040bf53ae05e7fabe82cac8defc7d57f2d683284efc270bb8177ce034",
+  "mode": "synthetic_test",
+  "data": {
+    "prediction_id": "27a52ba1-e517-4fdb-af6c-53d471a839ee",
+    "prediction_hash": "90ac267040bf53ae05e7fabe82cac8defc7d57f2d683284efc270bb8177ce034",
+    "result": {
+      "schema_version": "1.0.0",
+      "match_id": "synthetic:fixture-1",
+      "home_team_id": "synthetic:home",
+      "away_team_id": "synthetic:away",
+      "competition_id": "synthetic:league",
+      "season": "2026-2027",
+      "kickoff_utc": "2026-10-16T18:00:00Z",
+      "status": "FINISHED",
+      "regular_time": {
+        "home": 2,
+        "away": 1
+      },
+      "extra_time": null,
+      "penalties": null,
+      "finished_at": "2026-10-16T20:00:00Z",
+      "source": {
+        "source_id": "synthetic:result",
+        "uri": "urn:synthetic:result",
+        "content_sha256": "d0d5b1ab3e6c0b743b8caedaaf4d754534958153d1f8b4c90f3716f99f23178a",
+        "published_at": "2026-10-16T20:05:00Z",
+        "observed_at": "2026-10-16T20:10:00Z",
+        "availability_verified": true,
+        "verification": "verified",
+        "data_origin": "synthetic"
+      },
+      "settlement": "normal",
+      "settlement_proof": null
+    },
+    "evaluation": {
+      "diagnostic_only": true,
+      "ready_for_analysis": false,
+      "ready_for_quant": false,
+      "statistics_usable_in_production": false,
+      "status": "winning",
+      "reasons": [
+        "experimental_regular_time_rules"
+      ],
+      "rules_version": "experimental-90min-v1",
+      "settlement_authority": "diagnostic_not_bookmaker",
+      "data_origin": "synthetic"
+    }
+  },
+  "content_hash": "d2a042ae8e85f932d22fe33e122db0c06f6da79d5d8f9711ced3c8f633c0c92e"
+}

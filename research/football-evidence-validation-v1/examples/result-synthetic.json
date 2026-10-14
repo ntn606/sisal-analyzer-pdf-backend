@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "match_id": "synthetic:fixture-1",
+  "home_team_id": "synthetic:home",
+  "away_team_id": "synthetic:away",
+  "competition_id": "synthetic:league",
+  "season": "2026-2027",
+  "kickoff_utc": "2026-10-16T18:00:00Z",
+  "status": "FINISHED",
+  "regular_time": {
+    "home": 2,
+    "away": 1
+  },
+  "extra_time": null,
+  "penalties": null,
+  "finished_at": "2026-10-16T20:00:00Z",
+  "source": {
+    "source_id": "synthetic:result",
+    "uri": "urn:synthetic:result",
+    "content_sha256": "d0d5b1ab3e6c0b743b8caedaaf4d754534958153d1f8b4c90f3716f99f23178a",
+    "published_at": "2026-10-16T20:05:00Z",
+    "observed_at": "2026-10-16T20:10:00Z",
+    "availability_verified": true,
+    "verification": "verified",
+    "data_origin": "synthetic"
+  },
+  "settlement": "normal",
+  "settlement_proof": null
+}

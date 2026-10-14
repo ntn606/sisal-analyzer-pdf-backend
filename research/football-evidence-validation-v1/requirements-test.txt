@@ -1,0 +1,2 @@
+# Standalone prototype dependency; production requirements.txt is unchanged.
+jsonschema==4.26.0

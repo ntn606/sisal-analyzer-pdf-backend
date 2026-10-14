@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sisal:football-validation:v1:evaluation",
+  "$ref": "#/$defs/evaluation",
+  "$defs": {
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "diagnostic_only": {
+          "const": true
+        },
+        "ready_for_analysis": {
+          "const": false
+        },
+        "ready_for_quant": {
+          "const": false
+        },
+        "statistics_usable_in_production": {
+          "const": false
+        },
+        "status": {
+          "enum": [
+            "winning",
+            "losing",
+            "void",
+            "not_evaluable"
+          ]
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "maxItems": 200
+        },
+        "rules_version": {
+          "const": "experimental-90min-v1"
+        },
+        "settlement_authority": {
+          "const": "diagnostic_not_bookmaker"
+        },
+        "data_origin": {
+          "enum": [
+            "synthetic",
+            "archived_real",
+            "unvalidated"
+          ]
+        }
+      },
+      "required": [
+        "diagnostic_only",
+        "ready_for_analysis",
+        "ready_for_quant",
+        "statistics_usable_in_production",
+        "status",
+        "reasons",
+        "rules_version",
+        "settlement_authority",
+        "data_origin"
+      ]
+    }
+  }
+}

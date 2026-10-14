@@ -1,0 +1,234 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sisal:football-validation:v1:result",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "match_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "home_team_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "away_team_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "competition_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "season": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "kickoff_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "enum": [
+        "FINISHED",
+        "CANCELLED",
+        "POSTPONED",
+        "IN_PLAY"
+      ]
+    },
+    "regular_time": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "home": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "away": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "required": [
+            "home",
+            "away"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "extra_time": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "home": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "away": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "required": [
+            "home",
+            "away"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "penalties": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "home": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "away": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "required": [
+            "home",
+            "away"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "finished_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source": {
+      "$ref": "#/$defs/source"
+    },
+    "settlement": {
+      "enum": [
+        "normal",
+        "verified_void",
+        "unknown"
+      ]
+    },
+    "settlement_proof": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/source"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "match_id",
+    "home_team_id",
+    "away_team_id",
+    "competition_id",
+    "season",
+    "kickoff_utc",
+    "status",
+    "regular_time",
+    "extra_time",
+    "penalties",
+    "finished_at",
+    "source",
+    "settlement",
+    "settlement_proof"
+  ],
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "uri": {
+          "type": "string",
+          "format": "uri",
+          "maxLength": 2000
+        },
+        "content_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "published_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "availability_verified": {
+          "type": "boolean"
+        },
+        "verification": {
+          "enum": [
+            "verified",
+            "reported_unconfirmed"
+          ]
+        },
+        "data_origin": {
+          "enum": [
+            "synthetic",
+            "archived_real"
+          ]
+        }
+      },
+      "required": [
+        "source_id",
+        "uri",
+        "content_sha256",
+        "published_at",
+        "observed_at",
+        "availability_verified",
+        "verification",
+        "data_origin"
+      ]
+    }
+  }
+}
