@@ -1,0 +1,2853 @@
+{
+  "schema_version": "1.0.0",
+  "diagnostic_only": true,
+  "ready_for_analysis": false,
+  "ready_for_quant": false,
+  "statistics_usable_in_production": false,
+  "status": "parsed",
+  "reasons": [],
+  "source": {
+    "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+    "sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+    "retrieved_at": "2026-10-15T20:42:15.875743Z",
+    "data_origin": "archived_real",
+    "publisher_timestamp_text": "15/10/2026 22:08:15",
+    "publisher_timezone": null,
+    "published_at_utc": null
+  },
+  "event": {
+    "palinsesto": "36421",
+    "avvenimento": "6071",
+    "event_key": "36421/6071",
+    "competition_code": "ITA4",
+    "home": "Budoni",
+    "away": "Ssd Albalonga",
+    "match_date": "2026-10-18",
+    "local_time": "15:00",
+    "date_resolution": {
+      "value": "2026-10-18",
+      "printed": "domenica, 18 ottobre",
+      "year_explicit": false,
+      "basis": "weekday_day_month_and_publisher_year_context"
+    },
+    "category": null,
+    "category_status": "not_explicitly_printed",
+    "timezone": null,
+    "kickoff_utc": null,
+    "identity_scope": "printed_sisal_event_only_no_cross_provider_mapping",
+    "identity_bbox": [
+      13.190639999999998,
+      96.72000000000003,
+      311.0304,
+      107.15999999999997
+    ],
+    "identity_words": [
+      {
+        "text": "15.00",
+        "bbox": [
+          15.7106,
+          97.9736,
+          32.2172,
+          106.0136
+        ]
+      },
+      {
+        "text": "ITA4",
+        "bbox": [
+          42.5885,
+          97.9736,
+          56.521,
+          106.0136
+        ]
+      },
+      {
+        "text": "36421",
+        "bbox": [
+          65.7506,
+          98.5284,
+          84.0913,
+          106.5684
+        ]
+      },
+      {
+        "text": "6071",
+        "bbox": [
+          88.6683,
+          98.5284,
+          103.3409,
+          106.5684
+        ]
+      },
+      {
+        "text": "Budoni",
+        "bbox": [
+          108.1116,
+          98.5284,
+          130.8284,
+          106.5684
+        ]
+      },
+      {
+        "text": "Ssd",
+        "bbox": [
+          210.1135,
+          98.5284,
+          222.2119,
+          106.5684
+        ]
+      },
+      {
+        "text": "Albalonga",
+        "bbox": [
+          224.046,
+          98.5284,
+          255.9331,
+          106.5684
+        ]
+      }
+    ],
+    "page": 2,
+    "identity_status": "printed_identity_matched"
+  },
+  "selections": [
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 1,
+      "range_max": 2,
+      "selection": "range",
+      "decimal_original": "2,10",
+      "decimal": "2.10",
+      "raw_cell_text": "2,10",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        311.0304,
+        96.72000000000003,
+        328.1904,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          312.7098,
+          97.9736,
+          325.5483,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        311.0304,
+        73.79999999999995,
+        328.1904,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        311.0304,
+        63.24000000000001,
+        345.4704,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 1,
+      "range_max": 2,
+      "selection": "altro",
+      "decimal_original": "1,52",
+      "decimal": "1.52",
+      "raw_cell_text": "1,52",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        328.1904,
+        96.72000000000003,
+        345.4704,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          329.9909,
+          97.9736,
+          342.8294,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        328.1904,
+        73.79999999999995,
+        345.4704,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        311.0304,
+        63.24000000000001,
+        345.4704,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 1,
+      "range_max": 3,
+      "selection": "range",
+      "decimal_original": "1,42",
+      "decimal": "1.42",
+      "raw_cell_text": "1,42",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        345.4704,
+        96.72000000000003,
+        362.7504,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          347.2698,
+          97.9736,
+          360.1083,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        345.4704,
+        73.79999999999995,
+        362.7504,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        345.4704,
+        63.24000000000001,
+        380.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 1,
+      "range_max": 3,
+      "selection": "altro",
+      "decimal_original": "2,35",
+      "decimal": "2.35",
+      "raw_cell_text": "2,35",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        362.7504,
+        96.72000000000003,
+        380.0304,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          364.5509,
+          97.9736,
+          377.3894,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        362.7504,
+        73.79999999999995,
+        380.0304,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        345.4704,
+        63.24000000000001,
+        380.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 1,
+      "range_max": 4,
+      "selection": "range",
+      "decimal_original": "1,16",
+      "decimal": "1.16",
+      "raw_cell_text": "1,16",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        380.0304,
+        96.72000000000003,
+        397.1904,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          381.7108,
+          97.9736,
+          394.5494,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        380.0304,
+        73.79999999999995,
+        397.1904,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        380.0304,
+        63.24000000000001,
+        414.4704,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 1,
+      "range_max": 4,
+      "selection": "altro",
+      "decimal_original": "3,90",
+      "decimal": "3.90",
+      "raw_cell_text": "3,90",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        397.1904,
+        96.72000000000003,
+        414.4704,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          398.9908,
+          97.9736,
+          411.8293,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        397.1904,
+        73.79999999999995,
+        414.4704,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        380.0304,
+        63.24000000000001,
+        414.4704,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 1,
+      "range_max": 5,
+      "selection": "range",
+      "decimal_original": "1,05",
+      "decimal": "1.05",
+      "raw_cell_text": "1,05",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        414.4704,
+        96.72000000000003,
+        431.7504,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          416.2708,
+          97.9736,
+          429.1093,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        414.4704,
+        73.79999999999995,
+        431.7504,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        414.4704,
+        63.24000000000001,
+        449.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 1,
+      "range_max": 5,
+      "selection": "altro",
+      "decimal_original": "6",
+      "decimal": "6",
+      "raw_cell_text": "6",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        431.7504,
+        96.72000000000003,
+        449.0304,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          438.1108,
+          97.9736,
+          441.779,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        431.7504,
+        73.79999999999995,
+        449.0304,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        414.4704,
+        63.24000000000001,
+        449.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 1,
+      "range_max": 6,
+      "selection": "range",
+      "decimal_original": "1,01",
+      "decimal": "1.01",
+      "raw_cell_text": "1,01",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        449.0304,
+        96.72000000000003,
+        466.1904,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          450.7108,
+          97.9736,
+          463.5493,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        449.0304,
+        73.79999999999995,
+        466.1904,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        449.0304,
+        63.24000000000001,
+        483.4704,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 1,
+      "range_max": 6,
+      "selection": "altro",
+      "decimal_original": "8",
+      "decimal": "8",
+      "raw_cell_text": "8",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        466.1904,
+        96.72000000000003,
+        483.4704,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          472.5508,
+          97.9736,
+          476.219,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        466.1904,
+        73.79999999999995,
+        483.4704,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        449.0304,
+        63.24000000000001,
+        483.4704,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 2,
+      "range_max": 3,
+      "selection": "range",
+      "decimal_original": "1,95",
+      "decimal": "1.95",
+      "raw_cell_text": "1,95",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        483.4704,
+        96.72000000000003,
+        500.7504,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          485.2708,
+          97.9736,
+          498.1093,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        483.4704,
+        73.79999999999995,
+        500.7504,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        483.4704,
+        63.24000000000001,
+        518.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 2,
+      "range_max": 3,
+      "selection": "altro",
+      "decimal_original": "1,62",
+      "decimal": "1.62",
+      "raw_cell_text": "1,62",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        500.7504,
+        96.72000000000003,
+        518.0304,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          502.5508,
+          97.9736,
+          515.3893,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        500.7504,
+        73.79999999999995,
+        518.0304,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        483.4704,
+        63.24000000000001,
+        518.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 2,
+      "range_max": 4,
+      "selection": "range",
+      "decimal_original": "1,47",
+      "decimal": "1.47",
+      "raw_cell_text": "1,47",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        518.0304,
+        96.72000000000003,
+        535.1904,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          519.7108,
+          97.9736,
+          532.5493,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        518.0304,
+        73.79999999999995,
+        535.1904,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        518.0304,
+        63.24000000000001,
+        552.4704,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 2,
+      "range_max": 4,
+      "selection": "altro",
+      "decimal_original": "2,25",
+      "decimal": "2.25",
+      "raw_cell_text": "2,25",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        535.1904,
+        96.72000000000003,
+        552.4704,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          536.9908,
+          97.9736,
+          549.8293,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        535.1904,
+        73.79999999999995,
+        552.4704,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        518.0304,
+        63.24000000000001,
+        552.4704,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 2,
+      "range_max": 5,
+      "selection": "range",
+      "decimal_original": "1,30",
+      "decimal": "1.30",
+      "raw_cell_text": "1,30",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        552.4704,
+        96.72000000000003,
+        569.7504,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          554.2708,
+          97.9736,
+          567.1093,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        552.4704,
+        73.79999999999995,
+        569.7504,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        552.4704,
+        63.24000000000001,
+        587.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 2,
+      "range_max": 5,
+      "selection": "altro",
+      "decimal_original": "2,80",
+      "decimal": "2.80",
+      "raw_cell_text": "2,80",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        569.7504,
+        96.72000000000003,
+        587.0304,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          571.5508,
+          97.9736,
+          584.3893,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        569.7504,
+        73.79999999999995,
+        587.0304,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        552.4704,
+        63.24000000000001,
+        587.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 2,
+      "range_max": 6,
+      "selection": "range",
+      "decimal_original": "1,23",
+      "decimal": "1.23",
+      "raw_cell_text": "1,23",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        587.0304,
+        96.72000000000003,
+        604.1904,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          588.7108,
+          97.9736,
+          601.5493,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        587.0304,
+        73.79999999999995,
+        604.1904,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        587.0304,
+        63.24000000000001,
+        621.4704,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 2,
+      "range_max": 6,
+      "selection": "altro",
+      "decimal_original": "3,20",
+      "decimal": "3.20",
+      "raw_cell_text": "3,20",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        604.1904,
+        96.72000000000003,
+        621.4704,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          605.9908,
+          97.9736,
+          618.8293,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        604.1904,
+        73.79999999999995,
+        621.4704,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        587.0304,
+        63.24000000000001,
+        621.4704,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 3,
+      "range_max": 4,
+      "selection": "range",
+      "decimal_original": "2,45",
+      "decimal": "2.45",
+      "raw_cell_text": "2,45",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        621.4704,
+        96.72000000000003,
+        638.7504,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          623.2709,
+          97.9736,
+          636.1094,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        621.4704,
+        73.79999999999995,
+        638.7504,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        621.4704,
+        63.24000000000001,
+        656.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 3,
+      "range_max": 4,
+      "selection": "altro",
+      "decimal_original": "1,40",
+      "decimal": "1.40",
+      "raw_cell_text": "1,40",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        638.7504,
+        96.72000000000003,
+        656.0304,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          640.5493,
+          97.9736,
+          653.3878,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        638.7504,
+        73.79999999999995,
+        656.0304,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        621.4704,
+        63.24000000000001,
+        656.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 3,
+      "range_max": 5,
+      "selection": "range",
+      "decimal_original": "2,05",
+      "decimal": "2.05",
+      "raw_cell_text": "2,05",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        656.0304,
+        96.72000000000003,
+        673.1904,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          657.7107,
+          97.9736,
+          670.5492,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        656.0304,
+        73.79999999999995,
+        673.1904,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        656.0304,
+        63.24000000000001,
+        690.4703999999999,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 3,
+      "range_max": 5,
+      "selection": "altro",
+      "decimal_original": "1,57",
+      "decimal": "1.57",
+      "raw_cell_text": "1,57",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        673.1904,
+        96.72000000000003,
+        690.4703999999999,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          674.9907,
+          97.9736,
+          687.8292,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        673.1904,
+        73.79999999999995,
+        690.4703999999999,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        656.0304,
+        63.24000000000001,
+        690.4703999999999,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 3,
+      "range_max": 6,
+      "selection": "range",
+      "decimal_original": "1,85",
+      "decimal": "1.85",
+      "raw_cell_text": "1,85",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        690.4703999999999,
+        96.72000000000003,
+        707.7504,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          692.2707,
+          97.9736,
+          705.1092,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        690.4703999999999,
+        73.79999999999995,
+        707.7504,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        690.4703999999999,
+        63.24000000000001,
+        725.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 3,
+      "range_max": 6,
+      "selection": "altro",
+      "decimal_original": "1,70",
+      "decimal": "1.70",
+      "raw_cell_text": "1,70",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        707.7504,
+        96.72000000000003,
+        725.0304,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          709.5507,
+          97.9736,
+          722.3892,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        707.7504,
+        73.79999999999995,
+        725.0304,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        690.4703999999999,
+        63.24000000000001,
+        725.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 4,
+      "range_max": 5,
+      "selection": "range",
+      "decimal_original": "3,70",
+      "decimal": "3.70",
+      "raw_cell_text": "3,70",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        725.0304,
+        96.72000000000003,
+        742.1904,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          726.7107,
+          97.9736,
+          739.5492,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        725.0304,
+        73.79999999999995,
+        742.1904,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        725.0304,
+        63.24000000000001,
+        759.4703999999999,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 4,
+      "range_max": 5,
+      "selection": "altro",
+      "decimal_original": "1,18",
+      "decimal": "1.18",
+      "raw_cell_text": "1,18",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        742.1904,
+        96.72000000000003,
+        759.4703999999999,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          743.9907,
+          97.9736,
+          756.8292,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        742.1904,
+        73.79999999999995,
+        759.4703999999999,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        725.0304,
+        63.24000000000001,
+        759.4703999999999,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 4,
+      "range_max": 6,
+      "selection": "range",
+      "decimal_original": "3,20",
+      "decimal": "3.20",
+      "raw_cell_text": "3,20",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        759.4703999999999,
+        96.72000000000003,
+        776.7504,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          761.2707,
+          97.9736,
+          774.1092,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        759.4703999999999,
+        73.79999999999995,
+        776.7504,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        759.4703999999999,
+        63.24000000000001,
+        794.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 4,
+      "range_max": 6,
+      "selection": "altro",
+      "decimal_original": "1,24",
+      "decimal": "1.24",
+      "raw_cell_text": "1,24",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        776.7504,
+        96.72000000000003,
+        794.0304,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          778.5507,
+          97.9736,
+          791.3892,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        776.7504,
+        73.79999999999995,
+        794.0304,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        759.4703999999999,
+        63.24000000000001,
+        794.0304,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 5,
+      "range_max": 6,
+      "selection": "range",
+      "decimal_original": "7",
+      "decimal": "7",
+      "raw_cell_text": "7",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        794.0304,
+        96.72000000000003,
+        811.1904,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          800.2707,
+          97.9736,
+          803.9388,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        794.0304,
+        73.79999999999995,
+        811.1904,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        794.0304,
+        63.24000000000001,
+        828.4703999999999,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    },
+    {
+      "event_key": "36421/6071",
+      "market_type": "multigol_match",
+      "scope": "match",
+      "period": null,
+      "range_min": 5,
+      "range_max": 6,
+      "selection": "altro",
+      "decimal_original": "1,02",
+      "decimal": "1.02",
+      "raw_cell_text": "1,02",
+      "status": "verified_from_pdf_cell",
+      "reasons": [],
+      "page": 2,
+      "cell_bbox": [
+        811.1904,
+        96.72000000000003,
+        828.4703999999999,
+        107.15999999999997
+      ],
+      "word_boxes": [
+        [
+          812.9907,
+          97.9736,
+          825.8292,
+          106.0136
+        ]
+      ],
+      "header_bbox": [
+        811.1904,
+        73.79999999999995,
+        828.4703999999999,
+        84.24000000000001
+      ],
+      "band_bbox": [
+        794.0304,
+        63.24000000000001,
+        828.4703999999999,
+        73.79999999999995
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70",
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+      "retrieved_at": "2026-10-15T20:42:15.875743Z",
+      "publisher_timestamp_text": "15/10/2026 22:08:15",
+      "published_at_utc": null
+    }
+  ],
+  "layouts": [
+    {
+      "profile": "sisal_multigol_per_data_paired_v1",
+      "page": 1,
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "header_top": 73.79999999999995,
+      "header_bottom": 84.24000000000001,
+      "x_boundaries": [
+        13.190639999999998,
+        35.03064,
+        65.03064,
+        86.03064,
+        107.03064,
+        209.03040000000001,
+        311.0304,
+        328.1904,
+        345.4704,
+        362.7504,
+        380.0304,
+        397.1904,
+        414.4704,
+        431.7504,
+        449.0304,
+        466.1904,
+        483.4704,
+        500.7504,
+        518.0304,
+        535.1904,
+        552.4704,
+        569.7504,
+        587.0304,
+        604.1904,
+        621.4704,
+        638.7504,
+        656.0304,
+        673.1904,
+        690.4703999999999,
+        707.7504,
+        725.0304,
+        742.1904,
+        759.4703999999999,
+        776.7504,
+        794.0304,
+        811.1904,
+        828.4703999999999
+      ],
+      "row_boundaries": [
+        84.24000000000001,
+        96.72000000000003,
+        107.15999999999997,
+        118.44,
+        130.68,
+        141.12,
+        152.51999999999998,
+        163.79999999999995,
+        175.2,
+        186.48000000000002,
+        197.88,
+        209.15999999999997,
+        220.56,
+        231.84000000000003,
+        243.24,
+        254.51999999999998,
+        265.92,
+        277.2,
+        288.59999999999997,
+        299.88,
+        311.28,
+        322.56,
+        333.96,
+        345.24,
+        356.64,
+        367.91999999999996,
+        379.32,
+        390.59999999999997,
+        402.0,
+        413.28,
+        424.68,
+        435.96,
+        447.35999999999996,
+        458.64,
+        470.03999999999996,
+        481.32,
+        492.71999999999997,
+        504.0,
+        515.4,
+        526.68,
+        538.0799999999999,
+        549.36,
+        560.76
+      ],
+      "markets": [
+        {
+          "range_min": 1,
+          "range_max": 2,
+          "selection": "range",
+          "column_index": 6,
+          "header_text": "1-2",
+          "header_bbox": [
+            311.0304,
+            73.79999999999995,
+            328.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            311.0304,
+            63.24000000000001,
+            345.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 2,
+          "selection": "altro",
+          "column_index": 7,
+          "header_text": "Altro",
+          "header_bbox": [
+            328.1904,
+            73.79999999999995,
+            345.4704,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            311.0304,
+            63.24000000000001,
+            345.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 3,
+          "selection": "range",
+          "column_index": 8,
+          "header_text": "1-3",
+          "header_bbox": [
+            345.4704,
+            73.79999999999995,
+            362.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            345.4704,
+            63.24000000000001,
+            380.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 3,
+          "selection": "altro",
+          "column_index": 9,
+          "header_text": "Altro",
+          "header_bbox": [
+            362.7504,
+            73.79999999999995,
+            380.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            345.4704,
+            63.24000000000001,
+            380.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 4,
+          "selection": "range",
+          "column_index": 10,
+          "header_text": "1-4",
+          "header_bbox": [
+            380.0304,
+            73.79999999999995,
+            397.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            380.0304,
+            63.24000000000001,
+            414.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 4,
+          "selection": "altro",
+          "column_index": 11,
+          "header_text": "Altro",
+          "header_bbox": [
+            397.1904,
+            73.79999999999995,
+            414.4704,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            380.0304,
+            63.24000000000001,
+            414.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 5,
+          "selection": "range",
+          "column_index": 12,
+          "header_text": "1-5",
+          "header_bbox": [
+            414.4704,
+            73.79999999999995,
+            431.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            414.4704,
+            63.24000000000001,
+            449.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 5,
+          "selection": "altro",
+          "column_index": 13,
+          "header_text": "Altro",
+          "header_bbox": [
+            431.7504,
+            73.79999999999995,
+            449.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            414.4704,
+            63.24000000000001,
+            449.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 6,
+          "selection": "range",
+          "column_index": 14,
+          "header_text": "1-6",
+          "header_bbox": [
+            449.0304,
+            73.79999999999995,
+            466.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            449.0304,
+            63.24000000000001,
+            483.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 6,
+          "selection": "altro",
+          "column_index": 15,
+          "header_text": "Altro",
+          "header_bbox": [
+            466.1904,
+            73.79999999999995,
+            483.4704,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            449.0304,
+            63.24000000000001,
+            483.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 3,
+          "selection": "range",
+          "column_index": 16,
+          "header_text": "2-3",
+          "header_bbox": [
+            483.4704,
+            73.79999999999995,
+            500.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            483.4704,
+            63.24000000000001,
+            518.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 3,
+          "selection": "altro",
+          "column_index": 17,
+          "header_text": "Altro",
+          "header_bbox": [
+            500.7504,
+            73.79999999999995,
+            518.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            483.4704,
+            63.24000000000001,
+            518.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 4,
+          "selection": "range",
+          "column_index": 18,
+          "header_text": "2-4",
+          "header_bbox": [
+            518.0304,
+            73.79999999999995,
+            535.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            518.0304,
+            63.24000000000001,
+            552.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 4,
+          "selection": "altro",
+          "column_index": 19,
+          "header_text": "Altro",
+          "header_bbox": [
+            535.1904,
+            73.79999999999995,
+            552.4704,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            518.0304,
+            63.24000000000001,
+            552.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 5,
+          "selection": "range",
+          "column_index": 20,
+          "header_text": "2-5",
+          "header_bbox": [
+            552.4704,
+            73.79999999999995,
+            569.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            552.4704,
+            63.24000000000001,
+            587.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 5,
+          "selection": "altro",
+          "column_index": 21,
+          "header_text": "Altro",
+          "header_bbox": [
+            569.7504,
+            73.79999999999995,
+            587.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            552.4704,
+            63.24000000000001,
+            587.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 6,
+          "selection": "range",
+          "column_index": 22,
+          "header_text": "2-6",
+          "header_bbox": [
+            587.0304,
+            73.79999999999995,
+            604.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            587.0304,
+            63.24000000000001,
+            621.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 6,
+          "selection": "altro",
+          "column_index": 23,
+          "header_text": "Altro",
+          "header_bbox": [
+            604.1904,
+            73.79999999999995,
+            621.4704,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            587.0304,
+            63.24000000000001,
+            621.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 4,
+          "selection": "range",
+          "column_index": 24,
+          "header_text": "3-4",
+          "header_bbox": [
+            621.4704,
+            73.79999999999995,
+            638.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            621.4704,
+            63.24000000000001,
+            656.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 4,
+          "selection": "altro",
+          "column_index": 25,
+          "header_text": "Altro",
+          "header_bbox": [
+            638.7504,
+            73.79999999999995,
+            656.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            621.4704,
+            63.24000000000001,
+            656.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 5,
+          "selection": "range",
+          "column_index": 26,
+          "header_text": "3-5",
+          "header_bbox": [
+            656.0304,
+            73.79999999999995,
+            673.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            656.0304,
+            63.24000000000001,
+            690.4703999999999,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 5,
+          "selection": "altro",
+          "column_index": 27,
+          "header_text": "Altro",
+          "header_bbox": [
+            673.1904,
+            73.79999999999995,
+            690.4703999999999,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            656.0304,
+            63.24000000000001,
+            690.4703999999999,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 6,
+          "selection": "range",
+          "column_index": 28,
+          "header_text": "3-6",
+          "header_bbox": [
+            690.4703999999999,
+            73.79999999999995,
+            707.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            690.4703999999999,
+            63.24000000000001,
+            725.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 6,
+          "selection": "altro",
+          "column_index": 29,
+          "header_text": "Altro",
+          "header_bbox": [
+            707.7504,
+            73.79999999999995,
+            725.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            690.4703999999999,
+            63.24000000000001,
+            725.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 4,
+          "range_max": 5,
+          "selection": "range",
+          "column_index": 30,
+          "header_text": "4-5",
+          "header_bbox": [
+            725.0304,
+            73.79999999999995,
+            742.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            725.0304,
+            63.24000000000001,
+            759.4703999999999,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 4,
+          "range_max": 5,
+          "selection": "altro",
+          "column_index": 31,
+          "header_text": "Altro",
+          "header_bbox": [
+            742.1904,
+            73.79999999999995,
+            759.4703999999999,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            725.0304,
+            63.24000000000001,
+            759.4703999999999,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 4,
+          "range_max": 6,
+          "selection": "range",
+          "column_index": 32,
+          "header_text": "4-6",
+          "header_bbox": [
+            759.4703999999999,
+            73.79999999999995,
+            776.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            759.4703999999999,
+            63.24000000000001,
+            794.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 4,
+          "range_max": 6,
+          "selection": "altro",
+          "column_index": 33,
+          "header_text": "Altro",
+          "header_bbox": [
+            776.7504,
+            73.79999999999995,
+            794.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            759.4703999999999,
+            63.24000000000001,
+            794.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 5,
+          "range_max": 6,
+          "selection": "range",
+          "column_index": 34,
+          "header_text": "5-6",
+          "header_bbox": [
+            794.0304,
+            73.79999999999995,
+            811.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            794.0304,
+            63.24000000000001,
+            828.4703999999999,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 5,
+          "range_max": 6,
+          "selection": "altro",
+          "column_index": 35,
+          "header_text": "Altro",
+          "header_bbox": [
+            811.1904,
+            73.79999999999995,
+            828.4703999999999,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            794.0304,
+            63.24000000000001,
+            828.4703999999999,
+            73.79999999999995
+          ]
+        }
+      ],
+      "layout_sha256": "f161236ba16087930716860bda0b1d3aa032183c919b51228a5434b252aa02dc"
+    },
+    {
+      "profile": "sisal_multigol_per_data_paired_v1",
+      "page": 2,
+      "source_sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+      "header_top": 73.79999999999995,
+      "header_bottom": 84.24000000000001,
+      "x_boundaries": [
+        13.190639999999998,
+        35.03064,
+        65.03064,
+        86.03064,
+        107.03064,
+        209.03040000000001,
+        311.0304,
+        328.1904,
+        345.4704,
+        362.7504,
+        380.0304,
+        397.1904,
+        414.4704,
+        431.7504,
+        449.0304,
+        466.1904,
+        483.4704,
+        500.7504,
+        518.0304,
+        535.1904,
+        552.4704,
+        569.7504,
+        587.0304,
+        604.1904,
+        621.4704,
+        638.7504,
+        656.0304,
+        673.1904,
+        690.4703999999999,
+        707.7504,
+        725.0304,
+        742.1904,
+        759.4703999999999,
+        776.7504,
+        794.0304,
+        811.1904,
+        828.4703999999999
+      ],
+      "row_boundaries": [
+        84.24000000000001,
+        96.72000000000003,
+        107.15999999999997,
+        118.44,
+        129.84000000000003,
+        141.12,
+        152.51999999999998,
+        163.79999999999995,
+        175.2,
+        186.48000000000002,
+        197.88,
+        209.15999999999997,
+        220.56,
+        231.84000000000003,
+        243.24,
+        254.51999999999998,
+        265.92,
+        277.2,
+        288.59999999999997,
+        299.88,
+        311.28,
+        322.56,
+        333.96,
+        345.24,
+        356.64,
+        367.91999999999996,
+        379.32,
+        390.59999999999997,
+        402.0,
+        413.28,
+        424.68,
+        435.96,
+        447.35999999999996,
+        458.64,
+        470.03999999999996,
+        481.32,
+        492.71999999999997,
+        504.0,
+        515.4,
+        526.68,
+        538.0799999999999,
+        549.36
+      ],
+      "markets": [
+        {
+          "range_min": 1,
+          "range_max": 2,
+          "selection": "range",
+          "column_index": 6,
+          "header_text": "1-2",
+          "header_bbox": [
+            311.0304,
+            73.79999999999995,
+            328.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            311.0304,
+            63.24000000000001,
+            345.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 2,
+          "selection": "altro",
+          "column_index": 7,
+          "header_text": "Altro",
+          "header_bbox": [
+            328.1904,
+            73.79999999999995,
+            345.4704,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            311.0304,
+            63.24000000000001,
+            345.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 3,
+          "selection": "range",
+          "column_index": 8,
+          "header_text": "1-3",
+          "header_bbox": [
+            345.4704,
+            73.79999999999995,
+            362.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            345.4704,
+            63.24000000000001,
+            380.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 3,
+          "selection": "altro",
+          "column_index": 9,
+          "header_text": "Altro",
+          "header_bbox": [
+            362.7504,
+            73.79999999999995,
+            380.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            345.4704,
+            63.24000000000001,
+            380.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 4,
+          "selection": "range",
+          "column_index": 10,
+          "header_text": "1-4",
+          "header_bbox": [
+            380.0304,
+            73.79999999999995,
+            397.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            380.0304,
+            63.24000000000001,
+            414.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 4,
+          "selection": "altro",
+          "column_index": 11,
+          "header_text": "Altro",
+          "header_bbox": [
+            397.1904,
+            73.79999999999995,
+            414.4704,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            380.0304,
+            63.24000000000001,
+            414.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 5,
+          "selection": "range",
+          "column_index": 12,
+          "header_text": "1-5",
+          "header_bbox": [
+            414.4704,
+            73.79999999999995,
+            431.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            414.4704,
+            63.24000000000001,
+            449.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 5,
+          "selection": "altro",
+          "column_index": 13,
+          "header_text": "Altro",
+          "header_bbox": [
+            431.7504,
+            73.79999999999995,
+            449.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            414.4704,
+            63.24000000000001,
+            449.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 6,
+          "selection": "range",
+          "column_index": 14,
+          "header_text": "1-6",
+          "header_bbox": [
+            449.0304,
+            73.79999999999995,
+            466.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            449.0304,
+            63.24000000000001,
+            483.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 1,
+          "range_max": 6,
+          "selection": "altro",
+          "column_index": 15,
+          "header_text": "Altro",
+          "header_bbox": [
+            466.1904,
+            73.79999999999995,
+            483.4704,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            449.0304,
+            63.24000000000001,
+            483.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 3,
+          "selection": "range",
+          "column_index": 16,
+          "header_text": "2-3",
+          "header_bbox": [
+            483.4704,
+            73.79999999999995,
+            500.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            483.4704,
+            63.24000000000001,
+            518.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 3,
+          "selection": "altro",
+          "column_index": 17,
+          "header_text": "Altro",
+          "header_bbox": [
+            500.7504,
+            73.79999999999995,
+            518.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            483.4704,
+            63.24000000000001,
+            518.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 4,
+          "selection": "range",
+          "column_index": 18,
+          "header_text": "2-4",
+          "header_bbox": [
+            518.0304,
+            73.79999999999995,
+            535.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            518.0304,
+            63.24000000000001,
+            552.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 4,
+          "selection": "altro",
+          "column_index": 19,
+          "header_text": "Altro",
+          "header_bbox": [
+            535.1904,
+            73.79999999999995,
+            552.4704,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            518.0304,
+            63.24000000000001,
+            552.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 5,
+          "selection": "range",
+          "column_index": 20,
+          "header_text": "2-5",
+          "header_bbox": [
+            552.4704,
+            73.79999999999995,
+            569.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            552.4704,
+            63.24000000000001,
+            587.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 5,
+          "selection": "altro",
+          "column_index": 21,
+          "header_text": "Altro",
+          "header_bbox": [
+            569.7504,
+            73.79999999999995,
+            587.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            552.4704,
+            63.24000000000001,
+            587.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 6,
+          "selection": "range",
+          "column_index": 22,
+          "header_text": "2-6",
+          "header_bbox": [
+            587.0304,
+            73.79999999999995,
+            604.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            587.0304,
+            63.24000000000001,
+            621.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 2,
+          "range_max": 6,
+          "selection": "altro",
+          "column_index": 23,
+          "header_text": "Altro",
+          "header_bbox": [
+            604.1904,
+            73.79999999999995,
+            621.4704,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            587.0304,
+            63.24000000000001,
+            621.4704,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 4,
+          "selection": "range",
+          "column_index": 24,
+          "header_text": "3-4",
+          "header_bbox": [
+            621.4704,
+            73.79999999999995,
+            638.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            621.4704,
+            63.24000000000001,
+            656.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 4,
+          "selection": "altro",
+          "column_index": 25,
+          "header_text": "Altro",
+          "header_bbox": [
+            638.7504,
+            73.79999999999995,
+            656.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            621.4704,
+            63.24000000000001,
+            656.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 5,
+          "selection": "range",
+          "column_index": 26,
+          "header_text": "3-5",
+          "header_bbox": [
+            656.0304,
+            73.79999999999995,
+            673.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            656.0304,
+            63.24000000000001,
+            690.4703999999999,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 5,
+          "selection": "altro",
+          "column_index": 27,
+          "header_text": "Altro",
+          "header_bbox": [
+            673.1904,
+            73.79999999999995,
+            690.4703999999999,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            656.0304,
+            63.24000000000001,
+            690.4703999999999,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 6,
+          "selection": "range",
+          "column_index": 28,
+          "header_text": "3-6",
+          "header_bbox": [
+            690.4703999999999,
+            73.79999999999995,
+            707.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            690.4703999999999,
+            63.24000000000001,
+            725.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 3,
+          "range_max": 6,
+          "selection": "altro",
+          "column_index": 29,
+          "header_text": "Altro",
+          "header_bbox": [
+            707.7504,
+            73.79999999999995,
+            725.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            690.4703999999999,
+            63.24000000000001,
+            725.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 4,
+          "range_max": 5,
+          "selection": "range",
+          "column_index": 30,
+          "header_text": "4-5",
+          "header_bbox": [
+            725.0304,
+            73.79999999999995,
+            742.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            725.0304,
+            63.24000000000001,
+            759.4703999999999,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 4,
+          "range_max": 5,
+          "selection": "altro",
+          "column_index": 31,
+          "header_text": "Altro",
+          "header_bbox": [
+            742.1904,
+            73.79999999999995,
+            759.4703999999999,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            725.0304,
+            63.24000000000001,
+            759.4703999999999,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 4,
+          "range_max": 6,
+          "selection": "range",
+          "column_index": 32,
+          "header_text": "4-6",
+          "header_bbox": [
+            759.4703999999999,
+            73.79999999999995,
+            776.7504,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            759.4703999999999,
+            63.24000000000001,
+            794.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 4,
+          "range_max": 6,
+          "selection": "altro",
+          "column_index": 33,
+          "header_text": "Altro",
+          "header_bbox": [
+            776.7504,
+            73.79999999999995,
+            794.0304,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            759.4703999999999,
+            63.24000000000001,
+            794.0304,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 5,
+          "range_max": 6,
+          "selection": "range",
+          "column_index": 34,
+          "header_text": "5-6",
+          "header_bbox": [
+            794.0304,
+            73.79999999999995,
+            811.1904,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            794.0304,
+            63.24000000000001,
+            828.4703999999999,
+            73.79999999999995
+          ]
+        },
+        {
+          "range_min": 5,
+          "range_max": 6,
+          "selection": "altro",
+          "column_index": 35,
+          "header_text": "Altro",
+          "header_bbox": [
+            811.1904,
+            73.79999999999995,
+            828.4703999999999,
+            84.24000000000001
+          ],
+          "band_bbox": [
+            794.0304,
+            63.24000000000001,
+            828.4703999999999,
+            73.79999999999995
+          ]
+        }
+      ],
+      "layout_sha256": "3017bad02c859847b1e9807068b34f403e17f59b7b22dedef4b353b912757b70"
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "diagnostic_only": {
+      "const": true
+    },
+    "ready_for_analysis": {
+      "const": false
+    },
+    "ready_for_quant": {
+      "const": false
+    },
+    "statistics_usable_in_production": {
+      "const": false
+    },
+    "status": {
+      "enum": [
+        "parsed",
+        "partial",
+        "blocked"
+      ]
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/source"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "event": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/event"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "selections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/selection"
+      }
+    },
+    "layouts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/layout"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "diagnostic_only",
+    "ready_for_analysis",
+    "ready_for_quant",
+    "statistics_usable_in_production",
+    "status",
+    "reasons",
+    "source",
+    "event",
+    "selections",
+    "layouts"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sisal:multigol-parser:v1:output",
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_url": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "retrieved_at": {
+          "type": "string"
+        },
+        "data_origin": {
+          "enum": [
+            "archived_real",
+            "synthetic"
+          ]
+        },
+        "publisher_timestamp_text": {
+          "type": "string"
+        },
+        "publisher_timezone": {
+          "type": "null"
+        },
+        "published_at_utc": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "source_url",
+        "sha256",
+        "retrieved_at",
+        "data_origin"
+      ]
+    },
+    "word": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "bbox": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      },
+      "required": [
+        "text",
+        "bbox"
+      ]
+    },
+    "date_resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "printed": {
+          "type": "string"
+        },
+        "year_explicit": {
+          "type": "boolean"
+        },
+        "basis": {
+          "enum": [
+            "printed_date",
+            "weekday_day_month_and_publisher_year_context"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "printed",
+        "year_explicit",
+        "basis"
+      ]
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "palinsesto": {
+          "type": "string"
+        },
+        "avvenimento": {
+          "type": "string"
+        },
+        "event_key": {
+          "type": "string"
+        },
+        "competition_code": {
+          "type": "string"
+        },
+        "home": {
+          "type": "string"
+        },
+        "away": {
+          "type": "string"
+        },
+        "match_date": {
+          "type": "string"
+        },
+        "local_time": {
+          "type": "string"
+        },
+        "date_resolution": {
+          "$ref": "#/$defs/date_resolution"
+        },
+        "category": {
+          "type": "null"
+        },
+        "category_status": {
+          "const": "not_explicitly_printed"
+        },
+        "timezone": {
+          "type": "null"
+        },
+        "kickoff_utc": {
+          "type": "null"
+        },
+        "identity_scope": {
+          "const": "printed_sisal_event_only_no_cross_provider_mapping"
+        },
+        "identity_status": {
+          "const": "printed_identity_matched"
+        },
+        "identity_bbox": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "identity_words": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/word"
+          }
+        },
+        "page": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "palinsesto",
+        "avvenimento",
+        "event_key",
+        "competition_code",
+        "home",
+        "away",
+        "match_date",
+        "local_time",
+        "date_resolution",
+        "category",
+        "category_status",
+        "timezone",
+        "kickoff_utc",
+        "identity_scope",
+        "identity_status",
+        "identity_bbox",
+        "identity_words",
+        "page"
+      ]
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "event_key": {
+          "type": "string"
+        },
+        "market_type": {
+          "const": "multigol_match"
+        },
+        "scope": {
+          "const": "match"
+        },
+        "period": {
+          "type": "null"
+        },
+        "range_min": {
+          "type": "integer"
+        },
+        "range_max": {
+          "type": "integer"
+        },
+        "selection": {
+          "enum": [
+            "range",
+            "altro"
+          ]
+        },
+        "decimal_original": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "decimal": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9]+(\\.[0-9]+)?$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "raw_cell_text": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "verified_from_pdf_cell",
+            "missing",
+            "blocked"
+          ]
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "page": {
+          "type": "integer"
+        },
+        "cell_bbox": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "word_boxes": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        },
+        "header_bbox": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "band_bbox": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "layout_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_url": {
+          "type": "string"
+        },
+        "retrieved_at": {
+          "type": "string"
+        },
+        "publisher_timestamp_text": {
+          "type": "string"
+        },
+        "published_at_utc": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "event_key",
+        "market_type",
+        "scope",
+        "period",
+        "range_min",
+        "range_max",
+        "selection",
+        "decimal_original",
+        "decimal",
+        "raw_cell_text",
+        "status",
+        "reasons",
+        "page",
+        "cell_bbox",
+        "word_boxes",
+        "header_bbox",
+        "band_bbox",
+        "layout_sha256",
+        "source_sha256",
+        "source_url",
+        "retrieved_at",
+        "publisher_timestamp_text",
+        "published_at_utc"
+      ]
+    },
+    "column": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "range_min": {
+          "type": "integer"
+        },
+        "range_max": {
+          "type": "integer"
+        },
+        "selection": {
+          "enum": [
+            "range",
+            "altro"
+          ]
+        },
+        "column_index": {
+          "type": "integer"
+        },
+        "header_text": {
+          "type": "string"
+        },
+        "header_bbox": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "band_bbox": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      },
+      "required": [
+        "range_min",
+        "range_max",
+        "selection",
+        "column_index",
+        "header_text",
+        "header_bbox",
+        "band_bbox"
+      ]
+    },
+    "layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "profile": {
+          "const": "sisal_multigol_per_data_paired_v1"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "header_top": {
+          "type": "number"
+        },
+        "header_bottom": {
+          "type": "number"
+        },
+        "x_boundaries": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "row_boundaries": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/column"
+          }
+        },
+        "layout_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "profile",
+        "page",
+        "source_sha256",
+        "header_top",
+        "header_bottom",
+        "x_boundaries",
+        "row_boundaries",
+        "markets",
+        "layout_sha256"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "blocked"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "event": {
+            "type": "null"
+          },
+          "selections": {
+            "maxItems": 0
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "source": {
+            "$ref": "#/$defs/source"
+          },
+          "event": {
+            "$ref": "#/$defs/event"
+          },
+          "selections": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

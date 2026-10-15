@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "diagnostic_only": true,
+  "ready_for_analysis": false,
+  "ready_for_quant": false,
+  "statistics_usable_in_production": false,
+  "status": "blocked",
+  "reasons": [
+    "printed_identity_mismatch"
+  ],
+  "source": {
+    "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+    "sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+    "retrieved_at": "2026-10-15T20:42:15.875743Z",
+    "data_origin": "archived_real"
+  },
+  "event": null,
+  "selections": [],
+  "layouts": []
+}

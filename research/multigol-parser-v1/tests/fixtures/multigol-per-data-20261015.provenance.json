@@ -1,0 +1,12 @@
+{
+  "source_url": "https://landing.sisal.it/volantini/Scommesse_Sport/Quote/calcio%20multigoal%20per%20data.pdf",
+  "retrieval_started_at": "2026-10-15T20:42:14.276756Z",
+  "retrieved_at": "2026-10-15T20:42:15.875743Z",
+  "http_status": 200,
+  "sha256": "71122a3a521047659941ff400f699db8b38471dd616b6c509c2f3542d0db7b4e",
+  "source_type": "official_sisal_pdf",
+  "data_origin": "archived_real",
+  "tls_verification": true,
+  "redirects_followed": false,
+  "bytes": 115745
+}

@@ -1,0 +1,4 @@
+# Standalone reader and output-contract validation. Production pins unchanged.
+pdfplumber==0.11.10
+pypdf==6.20.0
+jsonschema==4.26.0
